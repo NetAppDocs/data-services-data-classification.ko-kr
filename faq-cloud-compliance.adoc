@@ -173,7 +173,7 @@ IMPORTANT: BlueXP 개인 모드(레거시 BlueXP 인터페이스)는 일반적�
 
 데이터 분류는 파일 이름, 권한, 생성 시간, 마지막 액세스, 마지막 수정과 같은 메타데이터를 캡처합니다.  여기에는 데이터 조사 세부 정보 페이지와 데이터 조사 보고서에 나타나는 모든 메타데이터가 포함됩니다.
 
-데이터 분류를 통해 개인 정보(PII) 및 민감한 개인 정보(SPII) 등 다양한 유형의 비공개 데이터를 식별할 수 있습니다.  개인 정보에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["데이터 분류가 스캔하는 개인 데이터 범주"] .
+데이터 분류를 통해 개인 정보(PII) 및 민감한 개인 정보(SPII) 등 다양한 유형의 비공개 데이터를 식별할 수 있습니다. 개인 정보에 대한 자세한 내용은 다음을 참조하세요.xref:reference-private-data-categories.html[데이터 분류가 스캔하는 개인 데이터 범주] .
 
 
 
@@ -245,7 +245,7 @@ NetApp 민감한 데이터에 액세스할 수 없으며 이를 UI에 표시하�
 * 온프레미스 ONTAP 시스템의 경우: 콘솔 에이전트는 온프레미스에 있습니다.
 
 
-이러한 위치에 데이터가 있는 경우 다음을 사용해야 할 수 있습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["여러 콘솔 에이전트"^] .
+이러한 위치에 데이터가 있는 경우 다음을 사용해야 할 수 있습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["여러 콘솔 에이전트"^] .
 
 
 

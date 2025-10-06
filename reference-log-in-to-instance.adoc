@@ -35,7 +35,7 @@ summary: 로그 파일에 액세스하거나 구성 파일을 편집하려면 Ne
 
 클라우드 시스템에 액세스하려면 보안 그룹 인바운드 규칙을 수정해야 합니다.  자세한 내용은 다음을 참조하세요.
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS의 보안 그룹 규칙"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure의 보안 그룹 규칙"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud의 방화벽 규칙"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-aws.html["AWS의 보안 그룹 규칙"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-azure.html["Azure의 보안 그룹 규칙"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-gcp.html["Google Cloud의 방화벽 규칙"^]
 

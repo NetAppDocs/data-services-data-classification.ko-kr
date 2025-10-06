@@ -16,10 +16,10 @@ NetApp 콘솔을 통해 NetApp 데이터 분류에 액세스할 수 있습니다
 
 콘솔에 로그인하려면 NetApp 지원 사이트 자격 증명을 사용하거나 이메일과 비밀번호를 사용하여 NetApp 콘솔 로그인에 가입할 수 있습니다. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["콘솔에 로그인하는 방법에 대해 자세히 알아보세요"^] .
 
-특정 작업에는 특정 콘솔 사용자 역할이 필요합니다. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 콘솔 액세스 역할에 대해 알아보세요."^] .
+특정 작업에는 특정 콘솔 사용자 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 콘솔 액세스 역할에 대해 알아보세요."^] .
 
 .시작하기 전에
-* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["콘솔 에이전트를 추가해야 합니다."^]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 에이전트를 추가해야 합니다."^]
 * link:task-deploy-cloud-compliance.html["귀하의 작업 부하에 적합한 데이터 분류 배포 스타일을 파악하세요."]
 
 

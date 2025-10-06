@@ -29,7 +29,7 @@ NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 �
 
 NetApp Console을 사용하려면 라이선스나 구독이 필요하지 않으며, 스토리지 시스템이나 NetApp 데이터 서비스에 대한 연결을 보장하기 위해 클라우드에 Console 에이전트를 배포해야 할 때만 요금이 부과됩니다. 그러나 콘솔에서 액세스할 수 있는 일부 NetApp 데이터 서비스는 라이선스 기반이거나 구독 기반입니다.
 
-자세히 알아보세요link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp 콘솔"^] .
+자세히 알아보세요link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp 콘솔"^] .
 
 
 
@@ -37,7 +37,7 @@ NetApp Console을 사용하려면 라이선스나 구독이 필요하지 않으�
 
 데이터 분류는 인공지능(AI), 자연어 처리(NLP), 머신 러닝(ML)을 사용하여 스캔한 콘텐츠를 이해하고 엔터티를 추출하고 그에 따라 콘텐츠를 분류합니다.  이를 통해 데이터 분류는 다음과 같은 기능 영역을 제공할 수 있습니다.
 
-https://bluexp.netapp.com/netapp-cloud-data-sense["데이터 분류 사용 사례에 대해 알아보세요"^] .
+link:https://www.netapp.com/data-services/classification/["데이터 분류 사용 사례에 대해 알아보세요"^] .
 
 .규정 준수 유지
 데이터 분류는 규정 준수 노력에 도움이 되는 다양한 도구를 제공합니다.  데이터 분류를 사용하여 다음을 수행할 수 있습니다.
@@ -60,7 +60,7 @@ https://bluexp.netapp.com/netapp-cloud-data-sense["데이터 분류 사용 사�
 데이터 분류는 스토리지 총 소유 비용(TCO)을 절감하는 데 도움이 되는 도구를 제공합니다.  데이터 분류를 사용하여 다음을 수행할 수 있습니다.
 
 * 중복된 데이터나 업무와 관련 없는 데이터를 식별하여 저장 효율성을 높입니다.
-* 비활성 데이터를 식별하여 비용이 덜 드는 개체 스토리지로 계층화하여 스토리지 비용을 절감하세요. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Cloud Volumes ONTAP 시스템의 계층화에 대해 자세히 알아보세요."^] . https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["온프레미스 ONTAP 시스템의 계층화에 대해 자세히 알아보세요."^] .
+* 비활성 데이터를 식별하여 비용이 덜 드는 개체 스토리지로 계층화하여 스토리지 비용을 절감하세요. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["Cloud Volumes ONTAP 시스템의 계층화에 대해 자세히 알아보세요."^] . https://docs.netapp.com/us-en/data-services-tiering/concept-cloud-tiering.html["온프레미스 ONTAP 시스템의 계층화에 대해 자세히 알아보세요."^] .
 
 
 
@@ -76,6 +76,7 @@ https://bluexp.netapp.com/netapp-cloud-data-sense["데이터 분류 사용 사�
 * Cloud Volumes ONTAP (AWS, Azure 또는 GCP에 배포됨)
 * 온프레미스 ONTAP 클러스터
 * StorageGRID
+* Google Cloud NetApp Volumes
 
 
 *데이터 출처*
@@ -107,7 +108,7 @@ https://bluexp.netapp.com/netapp-cloud-data-sense["데이터 분류 사용 사�
 === 인프라 비용
 
 * 클라우드에 데이터 분류를 설치하려면 클라우드 인스턴스를 배포해야 하며, 배포된 클라우드 제공업체에서 요금이 부과됩니다. 보다 <<데이터 분류 인스턴스,각 클라우드 공급자에 배포되는 인스턴스 유형>> .  온프레미스 시스템에 데이터 분류를 설치하는 경우 비용이 발생하지 않습니다.
-* 데이터 분류를 위해서는 콘솔 에이전트를 배포해야 합니다.  많은 경우 콘솔에서 다른 저장소와 서비스를 사용하고 있기 때문에 이미 콘솔 에이전트가 있는 것입니다.  콘솔 에이전트 인스턴스는 배포된 클라우드 공급자로부터 요금이 부과됩니다. 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["각 클라우드 공급자에 배포되는 인스턴스 유형"^] .  온프레미스 시스템에 콘솔 에이전트를 설치하는 경우 비용이 발생하지 않습니다.
+* 데이터 분류를 위해서는 콘솔 에이전트를 배포해야 합니다. 많은 경우 콘솔에서 다른 저장소와 서비스를 사용하고 있기 때문에 이미 콘솔 에이전트가 있는 것입니다. 콘솔 에이전트 인스턴스는 배포된 클라우드 공급자로부터 요금이 부과됩니다. 를 참조하십시오 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["각 클라우드 공급자에 배포되는 인스턴스 유형"^] . 온프레미스 시스템에 콘솔 에이전트를 설치하는 경우 비용이 발생하지 않습니다.
 
 
 
@@ -125,7 +126,7 @@ https://bluexp.netapp.com/netapp-cloud-data-sense["데이터 분류 사용 사�
 
 == 데이터 분류 인스턴스
 
-클라우드에 데이터 분류를 배포하면 콘솔은 콘솔 에이전트와 동일한 서브넷에 인스턴스를 배포합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["콘솔 에이전트에 대해 자세히 알아보세요."^]
+클라우드에 데이터 분류를 배포하면 콘솔은 콘솔 에이전트와 동일한 서브넷에 인스턴스를 배포합니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 에이전트에 대해 자세히 알아보세요."^]
 
 image:diagram_cloud_compliance_instance.png["클라우드 공급자에서 실행되는 콘솔 인스턴스와 데이터 분류 인스턴스를 보여주는 다이어그램입니다."]
 
@@ -183,7 +184,7 @@ image:diagram_cloud_compliance_scan.png["클라우드 공급자에서 실행되�
 볼륨 수준이나 데이터베이스 스키마 수준에서 검사를 활성화하거나 비활성화할 수 있습니다.
 
 
-NOTE: 데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 않습니다.  각 콘솔 에이전트는 500TiB의 데이터를 스캔하고 표시하는 것을 지원합니다. 500TiB 이상의 데이터를 스캔하려면link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["다른 콘솔 에이전트를 설치하세요"^] 그 다음에link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["다른 데이터 분류 인스턴스 배포"] .  + 콘솔 UI는 단일 커넥터의 데이터를 표시합니다.  여러 콘솔 에이전트의 데이터를 보는 방법에 대한 팁은 다음을 참조하세요.link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["여러 콘솔 에이전트와 함께 작업"^] .
+NOTE: 데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 않습니다. 각 콘솔 에이전트는 500TiB의 데이터를 스캔하고 표시하는 것을 지원합니다. 500TiB 이상의 데이터를 스캔하려면link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["다른 콘솔 에이전트를 설치하세요"^] 그 다음에link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["다른 데이터 분류 인스턴스 배포"] . + 콘솔 UI는 단일 커넥터의 데이터를 표시합니다. 여러 콘솔 에이전트의 데이터를 보는 방법에 대한 팁은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["여러 콘솔 에이전트와 함께 작업"^] .
 
 
 

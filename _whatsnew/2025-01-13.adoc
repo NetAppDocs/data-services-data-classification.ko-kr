@@ -26,4 +26,4 @@
 * 100만 개의 레코드를 내보내는 데는 약 35분이 걸릴 것으로 예상됩니다.
 
 
-데이터 조사 및 보고서에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["귀하의 조직에 저장된 데이터를 조사하세요"] .
+데이터 조사 및 보고서에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["귀하의 조직에 저장된 데이터를 조사하세요"] .

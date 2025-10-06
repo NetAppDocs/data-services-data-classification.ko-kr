@@ -36,10 +36,10 @@ image:diagram_deploy_onprem_cloud_instance.png["필수 콘솔 및 네트워크 �
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"]콘솔 에이전트 만들기
 [role="quick-margin-para"]
-아직 콘솔 에이전트가 없는 경우 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 배포"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.
+아직 콘솔 에이전트가 없는 경우 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 배포"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.
 
 [role="quick-margin-para"]
-클라우드 공급자를 사용하여 콘솔 에이전트를 생성할 수도 있습니다.  보다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
+클라우드 공급자를 사용하여 콘솔 에이전트를 생성할 수도 있습니다. 보다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"]필수 조건 검토
 [role="quick-margin-para"]
@@ -56,9 +56,9 @@ NetApp 지원 사이트에서 클라우드 데이터 분류 소프트웨어를 �
 
 == 콘솔 에이전트 만들기
 
-데이터 분류를 설치하고 사용하려면 콘솔 에이전트가 필요합니다.  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
+데이터 분류를 설치하고 사용하려면 콘솔 에이전트가 필요합니다. 대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
 
-클라우드 공급자 환경에서 하나를 생성하려면 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
+클라우드 공급자 환경에서 하나를 생성하려면 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
 
 특정 클라우드 공급자에 배포된 콘솔 에이전트를 사용해야 하는 몇 가지 시나리오가 있습니다.
 
@@ -72,7 +72,7 @@ Azure NetApp Files 의 경우, 스캔하려는 볼륨과 동일한 지역에 배
 
 온프레미스 ONTAP 시스템, NetApp 파일 공유 및 데이터베이스 계정은 이러한 클라우드 콘솔 에이전트를 사용하여 스캔할 수 있습니다.
 
-또한 다음을 수행할 수도 있습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 배포"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 콘솔 에이전트도 온프레미스에 설치하기로 선택할 수도 있습니다.
+또한 다음을 수행할 수도 있습니다. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 배포"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서. 온프레미스에 데이터 분류를 설치하려는 일부 사용자는 콘솔 에이전트도 온프레미스에 설치하기로 선택할 수도 있습니다.
 
 데이터 분류를 설치할 때 콘솔 에이전트 시스템의 IP 주소나 호스트 이름이 필요합니다.  사내에 콘솔 에이전트를 설치한 경우 이 정보를 얻을 수 있습니다.  콘솔 에이전트가 클라우드에 배포된 경우 콘솔에서 다음 정보를 찾을 수 있습니다. 도움말 아이콘을 선택한 다음 *지원*을 선택하고 **콘솔 에이전트**를 선택합니다.
 
@@ -210,16 +210,16 @@ NOTE: 데이터 분류 호스트 시스템의 IP 주소는 설치 후 변경할 
 | 엔드포인트 | 목적 
 
 
-| \ https://api.bluexp.netapp.com | NetApp 계정을 포함한 콘솔과의 통신. 
+| \ https://api.console.netapp.com | NetApp 계정을 포함한 콘솔과의 통신. 
 
 
 | \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 중앙화된 사용자 인증을 위해 콘솔 웹사이트와 통신합니다. 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | 소프트웨어 이미지, 매니페스트, 템플릿에 대한 액세스를 제공하고 로그와 메트릭을 전송합니다. 
+| \ https://support.compliance.api.console.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | 소프트웨어 이미지, 매니페스트, 템플릿에 대한 액세스를 제공하고 로그와 메트릭을 전송합니다. 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ | NetApp 감사 기록에서 데이터를 스트리밍할 수 있도록 합니다. 
+| \ https://support.compliance.api.console.netapp.com/ | NetApp 감사 기록에서 데이터를 스트리밍할 수 있도록 합니다. 
 
 
 | \ https://github.com/docker \ https://download.docker.com | Docker 설치를 위한 필수 패키지를 제공합니다. 
@@ -293,7 +293,7 @@ image:diagram_deploy_onprem_single_host_internet.png["인터넷 접속이 가능
 인스턴스에 인터넷 연결이 있는 한 데이터 분류 소프트웨어 업그레이드는 자동으로 수행됩니다.
 
 
-NOTE: 현재 데이터 분류 기능은 온프레미스에 소프트웨어가 설치된 경우 S3 버킷, Azure NetApp Files 또는 FSx for ONTAP 검색할 수 없습니다.  이러한 경우 클라우드에 별도의 콘솔 에이전트와 데이터 분류 인스턴스를 배포해야 합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["커넥터 간 전환"^] 다양한 데이터 소스에 대해.
+NOTE: 현재 데이터 분류 기능은 온프레미스에 소프트웨어가 설치된 경우 S3 버킷, Azure NetApp Files 또는 FSx for ONTAP 검색할 수 없습니다. 이러한 경우 클라우드에 별도의 콘솔 에이전트와 데이터 분류 인스턴스를 배포해야 합니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["커넥터 간 전환"^] 다양한 데이터 소스에 대해.
 
 
 

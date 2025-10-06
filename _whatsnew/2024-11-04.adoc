@@ -13,9 +13,9 @@
 
 다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, BlueXP classification 버전 1.30 이상이 필요합니다: Red Hat Enterprise Linux 버전 8.8, 8.10, 9.0, 9.1, 9.2, 9.3 및 9.4.
 
-자세히 알아보세요 https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["BlueXP classification"] .
+자세히 알아보세요 https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["BlueXP classification"] .
 
 .NFS v4.1 지원
 이 릴리스에서는 이전에 지원되었던 버전 외에도 NFS v4.1에 대한 지원이 제공됩니다.
 
-자세히 알아보세요 https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["BlueXP classification"] .
+자세히 알아보세요 https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["BlueXP classification"] .

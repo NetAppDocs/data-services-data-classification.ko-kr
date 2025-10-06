@@ -37,9 +37,9 @@ Linux 호스트에 NetApp Data Classification을 수동으로 설치하기 전�
 
 데이터 분류를 설치하고 사용하려면 콘솔 에이전트가 필요합니다.  하지만 콘솔 에이전트 없이도 필수 구성 요소 스크립트를 실행할 수 있습니다.
 
-당신은 할 수 있습니다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 콘솔 에이전트도 온프레미스에 설치하기로 선택할 수도 있습니다.
+당신은 할 수 있습니다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서. 온프레미스에 데이터 분류를 설치하려는 일부 사용자는 콘솔 에이전트도 온프레미스에 설치하기로 선택할 수도 있습니다.
 
-클라우드 공급자 환경에서 콘솔 에이전트를 생성하려면 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
+클라우드 공급자 환경에서 콘솔 에이전트를 생성하려면 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
 
 필수 구성 요소 스크립트를 실행할 때는 콘솔 에이전트 시스템의 IP 주소나 호스트 이름이 필요합니다.  사내에 콘솔 에이전트를 설치한 경우 이 정보를 얻을 수 있습니다.  콘솔 에이전트가 클라우드에 배포된 경우 콘솔에서 다음 정보를 찾을 수 있습니다. 도움말 아이콘을 선택한 다음 *지원*을 선택하고 *콘솔 에이전트*를 선택합니다.
 
@@ -175,16 +175,16 @@ TIP: 인터넷 연결이 없는 사이트에 설치된 호스트 시스템에는
 | 엔드포인트 | 목적 
 
 
-| \ https://api.bluexp.netapp.com | NetApp 계정을 포함하는 콘솔 서비스와의 통신입니다. 
+| \ https://api.console.netapp.com | NetApp 계정을 포함하는 콘솔 서비스와의 통신입니다. 
 
 
 | \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 중앙화된 사용자 인증을 위해 콘솔 웹사이트와 통신합니다. 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | 소프트웨어 이미지, 매니페스트, 템플릿에 대한 액세스를 제공하고 로그와 메트릭을 전송합니다. 
+| \ https://support.compliance.api.console.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | 소프트웨어 이미지, 매니페스트, 템플릿에 대한 액세스를 제공하고 로그와 메트릭을 전송합니다. 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ | NetApp 감사 기록에서 데이터를 스트리밍할 수 있도록 합니다. 
+| \ https://support.compliance.api.console.netapp.com/ | NetApp 감사 기록에서 데이터를 스트리밍할 수 있도록 합니다. 
 
 
 | \ https://github.com/docker \ https://download.docker.com | Docker 설치를 위한 필수 패키지를 제공합니다. 

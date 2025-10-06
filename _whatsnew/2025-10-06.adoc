@@ -14,17 +14,25 @@ BlueXP 데이터 인프라 관리에서의 역할을 더 잘 반영하도록 이
 
 NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 전반의 스토리지 및 데이터 서비스를 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공합니다.
 
-변경된 사항에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp 콘솔 릴리스 노트"] .
+변경된 사항에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp 콘솔 릴리스 노트"] .
 
-.작업(미리 보기)
-데이터 분류는 이제 조사 페이지에서 작업을 지원합니다.  데이터 분류에서 파일을 복사, 이동, 삭제할 수 있습니다.
+.강화된 조사 경험
+새로운 검색 필터, 값별 결과 수, 주요 결과를 요약한 실시간 통찰력, 사용자 정의 열과 슬라이드 아웃 세부 정보 창이 포함된 새로 고침된 결과 표를 통해 데이터를 더 빠르게 찾고 이해하세요.
 
-.파일 태그 지원(미리 보기)
-데이터 분류는 이제 개별 파일에 태그를 지정하는 것을 지원합니다.  파일 태그를 사용하면 특정 파일에 대한 사용자 정의 식별자를 만들어 데이터를 식별하고 필터링할 수 있습니다.  태그를 사용하면 데이터 조사에서 특정 품질을 식별하거나 태그 결과를 기반으로 저장된 쿼리와 정책을 만들 수 있습니다.
+자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["데이터 조사"] .
 
-자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["파일 메타데이터 보기"] .
+.새로운 거버넌스 및 규정 준수 대시보드
+직관적인 위젯, 더욱 명확한 시각 자료, 향상된 로딩 성능을 통해 중요한 통찰력을 더 빠르게 얻으세요.  자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/data-services-data-classification//task-controlling-governance-data.html["귀하의 데이터에 대한 거버넌스 정보를 검토하세요"] 그리고link:https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-private-data.html["귀하의 데이터에 대한 규정 준수 정보 보기"] .
 
 .저장된 쿼리에 대한 정책(미리 보기)
-저장된 검색은 저장된 쿼리로 이름이 바뀌었습니다.  저장된 쿼리를 실행 가능한 정책으로 전환할 수도 있습니다. 즉, 저장된 쿼리 결과에 따라 데이터를 삭제하거나 이메일 알림을 보낼 수 있습니다.
+이제 데이터 분류를 통해 조건부 작업으로 거버넌스를 자동화할 수 있습니다.  자동 삭제, 주기적 이메일 알림 등을 포함한 보존 규칙을 만들 수 있으며, 이 모든 것은 업데이트된 저장된 쿼리 페이지에서 관리할 수 있습니다.
 
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["정책 생성"] .
+
+.작업(미리 보기)
+조사 페이지에서 직접 제어하세요. 파일을 개별적으로 또는 대량으로 삭제, 이동, 복사하거나 태그를 지정하여 효율적인 데이터 관리 및 수정이 가능합니다.
+
+자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["데이터 조사"] .
+
+.Google Cloud NetApp Volumes 지원
+데이터 분류는 이제 Google Cloud NetApp Volumes 에서 스캐닝을 지원합니다.  NetApp 콘솔에서 Google Cloud NetApp Volumes 쉽게 추가하여 원활한 데이터 스캔 및 분류를 수행할 수 있습니다.

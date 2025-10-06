@@ -20,7 +20,7 @@ Azure NetApp Files 에 대한 NetApp 데이터 분류를 시작하려면 몇 가
 
 == 검사하려는 Azure NetApp Files 시스템을 검색하세요.
 
-검사하려는 Azure NetApp Files 시스템이 시스템으로 NetApp 콘솔에 아직 없는 경우link:https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["시스템 페이지에 추가하세요"^] .
+검사하려는 Azure NetApp Files 시스템이 시스템으로 NetApp 콘솔에 아직 없는 경우link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["시스템 페이지에 추가하세요"^] .
 
 
 

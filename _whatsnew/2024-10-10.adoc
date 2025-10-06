@@ -11,7 +11,7 @@
 
 다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, BlueXP classification 버전 1.30 이상이 필요합니다: Red Hat Enterprise Linux 버전 8.8, 9.0, 9.1, 9.2, 9.3 및 9.4.
 
-자세히 알아보세요 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP classification 배포 개요"] .
+자세히 알아보세요 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["BlueXP classification 배포 개요"] .
 
 .향상된 스캔 성능
 이 릴리스에서는 향상된 스캔 성능이 제공됩니다.

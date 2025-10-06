@@ -20,9 +20,9 @@
 
 우선권은 한 번만 부여됩니다.  매핑 데이터의 자동 재스캔은 기본 순서대로 수행됩니다.
 
-우선순위는 다음으로 제한됩니다.link:https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["매핑 전용 스캔"^] ; 지도 및 분류 스캔에는 사용할 수 없습니다.
+우선순위는 다음으로 제한됩니다.link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["매핑 전용 스캔"^] ; 지도 및 분류 스캔에는 사용할 수 없습니다.
 
-자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["스캔 우선 순위 지정"^] .
+자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["스캔 우선 순위 지정"^] .
 
 .모든 스캔을 다시 시도하세요
 BlueXP classification 실패한 모든 스캔을 일괄적으로 다시 시도하는 기능을 지원합니다.
@@ -36,4 +36,4 @@ BlueXP classification 실패한 모든 스캔을 일괄적으로 다시 시도�
 
 
 .향상된 분류 모델 정확도
-머신 러닝 모델의 정확도link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["미리 정의된 카테고리"] 11% 개선되었습니다.
+머신 러닝 모델의 정확도link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["미리 정의된 카테고리"] 11% 개선되었습니다.
