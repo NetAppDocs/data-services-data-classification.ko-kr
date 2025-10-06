@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-overview.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, bluexp classification 
+summary: 귀하의 요구 사항에 맞는 NetApp 데이터 분류 배포를 계획하세요. 
+---
+= 어떤 NetApp 데이터 분류 배포를 사용해야 합니까?
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 데이터 분류는 다양한 방법으로 배포할 수 있습니다.  귀하의 필요에 맞는 방법이 무엇인지 알아보세요.
+
+데이터 분류는 다음과 같은 방법으로 배포될 수 있습니다.
+
+* link:task-deploy-cloud-compliance.html["콘솔을 사용하여 클라우드에 배포"] . 콘솔은 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다.
+* link:task-deploy-compliance-onprem.html["인터넷 접속이 가능한 Linux 호스트에 설치"] . 인터넷 접속이 가능한 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에 데이터 분류를 설치합니다.  온프레미스 ONTAP 시스템을 온프레미스에 있는 데이터 분류 인스턴스를 사용하여 스캔하려는 경우 이러한 유형의 설치가 좋은 옵션일 수 있지만, 이는 필수 사항은 아닙니다.
+* link:task-deploy-compliance-dark-site.html["인터넷 접속이 불가능한 온프레미스 사이트의 Linux 호스트에 설치"]_비공개 모드_라고도 합니다. 설치 스크립트를 사용하는 이 유형의 설치는 콘솔 SaaS 계층에 연결할 수 없습니다.
+
+
+
+IMPORTANT: BlueXP 개인 모드(레거시 BlueXP 인터페이스)는 일반적으로 인터넷 연결이 없고 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6를 포함하는 보안 클라우드 지역이 있는 온프레미스 환경에서 사용됩니다. NetApp 기존 BlueXP 인터페이스를 통해 이러한 환경을 계속 지원합니다. 레거시 BlueXP 인터페이스의 개인 모드 설명서는 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXP 개인 모드에 대한 PDF 문서"^] .
+
+인터넷 접속이 가능한 Linux 호스트에 설치하는 경우와 인터넷 접속이 불가능한 Linux 호스트에 온프레미스로 설치하는 경우 모두 설치 스크립트를 사용합니다.  스크립트는 시스템과 환경이 전제 조건을 충족하는지 확인하는 것으로 시작합니다.  필수 구성 요소가 충족되면 설치가 시작됩니다.  데이터 분류 설치를 실행하지 않고도 전제 조건을 독립적으로 확인하려면 전제 조건만 테스트하는 별도의 소프트웨어 패키지를 다운로드할 수 있습니다.
+
+link:task-test-linux-system.html["Linux 호스트가 데이터 분류를 설치할 준비가 되었는지 확인하세요."] .

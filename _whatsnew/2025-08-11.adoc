@@ -1,0 +1,19 @@
+= 버전 1.46
+:allow-uri-read: 
+
+
+
+
+=== 버전 1.46
+
+이 데이터 분류 릴리스에는 버그 수정과 다음 업데이트가 포함되어 있습니다.
+
+.감사 페이지에서 향상된 스캔 이벤트 통찰력
+감사 페이지는 이제 BlueXP classification 위한 스캔 이벤트에 대한 향상된 통찰력을 지원합니다.  이제 감사 페이지에 시스템 검사가 시작되는 시점, 시스템 상태, 문제가 표시됩니다.  공유 및 시스템 상태는 매핑 스캔에만 사용할 수 있습니다.
+
+감사 페이지에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["NetApp 콘솔 작업 모니터링"^] .
+
+.RHEL 9.6 지원
+이 릴리스에서는 다크 사이트 배포를 포함하여 BlueXP classification 의 수동 온프레미스 설치를 위한 Red Hat Enterprise Linux v9.6에 대한 지원이 추가되었습니다.
+
+다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, BlueXP classification 버전 1.30 이상이 필요합니다: Red Hat Enterprise Linux 버전 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 및 9.5.

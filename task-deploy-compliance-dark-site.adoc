@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-compliance-dark-site.html 
+keywords: cloud compliance, bluexp, data sense, get started, web browser connectivity, cloud compliance access, privacy, linux, ubuntu, compliance, on-premises, dark site, upgrade, private mode, docker, podman, rhel, bluexp classification, classification, install, cloud data sense, linux host 
+summary: '인터넷 접속이 불가능한 온프레미스 사이트의 Linux 호스트에 NetApp 데이터 분류를 설치하려면 몇 가지 단계를 완료하세요. 이를 "개인 모드"라고도 합니다. 이러한 유형의 설치는 보안 사이트에 적합합니다.' 
+---
+= 인터넷 접속이 없는 Linux 호스트에 NetApp 데이터 분류 설치
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+인터넷 접속이 불가능한 온프레미스 사이트의 Linux 호스트에 NetApp 데이터 분류를 설치하는 것을 _개인 모드_라고 합니다.  설치 스크립트를 사용하는 이 유형의 설치는 NetApp Console SaaS 계층에 연결되지 않습니다.
+
+
+IMPORTANT: BlueXP 개인 모드(레거시 BlueXP 인터페이스)는 일반적으로 인터넷 연결이 없고 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6를 포함하는 보안 클라우드 지역이 있는 온프레미스 환경에서 사용됩니다. NetApp 기존 BlueXP 인터페이스를 통해 이러한 환경을 계속 지원합니다. 레거시 BlueXP 인터페이스의 개인 모드 설명서는 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXP 개인 모드에 대한 PDF 문서"^] .

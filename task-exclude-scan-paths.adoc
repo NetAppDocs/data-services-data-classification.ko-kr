@@ -1,0 +1,160 @@
+---
+sidebar: sidebar 
+permalink: task-exclude-scan-paths.html 
+keywords: exclude scans, folders, directories 
+summary: NetApp 데이터 분류에서 특정 데이터 소스 디렉토리에 있는 스캐닝 데이터를 제외하려면 이러한 디렉토리 이름을 구성 파일에 추가할 수 있습니다.  이 변경 사항을 적용하면 데이터 분류 엔진이 해당 디렉토리의 스캐닝 데이터를 제외합니다. 
+---
+= NetApp 데이터 분류 검사에서 특정 디렉토리 제외
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 데이터 분류에서 특정 디렉토리를 검사에서 제외하려면 이러한 디렉토리 이름을 구성 파일에 추가할 수 있습니다.  이 변경 사항을 적용하면 데이터 분류 엔진이 해당 디렉토리를 검사에서 제외합니다.
+
+
+NOTE: 기본적으로 데이터 분류 스캔에서는 볼륨의 소스와 동일한 볼륨 스냅샷 데이터는 제외됩니다.
+
+
+
+== 지원되는 데이터 소스
+
+다음 데이터 소스의 NFS 및 CIFS 공유에 대해 데이터 분류 검사에서 특정 디렉토리를 제외하는 기능이 지원됩니다.
+
+* 온프레미스 ONTAP
+* Cloud Volumes ONTAP
+* Amazon FSx for NetApp ONTAP
+* Azure NetApp Files
+* 일반 파일 공유
+
+
+
+
+== 스캔에서 제외할 디렉토리를 정의합니다.
+
+디렉토리를 분류 스캐닝에서 제외하려면 먼저 데이터 분류 시스템에 로그인하여 구성 파일을 편집하고 스크립트를 실행해야 합니다.  방법을 확인하세요link:reference-log-in-to-instance.html["데이터 분류 시스템에 로그인하세요"] Linux 시스템에 소프트웨어를 수동으로 설치했는지, 아니면 클라우드에 인스턴스를 배포했는지에 따라 다릅니다.
+
+.고려 사항
+* 데이터 분류 시스템당 최대 50개의 디렉토리 경로를 제외할 수 있습니다.
+* 디렉토리 경로를 제외하면 스캔 시간에 영향을 미칠 수 있습니다.
+
+
+.단계
+. 데이터 분류 시스템에서 "/opt/netapp/config/custom_configuration"으로 이동한 다음 파일을 엽니다. `data_provider.yaml` .
+. "data_providers" 섹션의 "exclude:" 줄에 제외할 디렉토리 경로를 입력합니다. 예를 들어:
++
+....
+exclude:
+- "folder1"
+- "folder2"
+....
++
+이 파일의 다른 내용은 수정하지 마세요.
+
+. 파일의 변경 사항을 저장합니다.
+. "/opt/netapp/Datasense/tools/customer_configuration/data_providers"로 이동하여 다음 스크립트를 실행합니다.
+
+
+`update_data_providers_from_config_file.sh`
+
++ 이 명령은 스캐닝에서 제외할 디렉토리를 분류 엔진에 커밋합니다.
+
+.결과
+이후의 모든 데이터 검사에서는 해당 지정된 디렉토리 검사가 제외됩니다.
+
+동일한 단계를 사용하여 제외 목록에서 항목을 추가, 편집 또는 삭제할 수 있습니다.  스크립트를 실행하여 변경 사항을 커밋한 후 개정된 제외 목록이 업데이트됩니다.
+
+
+
+== 예시
+
+.구성 1:
+이름에 "folder1"이 포함된 모든 폴더는 모든 데이터 소스에서 제외됩니다.
+
+....
+data_providers:
+   exclude:
+   - "folder1"
+....
+.제외될 경로에 대한 예상 결과:
+* /CVO1/폴더1
+* /CVO1/폴더1이름
+* /CVO1/폴더10
+* /CVO1/*폴더1
+* /CVO1/+폴더1이름
+* /CVO1/notfolder10
+* /CVO22/폴더1
+* /CVO22/폴더1이름
+* /CVO22/폴더10
+
+
+.제외되지 않는 경로의 예:
+* /CVO1/*폴더
+* /CVO1/폴더 이름
+* /CVO22/*폴더20
+
+
+.구성 2:
+이름 앞에 "*folder1"만 포함된 모든 폴더는 제외됩니다.
+
+....
+data_providers:
+   exclude:
+   - "\\*folder1"
+....
+.제외될 경로에 대한 예상 결과:
+* /CVO/*폴더1
+* /CVO/*폴더1이름
+* /CVO/*폴더10
+
+
+.제외되지 않는 경로의 예:
+* /CVO/폴더1
+* /CVO/폴더1이름
+* /CVO/not*folder10
+
+
+.구성 3:
+이름에 "folder1"이 포함된 데이터 소스 "CVO22"의 모든 폴더는 제외됩니다.
+
+....
+data_providers:
+   exclude:
+   - "CVO22/folder1"
+....
+.제외될 경로에 대한 예상 결과:
+* /CVO22/폴더1
+* /CVO22/폴더1이름
+* /CVO22/폴더10
+
+
+.제외되지 않는 경로의 예:
+* /CVO1/폴더1
+* /CVO1/폴더1이름
+* /CVO1/폴더10
+
+
+
+
+== 폴더 이름에서 특수 문자 이스케이프
+
+다음 특수 문자 중 하나가 포함된 폴더 이름이 있고 해당 폴더의 데이터를 검사에서 제외하려면 폴더 이름 앞에 이스케이프 시퀀스 \\를 사용해야 합니다.
+
+ ., +, *, ?, ^, $, (, ), [, ], {, }, |
+예를 들어:
+
+소스의 경로: `/project/*not_to_scan`
+
+제외 파일의 구문: `"\\*not_to_scan"`
+
+
+
+== 현재 제외 목록 보기
+
+내용의 경우 가능합니다. `data_provider.yaml` 실행 후 실제로 커밋된 내용과 다르게 구성 파일을 작성합니다. `update_data_providers_from_config_file.sh` 스크립트.  데이터 분류 검사에서 제외한 디렉토리의 현재 목록을 보려면 "/opt/netapp/Datasense/tools/customer_configuration/data_providers"에서 다음 명령을 실행하세요.
+
+ get_data_providers_configuration.sh

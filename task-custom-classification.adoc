@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task-custom-classification.html 
+keywords: custom classification, customize, regular expression, keyword, regex 
+summary: NetApp 데이터 분류를 사용하면 민감한 정보에 대한 검색을 사용자 정의하고 조직과 관련된 개별 패턴과 키워드에 맞춰 서비스를 조정할 수 있습니다. 
+---
+= NetApp 데이터 분류에서 사용자 정의 분류 만들기
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 데이터 분류를 사용하면 민감한 정보에 대한 사용자 정의 검색을 만들 수 있습니다.  검색 범위는 정규 표현식(regex)으로 지정될 수 있습니다.
+
+
+
+== 사용자 정의 분류 만들기
+
+사용자 정의 분류는 매핑 전용 스캔이 아닌 맵 및 분류 스캔에만 사용할 수 있습니다.  이 기능은 현재 미리보기 단계에 있습니다.
+
+.단계
+. **사용자 정의 분류** 탭을 선택합니다.
+. **새로운 분류자 추가** 버튼을 선택합니다.
+. 새로운 분류기에 대한 분류기 이름과 설명을 추가합니다.
+. 분류자를 *개인 식별자* 또는 *범주*로 추가하도록 선택합니다.
++
+image:screenshot-custom-classifier-name.png["분류기 추가 스크린샷"]
+
+. *다음*을 선택하세요.
+. 사용자 정의를 정규 표현식으로 추가하려면 **사용자 정의 정규 표현식**을 선택한 후 **다음**을 선택합니다.
+. 데이터의 특정 정보를 감지하기 위한 패턴을 추가합니다.  **검증**을 선택하여 항목의 구문을 확인하세요.image:screenshot-create-logic-regex.png["정규 표현식을 만드는 대화 상자의 스크린샷입니다."]
+. **완료**를 선택하여 사용자 정의 분류를 만듭니다.
+
+
+새로운 사용자 정의는 다음 예약된 스캔에서 캡처됩니다.  결과를 보려면 다음을 참조하세요.xref:task-generating-compliance-reports.html[규정 준수 보고서 생성] .

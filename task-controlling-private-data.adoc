@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-controlling-private-data.html 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights 
+summary: '귀하의 조직 내 개인 데이터(PII) 및 민감한 개인 데이터(SPII)에 대한 세부 정보를 확인하여 개인 데이터를 제어하세요.  데이터 분류가 데이터에서 찾은 범주와 파일 유형을 검토하여 가시성을 얻을 수도 있습니다.' 
+---
+= NetApp 데이터 분류를 사용하여 조직에 저장된 개인 데이터에 대한 규정 준수 세부 정보를 확인하세요.
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+귀하의 조직 내 개인 데이터(PII) 및 민감한 개인 데이터(SPII)에 대한 세부 정보를 확인하여 개인 데이터를 제어하세요.  NetApp 데이터 분류가 데이터에서 찾은 범주와 파일 유형을 검토하여 가시성을 얻을 수도 있습니다.
+
+
+NOTE: 파일 수준 규정 준수 세부 정보는 전체 분류 검사를 수행한 경우에만 사용할 수 있습니다.  매핑 전용 스캔에서는 파일 수준 세부 정보가 생성되지 않습니다.
+
+기본적으로 데이터 분류 대시보드에는 모든 시스템과 데이터베이스에 대한 규정 준수 데이터가 표시됩니다.  일부 시스템에 대한 데이터만 보려면 해당 시스템을 선택하세요.
+
+image:screenshot_compliance_dashboard.png["데이터 분류 대시보드의 스크린샷"]
+
+데이터 조사 페이지에서 결과를 필터링하고 결과 보고서를 CSV 파일로 다운로드할 수 있습니다. 보다link:task-investigate-data.html["데이터 조사 페이지에서 데이터 필터링"] 자세한 내용은.
+
+
+
+== 개인 정보가 포함된 파일 보기
+
+데이터 분류는 데이터 내의 특정 단어, 문자열, 패턴(정규식)을 자동으로 식별합니다. link:link:reference-private-data-categories.html["예를 들어, 신용카드 번호, 주민등록번호, 은행 계좌번호, 비밀번호 등이 있습니다."] 데이터 분류는 개별 파일, 디렉토리(공유 및 폴더) 내의 파일, 데이터베이스 테이블에서 이러한 유형의 정보를 식별합니다.
+
+귀하의 조직과 관련된 개인 데이터를 식별하기 위해 사용자 정의 검색어를 만들 수도 있습니다. 자세한 내용은 다음을 참조하세요. link:task-custom-classification.html["사용자 정의 분류 만들기"] .
+
+일부 유형의 개인 데이터의 경우, 데이터 분류는 _근접성 검증_을 사용하여 결과를 검증합니다.  검증은 발견된 개인 데이터와 가까운 하나 이상의 미리 정의된 키워드를 찾는 방식으로 수행됩니다.  예를 들어, 데이터 분류는 미국 사회 보장 번호(SSN) 옆에 근접 단어(예: _SSN_ 또는 _사회 보장_)가 있는 경우 해당 번호를 SSN으로 식별합니다. link:reference-private-data-categories.html["개인정보 표"] 데이터 분류가 근접성 검증을 사용하는 경우를 보여줍니다.
+
+.단계
+. 데이터 분류 메뉴에서 *규정 준수* 탭을 선택합니다.
+. 모든 개인 데이터의 세부 정보를 조사하려면 개인 데이터 비율 옆에 있는 아이콘을 선택하세요.
++
+image:screenshot_compliance_dashboard.png["데이터 분류 대시보드의 스크린샷"]
+
+. 특정 유형의 개인 데이터에 대한 세부 정보를 조사하려면 *모두 보기*를 선택한 다음 특정 유형의 개인 데이터(예: 이메일 주소)에 대한 *조사 결과* 화살표 아이콘을 선택합니다.
++
+image:screenshot_personal_files.png["개인 데이터 유형 옆에 있는 조사 결과 아이콘을 선택할 수 있는 개인 파일 대화 상자의 스크린샷입니다."]
+
+. 특정 파일에 대한 세부 정보를 검색, 정렬, 확장하여 데이터를 조사하고, *조사 결과* 화살표를 선택하여 가려진 정보를 확인하거나 파일 목록을 다운로드합니다.
++
+다음 이미지는 디렉토리(공유 및 폴더)에서 발견된 개인 데이터를 보여줍니다.  *구조적* 탭에서는 데이터베이스에서 찾은 개인 데이터를 볼 수 있습니다.  *비정형* 탭에서는 파일 수준 데이터를 볼 수 있습니다.
+
++
+image:screenshot_compliance_investigation_page.png["조사 결과를 클릭한 후 파일에서 발견된 세부 정보의 스크린샷입니다."]
+
++
+image:screenshot_compliance_investigation_page_directory.png["조사 결과를 클릭한 후 디렉토리에서 찾은 자세한 정보의 스크린샷입니다."]
+
+
+
+
+
+== 민감한 개인 데이터가 포함된 파일 보기
+
+데이터 분류는 개인 정보 보호 규정에 정의된 대로 특수 유형의 민감한 개인 정보를 자동으로 식별합니다. https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR 제9조 및 제10조"^] .  예를 들어, 개인의 건강, 민족적 기원, 성적 지향에 대한 정보입니다. link:reference-private-data-categories.html["전체 목록을 확인하세요"] .  데이터 분류는 개별 파일, 디렉토리(공유 및 폴더) 내의 파일, 데이터베이스 테이블에서 이러한 유형의 정보를 식별합니다.
+
+데이터 분류는 AI, 자연어 처리(NLP), 머신 러닝(ML), 인지 컴퓨팅(CC)을 사용하여 스캔하는 콘텐츠의 의미를 이해하고 엔터티를 추출하여 그에 따라 분류합니다.
+
+예를 들어, 민감한 GDPR 데이터 범주 중 하나는 민족적 기원입니다.  데이터 분류는 자연어 처리(NLP) 기능을 갖추고 있어 "조지는 멕시코인이다"라는 문장(GDPR 제9조에 명시된 민감한 데이터를 나타냄)과 "조지는 멕시코 음식을 먹고 있다"라는 문장의 차이를 구분할 수 있습니다.
+
+
+NOTE: 민감한 개인 데이터를 스캔할 때는 영어만 지원됩니다.  나중에 더 많은 언어에 대한 지원이 추가될 예정입니다.
+
+.단계
+. 데이터 분류 메뉴에서 *규정 준수*를 선택합니다.
+. 모든 민감한 개인 데이터의 세부 정보를 조사하려면 **민감한 개인 결과** 카드를 찾은 다음 **모두 표시**를 선택하세요.
++
+image:screenshot-sensitive-personal.png["민감한 개인 결과 카드의 스크린샷"] .
+
+. 특정 유형의 민감한 개인 데이터에 대한 세부 정보를 조사하려면 *모두 보기*를 선택한 다음 특정 유형의 민감한 개인 데이터에 대한 *조사 결과* 화살표 아이콘을 선택하세요.
+. 검색, 정렬, 특정 파일에 대한 세부 정보 확장, *결과 조사*를 클릭하여 가려진 정보를 확인하거나 파일 목록을 다운로드하여 데이터를 조사합니다.
+

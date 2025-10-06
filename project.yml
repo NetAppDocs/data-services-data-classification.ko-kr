@@ -1,0 +1,109 @@
+---
+settings:
+  name: NetApp Data Classification
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: true
+    lipi_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
+sidebar:
+  entries:
+  - title: NetApp 데이터 분류 문서
+    url: "/index.html"
+  - title: 릴리스 노트
+    entries:
+    - title: 새로운 소식
+      url: "/whats-new.html"
+    - title: 알려진 제한 사항
+      url: "/reference-limitations.html"
+  - title: 시작하기
+    entries:
+    - title: 데이터 분류에 대해 알아보세요
+      url: "/concept-classification.html"
+    - title: 액세스 데이터 분류
+      url: "/task-access.html"
+    - title: 데이터 분류 배포
+      entries:
+      - title: 어떤 배포를 사용해야 합니까?
+        url: "/task-deploy-overview.html"
+      - title: 클라우드에 배포
+        url: "/task-deploy-cloud-compliance.html"
+      - title: 인터넷 접속이 가능한 Linux 호스트에 설치
+        url: "/task-deploy-compliance-onprem.html"
+      - title: 인터넷 접속 없이 온프레미스 Linux 호스트에 설치
+        url: "/task-deploy-compliance-dark-site.html"
+      - title: Linux 호스트가 데이터 분류를 설치할 준비가 되었는지 확인하세요.
+        url: "/task-test-linux-system.html"
+    - title: 데이터 소스에서 스캐닝을 활성화하세요
+      entries:
+      - title: 데이터 소스 개요 스캔
+        url: "/task-scanning-overview.html"
+      - title: Azure NetApp Files
+        url: "/task-scanning-anf.html"
+      - title: ONTAP 용 Amazon FSx
+        url: "/task-scanning-fsx.html"
+      - title: Cloud Volumes ONTAP 및 온프레미스 ONTAP
+        url: "/task-getting-started-compliance.html"
+      - title: 데이터베이스 스키마
+        url: "/task-scanning-databases.html"
+      - title: 파일 공유
+        url: "/task-scanning-file-shares.html"
+      - title: StorageGRID
+        url: "/task-scanning-storagegrid.html"
+    - title: Active Directory 통합
+      url: "/task-active-directory.html"
+  - title: 데이터 분류 사용
+    entries:
+    - title: 데이터에 대한 거버넌스 세부 정보 보기
+      url: "/task-controlling-governance-data.html"
+    - title: 귀하의 데이터에 대한 규정 준수 세부 정보 보기
+      url: "/task-controlling-private-data.html"
+    - title: 개인 정보의 범주
+      url: "/reference-private-data-categories.html"
+    - title: 사용자 정의 스캔 만들기
+      url: "/task-custom-classification.html"
+    - title: 데이터 조사
+      url: "/task-investigate-data.html"
+    - title: 저장된 쿼리 관리
+      url: "/task-using-policies.html"
+    - title: 스캔 설정 수정
+      url: "/task-managing-repo-scanning.html"
+    - title: 규정 준수 보고서 생성
+      url: "/task-generating-compliance-reports.html"
+  - title: 데이터 분류 관리
+    entries:
+    - title: 스캔에서 디렉토리 제외
+      url: "/task-exclude-scan-paths.html"
+    - title: 기존 그룹 ID를 "조직에 공개됨"으로 정의합니다.
+      url: "/task-add-group-id-as-open.html"
+    - title: 데이터 분류에서 데이터 소스 제거
+      url: "/task-managing-compliance.html"
+    - title: 데이터 분류 제거
+      url: "/task-uninstall.html"
+  - title: 참조
+    entries:
+    - title: 지원되는 데이터 분류 인스턴스 유형
+      url: "/reference-instance-types.html"
+    - title: 데이터 소스에서 수집된 메타데이터
+      url: "/reference-collected-metadata.html"
+    - title: 데이터 분류에 로그인
+      url: "/reference-log-in-to-instance.html"
+    - title: 데이터 분류 API
+      url: "/api-classification.html"
+  - title: 지식과 지원
+    entries:
+    - title: 지원 등록
+      url: "/task-support-registration.html"
+    - title: 도움을 받으세요
+      url: "/task-get-help.html"
+  - title: 자주 묻는 질문
+    url: "/faq-cloud-compliance.html"
+  - title: 법적 고지 사항
+    url: "/legal-notices.html"
+product-family:
+  name: NetApp Data Services
+  repo: data-services-family

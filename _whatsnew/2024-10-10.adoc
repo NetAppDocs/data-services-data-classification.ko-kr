@@ -1,0 +1,17 @@
+= 버전 1.36
+:allow-uri-read: 
+
+
+
+
+=== 버전 1.36
+
+.RHEL 9.4 지원
+이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v9.4에 대한 지원이 제공됩니다.  이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
+
+다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, BlueXP classification 버전 1.30 이상이 필요합니다: Red Hat Enterprise Linux 버전 8.8, 9.0, 9.1, 9.2, 9.3 및 9.4.
+
+자세히 알아보세요 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP classification 배포 개요"] .
+
+.향상된 스캔 성능
+이 릴리스에서는 향상된 스캔 성능이 제공됩니다.

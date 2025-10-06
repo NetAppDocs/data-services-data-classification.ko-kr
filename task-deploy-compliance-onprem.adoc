@@ -1,0 +1,391 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-compliance-onprem.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, linux, ubuntu, cloud compliance access, privacy, compliance, on-premises 
+summary: 네트워크의 Linux 호스트나 인터넷 접속이 가능한 클라우드의 Linux 호스트에 NetApp 데이터 분류를 배포하려면 네트워크나 클라우드에 Linux 호스트를 수동으로 배포해야 합니다. 
+---
+= 인터넷 접속이 가능한 호스트에 NetApp 데이터 분류 설치
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+네트워크의 Linux 호스트나 인터넷 접속이 가능한 클라우드의 Linux 호스트에 NetApp 데이터 분류를 배포하려면 네트워크나 클라우드에 Linux 호스트를 수동으로 배포해야 합니다.
+
+온프레미스 설치는 온프레미스에 있는 데이터 분류 인스턴스를 사용하여 온프레미스 ONTAP 시스템을 스캔하는 것을 선호하는 경우에 좋은 옵션입니다.  이것은 필수사항이 아닙니다.  어떤 설치 방법을 선택하든 소프트웨어의 기능은 동일합니다.
+
+데이터 분류 설치 스크립트는 시스템과 환경이 필수 전제 조건을 충족하는지 확인하는 것으로 시작됩니다.  모든 전제 조건이 충족되면 설치가 시작됩니다.  데이터 분류 설치를 실행하지 않고도 전제 조건을 독립적으로 확인하려면 전제 조건만 테스트하는 별도의 소프트웨어 패키지를 다운로드할 수 있습니다. link:task-test-linux-system.html["Linux 호스트가 데이터 분류를 설치할 준비가 되었는지 확인하는 방법을 알아보세요."] .
+
+귀사 구내의 Linux 호스트에 일반적으로 설치되는 구성 요소와 연결은 다음과 같습니다.
+
+image:diagram_deploy_onprem_overview.png["필수 콘솔 및 네트워크 구성 요소와 관련 연결에 대한 다이어그램입니다."]
+
+클라우드에 있는 Linux 호스트에 일반적으로 설치되는 구성 요소와 연결은 다음과 같습니다.
+
+image:diagram_deploy_onprem_cloud_instance.png["필수 콘솔 및 네트워크 구성 요소와 관련 연결에 대한 다이어그램입니다."]
+
+
+
+== 빠른 시작
+
+다음 단계에 따라 빠르게 시작하거나, 나머지 섹션으로 스크롤하여 자세한 내용을 확인하세요.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"]콘솔 에이전트 만들기
+[role="quick-margin-para"]
+아직 콘솔 에이전트가 없는 경우 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 배포"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.
+
+[role="quick-margin-para"]
+클라우드 공급자를 사용하여 콘솔 에이전트를 생성할 수도 있습니다.  보다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"]필수 조건 검토
+[role="quick-margin-para"]
+귀하의 환경이 전제 조건을 충족하는지 확인하세요.  여기에는 인스턴스에 대한 아웃바운드 인터넷 액세스, 포트 443을 통한 콘솔 에이전트와 데이터 분류 간의 연결 등이 포함됩니다. <<데이터 분류에서 아웃바운드 인터넷 액세스 활성화,전체 목록을 확인하세요>> .
+
+[role="quick-margin-para"]
+또한 다음을 충족하는 Linux 시스템이 필요합니다.<<Linux 호스트 시스템 준비,다음 요구 사항>> .
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["삼"]데이터 분류 다운로드 및 배포
+[role="quick-margin-para"]
+NetApp 지원 사이트에서 클라우드 데이터 분류 소프트웨어를 다운로드하고 사용하려는 Linux 호스트에 설치 프로그램 파일을 복사합니다.  그런 다음 설치 마법사를 실행하고 메시지에 따라 데이터 분류 인스턴스를 배포합니다.
+
+
+
+== 콘솔 에이전트 만들기
+
+데이터 분류를 설치하고 사용하려면 콘솔 에이전트가 필요합니다.  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
+
+클라우드 공급자 환경에서 하나를 생성하려면 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
+
+특정 클라우드 공급자에 배포된 콘솔 에이전트를 사용해야 하는 몇 가지 시나리오가 있습니다.
+
+* AWS의 Cloud Volumes ONTAP 또는 Amazon FSx for ONTAP 에서 데이터를 스캔할 때 AWS의 콘솔 에이전트를 사용합니다.
+* Azure의 Cloud Volumes ONTAP 또는 Azure NetApp Files 에서 데이터를 스캔할 때 Azure의 콘솔 에이전트를 사용합니다.
++
+Azure NetApp Files 의 경우, 스캔하려는 볼륨과 동일한 지역에 배포해야 합니다.
+
+* GCP에서 Cloud Volumes ONTAP 의 데이터를 스캔할 때 GCP의 콘솔 에이전트를 사용합니다.
+
+
+온프레미스 ONTAP 시스템, NetApp 파일 공유 및 데이터베이스 계정은 이러한 클라우드 콘솔 에이전트를 사용하여 스캔할 수 있습니다.
+
+또한 다음을 수행할 수도 있습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 배포"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 콘솔 에이전트도 온프레미스에 설치하기로 선택할 수도 있습니다.
+
+데이터 분류를 설치할 때 콘솔 에이전트 시스템의 IP 주소나 호스트 이름이 필요합니다.  사내에 콘솔 에이전트를 설치한 경우 이 정보를 얻을 수 있습니다.  콘솔 에이전트가 클라우드에 배포된 경우 콘솔에서 다음 정보를 찾을 수 있습니다. 도움말 아이콘을 선택한 다음 *지원*을 선택하고 **콘솔 에이전트**를 선택합니다.
+
+
+
+== Linux 호스트 시스템 준비
+
+데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.  Linux 호스트는 네트워크에 있을 수도 있고 클라우드에 있을 수도 있습니다.
+
+데이터 분류를 계속 실행할 수 있는지 확인하세요.  데이터 분류 머신은 지속적으로 데이터를 스캔하기 위해 계속 켜져 있어야 합니다.
+
+* 다른 애플리케이션과 공유되는 호스트에서는 데이터 분류가 지원되지 않습니다. 호스트는 전용 호스트여야 합니다.
+* 사내 호스트 시스템을 구축할 때 데이터 분류를 통해 스캔하려는 데이터 세트의 크기에 따라 다음 시스템 크기 중에서 선택할 수 있습니다.
++
+[cols="17,17,27,31"]
+|===
+| 시스템 크기 | CPU | RAM(스왑 메모리를 비활성화해야 함) | 디스크 
+
+
+| *특대* | 32개의 CPU | 128GB 램  a| 
+** /에 1TiB SSD, 또는 /opt에 100GiB 사용 가능
+** /var/lib/docker에서 895GiB 사용 가능
+** /tmp에 5GiB
+** *Podman의 경우 /var/tmp에 30GB*
+
+
+
+
+| *크기가 큰* | 16개의 CPU | 64GB 램  a| 
+** /에 500GiB SSD, 또는 /opt에 100GiB 사용 가능
+** /var/lib/docker 또는 Podman /var/lib/containers에서 400GiB 사용 가능
+** /tmp에 5GiB
+** *Podman의 경우 /var/tmp에 30GB*
+
+
+|===
+* 데이터 분류 설치를 위해 클라우드에 컴퓨팅 인스턴스를 배포할 때 위의 "대규모" 시스템 요구 사항을 충족하는 시스템을 사용하는 것이 좋습니다.
++
+** *Amazon Elastic Compute Cloud(Amazon EC2) 인스턴스 유형*: "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["추가 AWS 인스턴스 유형 보기"^] .
+** *Azure VM 크기*: "Standard_D16s_v3". link:reference-instance-types.html#azure-instance-types["추가 Azure 인스턴스 유형 보기"^] .
+** *GCP 머신 유형*: "n2-standard-16". link:reference-instance-types.html#gcp-instance-types["추가 GCP 인스턴스 유형을 참조하세요."^] .
+
+
+* *UNIX 폴더 권한*: 다음과 같은 최소 UNIX 권한이 필요합니다.
++
+[cols="25,25"]
+|===
+| 접는 사람 | 최소 권한 
+
+
+| /임시 | `rwxrwxrwt` 
+
+
+| /고르다 | `rwxr-xr-x` 
+
+
+| /var/lib/도커 | `rwx------` 
+
+
+| /usr/lib/systemd/시스템 | `rwxr-xr-x` 
+|===
+* *운영체제*:
++
+** 다음 운영 체제에서는 Docker 컨테이너 엔진을 사용해야 합니다.
++
+*** Red Hat Enterprise Linux 버전 7.8 및 7.9
+*** Ubuntu 22.04(데이터 분류 버전 1.23 이상 필요)
+*** Ubuntu 24.04(데이터 분류 버전 1.23 이상 필요)
+
+
+** 다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, Data Classification 버전 1.30 이상이 필요합니다.
++
+*** Red Hat Enterprise Linux 버전 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5 및 9.6.
+
+
+** 호스트 시스템에서 고급 벡터 확장(AVX2)을 활성화해야 합니다.
+
+
+* *Red Hat Subscription Management*: 호스트는 Red Hat Subscription Management에 등록되어야 합니다.  등록되지 않은 경우, 설치 중에 시스템은 저장소에 접근하여 필요한 타사 소프트웨어를 업데이트할 수 없습니다.
+* *추가 소프트웨어*: 데이터 분류를 설치하기 전에 호스트에 다음 소프트웨어를 설치해야 합니다.
++
+** 사용하는 OS에 따라 컨테이너 엔진 중 하나를 설치해야 합니다.
++
+*** Docker Engine 버전 19.3.1 이상. https://docs.docker.com/engine/install/["설치 지침 보기"^] .
+*** Podman 버전 4 이상.  Podman을 설치하려면 다음을 입력하세요.(`sudo yum install podman netavark -y` ).
+
+
+
+
+
+
+* Python 버전 3.6 이상. https://www.python.org/downloads/["설치 지침 보기"^] .
++
+** *NTP 고려 사항*: NetApp 데이터 분류 시스템을 구성하여 NTP(네트워크 시간 프로토콜) 서비스를 사용할 것을 권장합니다.  데이터 분류 시스템과 콘솔 에이전트 시스템 간의 시간을 동기화해야 합니다.
+
+
+
+
+* *방화벽 고려 사항*: 방화벽을 사용하려는 경우 `firewalld` 데이터 분류를 설치하기 전에 해당 기능을 활성화하는 것이 좋습니다.  다음 명령을 실행하여 구성하세요. `firewalld` 데이터 분류와 호환되도록:
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --reload
+....
++
+추가 데이터 분류 호스트를 스캐너 노드로 사용할 계획이라면 지금 기본 시스템에 다음 규칙을 추가하세요.
+
++
+....
+firewall-cmd --permanent --add-port=2377/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
+firewall-cmd --permanent --add-port=4789/udp
+....
++
+Docker 또는 Podman을 활성화하거나 업데이트할 때마다 다시 시작해야 합니다. `firewalld` 설정.
+
+
+
+
+NOTE: 데이터 분류 호스트 시스템의 IP 주소는 설치 후 변경할 수 없습니다.
+
+
+
+== 데이터 분류에서 아웃바운드 인터넷 액세스 활성화
+
+데이터 분류에는 아웃바운드 인터넷 액세스가 필요합니다.  가상 또는 물리적 네트워크에서 인터넷 접속을 위해 프록시 서버를 사용하는 경우, 데이터 분류 인스턴스에 다음 엔드포인트에 연결할 수 있는 아웃바운드 인터넷 접속 권한이 있는지 확인하세요.
+
+[cols="43,57"]
+|===
+| 엔드포인트 | 목적 
+
+
+| \ https://api.bluexp.netapp.com | NetApp 계정을 포함한 콘솔과의 통신. 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 중앙화된 사용자 인증을 위해 콘솔 웹사이트와 통신합니다. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | 소프트웨어 이미지, 매니페스트, 템플릿에 대한 액세스를 제공하고 로그와 메트릭을 전송합니다. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ | NetApp 감사 기록에서 데이터를 스트리밍할 수 있도록 합니다. 
+
+
+| \ https://github.com/docker \ https://download.docker.com | Docker 설치를 위한 필수 패키지를 제공합니다. 
+
+
+| \ http://packages.ubuntu.com/ \ http://archive.ubuntu.com | Ubuntu 설치를 위한 필수 패키지를 제공합니다. 
+|===
+
+
+== 모든 필수 포트가 활성화되어 있는지 확인하세요
+
+콘솔 에이전트, 데이터 분류, Active Directory 및 데이터 소스 간 통신에 필요한 모든 포트가 열려 있는지 확인해야 합니다.
+
+[cols="25,25,50"]
+|===
+| 연결 유형 | 포트 | 설명 
+
+
+| 콘솔 에이전트 <> 데이터 분류 | 8080(TCP), 443(TCP), 80. 9000 | 콘솔 에이전트의 방화벽 또는 라우팅 규칙은 포트 443을 통해 데이터 분류 인스턴스로의 인바운드 및 아웃바운드 트래픽을 허용해야 합니다.  콘솔에서 설치 진행 상황을 볼 수 있도록 포트 8080이 열려 있는지 확인하세요.  Linux 호스트에서 방화벽을 사용하는 경우 Ubuntu 서버 내의 내부 프로세스에는 포트 9000이 필요합니다. 
+
+
+| 콘솔 에이전트 <> ONTAP 클러스터(NAS) | 443(TCP)  a| 
+콘솔은 HTTPS를 사용하여 ONTAP 클러스터를 검색합니다. 사용자 지정 방화벽 정책을 사용하는 경우 다음 요구 사항을 충족해야 합니다.
+
+* 콘솔 에이전트 호스트는 포트 443을 통해 아웃바운드 HTTPS 액세스를 허용해야 합니다.  콘솔 에이전트가 클라우드에 있는 경우 모든 아웃바운드 통신은 사전 정의된 방화벽이나 라우팅 규칙에 따라 허용됩니다.
+* ONTAP 클러스터는 포트 443을 통해 인바운드 HTTPS 액세스를 허용해야 합니다.  기본 "mgmt" 방화벽 정책은 모든 IP 주소에서 인바운드 HTTPS 액세스를 허용합니다.  이 기본 정책을 수정했거나 사용자 고유의 방화벽 정책을 만든 경우 HTTPS 프로토콜을 해당 정책과 연결하고 콘솔 에이전트 호스트에서 액세스를 활성화해야 합니다.
+
+
+
+
+| 데이터 분류 <> ONTAP 클러스터  a| 
+* NFS의 경우 - 111(TCP\UDP) 및 2049(TCP\UDP)
+* CIFS의 경우 - 139(TCP\UDP) 및 445(TCP\UDP)
+
+ a| 
+데이터 분류에는 각 Cloud Volumes ONTAP 서브넷이나 온프레미스 ONTAP 시스템에 대한 네트워크 연결이 필요합니다.  Cloud Volumes ONTAP 의 방화벽이나 라우팅 규칙은 데이터 분류 인스턴스에서 인바운드 연결을 허용해야 합니다.
+
+다음 포트가 데이터 분류 인스턴스에 열려 있는지 확인하세요.
+
+* NFS - 111 및 2049의 경우
+* CIFS - 139 및 445의 경우
+
+
+NFS 볼륨 내보내기 정책은 데이터 분류 인스턴스에서의 액세스를 허용해야 합니다.
+
+
+
+| 데이터 분류 <> Active Directory | 389(TCP 및 UDP), 636(TCP), 3268(TCP), 3269(TCP)  a| 
+회사 사용자를 위해 Active Directory가 이미 설정되어 있어야 합니다.  또한, 데이터 분류에는 CIFS 볼륨을 스캔하기 위한 Active Directory 자격 증명이 필요합니다.
+
+Active Directory에 대한 정보가 있어야 합니다.
+
+* DNS 서버 IP 주소 또는 여러 IP 주소
+* 서버의 사용자 이름 및 비밀번호
+* 도메인 이름(Active Directory 이름)
+* 보안 LDAP(LDAPS)를 사용하든 사용하지 않든
+* LDAP 서버 포트(일반적으로 LDAP의 경우 389, 보안 LDAP의 경우 636)
+
+
+|===
+
+
+== Linux 호스트에 데이터 분류 설치
+
+일반적인 구성의 경우 단일 호스트 시스템에 소프트웨어를 설치합니다. <<일반적인 구성을 위한 단일 호스트 설치,여기에서 해당 단계를 확인하세요>> .
+
+image:diagram_deploy_onprem_single_host_internet.png["인터넷 접속이 가능한 온프레미스에 단일 데이터 분류 인스턴스를 배포할 때 스캔할 수 있는 데이터 소스의 위치를 보여주는 다이어그램입니다."]
+
+보다<<Linux 호스트 시스템 준비,Linux 호스트 시스템 준비>> 그리고<<데이터 분류에서 아웃바운드 인터넷 액세스 활성화,필수 조건 검토>> 데이터 분류를 배포하기 전에 필요한 전체 요구 사항 목록을 확인하세요.
+
+인스턴스에 인터넷 연결이 있는 한 데이터 분류 소프트웨어 업그레이드는 자동으로 수행됩니다.
+
+
+NOTE: 현재 데이터 분류 기능은 온프레미스에 소프트웨어가 설치된 경우 S3 버킷, Azure NetApp Files 또는 FSx for ONTAP 검색할 수 없습니다.  이러한 경우 클라우드에 별도의 콘솔 에이전트와 데이터 분류 인스턴스를 배포해야 합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["커넥터 간 전환"^] 다양한 데이터 소스에 대해.
+
+
+
+=== 일반적인 구성을 위한 단일 호스트 설치
+
+단일 온프레미스 호스트에 데이터 분류 소프트웨어를 설치할 때 요구 사항을 검토하고 다음 단계를 따르세요.
+
+https://youtu.be/XiPLaJpfJEI["이 영상을 시청하세요"^]데이터 분류를 설치하는 방법을 알아보세요.
+
+데이터 분류를 설치할 때 모든 설치 활동이 기록됩니다.  설치 중에 문제가 발생하면 설치 감사 로그의 내용을 볼 수 있습니다.  에 쓰여있다 `/opt/netapp/install_logs/` .
+
+.시작하기 전에
+* Linux 시스템이 다음 사항을 충족하는지 확인하십시오.<<Linux 호스트 시스템 준비,호스트 요구 사항>> .
+* 시스템에 두 가지 필수 소프트웨어 패키지(Docker Engine 또는 Podman, Python 3)가 설치되어 있는지 확인합니다.
+* Linux 시스템에서 루트 권한이 있는지 확인하세요.
+* 인터넷에 접속하기 위해 프록시를 사용하는 경우:
++
+** 프록시 서버 정보(IP 주소 또는 호스트 이름, 연결 포트, 연결 방식: https 또는 http, 사용자 이름 및 비밀번호)가 필요합니다.
+** 프록시가 TLS 가로채기를 수행하는 경우 TLS CA 인증서가 저장된 Data Classification Linux 시스템의 경로를 알아야 합니다.
+** 프록시는 투명하지 않아야 합니다.  데이터 분류는 현재 투명 프록시를 지원하지 않습니다.
+** 사용자는 로컬 사용자여야 합니다. 도메인 사용자는 지원되지 않습니다.
+
+
+* 오프라인 환경이 요구 사항을 충족하는지 확인하세요.<<데이터 분류에서 아웃바운드 인터넷 액세스 활성화,권한 및 연결>> .
+
+
+.단계
+. 데이터 분류 소프트웨어를 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 지원 사이트"^] .  선택해야 하는 파일의 이름은 *DATASENSE-INSTALLER-<버전>.tar.gz*입니다.
+. 사용하려는 Linux 호스트에 설치 프로그램 파일을 복사합니다(사용 `scp` 또는 다른 방법).
+. 예를 들어, 호스트 컴퓨터에서 설치 프로그램 파일의 압축을 풉니다.
++
+[source, cli]
+----
+tar -xzf DATASENSE-INSTALLER-V1.25.0.tar.gz
+----
+. 콘솔에서 *거버넌스 > 분류*를 선택합니다.
+. *온프레미스 또는 클라우드에 분류 배포*를 선택합니다.
++
+image:screenshot-deploy-classification.png["데이터 분류를 활성화하기 위한 버튼을 선택하는 스크린샷입니다."]
+
+. 클라우드에서 준비한 인스턴스에 데이터 분류를 설치하는지, 아니면 사내에서 준비한 인스턴스에 데이터 분류를 설치하는지에 따라 적절한 *배포* 버튼을 선택하여 데이터 분류 설치를 시작합니다.
++
+image:screenshot_cloud_compliance_deploy_onprem.png["클라우드 또는 사내 머신에 데이터 분류를 배포하기 위한 버튼을 선택하는 스크린샷입니다."]
+
+. _온프레미스에 데이터 분류 배포_ 대화 상자가 표시됩니다.  제공된 명령을 복사합니다(예: `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq` )을 텍스트 파일에 붙여넣어 나중에 사용할 수 있습니다.  그런 다음 *닫기*를 선택하여 대화 상자를 닫습니다.
+. 호스트 머신에서 복사한 명령을 입력한 다음 일련의 프롬프트를 따르거나 모든 필수 매개변수를 포함한 전체 명령을 명령줄 인수로 제공할 수 있습니다.
++
+설치 프로그램은 성공적인 설치를 위해 시스템 및 네트워킹 요구 사항이 충족되는지 사전 점검을 수행합니다. https://youtu.be/5ONowfPWkFs["이 영상을 시청하세요"^] 사전 확인 메시지와 그 의미를 이해합니다.
+
++
+[cols="50a,50"]
+|===
+| 프롬프트에 따라 매개변수를 입력하세요. | 전체 명령을 입력하세요: 
+
+
+ a| 
+.. 7단계에서 복사한 명령을 붙여넣습니다.
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token>`
++
+클라우드 인스턴스(사내가 아닌)에 설치하는 경우 다음을 추가하세요. `--manual-cloud-install <cloud_provider>` .
+
+.. 콘솔 에이전트 시스템에서 액세스할 수 있도록 데이터 분류 호스트 머신의 IP 주소 또는 호스트 이름을 입력하세요.
+.. 데이터 분류 시스템에서 액세스할 수 있도록 콘솔 에이전트 호스트 머신의 IP 주소 또는 호스트 이름을 입력하세요.
+.. 지시에 따라 프록시 세부 정보를 입력하세요.  콘솔 에이전트가 이미 프록시를 사용하는 경우 데이터 분류가 자동으로 콘솔 에이전트에서 사용하는 프록시를 사용하므로 여기에 다시 정보를 입력할 필요가 없습니다.
+
+| 또는 필요한 호스트 및 프록시 매개변수를 제공하여 전체 명령을 미리 만들 수 있습니다.
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> --manual-cloud-install <cloud_provider> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
+|===
++
+변수 값:
+
++
+** _account_id_ = NetApp 계정 ID
+** _client_id_ = 콘솔 에이전트 클라이언트 ID(클라이언트 ID에 접미사 "clients"가 없으면 추가)
+** _user_token_ = JWT 사용자 액세스 토큰
+** _ds_host_ = 데이터 분류 Linux 시스템의 IP 주소 또는 호스트 이름입니다.
+** _cm_host_ = 콘솔 에이전트 시스템의 IP 주소 또는 호스트 이름입니다.
+** _cloud_provider_ = 클라우드 인스턴스에 설치하는 경우 클라우드 공급자에 따라 "AWS", "Azure" 또는 "Gcp"를 입력하세요.
+** _proxy_host_ = 호스트가 프록시 서버 뒤에 있는 경우 프록시 서버의 IP 또는 호스트 이름입니다.
+** _proxy_port_ = 프록시 서버에 연결할 포트(기본값 80).
+** _proxy_scheme_ = 연결 방식: https 또는 http(기본값은 http).
+** _proxy_user_ = 기본 인증이 필요한 경우 프록시 서버에 연결하는 인증된 사용자입니다.  사용자는 로컬 사용자여야 합니다. 도메인 사용자는 지원되지 않습니다.
+** _proxy_password_ = 지정한 사용자 이름에 대한 비밀번호입니다.
+** _ca_cert_dir_ = 추가 TLS CA 인증서 번들이 포함된 Data Classification Linux 시스템의 경로입니다.  프록시가 TLS 가로채기를 수행하는 경우에만 필요합니다.
+
+
+
+
+.결과
+데이터 분류 설치 프로그램은 패키지를 설치하고, 설치를 등록하고, 데이터 분류를 설치합니다.  설치하는 데 10~20분이 걸릴 수 있습니다.
+
+호스트 머신과 콘솔 에이전트 인스턴스 사이에 포트 8080을 통해 연결이 있는 경우 콘솔의 데이터 분류 탭에서 설치 진행률을 볼 수 있습니다.
+
+.다음은 무엇인가
+구성 페이지에서 스캔할 데이터 소스를 선택할 수 있습니다.

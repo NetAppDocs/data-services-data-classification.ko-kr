@@ -1,0 +1,247 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-cloud-compliance.html 
+keywords: cloud compliance, data sense, quickstart, outbound internet, endpoints, cloud compliance internet, browser connectivity, cloud compliance access, privacy, compliance, bluexp classification, classification, netapp console, 
+summary: 클라우드에 NetApp 데이터 분류를 배포하려면 몇 가지 단계를 완료하세요.  NetApp 콘솔은 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다. 
+---
+= NetApp 콘솔을 사용하여 클라우드에 NetApp 데이터 분류를 배포합니다.
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 콘솔을 사용하여 클라우드에 NetApp 데이터 분류를 배포할 수 있습니다.  콘솔은 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다.
+
+또한 다음을 수행할 수도 있습니다.link:task-deploy-compliance-onprem.html["인터넷 접속이 가능한 Linux 호스트에 데이터 분류 설치"] .  온프레미스 ONTAP 시스템을 온프레미스에 있는 데이터 분류 인스턴스를 사용하여 스캔하려는 경우 이러한 유형의 설치가 좋은 옵션일 수 있지만, 이는 필수 사항은 아닙니다.  어떤 설치 방법을 선택하든 소프트웨어의 기능은 정확히 동일합니다.
+
+
+
+== 빠른 시작
+
+다음 단계에 따라 빠르게 시작하거나, 나머지 섹션으로 스크롤하여 자세한 내용을 확인하세요.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"]콘솔 에이전트 만들기
+[role="quick-margin-para"]
+아직 콘솔 에이전트가 없으면 하나 만드세요.  보다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
+
+[role="quick-margin-para"]
+당신도 할 수 있습니다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"]필수 조건
+[role="quick-margin-para"]
+귀하의 환경이 전제 조건을 충족하는지 확인하세요.  여기에는 인스턴스에 대한 아웃바운드 인터넷 액세스, 포트 443을 통한 콘솔 에이전트와 데이터 분류 간의 연결 등이 포함됩니다.  <<필수 조건, 전체 목록 보기>>.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["삼"]데이터 분류 배포
+[role="quick-margin-para"]
+설치 마법사를 실행하여 클라우드에 데이터 분류 인스턴스를 배포합니다.
+
+
+
+== 콘솔 에이전트 만들기
+
+아직 콘솔 에이전트가 없다면 클라우드 공급자에서 콘솔 에이전트를 만드세요.  보다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] 또는 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-a-connector-is-required["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
+
+특정 클라우드 공급자에 배포된 콘솔 에이전트를 사용해야 하는 몇 가지 시나리오가 있습니다.
+
+* AWS의 Cloud Volumes ONTAP 또는 Amazon FSx for ONTAP 버킷에서 데이터를 스캔할 때 AWS의 콘솔 에이전트를 사용합니다.
+* Azure의 Cloud Volumes ONTAP 또는 Azure NetApp Files 에서 데이터를 스캔할 때 Azure의 콘솔 에이전트를 사용합니다.
++
+** Azure NetApp Files 의 경우, 스캔하려는 볼륨과 동일한 지역에 배포해야 합니다.
+
+
+* GCP에서 Cloud Volumes ONTAP 의 데이터를 스캔할 때 GCP의 콘솔 에이전트를 사용합니다.
+
+
+이러한 클라우드 콘솔 에이전트를 사용하면 온프레미스 ONTAP 시스템, NetApp 파일 공유 및 데이터베이스를 검사할 수 있습니다.
+
+또한 다음을 수행할 수도 있습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크나 클라우드 내의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 온프레미스에 콘솔 에이전트를 설치하기로 선택할 수도 있습니다.
+
+보시다시피, 사용해야 하는 상황이 있을 수 있습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["여러 콘솔 에이전트"] .
+
+
+TIP: 데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 않습니다.  각 콘솔 에이전트는 500TiB의 데이터를 스캔하고 표시하는 것을 지원합니다. 500TiB 이상의 데이터를 스캔하려면link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["다른 콘솔 에이전트를 설치하세요"^] 그 다음에link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["다른 데이터 분류 인스턴스 배포"] .  + 콘솔 UI는 단일 커넥터의 데이터를 표시합니다.  여러 콘솔 에이전트의 데이터를 보는 방법에 대한 팁은 다음을 참조하세요.link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["여러 콘솔 에이전트와 함께 작업"^] .
+
+
+
+=== 정부 지역 지원
+
+콘솔 에이전트가 정부 지역(AWS GovCloud, Azure Gov 또는 Azure DoD)에 배포된 경우 데이터 분류가 지원됩니다.  이런 방식으로 배포할 경우 데이터 분류에는 다음과 같은 제한이 있습니다.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html["정부 지역에 콘솔 에이전트를 배포하는 방법에 대한 자세한 내용을 확인하세요."^] .
+
+
+
+== 필수 조건
+
+클라우드에 데이터 분류를 배포하기 전에 지원되는 구성이 있는지 확인하려면 다음 필수 구성 요소를 검토하세요.  클라우드에 데이터 분류를 배포하면 콘솔 에이전트와 동일한 서브넷에 위치하게 됩니다.
+
+데이터 분류에서 아웃바운드 인터넷 액세스 활성화:: 데이터 분류에는 아웃바운드 인터넷 액세스가 필요합니다.  가상 또는 물리적 네트워크에서 인터넷 접속을 위해 프록시 서버를 사용하는 경우, 데이터 분류 인스턴스에 다음 엔드포인트에 연결할 수 있는 아웃바운드 인터넷 접속 권한이 있는지 확인하세요.  프록시는 투명하지 않아야 합니다.  투명 프록시는 현재 지원되지 않습니다.
++
+--
+AWS, Azure 또는 GCP에서 데이터 분류를 배포하는지에 따라 아래 해당 표를 검토하세요.
+
+--
+
+
+[role="tabbed-block"]
+====
+.AWS에 필요한 엔드포인트
+--
+[cols="43,57"]
+|===
+| 엔드포인트 | 목적 
+
+
+| \ https://api.bluexp.netapp.com | NetApp 계정을 포함하는 콘솔 서비스와의 통신입니다. 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 중앙화된 사용자 인증을 위해 콘솔 웹사이트와 통신합니다. 
+
+
+| \ https://cloud-compliance-support-netapp.s3.us-west-2.amazonaws.com \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | 소프트웨어 이미지, 매니페스트, 템플릿에 대한 액세스를 제공합니다. 
+
+
+| \ https://kinesis.us-east-1.amazonaws.com | NetApp 감사 기록에서 데이터를 스트리밍할 수 있도록 합니다. 
+
+
+| \ https://cognito-idp.us-east-1.amazonaws.com \ https://cognito-identity.us-east-1.amazonaws.com \ https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \ https://customer-data-production.s3.us-west-2.amazonaws.com | 데이터 분류를 통해 매니페스트와 템플릿에 액세스하고 다운로드하며, 로그와 메트릭을 전송할 수 있습니다. 
+|===
+--
+.Azure에 필요한 엔드포인트
+--
+[cols="43,57"]
+|===
+| 엔드포인트 | 목적 
+
+
+| \ https://api.bluexp.netapp.com | NetApp 계정을 포함하는 콘솔 서비스와의 통신입니다. 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 중앙화된 사용자 인증을 위해 콘솔 웹사이트와 통신합니다. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | 소프트웨어 이미지, 매니페스트, 템플릿에 대한 액세스를 제공하고 로그와 메트릭을 전송합니다. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ | NetApp 감사 기록에서 데이터를 스트리밍할 수 있도록 합니다. 
+|===
+--
+.GCP에 필요한 엔드포인트
+--
+[cols="43,57"]
+|===
+| 엔드포인트 | 목적 
+
+
+| \ https://api.bluexp.netapp.com | NetApp 계정을 포함하는 콘솔 서비스와의 통신입니다. 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 중앙화된 사용자 인증을 위해 콘솔 웹사이트와 통신합니다. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | 소프트웨어 이미지, 매니페스트, 템플릿에 대한 액세스를 제공하고 로그와 메트릭을 전송합니다. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ | NetApp 감사 기록에서 데이터를 스트리밍할 수 있도록 합니다. 
+|===
+--
+====
+데이터 분류에 필요한 권한이 있는지 확인하세요.:: 데이터 분류에 리소스를 배포하고 데이터 분류 인스턴스에 대한 보안 그룹을 생성할 수 있는 권한이 있는지 확인하세요.
++
+--
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Google Cloud 권한"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#classification["AWS 권한"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#classification["Azure 권한"^]
+
+
+--
+콘솔 에이전트가 데이터 분류에 액세스할 수 있는지 확인하세요.:: 콘솔 에이전트와 데이터 분류 인스턴스 간의 연결을 보장합니다.  콘솔 에이전트의 보안 그룹은 포트 443을 통해 데이터 분류 인스턴스와의 인바운드 및 아웃바운드 트래픽을 허용해야 합니다.  이 연결을 통해 데이터 분류 인스턴스를 배포하고 규정 준수 및 거버넌스 탭에서 정보를 볼 수 있습니다.  데이터 분류는 AWS와 Azure의 정부 지역에서 지원됩니다.
++
+--
+AWS 및 AWS GovCloud 배포에는 추가적인 인바운드 및 아웃바운드 보안 그룹 규칙이 필요합니다. 보다 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS의 콘솔 에이전트에 대한 규칙"^] 자세한 내용은.
+
+Azure 및 Azure Government 배포에는 추가적인 인바운드 및 아웃바운드 보안 그룹 규칙이 필요합니다. 보다 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure의 콘솔 에이전트에 대한 규칙"^] 자세한 내용은.
+
+--
+데이터 분류를 계속 실행할 수 있는지 확인하세요.:: 데이터 분류 인스턴스는 지속적으로 데이터를 스캔하기 위해 켜져 있어야 합니다.
+데이터 분류에 대한 웹 브라우저 연결을 보장합니다.:: 데이터 분류가 활성화된 후, 사용자가 데이터 분류 인스턴스에 연결된 호스트에서 콘솔 인터페이스에 액세스하는지 확인하세요.
++
+--
+데이터 분류 인스턴스는 개인 IP 주소를 사용하여 인덱싱된 데이터가 인터넷에서 접근되지 않도록 보장합니다.  따라서 콘솔에 접속하는 데 사용하는 웹 브라우저는 해당 개인 IP 주소에 연결되어 있어야 합니다.  해당 연결은 클라우드 공급자(예: VPN)에 대한 직접 연결을 통해 이루어질 수도 있고, 데이터 분류 인스턴스와 동일한 네트워크 내부에 있는 호스트를 통해 이루어질 수도 있습니다.
+
+--
+vCPU 제한을 확인하세요:: 클라우드 제공업체의 vCPU 한도가 필요한 수의 코어를 갖춘 인스턴스를 배포할 수 있는지 확인하세요.  콘솔이 실행되는 지역에서 해당 인스턴스 패밀리에 대한 vCPU 제한을 확인해야 합니다. link:concept-classification.html#the-data-classification-instance["필요한 인스턴스 유형을 확인하세요"] .
++
+--
+vCPU 제한에 대한 자세한 내용은 다음 링크를 참조하세요.
+
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS 설명서: Amazon EC2 서비스 할당량"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure 설명서: 가상 머신 vCPU 할당량"^]
+* https://cloud.google.com/compute/quotas["Google Cloud 문서: 리소스 할당량"^]
+
+
+--
+
+
+
+
+== 클라우드에 데이터 분류 배포
+
+클라우드에 데이터 분류 인스턴스를 배포하려면 다음 단계를 따르세요.  콘솔 에이전트는 클라우드에 인스턴스를 배포한 다음 해당 인스턴스에 데이터 분류 소프트웨어를 설치합니다.
+
+기본 인스턴스 유형을 사용할 수 없는 지역에서는 데이터 분류가 실행됩니다.link:reference-instance-types.html["대체 인스턴스 유형"] .
+
+[role="tabbed-block"]
+====
+.AWS에 배포
+--
+.단계
+. 데이터 분류의 메인 페이지에서 *온프레미스 또는 클라우드에 분류 배포*를 선택합니다.
++
+image:screenshot-deploy-classification.png["데이터 분류를 활성화하기 위한 버튼을 선택하는 스크린샷입니다."]
+
+. _설치_ 페이지에서 *배포 > 배포*를 선택하여 "대형" 인스턴스 크기를 사용하고 클라우드 배포 마법사를 시작합니다.
+. 마법사는 배포 단계를 진행하면서 진행 상황을 표시합니다.  입력이 필요하거나 문제가 발생하면 메시지가 표시됩니다.
+. 인스턴스가 배포되고 데이터 분류가 설치되면 *구성 계속*을 선택하여 _구성_ 페이지로 이동합니다.
+
+
+--
+.Azure에 배포
+--
+.단계
+. 데이터 분류의 메인 페이지에서 *온프레미스 또는 클라우드에 분류 배포*를 선택합니다.
++
+image:screenshot-deploy-classification.png["데이터 분류를 활성화하기 위한 버튼을 선택하는 스크린샷입니다."]
+
+. 클라우드 배포 마법사를 시작하려면 *배포*를 선택하세요.
+. 마법사는 배포 단계를 진행하면서 진행 상황을 표시합니다.  문제가 발생하면 멈추고 입력을 요청합니다.
+. 인스턴스가 배포되고 데이터 분류가 설치되면 *구성 계속*을 선택하여 _구성_ 페이지로 이동합니다.
+
+
+--
+.Google Cloud에 배포
+--
+.단계
+. 데이터 분류의 메인 페이지에서 *거버넌스 > 분류*를 선택합니다.
+. *온프레미스 또는 클라우드에 분류 배포*를 선택합니다.
++
+image:screenshot-deploy-classification.png["데이터 분류를 활성화하기 위한 버튼을 선택하는 스크린샷입니다."]
+
+. 클라우드 배포 마법사를 시작하려면 *배포*를 선택하세요.
+. 마법사는 배포 단계를 진행하면서 진행 상황을 표시합니다.  문제가 발생하면 멈추고 입력을 요청합니다.
+. 인스턴스가 배포되고 데이터 분류가 설치되면 *구성 계속*을 선택하여 _구성_ 페이지로 이동합니다.
+
+
+--
+====
+.결과
+콘솔은 클라우드 공급자에 데이터 분류 인스턴스를 배포합니다.
+
+인스턴스가 인터넷에 연결되어 있는 한 콘솔 에이전트와 데이터 분류 소프트웨어의 업그레이드는 자동화됩니다.
+
+.다음은 무엇인가
+구성 페이지에서 스캔할 데이터 소스를 선택할 수 있습니다.

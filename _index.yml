@@ -1,0 +1,64 @@
+---
+indexpage:
+  title: NetApp 데이터 분류 문서
+  summary: NetApp 데이터 분류를 사용하면 조직의 하이브리드 멀티클라우드에서 데이터를 스캔하고 분류할 수 있습니다.  데이터 분류는 상황에
+    맞는 데이터 분석 및 분류를 위해 AI 기반 자연어 처리(NLP)를 활용하여 규정 준수 요구 사항을 충족하고, 보안 취약성을 탐지하고, 비용을
+    최적화하고, 마이그레이션을 가속화할 수 있는 실행 가능한 데이터 통찰력을 제공합니다.
+  keywords: bluexp, data classification, cloud data sense, data sense, compliance,
+    security, netapp console, bluexp classification
+  lead: NetApp 데이터 분류를 사용하면 조직의 하이브리드 멀티클라우드에서 데이터를 스캔하고 분류할 수 있습니다.  데이터 분류는 상황에
+    맞는 데이터 분석 및 분류를 위해 AI 기반 자연어 처리(NLP)를 활용하여 규정 준수 요구 사항을 충족하고, 보안 취약성을 탐지하고, 비용을
+    최적화하고, 마이그레이션을 가속화할 수 있는 실행 가능한 데이터 통찰력을 제공합니다.
+  tiles:
+  - title: 시작하기
+    links:
+    - title: 데이터 분류에 대해 알아보세요
+      url: concept-classification.html
+    - title: 새로운 소식
+      url: whats-new.html
+    - title: 클라우드에 데이터 분류 배포
+      url: task-deploy-cloud-compliance.html
+    - title: 인터넷이 연결된 Linux 호스트에 데이터 분류 설치
+      url: task-deploy-compliance-onprem.html
+  - title: 데이터 소스 스캔
+    links:
+    - title: ONTAP 볼륨에 대한 Amazon FSx 스캔
+      url: task-scanning-fsx.html
+    - title: Azure NetApp Files 볼륨 스캔
+      url: task-scanning-anf.html
+    - title: Cloud Volumes ONTAP 볼륨 스캔
+      url: task-getting-started-compliance.html
+    - title: 데이터베이스 스키마 스캔
+      url: task-scanning-databases.html
+    - title: 파일 공유 스캔(CIFS, NFS)
+      url: task-scanning-file-shares.html
+    - title: 온프레미스 ONTAP 볼륨 스캔
+      url: task-getting-started-compliance.html
+    - title: 스캔 StorageGRID
+      url: task-scanning-storagegrid.html
+  - title: 귀하의 데이터에 대한 세부 정보 보기
+    links:
+    - title: 개인 정보가 포함된 파일 보기
+      url: task-controlling-private-data.html
+    - title: 저장소에 복제된 파일 보기
+      url: task-investigate-data.html#check-for-duplicate-files-in-your-storage-systems
+    - title: 특정 파일을 보려면 데이터를 필터링하세요.
+      url: task-investigate-data.html
+    - title: 저장된 쿼리 만들기
+      url: task-using-policies.html
+    - title: 규정 준수 보고서 생성
+      url: task-generating-compliance-reports.html
+    - title: 데이터 주체 접근 요청에 응답
+      url: task-generating-compliance-reports.html
+  - title: 블로그 및 커뮤니티
+    links:
+    - title: NetApp 콘솔
+      url: https://www.netapp.com/console
+    - title: NetApp 데이터 서비스
+      url: https://www.netapp.com/data-services/
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com/
+    - title: 데이터 분류 사용 사례
+      url: https://bluexp.netapp.com/netapp-cloud-data-sense
+    - title: 데이터 분류 비디오
+      url: https://youtube.com/playlist?list=PLdXI3bZJEw7m0dFDhu3w6Yqt71Zqyl2Pw

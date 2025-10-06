@@ -1,0 +1,39 @@
+= 버전 1.40
+:allow-uri-read: 
+
+
+
+
+=== 버전 1.40
+
+이 BlueXP classification 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+
+.RHEL 9.5 지원
+이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v9.5에 대한 지원이 제공됩니다.  이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
+
+다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, BlueXP classification 버전 1.30 이상이 필요합니다: Red Hat Enterprise Linux 버전 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 및 9.5.
+
+.매핑 전용 스캔 우선 순위 지정
+매핑 전용 스캔을 수행할 때 가장 중요한 스캔의 우선순위를 지정할 수 있습니다.  이 기능은 작업 환경이 여러 개이고 우선 순위가 높은 스캔을 먼저 완료하려는 경우에 유용합니다.
+
+기본적으로 스캔은 시작된 순서에 따라 대기열에 추가됩니다.  검사의 우선순위를 지정하는 기능을 사용하면 검사를 대기열의 앞으로 옮길 수 있습니다.  여러 스캔에 우선순위를 지정할 수 있습니다.  우선순위는 선입선출 순서로 지정됩니다. 즉, 우선순위를 지정한 첫 번째 스캔이 대기열의 앞으로 이동하고, 두 번째로 우선순위를 지정한 스캔이 대기열의 두 번째가 되는 식입니다.
+
+우선권은 한 번만 부여됩니다.  매핑 데이터의 자동 재스캔은 기본 순서대로 수행됩니다.
+
+우선순위는 다음으로 제한됩니다.link:https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["매핑 전용 스캔"^] ; 지도 및 분류 스캔에는 사용할 수 없습니다.
+
+자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["스캔 우선 순위 지정"^] .
+
+.모든 스캔을 다시 시도하세요
+BlueXP classification 실패한 모든 스캔을 일괄적으로 다시 시도하는 기능을 지원합니다.
+
+**모두 다시 시도** 기능을 사용하면 일괄 작업으로 스캔을 다시 시도할 수 있습니다.  네트워크 중단과 같은 일시적인 문제로 인해 분류 스캔이 실패하는 경우, 개별적으로 다시 시도하는 대신 하나의 버튼으로 모든 스캔을 동시에 다시 시도할 수 있습니다.  필요한 만큼 스캔을 다시 시도할 수 있습니다.
+
+모든 스캔을 다시 시도하려면:
+
+. BlueXP classification 메뉴에서 *구성*을 선택합니다.
+. 실패한 모든 검사를 다시 시도하려면 *모든 검사 다시 시도*를 선택하세요.
+
+
+.향상된 분류 모델 정확도
+머신 러닝 모델의 정확도link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["미리 정의된 카테고리"] 11% 개선되었습니다.

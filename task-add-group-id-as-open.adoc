@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task-add-group-id-as-open.html 
+keywords: permissions, open to organization, file access 
+summary: 'NFS 파일 공유의 파일이나 폴더에 그룹 ID가 추가되면 해당 파일이나 폴더에 대한 권한이 정의됩니다. 예를 들어, "조직에 공개"할지 여부 등이 정의됩니다.  일부 그룹 ID(GID)가 처음에 "조직에 공개" 권한 수준으로 설정되지 않은 경우 해당 권한을 GID에 추가하여 해당 GID가 첨부된 모든 파일과 폴더가 "조직에 공개"된 것으로 간주되도록 할 수 있습니다.' 
+---
+= NetApp 데이터 분류에서 조직에 공개된 추가 그룹 ID 정의
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NFS 파일 공유의 파일이나 폴더에 그룹 ID(GID)가 추가되면 파일이나 폴더에 대한 사용 권한이 정의됩니다. 예를 들어, "조직에 공개"할지 여부 등이 정의됩니다.  일부 GID가 처음에 "조직에 공개" 권한 수준으로 설정되지 않은 경우 해당 권한을 GID에 추가하여 해당 GID가 첨부된 모든 파일과 폴더가 "조직에 공개"된 것으로 간주되도록 할 수 있습니다.
+
+이 변경을 하고 NetApp 데이터 분류가 파일과 폴더를 다시 검사하면 이러한 그룹 ID가 첨부된 모든 파일과 폴더에 조사 세부 정보 페이지에 이 권한이 표시되고 파일 권한을 표시하는 보고서에도 나타납니다.
+
+이 기능을 활성화하려면 데이터 분류 시스템에 로그인하여 구성 파일을 편집하고 스크립트를 실행해야 합니다.  방법을 확인하세요link:reference-log-in-to-instance.html["데이터 분류 시스템에 로그인하세요"] Linux 시스템에 소프트웨어를 수동으로 설치했는지, 아니면 클라우드에 인스턴스를 배포했는지에 따라 다릅니다.
+
+
+
+== 그룹 ID에 "조직에 공개" 권한 추가
+
+이 작업을 시작하기 전에 그룹 ID 번호(GID)가 필요합니다.
+
+.단계
+. 데이터 분류 시스템에서 "/opt/netapp/config/custom_configuration"으로 이동하여 파일을 엽니다. `data_provider.yaml` .
+. "organization_group_ids: []" 줄에 그룹 ID를 추가합니다. 예를 들어:
++
+ organization_group_ids: [1014, 1015, 21, 2021, 1013, 2020, 1018, 1019]
++
+이 파일의 다른 내용은 변경하지 마세요.
+
+. 파일의 변경 사항을 저장합니다.
+. "/opt/netapp/Datasense/tools/customer_configuration/data_providers"로 이동하여 다음 스크립트를 실행합니다.
++
+ update_data_providers_from_config_file.sh
++
+이 명령은 수정된 그룹 ID 권한을 분류 엔진에 커밋합니다.
+
+
+
+.결과
+이후의 모든 데이터 스캔에서는 이러한 그룹 ID가 "조직에 공개됨"으로 첨부된 파일이나 폴더를 식별합니다.
+
+동일한 단계를 사용하여 그룹 ID 목록을 편집하고 과거에 추가한 그룹 ID를 삭제할 수 있습니다.  스크립트를 실행하여 변경 사항을 커밋한 후 수정된 그룹 ID 목록이 업데이트됩니다.
+
+
+
+== 현재 그룹 ID 목록 보기
+
+내용의 경우 가능합니다. `data_provider.yaml` 실행 후 실제로 커밋된 내용과 다르게 구성 파일을 설정합니다. `update_data_providers_from_config_file.sh` 스크립트.  데이터 분류에 추가한 그룹 ID의 현재 목록을 보려면 "/opt/netapp/Datasense/tools/customer_configuration/data_providers"에서 다음 명령을 실행하세요.
+
+ get_data_providers_configuration.sh

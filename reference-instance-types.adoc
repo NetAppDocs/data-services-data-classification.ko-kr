@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: reference-instance-types.html 
+keywords: BlueXP classification, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
+summary: '데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.  클라우드에서 데이터 분류를 배포할 때 모든 기능을 활용하려면 "대규모" 특성을 갖춘 시스템을 사용하는 것이 좋습니다.' 
+---
+= 지원되는 NetApp 데이터 분류 인스턴스 유형
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.  클라우드에서 데이터 분류를 배포할 때 모든 기능을 활용하려면 "대규모" 특성을 갖춘 시스템을 사용하는 것이 좋습니다.
+
+CPU와 RAM이 적은 시스템에도 데이터 분류를 배포할 수 있지만, 이러한 덜 강력한 시스템을 사용할 경우 몇 가지 제한 사항이 있습니다. link:concept-classification.html["이러한 제한 사항에 대해 알아보세요"^] .
+
+다음 표에서 "기본"으로 표시된 시스템을 데이터 분류를 설치하는 지역에서 사용할 수 없는 경우 표의 다음 시스템이 배포됩니다.
+
+
+
+== AWS 인스턴스 유형
+
+[cols="20,30,25"]
+|===
+| 시스템 크기 | 명세서 | 인스턴스 유형 
+
+
+| 특대 | 32개 CPU, 128GB RAM, 1TiB gp3 SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.8xlarge"^](기본) 
+
+
+| 크기가 큰 | CPU 16개, 64GB RAM, 500GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge"^](기본값) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+
+
+| 중간 | CPU 8개, 32GB RAM, 200GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.2xlarge"^](기본값) m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+
+
+| 작은 | CPU 8개, 16GB RAM, 100GiB SSD | https://aws.amazon.com/ec2/instance-types/c6a/["c6a.2xlarge"^](기본값) c5a.2xlarge c5.2xlarge c4.2xlarge 
+|===
+
+
+== Azure 인스턴스 유형
+
+[cols="20,30,25"]
+|===
+| 시스템 크기 | 명세서 | 인스턴스 유형 
+
+
+| 특대 | 32개 CPU, 128GB RAM, OS 디스크(2,048GiB, 최소 250MB/s 처리량), 데이터 디스크(1TiB SSD, 최소 750MB/s 처리량) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^](기본) 
+
+
+| 크기가 큰 | CPU 16개, 64GB RAM, 500GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^](기본) 
+|===
+
+
+== GCP 인스턴스 유형
+
+[cols="20,30,25"]
+|===
+| 시스템 크기 | 명세서 | 인스턴스 유형 
+
+
+| 크기가 큰 | CPU 16개, 64GB RAM, 500GiB SSD | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-표준-16"^](기본값) n2d-standard-16 n1-standard-16 
+|===

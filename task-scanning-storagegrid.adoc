@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-storagegrid.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
+summary: NetApp Data Classification을 사용하여 StorageGRID 내에서 직접 데이터 스캔을 시작하려면 몇 가지 단계를 완료하세요. 
+---
+= NetApp 데이터 분류를 사용하여 StorageGRID 데이터 스캔
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification을 사용하여 StorageGRID 내에서 직접 데이터 스캔을 시작하려면 몇 가지 단계를 완료하세요.
+
+
+
+== StorageGRID 요구 사항 검토
+
+데이터 분류를 활성화하기 전에 지원되는 구성이 있는지 확인하려면 다음 필수 구성 요소를 검토하세요.
+
+* 개체 스토리지 서비스에 연결하려면 엔드포인트 URL이 필요합니다.
+* 데이터 분류가 버킷에 액세스할 수 있도록 StorageGRID 에서 액세스 키와 비밀 키가 필요합니다.
+
+
+
+
+== 데이터 분류 인스턴스 배포
+
+아직 배포된 인스턴스가 없으면 데이터 분류를 배포합니다.
+
+인터넷을 통해 액세스할 수 있는 StorageGRID 의 데이터를 스캔하는 경우 다음을 수행할 수 있습니다.link:task-deploy-cloud-compliance.html["클라우드에 데이터 분류 배포"^] 또는link:task-deploy-compliance-onprem.html["인터넷 접속이 가능한 온프레미스 위치에 데이터 분류를 배포합니다."^] .
+
+인터넷 접속이 불가능한 어두운 장소에 설치된 StorageGRID 에서 데이터를 스캔하는 경우 다음이 필요합니다.link:task-deploy-compliance-dark-site.html["인터넷 접속이 없는 동일한 온프레미스 위치에 데이터 분류를 배포합니다."^] .  이를 위해서는 콘솔 에이전트가 동일한 온프레미스 위치에 배포되어야 합니다.
+
+
+
+== 데이터 분류에 StorageGRID 서비스 추가
+
+StorageGRID 서비스를 추가합니다.
+
+.단계
+. 데이터 분류 메뉴에서 *구성* 옵션을 선택합니다.
+. 구성 페이지에서 *시스템 추가* > * StorageGRID 추가*를 선택합니다.
+. StorageGRID 서비스 추가 대화 상자에서 StorageGRID 서비스에 대한 세부 정보를 입력하고 *계속*을 선택합니다.
++
+.. 시스템에 사용할 이름을 입력하세요.  이 이름은 연결하려는 StorageGRID 서비스의 이름을 반영해야 합니다.
+.. 개체 스토리지 서비스에 액세스하려면 Endpoint URL을 입력하세요.
+.. Data Classification이 StorageGRID 의 버킷에 액세스할 수 있도록 액세스 키와 비밀 키를 입력하세요.
++
+image:screenshot-scanning-storagegrid-add.png["StorageGRID 서비스에 액세스하기 위해 값을 입력하는 대화 상자의 스크린샷입니다."]
+
+
+
+
+
+.결과
+StorageGRID 시스템 목록에 추가되었습니다.
+
+
+
+== StorageGRID 버킷에서 규정 준수 검사 활성화 및 비활성화
+
+StorageGRID 에서 데이터 분류를 활성화한 후 다음 단계는 스캔할 버킷을 구성하는 것입니다.  데이터 분류는 해당 버킷을 검색하여 사용자가 만든 시스템에 표시합니다.
+
+.단계
+. 구성 페이지에서 StorageGRID 시스템을 찾으세요.
+. StorageGRID 시스템 타일에서 *구성*을 선택합니다.
+. 다음 단계 중 하나를 완료하여 스캐닝을 활성화하거나 비활성화하세요.
++
+** 버킷에서 매핑 전용 스캔을 활성화하려면 *맵*을 선택합니다.
+** 버킷에 대한 전체 검사를 활성화하려면 *매핑 및 분류*를 선택합니다.
+** 버킷에서 스캐닝을 비활성화하려면 *끄기*를 선택하세요.
+
+
+
+
+.결과
+데이터 분류는 활성화된 버킷을 스캔하기 시작합니다.  **구성** 메뉴로 이동한 다음 **시스템 구성**을 선택하면 초기 검사의 진행 상황을 추적할 수 있습니다.  각 스캔의 진행 상황은 진행률 표시줄로 표시됩니다.  진행률 표시줄 위에 마우스를 올려 놓으면 볼륨의 전체 파일 대비 검사된 파일 수를 확인할 수 있습니다.  오류가 있는 경우 오류는 상태 열에 표시되고 오류를 수정하는 데 필요한 작업도 함께 표시됩니다.

@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall.html 
+keywords: remove, delete, stop, stop scans, stop scanning, delete cloud data sense, terminate, deactivate, data sense 
+summary: 문제를 해결하거나 호스트에서 소프트웨어를 영구적으로 제거하려면 데이터 분류 소프트웨어를 제거할 수 있습니다.  인스턴스를 삭제하면 인덱싱된 데이터가 있는 관련 디스크도 삭제됩니다.  데이터 분류에서 스캔한 모든 정보는 영구적으로 삭제됩니다. 
+---
+= NetApp 데이터 분류 제거
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+문제를 해결하거나 호스트에서 소프트웨어를 영구적으로 제거하려면 NetApp Data Classification을 제거할 수 있습니다.  인스턴스를 삭제하면 인덱싱된 데이터가 있는 관련 디스크도 삭제되므로 데이터 분류에서 스캔한 모든 정보가 영구적으로 삭제됩니다.
+
+사용해야 하는 단계는 데이터 분류를 클라우드에 배포했는지, 아니면 온프레미스 호스트에 배포했는지에 따라 달라집니다.
+
+
+
+== 클라우드 공급자로부터 데이터 분류 제거
+
+. 데이터 분류에서 **구성**을 선택합니다.
+. 구성 페이지 하단에서 **분류 제거**를 선택합니다.
++
+image:screenshot-uninstall.png["데이터 분류를 제거하는 버튼의 스크린샷입니다."]
+
+. 대화 상자에서 "제거"를 입력하여 콘솔 에이전트에서 데이터 분류 인스턴스의 연결을 끊습니다.  **제거**를 선택하여 확인하세요.
+. _분류 제거_ 대화 상자에서 *uninstall*을 입력하여 콘솔 에이전트에서 데이터 분류 인스턴스의 연결을 끊으려는 것을 확인한 다음 *제거*를 선택합니다.
+. 제거 프로세스를 마무리하려면 클라우드 공급자의 콘솔로 이동하여 데이터 분류 인스턴스를 삭제하세요.  인스턴스 이름은 _CloudCompliance_이고, 생성된 해시(UUID)가 여기에 연결됩니다.  예: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
+
+
+
+
+== 온프레미스 배포에서 데이터 분류 제거
+
+. 데이터 분류에서 **구성**을 선택합니다.
+. 구성 페이지 하단에서 **분류 제거**를 선택합니다.
++
+image:screenshot-uninstall.png["데이터 분류를 제거하는 버튼의 스크린샷입니다."]
+
+. 대화 상자에서 "제거"를 입력하여 콘솔 에이전트에서 데이터 분류 인스턴스의 연결을 끊습니다.  **제거**를 선택하여 확인하세요.
+. 호스트에서 소프트웨어를 제거하려면 다음을 실행하세요. `cleanup.sh` 예를 들어, 데이터 분류 호스트 머신의 스크립트:
++
+[source, cli]
+----
+cleanup.sh
+----
++
+스크립트는 다음 위치에 있습니다. `/install/light_probe/onprem_installer/cleanup.sh` 예배 규칙서. 방법을 확인하세요link:reference-log-in-to-instance.html["데이터 분류 호스트 머신에 로그인합니다."] .
+
+

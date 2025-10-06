@@ -1,0 +1,264 @@
+---
+sidebar: sidebar 
+permalink: task-test-linux-system.html 
+keywords: cloud compliance, bluexp, data sense, get started, deploy, data classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, ubuntu, rhel, dark site 
+summary: Linux 호스트에 Data Classification을 수동으로 설치하기 전에 호스트에서 스크립트를 실행하여 Data Classification을 설치하는 데 필요한 모든 전제 조건이 충족되었는지 확인할 수 있습니다.  이 스크립트는 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서 실행할 수 있습니다.  호스트는 인터넷에 연결되어 있을 수도 있고, 인터넷에 접속할 수 없는 사이트에 있을 수도 있습니다. 
+---
+= Linux 호스트가 NetApp 데이터 분류를 설치할 준비가 되었는지 확인하세요.
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Linux 호스트에 NetApp Data Classification을 수동으로 설치하기 전에 호스트에서 스크립트를 실행하여 Data Classification을 설치하는 데 필요한 모든 전제 조건이 충족되었는지 확인합니다.  이 스크립트는 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서 실행할 수 있습니다.  호스트는 인터넷에 연결되어 있을 수도 있고, 인터넷에 접속할 수 없는 사이트(_다크 사이트_)에 있을 수도 있습니다.
+
+데이터 분류 설치 스크립트의 일부인 필수 테스트 스크립트도 있습니다.  여기에 설명된 스크립트는 데이터 분류 설치 스크립트를 실행하지 않고도 Linux 호스트를 독립적으로 검증하려는 사용자를 위해 특별히 설계되었습니다.
+
+
+
+== 시작하기
+
+다음 작업을 수행하게 됩니다.
+
+. 아직 콘솔 에이전트가 설치되어 있지 않으면 선택적으로 설치합니다.  콘솔 에이전트를 설치하지 않고도 테스트 스크립트를 실행할 수 있지만, 스크립트는 콘솔 에이전트와 데이터 분류 호스트 머신 간의 연결을 확인합니다. 따라서 콘솔 에이전트를 설치하는 것이 좋습니다.
+. 호스트 머신을 준비하고 모든 요구 사항을 충족하는지 확인하세요.
+. 데이터 분류 호스트 머신에서 아웃바운드 인터넷 액세스를 활성화합니다.
+. 모든 시스템에서 필요한 포트가 모두 활성화되어 있는지 확인하세요.
+. 필수 테스트 스크립트를 다운로드하여 실행하세요.
+
+
+
+
+== 콘솔 에이전트 만들기
+
+데이터 분류를 설치하고 사용하려면 콘솔 에이전트가 필요합니다.  하지만 콘솔 에이전트 없이도 필수 구성 요소 스크립트를 실행할 수 있습니다.
+
+당신은 할 수 있습니다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 콘솔 에이전트도 온프레미스에 설치하기로 선택할 수도 있습니다.
+
+클라우드 공급자 환경에서 콘솔 에이전트를 생성하려면 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
+
+필수 구성 요소 스크립트를 실행할 때는 콘솔 에이전트 시스템의 IP 주소나 호스트 이름이 필요합니다.  사내에 콘솔 에이전트를 설치한 경우 이 정보를 얻을 수 있습니다.  콘솔 에이전트가 클라우드에 배포된 경우 콘솔에서 다음 정보를 찾을 수 있습니다. 도움말 아이콘을 선택한 다음 *지원*을 선택하고 *콘솔 에이전트*를 선택합니다.
+
+
+
+== 호스트 요구 사항 확인
+
+데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.
+
+* 다른 애플리케이션과 공유되는 호스트에서는 데이터 분류가 지원되지 않습니다. 호스트는 전용 호스트여야 합니다.
+* 사내 호스트 시스템을 구축할 때 데이터 분류를 통해 스캔하려는 데이터 세트의 크기에 따라 다음 시스템 크기 중에서 선택할 수 있습니다.
++
+[cols="17,17,27,31"]
+|===
+| 시스템 크기 | CPU | RAM(스왑 메모리를 비활성화해야 함) | 디스크 
+
+
+| *특대* | 32개의 CPU | 128GB 램  a| 
+** /에 1TiB SSD, 또는 /opt에 100GiB 사용 가능
+** /var/lib/docker에서 895GiB 사용 가능
+** /tmp에 5GiB
+** *Podman의 경우 /var/tmp에 30GB*
+
+
+
+
+| *크기가 큰* | 16개의 CPU | 64GB 램  a| 
+** /에 500GiB SSD, 또는 /opt에 100GiB 사용 가능
+** /var/lib/docker 또는 Podman /var/lib/containers에서 400GiB 사용 가능
+** /tmp에 5GiB
+** *Podman의 경우 /var/tmp에 30GB*
+
+
+|===
+* 데이터 분류 설치를 위해 클라우드에 컴퓨팅 인스턴스를 배포할 때 위의 "대규모" 시스템 요구 사항을 충족하는 시스템을 사용하는 것이 좋습니다.
++
+** *Amazon Elastic Compute Cloud(Amazon EC2) 인스턴스 유형*: "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["추가 AWS 인스턴스 유형 보기"^] .
+** *Azure VM 크기*: "Standard_D16s_v3". link:reference-instance-types.html#azure-instance-types["추가 Azure 인스턴스 유형 보기"^] .
+** *GCP 머신 유형*: "n2-standard-16". link:reference-instance-types.html#gcp-instance-types["추가 GCP 인스턴스 유형을 참조하세요."^] .
+
+
+* *UNIX 폴더 권한*: 다음과 같은 최소 UNIX 권한이 필요합니다.
++
+[cols="25,25"]
+|===
+| 접는 사람 | 최소 권한 
+
+
+| /임시 | `rwxrwxrwt` 
+
+
+| /고르다 | `rwxr-xr-x` 
+
+
+| /var/lib/도커 | `rwx------` 
+
+
+| /usr/lib/systemd/시스템 | `rwxr-xr-x` 
+|===
+* *운영체제*:
++
+** 다음 운영 체제에서는 Docker 컨테이너 엔진을 사용해야 합니다.
++
+*** Red Hat Enterprise Linux 버전 7.8 및 7.9
+*** Ubuntu 22.04(데이터 분류 버전 1.23 이상 필요)
+*** Ubuntu 24.04(데이터 분류 버전 1.23 이상 필요)
+
+
+** 다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, Data Classification 버전 1.30 이상이 필요합니다.
++
+*** Red Hat Enterprise Linux 버전 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5 및 9.6.
+
+
+** 호스트 시스템에서 고급 벡터 확장(AVX2)을 활성화해야 합니다.
+
+
+* *Red Hat Subscription Management*: 호스트는 Red Hat Subscription Management에 등록되어야 합니다.  등록되지 않은 경우, 설치 중에 시스템은 저장소에 접근하여 필요한 타사 소프트웨어를 업데이트할 수 없습니다.
+* *추가 소프트웨어*: 데이터 분류를 설치하기 전에 호스트에 다음 소프트웨어를 설치해야 합니다.
++
+** 사용하는 OS에 따라 컨테이너 엔진 중 하나를 설치해야 합니다.
++
+*** Docker Engine 버전 19.3.1 이상. https://docs.docker.com/engine/install/["설치 지침 보기"^] .
+*** Podman 버전 4 이상.  Podman을 설치하려면 다음을 입력하세요.(`sudo yum install podman netavark -y` ).
+
+
+
+
+
+
+* Python 버전 3.6 이상. https://www.python.org/downloads/["설치 지침 보기"^] .
++
+** *NTP 고려 사항*: NetApp 데이터 분류 시스템을 구성하여 NTP(네트워크 시간 프로토콜) 서비스를 사용할 것을 권장합니다.  데이터 분류 시스템과 콘솔 에이전트 시스템 간의 시간을 동기화해야 합니다.
+
+
+
+
+* *방화벽 고려 사항*: 방화벽을 사용하려는 경우 `firewalld` 데이터 분류를 설치하기 전에 해당 기능을 활성화하는 것이 좋습니다.  다음 명령을 실행하여 구성하세요. `firewalld` 데이터 분류와 호환되도록:
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --reload
+....
++
+추가 데이터 분류 호스트를 스캐너 노드로 사용하려는 경우(분산 모델에서), 이때 다음 규칙을 기본 시스템에 추가하세요.
+
++
+....
+firewall-cmd --permanent --add-port=2377/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
+firewall-cmd --permanent --add-port=4789/udp
+....
++
+Docker 또는 Podman을 활성화하거나 업데이트할 때마다 다시 시작해야 합니다. `firewalld` 설정.
+
+
+
+
+
+== 데이터 분류에서 아웃바운드 인터넷 액세스 활성화
+
+데이터 분류에는 아웃바운드 인터넷 액세스가 필요합니다.  가상 또는 물리적 네트워크에서 인터넷 접속을 위해 프록시 서버를 사용하는 경우, 데이터 분류 인스턴스에 다음 엔드포인트에 연결할 수 있는 아웃바운드 인터넷 접속 권한이 있는지 확인하세요.
+
+
+TIP: 인터넷 연결이 없는 사이트에 설치된 호스트 시스템에는 이 섹션이 필요하지 않습니다.
+
+[cols="43,57"]
+|===
+| 엔드포인트 | 목적 
+
+
+| \ https://api.bluexp.netapp.com | NetApp 계정을 포함하는 콘솔 서비스와의 통신입니다. 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 중앙화된 사용자 인증을 위해 콘솔 웹사이트와 통신합니다. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/ | 소프트웨어 이미지, 매니페스트, 템플릿에 대한 액세스를 제공하고 로그와 메트릭을 전송합니다. 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ | NetApp 감사 기록에서 데이터를 스트리밍할 수 있도록 합니다. 
+
+
+| \ https://github.com/docker \ https://download.docker.com | Docker 설치를 위한 필수 패키지를 제공합니다. 
+
+
+| \ http://packages.ubuntu.com/ \ http://archive.ubuntu.com | Ubuntu 설치를 위한 필수 패키지를 제공합니다. 
+|===
+
+
+== 모든 필수 포트가 활성화되어 있는지 확인하세요
+
+콘솔 에이전트, 데이터 분류, Active Directory 및 데이터 소스 간 통신에 필요한 모든 포트가 열려 있는지 확인해야 합니다.
+
+[cols="25,25,50"]
+|===
+| 연결 유형 | 포트 | 설명 
+
+
+| 콘솔 에이전트 <> 데이터 분류 | 8080(TCP), 443(TCP), 80. 9000 | 콘솔 에이전트의 방화벽 또는 라우팅 규칙은 포트 443을 통해 데이터 분류 인스턴스로의 인바운드 및 아웃바운드 트래픽을 허용해야 합니다.  콘솔에서 설치 진행 상황을 볼 수 있도록 포트 8080이 열려 있는지 확인하세요.  Linux 호스트에서 방화벽을 사용하는 경우 Ubuntu 서버 내의 내부 프로세스에는 포트 9000이 필요합니다. 
+
+
+| 콘솔 에이전트 <> ONTAP 클러스터(NAS) | 443(TCP)  a| 
+콘솔은 HTTPS를 사용하여 ONTAP 클러스터를 검색합니다. 사용자 지정 방화벽 정책을 사용하는 경우 콘솔 에이전트 호스트는 포트 443을 통한 아웃바운드 HTTPS 액세스를 허용해야 합니다.  콘솔 에이전트가 클라우드에 있는 경우 모든 아웃바운드 통신은 사전 정의된 방화벽이나 라우팅 규칙에 따라 허용됩니다.
+
+|===
+
+
+== 데이터 분류 필수 조건 스크립트 실행
+
+데이터 분류 필수 조건 스크립트를 실행하려면 다음 단계를 따르세요.
+
+https://youtu.be/5ONowfPWkFs?si=QLGUw8mqPrz9qs4B["이 영상을 시청하세요"^]필수 구성 요소 스크립트를 실행하고 결과를 해석하는 방법을 알아보세요.
+
+.시작하기 전에
+* Linux 시스템이 다음 사항을 충족하는지 확인하십시오.<<호스트 요구 사항 확인,호스트 요구 사항>> .
+* 시스템에 두 가지 필수 소프트웨어 패키지(Docker Engine 또는 Podman, Python 3)가 설치되어 있는지 확인합니다.
+* Linux 시스템에서 루트 권한이 있는지 확인하세요.
+
+
+.단계
+. 데이터 분류 전제 조건 스크립트를 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 지원 사이트"^] .  선택해야 하는 파일의 이름은 *standalone-pre-requisite-tester-<version>*입니다.
+. 사용하려는 Linux 호스트에 파일을 복사합니다(사용 `scp` 또는 다른 방법).
+. 스크립트를 실행할 수 있는 권한을 할당합니다.
++
+[source, cli]
+----
+chmod +x standalone-pre-requisite-tester-v1.25.0
+----
+. 다음 명령을 사용하여 스크립트를 실행하세요.
++
+[source, cli]
+----
+ ./standalone-pre-requisite-tester-v1.25.0 <--darksite>
+----
++
+인터넷 접속이 불가능한 호스트에서 스크립트를 실행하는 경우에만 "--darksite" 옵션을 추가하세요.  호스트가 인터넷에 연결되어 있지 않으면 특정 필수 테스트가 건너뜁니다.
+
+. 스크립트는 데이터 분류 호스트 머신의 IP 주소를 입력하라는 메시지를 표시합니다.
++
+** IP 주소나 호스트 이름을 입력하세요.
+
+
+. 스크립트는 콘솔 에이전트가 설치되어 있는지 여부를 묻습니다.
++
+** 콘솔 에이전트가 설치되어 있지 않으면 *N*을 입력하세요.
+** 콘솔 에이전트가 설치되어 있는 경우 *Y*를 입력하세요.  그런 다음 테스트 스크립트가 이 연결성을 테스트할 수 있도록 콘솔 에이전트의 IP 주소나 호스트 이름을 입력합니다.
+
+
+. 스크립트는 시스템에서 다양한 테스트를 실행하고 진행 상황에 따라 결과를 표시합니다.  완료되면 세션 로그를 다음 이름의 파일에 기록합니다. `prerequisites-test-<timestamp>.log` 디렉토리에서 `/opt/netapp/install_logs` .
+
+
+.결과
+모든 필수 테스트가 성공적으로 실행되었다면 준비가 되면 호스트에 데이터 분류를 설치할 수 있습니다.
+
+문제가 발견되면 "권장" 또는 "필수"로 분류하여 수정합니다.  권장되는 문제는 일반적으로 데이터 분류 스캐닝 및 분류 작업의 실행 속도를 느리게 만드는 항목입니다.  이러한 항목은 수정할 필요가 없지만 해결하는 것이 좋습니다.
+
+"필수" 문제가 있는 경우 문제를 해결하고 필수 구성 요소 테스트 스크립트를 다시 실행해야 합니다.
