@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-generating-compliance-reports.html 
 keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file, dsar 
-summary: NetApp 데이터 분류는 조직의 데이터 개인정보 보호 프로그램 상태를 더 잘 이해하는 데 사용할 수 있는 보고서를 제공합니다. 
+summary: NetApp Data Classification 조직의 데이터 개인정보 보호 프로그램 상태를 더 잘 이해하는 데 사용할 수 있는 보고서를 제공합니다. 
 ---
-= NetApp 데이터 분류 규정 준수 보고서 보기
+= NetApp Data Classification 준수 보고서 보기
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp 데이터 분류는 조직의 데이터 개인정보 보호 프�
 
 
 [role="lead"]
-NetApp 데이터 분류는 조직의 데이터 개인정보 보호 프로그램 상태를 더 잘 이해하는 데 사용할 수 있는 보고서를 제공합니다.
+NetApp Data Classification 조직의 데이터 개인정보 보호 프로그램 상태를 더 잘 이해하는 데 사용할 수 있는 보고서를 제공합니다.
 
 기본적으로 데이터 분류 대시보드에는 모든 시스템, 데이터베이스 및 데이터 소스에 대한 규정 준수 및 거버넌스 데이터가 표시됩니다.  일부 시스템에 대한 데이터만 포함된 보고서를 보려면 필터링을 통해 해당 시스템만 볼 수 있습니다.
 
@@ -230,7 +230,7 @@ image:screenshot-report-options.png["규정 준수 페이지의 보고서 옵션
 | 5 | 변수 중 하나가 6%보다 큽니다. 
 
 
-| 6 | 두 변수가 6%보다 큽니다. 
+| 6 | 변수 중 두 개가 6%보다 큽니다. 
 
 
 | 7 | 변수 중 3개가 6%보다 큽니다. 

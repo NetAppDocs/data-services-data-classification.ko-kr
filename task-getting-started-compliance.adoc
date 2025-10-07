@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-getting-started-compliance.html 
 keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense 
-summary: NetApp 데이터 분류를 사용하여 Cloud Volumes ONTAP 및 온프레미스 ONTAP 볼륨 스캔을 시작하려면 몇 가지 단계를 완료하세요. 
+summary: NetApp Data Classification 사용하여 Cloud Volumes ONTAP 및 온프레미스 ONTAP 볼륨 스캔을 시작하려면 몇 가지 단계를 완료하세요. 
 ---
-= NetApp 데이터 분류를 사용하여 Cloud Volumes ONTAP 및 온프레미스 ONTAP 볼륨 스캔
+= NetApp Data Classification 사용하여 Cloud Volumes ONTAP 및 온프레미스 ONTAP 볼륨 스캔
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp 데이터 분류를 사용하여 Cloud Volumes ONTAP 및 온프�
 
 
 [role="lead"]
-NetApp 데이터 분류를 사용하여 Cloud Volumes ONTAP 및 온프레미스 ONTAP 볼륨 스캔을 시작하려면 몇 가지 단계를 완료하세요.
+NetApp Data Classification 사용하여 Cloud Volumes ONTAP 및 온프레미스 ONTAP 볼륨 스캔을 시작하려면 몇 가지 단계를 완료하세요.
 
 
 

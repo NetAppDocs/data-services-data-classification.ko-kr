@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, quickstart, outbound internet, endpoints, cloud compliance internet, browser connectivity, cloud compliance access, privacy, compliance, bluexp classification, classification, netapp console, 
-summary: 클라우드에 NetApp 데이터 분류를 배포하려면 몇 가지 단계를 완료하세요.  NetApp 콘솔은 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다. 
+summary: 클라우드에 NetApp Data Classification 배포하려면 몇 가지 단계를 완료하세요.  NetApp Console 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다. 
 ---
-= NetApp 콘솔을 사용하여 클라우드에 NetApp 데이터 분류를 배포합니다.
+= NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 클라우드에 NetApp 데이터 분류를 배포하려면 몇 가지 �
 
 
 [role="lead"]
-NetApp 콘솔을 사용하여 클라우드에 NetApp 데이터 분류를 배포할 수 있습니다.  콘솔은 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다.
+NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할 수 있습니다.  콘솔은 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다.
 
 또한 다음을 수행할 수도 있습니다.link:task-deploy-compliance-onprem.html["인터넷 접속이 가능한 Linux 호스트에 데이터 분류 설치"] .  온프레미스 ONTAP 시스템을 온프레미스에 있는 데이터 분류 인스턴스를 사용하여 스캔하려는 경우 이러한 유형의 설치가 좋은 옵션일 수 있지만, 이는 필수 사항은 아닙니다.  어떤 설치 방법을 선택하든 소프트웨어의 기능은 정확히 동일합니다.
 
@@ -26,7 +26,7 @@ NetApp 콘솔을 사용하여 클라우드에 NetApp 데이터 분류를 배포�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"]콘솔 에이전트 만들기
 [role="quick-margin-para"]
-아직 콘솔 에이전트가 없으면 하나 만드세요. 보다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
+아직 콘솔 에이전트가 없으면 하나 만드세요.  보다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
 
 [role="quick-margin-para"]
 당신도 할 수 있습니다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.
@@ -43,7 +43,7 @@ NetApp 콘솔을 사용하여 클라우드에 NetApp 데이터 분류를 배포�
 
 == 콘솔 에이전트 만들기
 
-아직 콘솔 에이전트가 없다면 클라우드 공급자에서 콘솔 에이전트를 만드세요. 보다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] . 대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-a-connector-is-required["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
+아직 콘솔 에이전트가 없다면 클라우드 공급자에서 콘솔 에이전트를 만드세요.  보다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-a-connector-is-required["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
 
 특정 클라우드 공급자에 배포된 콘솔 에이전트를 사용해야 하는 몇 가지 시나리오가 있습니다.
 
@@ -58,12 +58,12 @@ NetApp 콘솔을 사용하여 클라우드에 NetApp 데이터 분류를 배포�
 
 이러한 클라우드 콘솔 에이전트를 사용하면 온프레미스 ONTAP 시스템, NetApp 파일 공유 및 데이터베이스를 검사할 수 있습니다.
 
-또한 다음을 수행할 수도 있습니다. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크나 클라우드 내의 Linux 호스트에서. 온프레미스에 데이터 분류를 설치하려는 일부 사용자는 온프레미스에 콘솔 에이전트를 설치하기로 선택할 수도 있습니다.
+또한 다음을 수행할 수도 있습니다. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크나 클라우드 내의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 온프레미스에 콘솔 에이전트를 설치하기로 선택할 수도 있습니다.
 
 보시다시피, 사용해야 하는 상황이 있을 수 있습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#multiple-connectors["여러 콘솔 에이전트"] .
 
 
-TIP: 데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 않습니다. 각 콘솔 에이전트는 500TiB의 데이터를 스캔하고 표시하는 것을 지원합니다. 500TiB 이상의 데이터를 스캔하려면link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["다른 콘솔 에이전트를 설치하세요"^] 그 다음에link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["다른 데이터 분류 인스턴스 배포"] . + 콘솔 UI는 단일 커넥터의 데이터를 표시합니다. 여러 콘솔 에이전트의 데이터를 보는 방법에 대한 팁은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["여러 콘솔 에이전트와 함께 작업"^] .
+TIP: 데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 않습니다.  각 콘솔 에이전트는 500TiB의 데이터를 스캔하고 표시하는 것을 지원합니다. 500TiB 이상의 데이터를 스캔하려면link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["다른 콘솔 에이전트를 설치하세요"^] 그 다음에link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["다른 데이터 분류 인스턴스 배포"] .  + 콘솔 UI는 단일 커넥터의 데이터를 표시합니다.  여러 콘솔 에이전트의 데이터를 보는 방법에 대한 팁은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["여러 콘솔 에이전트와 함께 작업"^] .
 
 
 

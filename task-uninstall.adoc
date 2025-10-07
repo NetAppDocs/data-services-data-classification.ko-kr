@@ -4,7 +4,7 @@ permalink: task-uninstall.html
 keywords: remove, delete, stop, stop scans, stop scanning, delete cloud data sense, terminate, deactivate, data sense 
 summary: 문제를 해결하거나 호스트에서 소프트웨어를 영구적으로 제거하려면 데이터 분류 소프트웨어를 제거할 수 있습니다.  인스턴스를 삭제하면 인덱싱된 데이터가 있는 관련 디스크도 삭제됩니다.  데이터 분류에서 스캔한 모든 정보는 영구적으로 삭제됩니다. 
 ---
-= NetApp 데이터 분류 제거
+= NetApp Data Classification 제거
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 문제를 해결하거나 호스트에서 소프트웨어를 영구적�
 
 
 [role="lead"]
-문제를 해결하거나 호스트에서 소프트웨어를 영구적으로 제거하려면 NetApp Data Classification을 제거할 수 있습니다.  인스턴스를 삭제하면 인덱싱된 데이터가 있는 관련 디스크도 삭제되므로 데이터 분류에서 스캔한 모든 정보가 영구적으로 삭제됩니다.
+문제를 해결하거나 호스트에서 소프트웨어를 영구적으로 제거하려면 NetApp Data Classification 제거할 수 있습니다.  인스턴스를 삭제하면 인덱싱된 데이터가 있는 관련 디스크도 삭제되므로 데이터 분류에서 스캔한 모든 정보가 영구적으로 삭제됩니다.
 
 사용해야 하는 단계는 데이터 분류를 클라우드에 배포했는지, 아니면 온프레미스 호스트에 배포했는지에 따라 달라집니다.
 

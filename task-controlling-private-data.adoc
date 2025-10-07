@@ -4,7 +4,7 @@ permalink: task-controlling-private-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights 
 summary: '귀하의 조직 내 개인 데이터(PII) 및 민감한 개인 데이터(SPII)에 대한 세부 정보를 확인하여 개인 데이터를 제어하세요.  데이터 분류가 데이터에서 찾은 범주와 파일 유형을 검토하여 가시성을 얻을 수도 있습니다.' 
 ---
-= NetApp 데이터 분류를 사용하여 조직에 저장된 개인 데이터에 대한 규정 준수 세부 정보를 확인하세요.
+= NetApp Data Classification 사용하여 조직에 저장된 개인 데이터에 대한 규정 준수 세부 정보를 확인하세요.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: '귀하의 조직 내 개인 데이터(PII) 및 민감한 개인 데이
 
 
 [role="lead"]
-귀하의 조직 내 개인 데이터(PII) 및 민감한 개인 데이터(SPII)에 대한 세부 정보를 확인하여 개인 데이터를 제어하세요.  NetApp 데이터 분류가 데이터에서 찾은 범주와 파일 유형을 검토하여 가시성을 얻을 수도 있습니다.
+귀하의 조직 내 개인 데이터(PII) 및 민감한 개인 데이터(SPII)에 대한 세부 정보를 확인하여 개인 데이터를 제어하세요.  NetApp Data Classification 데이터에서 찾은 범주와 파일 유형을 검토하여 가시성을 얻을 수도 있습니다.
 
 
 NOTE: 파일 수준 규정 준수 세부 정보는 전체 분류 검사를 수행한 경우에만 사용할 수 있습니다.  매핑 전용 스캔에서는 파일 수준 세부 정보가 생성되지 않습니다.

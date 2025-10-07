@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-collected-metadata.html 
 keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
-summary: 데이터 분류는 데이터 소스와 시스템의 데이터에 대한 분류 스캔을 수행할 때 특정 메타데이터를 수집합니다.  데이터 분류는 데이터 분류에 필요한 대부분의 메타데이터에 접근할 수 있지만, 필요한 데이터에 접근할 수 없는 일부 소스도 있습니다. 
+summary: 데이터 분류는 데이터 소스와 시스템의 데이터에 대한 분류 스캔을 수행할 때 특정 메타데이터를 수집합니다.  데이터 분류를 통해 데이터 분류에 필요한 대부분의 메타데이터에 접근할 수 있지만, 필요한 데이터에 접근할 수 없는 일부 소스도 있습니다. 
 ---
-= NetApp 데이터 분류의 데이터 소스에서 수집된 메타데이터
+= NetApp Data Classification 데이터 소스에서 수집된 메타데이터
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 데이터 분류는 데이터 소스와 시스템의 데이터에 대�
 
 
 [role="lead"]
-NetApp 데이터 분류는 데이터 소스와 시스템의 데이터에 대한 분류 스캔을 수행할 때 특정 메타데이터를 수집합니다.  데이터 분류는 데이터 분류에 필요한 대부분의 메타데이터에 접근할 수 있지만, 필요한 데이터에 접근할 수 없는 일부 소스도 있습니다.
+NetApp Data Classification 데이터 소스와 시스템의 데이터에 대한 분류 스캔을 수행할 때 특정 메타데이터를 수집합니다.  데이터 분류는 데이터 분류에 필요한 대부분의 메타데이터에 접근할 수 있지만, 필요한 데이터에 접근할 수 없는 일부 소스도 있습니다.
 
 [cols="15,25,25,25"]
 |===

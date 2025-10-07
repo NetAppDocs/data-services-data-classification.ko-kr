@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-fsx.html 
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, fsx, fsx for ontap, aws, data sense 
-summary: NetApp 데이터 분류를 사용하여 Amazon FSx for ONTAP 볼륨 스캔을 시작하려면 몇 가지 단계를 완료하세요. 
+summary: NetApp Data Classification 사용하여 Amazon FSx for ONTAP 볼륨 스캔을 시작하려면 몇 가지 단계를 완료하세요. 
 ---
-= NetApp 데이터 분류를 사용하여 Amazon FSx 에서 ONTAP 볼륨 스캔
+= NetApp Data Classification 사용하여 Amazon FSx 에서 ONTAP 볼륨 스캔
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp 데이터 분류를 사용하여 Amazon FSx for ONTAP 볼륨 스
 
 
 [role="lead"]
-NetApp 데이터 분류를 사용하여 Amazon FSx for ONTAP 볼륨 스캔을 시작하려면 몇 가지 단계를 완료하세요.
+NetApp Data Classification 사용하여 Amazon FSx for ONTAP 볼륨 스캔을 시작하려면 몇 가지 단계를 완료하세요.
 
 
 
@@ -57,7 +57,7 @@ AWS용 콘솔 에이전트와 스캔하려는 FSx 볼륨과 동일한 AWS 네트
 
 FSx for ONTAP 볼륨에 대한 데이터 분류를 활성화할 수 있습니다.
 
-. NetApp 콘솔에서 *거버넌스 > 분류*를 선택합니다.
+. NetApp Console 에서 *거버넌스 > 분류*를 선택합니다.
 . 데이터 분류 메뉴에서 *구성*을 선택합니다.
 +
 image:screenshot_fsx_scanning_activate.png["데이터 분류 인스턴스를 배포한 직후의 구성 탭 스크린샷입니다."]
@@ -128,7 +128,7 @@ NOTE: FSx for ONTAP 의 경우 데이터 분류는 콘솔과 동일한 지역의
 
 구성 페이지에서 언제든지 시스템의 매핑 전용 스캔이나 매핑 및 분류 스캔을 시작하거나 중지할 수 있습니다.  매핑 전용 스캔에서 매핑 및 분류 스캔으로 변경할 수도 있고, 그 반대로도 가능합니다.  모든 권을 스캔하는 것이 좋습니다.
 
-기본적으로 페이지 상단의 *"쓰기 속성" 권한이 없는 경우 검사* 스위치는 비활성화되어 있습니다.  즉, 데이터 분류에 CIFS에서 쓰기 속성 권한이 없거나 NFS에서 쓰기 권한이 없는 경우, 데이터 분류는 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없기 때문에 시스템이 파일을 검사하지 않습니다.  마지막 접근 시간이 재설정되어도 상관없다면, 스위치를 켜면 권한에 관계없이 모든 파일이 검사됩니다. link:reference-collected-metadata.html#last-access-time-timestamp["자세히 알아보기"^] .
+기본적으로 페이지 상단의 *"쓰기 속성" 권한이 없는 경우 검사* 스위치는 비활성화되어 있습니다.  즉, 데이터 분류에 CIFS에서 쓰기 속성 권한이 없거나 NFS에서 쓰기 권한이 없는 경우, 데이터 분류는 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없기 때문에 시스템이 파일을 검사하지 않습니다.  마지막 접근 시간이 재설정되어도 상관없다면 스위치를 켜면 권한에 관계없이 모든 파일이 검사됩니다. link:reference-collected-metadata.html#last-access-time-timestamp["자세히 알아보기"^] .
 
 image:screenshot_volume_compliance_selection.png["개별 볼륨의 스캐닝을 활성화하거나 비활성화할 수 있는 구성 페이지의 스크린샷입니다."]
 
@@ -173,7 +173,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["CIFS 데이터 보호 볼륨을
 
 
 .결과
-데이터 분류를 활성화하면 스캐닝을 위해 활성화된 각 DP 볼륨에서 NFS 공유가 생성됩니다.  공유 내보내기 정책은 데이터 분류 인스턴스에서만 액세스를 허용합니다.
+데이터 분류가 활성화되면 스캐닝을 위해 활성화된 각 DP 볼륨에서 NFS 공유가 생성됩니다.  공유 내보내기 정책은 데이터 분류 인스턴스에서만 액세스를 허용합니다.
 
 처음에 DP 볼륨에 대한 액세스를 활성화했을 때 CIFS 데이터 보호 볼륨이 없었고 나중에 볼륨을 추가한 경우, 구성 페이지 상단에 *CIFS DP에 대한 액세스 활성화* 버튼이 나타납니다.  이 버튼을 선택하고 CIFS 자격 증명을 추가하여 이러한 CIFS DP 볼륨에 대한 액세스를 활성화합니다.
 

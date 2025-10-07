@@ -4,7 +4,7 @@ permalink: task-scanning-file-shares.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
 summary: Data Classification을 사용하여 NetApp NFS 또는 CIFS가 아닌 파일 공유를 직접 스캔하려면 몇 가지 단계를 완료하세요.  이러한 파일 공유는 온프레미스나 클라우드에 있을 수 있습니다. 
 ---
-= NetApp 데이터 분류를 사용하여 파일 공유 스캔
+= NetApp Data Classification 사용하여 파일 공유 스캔
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Data Classification을 사용하여 NetApp NFS 또는 CIFS가 아닌 �
 
 
 [role="lead"]
-파일 공유를 스캔하려면 먼저 NetApp Data Classification에서 파일 공유 그룹을 만들어야 합니다.  파일 공유 그룹은 온프레미스 또는 클라우드에서 호스팅되는 NFS 또는 CIFS(SMB) 공유를 위한 것입니다.
+파일 공유를 스캔하려면 먼저 NetApp Data Classification 에서 파일 공유 그룹을 만들어야 합니다.  파일 공유 그룹은 온프레미스 또는 클라우드에서 호스팅되는 NFS 또는 CIFS(SMB) 공유를 위한 것입니다.
 
 
 NOTE: 데이터 분류 핵심 버전에서는 NetApp 아닌 파일 공유에서 데이터를 스캔하는 기능이 지원되지 않습니다.
@@ -52,7 +52,7 @@ NOTE: 데이터 분류 핵심 버전에서는 NetApp 아닌 파일 공유에서 
 
 그룹에 파일 공유를 추가할 때는 다음 형식을 사용해야 합니다. `<host_name>:/<share_path>` .
 
-파일 공유를 개별적으로 추가할 수도 있고, 검사하려는 파일 공유를 줄로 구분하여 나열하여 입력할 수도 있습니다.  한 번에 최대 100개까지 주식을 추가할 수 있습니다.
+파일 공유를 개별적으로 추가할 수도 있고, 검사하려는 파일 공유를 줄로 구분하여 나열하여 입력할 수도 있습니다.  한 번에 최대 100개의 주식을 추가할 수 있습니다.
 
 .단계
 . 데이터 분류 메뉴에서 *구성*을 선택합니다.
@@ -63,7 +63,7 @@ NOTE: 데이터 분류 핵심 버전에서는 NetApp 아닌 파일 공유에서 
 image:screen-cl-config-shares-add.png["프로토콜 및 공유를 선택하는 옵션을 보여주는 공유 추가 모달의 스크린샷"]
 
 +
-.. NTLM 인증을 사용하여 CIFS 공유를 추가하는 경우 Active Directory 자격 증명을 입력하여 CIFS 볼륨에 액세스합니다.  읽기 전용 자격 증명도 지원되지만 관리자 자격 증명을 사용하여 전체 액세스 권한을 제공하는 것이 좋습니다. **저장**을 선택하세요.
+.. NTLM 인증을 사용하여 CIFS 공유를 추가하는 경우 Active Directory 자격 증명을 입력하여 CIFS 볼륨에 액세스합니다.  읽기 전용 자격 증명도 지원되지만 관리자 자격 증명을 사용하여 전체 액세스 권한을 제공하는 것이 좋습니다.  **저장**을 선택하세요.
 
 
 . 검사하려는 파일 공유를 추가합니다(한 줄에 파일 공유 하나씩).  그런 다음 **계속**을 선택하세요.

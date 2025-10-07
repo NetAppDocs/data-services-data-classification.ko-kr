@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-custom-classification.html 
 keywords: custom classification, customize, regular expression, keyword, regex 
-summary: NetApp 데이터 분류를 사용하면 민감한 정보에 대한 검색을 사용자 정의하고 조직과 관련된 개별 패턴과 키워드에 맞춰 서비스를 조정할 수 있습니다. 
+summary: NetApp Data Classification 사용하면 민감한 정보에 대한 검색을 사용자 정의하고 조직과 관련된 개별 패턴과 키워드에 맞춰 서비스를 조정할 수 있습니다. 
 ---
-= NetApp 데이터 분류에서 사용자 정의 분류 만들기
+= NetApp Data Classification 에서 사용자 정의 분류 만들기
 :allow-uri-read: 
 :nofooter: 
 :icons: font
@@ -13,13 +13,13 @@ summary: NetApp 데이터 분류를 사용하면 민감한 정보에 대한 검�
 
 
 [role="lead"]
-NetApp 데이터 분류를 사용하면 민감한 정보에 대한 사용자 정의 검색을 만들 수 있습니다.  검색 범위는 정규 표현식(regex)으로 지정될 수 있습니다.
+NetApp Data Classification 사용하면 민감한 정보에 대한 사용자 정의 검색을 만들 수 있습니다.  검색 범위는 정규 표현식(regex)으로 지정될 수 있습니다.
 
 
 
 == 사용자 정의 분류 만들기
 
-사용자 정의 분류는 매핑 전용 스캔이 아닌 맵 및 분류 스캔에만 사용할 수 있습니다.  이 기능은 현재 미리보기 단계에 있습니다.
+사용자 정의 분류는 매핑 전용 스캔이 아닌 맵 및 분류 스캔에만 사용할 수 있습니다. 이 기능은 현재 미리보기 단계에 있습니다.
 
 .단계
 . **사용자 정의 분류** 탭을 선택합니다.

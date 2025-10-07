@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, linux, ubuntu, cloud compliance access, privacy, compliance, on-premises 
-summary: 네트워크의 Linux 호스트나 인터넷 접속이 가능한 클라우드의 Linux 호스트에 NetApp 데이터 분류를 배포하려면 네트워크나 클라우드에 Linux 호스트를 수동으로 배포해야 합니다. 
+summary: 네트워크의 Linux 호스트나 인터넷 접속이 가능한 클라우드의 Linux 호스트에 NetApp Data Classification 배포하려면 네트워크나 클라우드에 Linux 호스트를 수동으로 배포해야 합니다. 
 ---
-= 인터넷 접속이 가능한 호스트에 NetApp 데이터 분류 설치
+= 인터넷 접속이 가능한 호스트에 NetApp Data Classification 설치
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 네트워크의 Linux 호스트나 인터넷 접속이 가능한 클라
 
 
 [role="lead"]
-네트워크의 Linux 호스트나 인터넷 접속이 가능한 클라우드의 Linux 호스트에 NetApp 데이터 분류를 배포하려면 네트워크나 클라우드에 Linux 호스트를 수동으로 배포해야 합니다.
+네트워크의 Linux 호스트나 인터넷 접속이 가능한 클라우드의 Linux 호스트에 NetApp Data Classification 배포하려면 네트워크나 클라우드에 Linux 호스트를 수동으로 배포해야 합니다.
 
 온프레미스 설치는 온프레미스에 있는 데이터 분류 인스턴스를 사용하여 온프레미스 ONTAP 시스템을 스캔하는 것을 선호하는 경우에 좋은 옵션입니다.  이것은 필수사항이 아닙니다.  어떤 설치 방법을 선택하든 소프트웨어의 기능은 동일합니다.
 
@@ -39,7 +39,7 @@ image:diagram_deploy_onprem_cloud_instance.png["필수 콘솔 및 네트워크 �
 아직 콘솔 에이전트가 없는 경우 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 배포"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.
 
 [role="quick-margin-para"]
-클라우드 공급자를 사용하여 콘솔 에이전트를 생성할 수도 있습니다. 보다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
+클라우드 공급자를 사용하여 콘솔 에이전트를 생성할 수도 있습니다.  보다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"]필수 조건 검토
 [role="quick-margin-para"]
@@ -56,7 +56,7 @@ NetApp 지원 사이트에서 클라우드 데이터 분류 소프트웨어를 �
 
 == 콘솔 에이전트 만들기
 
-데이터 분류를 설치하고 사용하려면 콘솔 에이전트가 필요합니다. 대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
+데이터 분류를 설치하고 사용하려면 콘솔 에이전트가 필요합니다.  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
 
 클라우드 공급자 환경에서 하나를 생성하려면 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
 
@@ -72,7 +72,7 @@ Azure NetApp Files 의 경우, 스캔하려는 볼륨과 동일한 지역에 배
 
 온프레미스 ONTAP 시스템, NetApp 파일 공유 및 데이터베이스 계정은 이러한 클라우드 콘솔 에이전트를 사용하여 스캔할 수 있습니다.
 
-또한 다음을 수행할 수도 있습니다. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 배포"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서. 온프레미스에 데이터 분류를 설치하려는 일부 사용자는 콘솔 에이전트도 온프레미스에 설치하기로 선택할 수도 있습니다.
+또한 다음을 수행할 수도 있습니다. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 배포"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 콘솔 에이전트도 온프레미스에 설치하기로 선택할 수도 있습니다.
 
 데이터 분류를 설치할 때 콘솔 에이전트 시스템의 IP 주소나 호스트 이름이 필요합니다.  사내에 콘솔 에이전트를 설치한 경우 이 정보를 얻을 수 있습니다.  콘솔 에이전트가 클라우드에 배포된 경우 콘솔에서 다음 정보를 찾을 수 있습니다. 도움말 아이콘을 선택한 다음 *지원*을 선택하고 **콘솔 에이전트**를 선택합니다.
 
@@ -166,7 +166,7 @@ Azure NetApp Files 의 경우, 스캔하려는 볼륨과 동일한 지역에 배
 
 * Python 버전 3.6 이상. https://www.python.org/downloads/["설치 지침 보기"^] .
 +
-** *NTP 고려 사항*: NetApp 데이터 분류 시스템을 구성하여 NTP(네트워크 시간 프로토콜) 서비스를 사용할 것을 권장합니다.  데이터 분류 시스템과 콘솔 에이전트 시스템 간의 시간을 동기화해야 합니다.
+** *NTP 고려 사항*: NetApp 데이터 분류 시스템을 구성하여 NTP(네트워크 시간 프로토콜) 서비스를 사용할 것을 권장합니다.  데이터 분류 시스템과 콘솔 에이전트 시스템 간의 시간은 동기화되어야 합니다.
 
 
 
@@ -182,7 +182,7 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-추가 데이터 분류 호스트를 스캐너 노드로 사용할 계획이라면 지금 기본 시스템에 다음 규칙을 추가하세요.
+추가 데이터 분류 호스트를 스캐너 노드로 사용할 계획이라면 지금 바로 기본 시스템에 다음 규칙을 추가하세요.
 
 +
 ....
@@ -293,7 +293,7 @@ image:diagram_deploy_onprem_single_host_internet.png["인터넷 접속이 가능
 인스턴스에 인터넷 연결이 있는 한 데이터 분류 소프트웨어 업그레이드는 자동으로 수행됩니다.
 
 
-NOTE: 현재 데이터 분류 기능은 온프레미스에 소프트웨어가 설치된 경우 S3 버킷, Azure NetApp Files 또는 FSx for ONTAP 검색할 수 없습니다. 이러한 경우 클라우드에 별도의 콘솔 에이전트와 데이터 분류 인스턴스를 배포해야 합니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["커넥터 간 전환"^] 다양한 데이터 소스에 대해.
+NOTE: 현재 데이터 분류 기능은 온프레미스에 소프트웨어가 설치된 경우 S3 버킷, Azure NetApp Files 또는 FSx for ONTAP 검색할 수 없습니다.  이러한 경우 클라우드에 별도의 콘솔 에이전트와 데이터 분류 인스턴스를 배포해야 합니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["커넥터 간 전환"^] 다양한 데이터 소스에 대해.
 
 
 
@@ -314,7 +314,7 @@ https://youtu.be/XiPLaJpfJEI["이 영상을 시청하세요"^]데이터 분류�
 ** 프록시 서버 정보(IP 주소 또는 호스트 이름, 연결 포트, 연결 방식: https 또는 http, 사용자 이름 및 비밀번호)가 필요합니다.
 ** 프록시가 TLS 가로채기를 수행하는 경우 TLS CA 인증서가 저장된 Data Classification Linux 시스템의 경로를 알아야 합니다.
 ** 프록시는 투명하지 않아야 합니다.  데이터 분류는 현재 투명 프록시를 지원하지 않습니다.
-** 사용자는 로컬 사용자여야 합니다. 도메인 사용자는 지원되지 않습니다.
+** 사용자는 로컬 사용자여야 합니다.  도메인 사용자는 지원되지 않습니다.
 
 
 * 오프라인 환경이 요구 사항을 충족하는지 확인하세요.<<데이터 분류에서 아웃바운드 인터넷 액세스 활성화,권한 및 연결>> .
@@ -323,7 +323,7 @@ https://youtu.be/XiPLaJpfJEI["이 영상을 시청하세요"^]데이터 분류�
 .단계
 . 데이터 분류 소프트웨어를 다운로드하세요. https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 지원 사이트"^] .  선택해야 하는 파일의 이름은 *DATASENSE-INSTALLER-<버전>.tar.gz*입니다.
 . 사용하려는 Linux 호스트에 설치 프로그램 파일을 복사합니다(사용 `scp` 또는 다른 방법).
-. 예를 들어, 호스트 컴퓨터에서 설치 프로그램 파일의 압축을 풉니다.
+. 호스트 컴퓨터에서 설치 프로그램 파일의 압축을 풉니다. 예:
 +
 [source, cli]
 ----

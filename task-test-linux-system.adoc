@@ -4,7 +4,7 @@ permalink: task-test-linux-system.html
 keywords: cloud compliance, bluexp, data sense, get started, deploy, data classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, ubuntu, rhel, dark site 
 summary: Linux 호스트에 Data Classification을 수동으로 설치하기 전에 호스트에서 스크립트를 실행하여 Data Classification을 설치하는 데 필요한 모든 전제 조건이 충족되었는지 확인할 수 있습니다.  이 스크립트는 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서 실행할 수 있습니다.  호스트는 인터넷에 연결되어 있을 수도 있고, 인터넷에 접속할 수 없는 사이트에 있을 수도 있습니다. 
 ---
-= Linux 호스트가 NetApp 데이터 분류를 설치할 준비가 되었는지 확인하세요.
+= Linux 호스트가 NetApp Data Classification 설치할 준비가 되었는지 확인하세요.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Linux 호스트에 Data Classification을 수동으로 설치하기 전
 
 
 [role="lead"]
-Linux 호스트에 NetApp Data Classification을 수동으로 설치하기 전에 호스트에서 스크립트를 실행하여 Data Classification을 설치하는 데 필요한 모든 전제 조건이 충족되었는지 확인합니다.  이 스크립트는 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서 실행할 수 있습니다.  호스트는 인터넷에 연결되어 있을 수도 있고, 인터넷에 접속할 수 없는 사이트(_다크 사이트_)에 있을 수도 있습니다.
+Linux 호스트에 NetApp Data Classification 수동으로 설치하기 전에 호스트에서 스크립트를 실행하여 Data Classification을 설치하는 데 필요한 모든 전제 조건이 충족되었는지 확인합니다.  이 스크립트는 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서 실행할 수 있습니다.  호스트는 인터넷에 연결되어 있을 수도 있고, 인터넷에 접속할 수 없는 사이트(_다크 사이트_)에 있을 수도 있습니다.
 
 데이터 분류 설치 스크립트의 일부인 필수 테스트 스크립트도 있습니다.  여기에 설명된 스크립트는 데이터 분류 설치 스크립트를 실행하지 않고도 Linux 호스트를 독립적으로 검증하려는 사용자를 위해 특별히 설계되었습니다.
 
@@ -24,7 +24,7 @@ Linux 호스트에 NetApp Data Classification을 수동으로 설치하기 전�
 
 다음 작업을 수행하게 됩니다.
 
-. 아직 콘솔 에이전트가 설치되어 있지 않으면 선택적으로 설치합니다.  콘솔 에이전트를 설치하지 않고도 테스트 스크립트를 실행할 수 있지만, 스크립트는 콘솔 에이전트와 데이터 분류 호스트 머신 간의 연결을 확인합니다. 따라서 콘솔 에이전트를 설치하는 것이 좋습니다.
+. 선택적으로, 콘솔 에이전트가 설치되어 있지 않으면 설치하세요.  콘솔 에이전트를 설치하지 않고도 테스트 스크립트를 실행할 수 있지만, 스크립트는 콘솔 에이전트와 데이터 분류 호스트 머신 간의 연결을 확인합니다. 따라서 콘솔 에이전트를 설치하는 것이 좋습니다.
 . 호스트 머신을 준비하고 모든 요구 사항을 충족하는지 확인하세요.
 . 데이터 분류 호스트 머신에서 아웃바운드 인터넷 액세스를 활성화합니다.
 . 모든 시스템에서 필요한 포트가 모두 활성화되어 있는지 확인하세요.
@@ -37,7 +37,7 @@ Linux 호스트에 NetApp Data Classification을 수동으로 설치하기 전�
 
 데이터 분류를 설치하고 사용하려면 콘솔 에이전트가 필요합니다.  하지만 콘솔 에이전트 없이도 필수 구성 요소 스크립트를 실행할 수 있습니다.
 
-당신은 할 수 있습니다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서. 온프레미스에 데이터 분류를 설치하려는 일부 사용자는 콘솔 에이전트도 온프레미스에 설치하기로 선택할 수도 있습니다.
+당신은 할 수 있습니다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 온프레미스에 콘솔 에이전트를 설치하기로 선택할 수도 있습니다.
 
 클라우드 공급자 환경에서 콘솔 에이전트를 생성하려면 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
 
@@ -131,7 +131,7 @@ Linux 호스트에 NetApp Data Classification을 수동으로 설치하기 전�
 
 * Python 버전 3.6 이상. https://www.python.org/downloads/["설치 지침 보기"^] .
 +
-** *NTP 고려 사항*: NetApp 데이터 분류 시스템을 구성하여 NTP(네트워크 시간 프로토콜) 서비스를 사용할 것을 권장합니다.  데이터 분류 시스템과 콘솔 에이전트 시스템 간의 시간을 동기화해야 합니다.
+** *NTP 고려 사항*: NetApp 데이터 분류 시스템을 구성하여 NTP(네트워크 시간 프로토콜) 서비스를 사용할 것을 권장합니다.  데이터 분류 시스템과 콘솔 에이전트 시스템 간의 시간은 동기화되어야 합니다.
 
 
 

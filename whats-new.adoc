@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
 summary: BlueXP classification 의 새로운 기능을 알아보세요. 
 ---
-= NetApp 데이터 분류의 새로운 기능
+= NetApp Data Classification 의 새로운 기능
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: BlueXP classification 의 새로운 기능을 알아보세요.
 
 
 [role="lead"]
-NetApp 데이터 분류의 새로운 기능을 알아보세요.
+NetApp Data Classification 의 새로운 기능을 알아보세요.
 
 
 
@@ -24,15 +24,15 @@ NetApp 데이터 분류의 새로운 기능을 알아보세요.
 
 === 버전 1.47
 
-.BlueXP classification 는 이제 NetApp 데이터 분류입니다.
-BlueXP classification NetApp 데이터 분류로 이름이 바뀌었습니다.  이름 변경 외에도 사용자 인터페이스가 향상되었습니다.
+.BlueXP classification 는 이제 NetApp Data Classification 입니다.
+BlueXP classification NetApp Data Classification 로 이름이 바뀌었습니다. 이름 변경 외에도 사용자 인터페이스가 향상되었습니다.
 
-.BlueXP 는 이제 NetApp 콘솔입니다.
+.BlueXP 는 이제 NetApp Console 입니다.
 BlueXP 데이터 인프라 관리에서의 역할을 더 잘 반영하도록 이름이 바뀌고 재설계되었습니다.
 
-NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 전반의 스토리지 및 데이터 서비스를 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공합니다.
+NetApp Console 엔터프라이즈급 온프레미스 및 클라우드 환경 전반의 스토리지 및 데이터 서비스를 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공합니다.
 
-변경된 사항에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp 콘솔 릴리스 노트"] .
+변경된 사항에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Console 릴리스 노트"] .
 
 .강화된 조사 경험
 새로운 검색 필터, 값별 결과 수, 주요 결과를 요약한 실시간 통찰력, 사용자 정의 열과 슬라이드 아웃 세부 정보 창이 포함된 새로 고침된 결과 표를 통해 데이터를 더 빠르게 찾고 이해하세요.
@@ -40,10 +40,10 @@ NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 �
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["데이터 조사"] .
 
 .새로운 거버넌스 및 규정 준수 대시보드
-직관적인 위젯, 더욱 명확한 시각 자료, 향상된 로딩 성능을 통해 중요한 통찰력을 더 빠르게 얻으세요.  자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/data-services-data-classification//task-controlling-governance-data.html["귀하의 데이터에 대한 거버넌스 정보를 검토하세요"] 그리고link:https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-private-data.html["귀하의 데이터에 대한 규정 준수 정보 보기"] .
+직관적인 위젯, 더욱 명확한 시각 자료, 향상된 로딩 성능을 통해 중요한 통찰력을 더 빠르게 얻으세요. 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/data-services-data-classification//task-controlling-governance-data.html["귀하의 데이터에 대한 거버넌스 정보를 검토하세요"] 그리고link:https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-private-data.html["귀하의 데이터에 대한 규정 준수 정보 보기"] .
 
 .저장된 쿼리에 대한 정책(미리 보기)
-이제 데이터 분류를 통해 조건부 작업으로 거버넌스를 자동화할 수 있습니다.  자동 삭제, 주기적 이메일 알림 등을 포함한 보존 규칙을 만들 수 있으며, 이 모든 것은 업데이트된 저장된 쿼리 페이지에서 관리할 수 있습니다.
+이제 데이터 분류를 통해 조건부 작업으로 거버넌스를 자동화할 수 있습니다. 자동 삭제, 주기적 이메일 알림 등을 포함한 보존 규칙을 만들 수 있으며, 이 모든 것은 업데이트된 저장된 쿼리 페이지에서 관리할 수 있습니다.
 
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["정책 생성"] .
 
@@ -53,7 +53,7 @@ NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 �
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["데이터 조사"] .
 
 .Google Cloud NetApp Volumes 지원
-데이터 분류는 이제 Google Cloud NetApp Volumes 에서 스캐닝을 지원합니다.  NetApp 콘솔에서 Google Cloud NetApp Volumes 쉽게 추가하여 원활한 데이터 스캔 및 분류를 수행할 수 있습니다.
+데이터 분류는 이제 Google Cloud NetApp Volumes 에서 스캐닝을 지원합니다. NetApp Console 에서 Google Cloud NetApp Volumes 쉽게 추가하여 원활한 데이터 스캔 및 분류를 수행할 수 있습니다.
 
 
 
@@ -66,9 +66,9 @@ NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 �
 이 데이터 분류 릴리스에는 버그 수정과 다음 업데이트가 포함되어 있습니다.
 
 .감사 페이지에서 향상된 스캔 이벤트 통찰력
-감사 페이지는 이제 BlueXP classification 위한 스캔 이벤트에 대한 향상된 통찰력을 지원합니다.  이제 감사 페이지에 시스템 검사가 시작되는 시점, 시스템 상태, 문제가 표시됩니다.  공유 및 시스템 상태는 매핑 스캔에만 사용할 수 있습니다.
+감사 페이지는 이제 BlueXP classification 위한 스캔 이벤트에 대한 향상된 통찰력을 지원합니다. 이제 감사 페이지에 시스템 검사가 시작되는 시점, 시스템 상태, 문제가 표시됩니다. 공유 및 시스템 상태는 매핑 스캔에만 사용할 수 있습니다.
 
-감사 페이지에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["NetApp 콘솔 작업 모니터링"^] .
+감사 페이지에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["NetApp Console 작업 모니터링"^] .
 
 .RHEL 9.6 지원
 이 릴리스에서는 다크 사이트 배포를 포함하여 BlueXP classification 의 수동 온프레미스 설치를 위한 Red Hat Enterprise Linux v9.6에 대한 지원이 추가되었습니다.
@@ -86,12 +86,12 @@ NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 �
 이 BlueXP classification 릴리스에는 리소스 활용도를 최적화하는 코드 변경 사항이 포함되어 있습니다.
 
 .스캔을 위해 파일 공유를 추가하는 향상된 워크플로
-파일 공유 그룹에 파일 공유를 추가하는 워크플로가 간소화되었습니다.  이 프로세스에서는 이제 인증 유형(Kerberos 또는 NTLM)에 따라 CIFS 프로토콜 지원을 구분합니다.
+파일 공유 그룹에 파일 공유를 추가하는 워크플로가 간소화되었습니다. 이 프로세스에서는 이제 인증 유형(Kerberos 또는 NTLM)에 따라 CIFS 프로토콜 지원을 구분합니다.
 
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-scanning-file-shares.html["파일 공유 스캔"] .
 
 .향상된 파일 소유자 정보
-이제 조사 탭에서 캡처된 파일의 파일 소유자에 대한 자세한 정보를 볼 수 있습니다.  조사 탭에서 파일의 메타데이터를 볼 때 파일 소유자를 찾은 다음 **세부 정보 보기**를 선택하여 사용자 이름, 이메일, SAM 계정 이름을 확인하세요.  이 사용자가 소유한 다른 항목도 볼 수 있습니다.  이 기능은 Active Directory가 있는 작업 환경에서만 사용할 수 있습니다.
+이제 조사 탭에서 캡처된 파일의 파일 소유자에 대한 자세한 정보를 볼 수 있습니다. 조사 탭에서 파일의 메타데이터를 볼 때 파일 소유자를 찾은 다음 **세부 정보 보기**를 선택하여 사용자 이름, 이메일, SAM 계정 이름을 확인하세요. 이 사용자가 소유한 다른 항목도 볼 수 있습니다. 이 기능은 Active Directory가 있는 작업 환경에서만 사용할 수 있습니다.
 
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["귀하의 조직에 저장된 데이터를 조사하세요"] .
 
@@ -106,7 +106,7 @@ NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 �
 이 BlueXP classification 릴리스에는 다음이 포함됩니다.
 
 .거버넌스 대시보드의 업데이트 시간이 개선되었습니다.
-거버넌스 대시보드의 개별 구성 요소에 대한 업데이트 시간이 개선되었습니다.  다음 표는 각 구성 요소의 업데이트 빈도를 보여줍니다.
+거버넌스 대시보드의 개별 구성 요소에 대한 업데이트 시간이 개선되었습니다. 다음 표는 각 구성 요소의 업데이트 빈도를 보여줍니다.
 
 [cols="1,1"]
 |===
@@ -154,7 +154,7 @@ NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 �
 BlueXP 분류의 성능, 메모리 소비, 보안을 개선하기 위해 개선 사항이 적용되었습니다.
 
 .버그 수정
-Redis가 업그레이드되어 BlueXP classification 의 안정성이 향상되었습니다.  BlueXP classification 이제 Elasticsearch를 사용하여 스캔 중 파일 수 보고의 정확도를 향상시킵니다.
+Redis가 업그레이드되어 BlueXP classification 의 안정성이 향상되었습니다. BlueXP classification 이제 Elasticsearch를 사용하여 스캔 중 파일 수 보고의 정확도를 향상시킵니다.
 
 
 
@@ -167,17 +167,17 @@ Redis가 업그레이드되어 BlueXP classification 의 안정성이 향상되�
 이 데이터 분류 릴리스에는 다음이 포함됩니다.
 
 .분류 스캔 우선 순위 지정
-데이터 분류는 매핑 전용 스캔 외에도 맵 및 분류 스캔의 우선순위를 지정하는 기능을 지원하여 어떤 스캔을 먼저 완료할지 선택할 수 있습니다.  Map & Classify 스캔의 우선순위 지정은 스캔이 시작되기 전과 시작 중 지원됩니다.  검사가 진행되는 동안 검사의 우선순위를 지정하는 경우 매핑 검사와 분류 검사가 모두 우선순위가 지정됩니다.
+데이터 분류는 매핑 전용 스캔 외에도 맵 및 분류 스캔의 우선순위를 지정하는 기능을 지원하여 어떤 스캔을 먼저 완료할지 선택할 수 있습니다. Map & Classify 스캔의 우선순위 지정은 스캔이 시작되기 전과 시작 중 지원됩니다. 검사가 진행되는 동안 검사의 우선순위를 지정하는 경우 매핑 검사와 분류 검사가 모두 우선순위가 지정됩니다.
 
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["스캔 우선 순위 지정"] .
 
 .캐나다 개인 식별 정보(PII) 데이터 범주 지원
-데이터 분류 스캔은 캐나다 PII 데이터 범주를 식별합니다.  이러한 범주에는 모든 캐나다 주와 지역의 은행 정보, 여권 번호, 사회보장번호, 운전면허증 번호, 건강카드 번호가 포함됩니다.
+데이터 분류 스캔은 캐나다 PII 데이터 범주를 식별합니다. 이러한 범주에는 모든 캐나다 주와 지역의 은행 정보, 여권 번호, 사회보장번호, 운전면허증 번호, 건강카드 번호가 포함됩니다.
 
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-personal-data["개인 데이터 범주"] .
 
 .사용자 정의 분류(미리 보기)
-데이터 분류는 Map & Classify 스캔에 대한 사용자 정의 분류를 지원합니다.  사용자 정의 분류를 사용하면 정규 표현식을 사용하여 조직에 맞는 데이터를 캡처하도록 데이터 분류 검사를 맞춤화할 수 있습니다.  이 기능은 현재 미리보기 단계에 있습니다.
+데이터 분류는 Map & Classify 스캔에 대한 사용자 정의 분류를 지원합니다. 사용자 정의 분류를 사용하면 정규 표현식을 사용하여 조직에 맞는 데이터를 캡처하도록 데이터 분류 검사를 맞춤화할 수 있습니다. 이 기능은 현재 미리보기 단계에 있습니다.
 
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-custom-classification.html["사용자 정의 분류 추가"] .
 
@@ -189,7 +189,7 @@ Redis가 업그레이드되어 BlueXP classification 의 안정성이 향상되�
 
 .보안 업데이트
 * Keras 패키지가 업데이트되어 취약점(BDSA-2025-0107 및 BDSA-2025-1984)이 완화되었습니다.
-* Docker 컨테이너 구성이 업데이트되었습니다.  컨테이너는 더 이상 원시 네트워크 패킷을 제작하기 위해 호스트의 네트워크 인터페이스에 액세스할 수 없습니다.  불필요한 접근을 줄임으로써 업데이트를 통해 잠재적인 보안 위험이 완화됩니다.
+* Docker 컨테이너 구성이 업데이트되었습니다. 컨테이너는 더 이상 원시 네트워크 패킷을 제작하기 위해 호스트의 네트워크 인터페이스에 액세스할 수 없습니다. 불필요한 접근을 줄임으로써 업데이트를 통해 잠재적인 보안 위험이 완화됩니다.
 
 
 .성능 향상
@@ -209,10 +209,10 @@ StorageGRID 검사가 실패하고, 조사 페이지 필터 옵션이 로드되�
 이 BlueXP classification 릴리스에는 다음이 포함됩니다.
 
 .작업 환경을 위한 대량 스캐닝
-BlueXP classification 작업 환경에서 대량 작업을 지원합니다.  작업 환경의 볼륨 전반에 걸쳐 매핑 스캔을 활성화하거나, 맵 및 분류 스캔을 활성화하거나, 스캔을 비활성화하거나, 사용자 정의 구성을 만들 수 있습니다.  개별 볼륨에 대한 선택을 하면 대량 선택이 무시됩니다.  대량 작업을 수행하려면 **구성** 페이지로 이동하여 선택하세요.
+BlueXP classification 작업 환경에서 대량 작업을 지원합니다. 작업 환경의 볼륨 전반에 걸쳐 매핑 스캔을 활성화하거나, 맵 및 분류 스캔을 활성화하거나, 스캔을 비활성화하거나, 사용자 정의 구성을 만들 수 있습니다. 개별 볼륨에 대한 선택을 하면 대량 선택이 무시됩니다. 대량 작업을 수행하려면 **구성** 페이지로 이동하여 선택하세요.
 
 .조사 보고서를 로컬로 다운로드하세요
-BlueXP classification 데이터 조사 보고서를 로컬로 다운로드하여 브라우저에서 볼 수 있는 기능을 지원합니다.  로컬 옵션을 선택하는 경우 데이터 조사는 CSV 형식으로만 가능하며, 데이터의 처음 10,000개 행만 표시됩니다.
+BlueXP classification 데이터 조사 보고서를 로컬로 다운로드하여 브라우저에서 볼 수 있는 기능을 지원합니다. 로컬 옵션을 선택하는 경우 데이터 조사는 CSV 형식으로만 가능하며, 데이터의 처음 10,000개 행만 표시됩니다.
 
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#create-the-data-investigation-report["BlueXP classification 사용하여 조직에 저장된 데이터를 조사하세요"] .
 
@@ -224,12 +224,12 @@ BlueXP classification 데이터 조사 보고서를 로컬로 다운로드하여
 
 === 버전 1.41
 
-이 BlueXP classification 릴리스에는 일반적인 개선 사항과 버그 수정이 포함되어 있습니다.  여기에는 다음이 포함됩니다.
+이 BlueXP classification 릴리스에는 일반적인 개선 사항과 버그 수정이 포함되어 있습니다. 여기에는 다음이 포함됩니다.
 
 .스캔 상태
-BlueXP classification 볼륨의 _초기_ 매핑 및 분류 스캔의 실시간 진행 상황을 추적합니다.  별도의 진행 막대는 매핑 및 분류 스캔을 추적하여 스캔된 전체 파일의 백분율을 나타냅니다.  진행률 표시줄 위에 마우스를 올려 놓으면 검사된 파일 수와 전체 파일을 볼 수 있습니다.  검사 상태를 추적하면 검사 진행 상황에 대한 심층적인 통찰력이 제공되어 검사를 보다 효과적으로 계획하고 리소스 할당을 이해하는 데 도움이 됩니다.
+BlueXP classification 볼륨의 _초기_ 매핑 및 분류 스캔의 실시간 진행 상황을 추적합니다. 별도의 진행 막대는 매핑 및 분류 스캔을 추적하여 스캔된 전체 파일의 백분율을 나타냅니다. 진행률 표시줄 위에 마우스를 올려 놓으면 검사된 파일 수와 전체 파일을 볼 수 있습니다. 검사 상태를 추적하면 검사 진행 상황에 대한 심층적인 통찰력이 제공되어 검사를 보다 효과적으로 계획하고 리소스 할당을 이해하는 데 도움이 됩니다.
 
-스캔 상태를 보려면 BlueXP classification 에서 **구성**으로 이동한 다음 **작업 환경 구성**을 선택하세요.  각 권의 진행 상황은 줄에 따라 표시됩니다.
+스캔 상태를 보려면 BlueXP classification 에서 **구성**으로 이동한 다음 **작업 환경 구성**을 선택하세요. 각 권의 진행 상황은 줄에 따라 표시됩니다.
 
 
 
@@ -242,16 +242,16 @@ BlueXP classification 볼륨의 _초기_ 매핑 및 분류 스캔의 실시간 �
 이 BlueXP classification 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 .RHEL 9.5 지원
-이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v9.5에 대한 지원이 제공됩니다.  이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
+이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v9.5에 대한 지원이 제공됩니다. 이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
 
 다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, BlueXP classification 버전 1.30 이상이 필요합니다: Red Hat Enterprise Linux 버전 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 및 9.5.
 
 .매핑 전용 스캔 우선 순위 지정
-매핑 전용 스캔을 수행할 때 가장 중요한 스캔의 우선순위를 지정할 수 있습니다.  이 기능은 작업 환경이 여러 개이고 우선 순위가 높은 스캔을 먼저 완료하려는 경우에 유용합니다.
+매핑 전용 스캔을 수행할 때 가장 중요한 스캔의 우선순위를 지정할 수 있습니다. 이 기능은 작업 환경이 여러 개이고 우선 순위가 높은 스캔을 먼저 완료하려는 경우에 유용합니다.
 
-기본적으로 스캔은 시작된 순서에 따라 대기열에 추가됩니다.  검사의 우선순위를 지정하는 기능을 사용하면 검사를 대기열의 앞으로 옮길 수 있습니다.  여러 스캔에 우선순위를 지정할 수 있습니다.  우선순위는 선입선출 순서로 지정됩니다. 즉, 우선순위를 지정한 첫 번째 스캔이 대기열의 앞으로 이동하고, 두 번째로 우선순위를 지정한 스캔이 대기열의 두 번째가 되는 식입니다.
+기본적으로 스캔은 시작된 순서에 따라 대기열에 추가됩니다. 검사의 우선순위를 지정하는 기능을 사용하면 검사를 대기열의 앞으로 옮길 수 있습니다. 여러 스캔에 우선순위를 지정할 수 있습니다. 우선순위는 선입선출 순서로 지정됩니다. 즉, 우선순위를 지정한 첫 번째 스캔이 대기열의 앞으로 이동하고, 두 번째로 우선순위를 지정한 스캔이 대기열의 두 번째가 되는 식입니다.
 
-우선권은 한 번만 부여됩니다.  매핑 데이터의 자동 재스캔은 기본 순서대로 수행됩니다.
+우선권은 한 번만 부여됩니다. 매핑 데이터의 자동 재스캔은 기본 순서대로 수행됩니다.
 
 우선순위는 다음으로 제한됩니다.link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["매핑 전용 스캔"^] ; 지도 및 분류 스캔에는 사용할 수 없습니다.
 
@@ -260,7 +260,7 @@ BlueXP classification 볼륨의 _초기_ 매핑 및 분류 스캔의 실시간 �
 .모든 스캔을 다시 시도하세요
 BlueXP classification 실패한 모든 스캔을 일괄적으로 다시 시도하는 기능을 지원합니다.
 
-**모두 다시 시도** 기능을 사용하면 일괄 작업으로 스캔을 다시 시도할 수 있습니다.  네트워크 중단과 같은 일시적인 문제로 인해 분류 스캔이 실패하는 경우, 개별적으로 다시 시도하는 대신 하나의 버튼으로 모든 스캔을 동시에 다시 시도할 수 있습니다.  필요한 만큼 스캔을 다시 시도할 수 있습니다.
+**모두 다시 시도** 기능을 사용하면 일괄 작업으로 스캔을 다시 시도할 수 있습니다. 네트워크 중단과 같은 일시적인 문제로 인해 분류 스캔이 실패하는 경우, 개별적으로 다시 시도하는 대신 하나의 버튼으로 모든 스캔을 동시에 다시 시도할 수 있습니다. 필요한 만큼 스캔을 다시 시도할 수 있습니다.
 
 모든 스캔을 다시 시도하려면:
 
@@ -279,11 +279,11 @@ BlueXP classification 실패한 모든 스캔을 일괄적으로 다시 시도�
 
 === 버전 1.39
 
-이 BlueXP classification 릴리스에서는 데이터 조사 보고서의 내보내기 프로세스가 업데이트되었습니다.  이 내보내기 업데이트는 데이터에 대한 추가 분석을 수행하거나, 데이터에 대한 추가 시각화를 생성하거나, 데이터 조사 결과를 다른 사람들과 공유하는 데 유용합니다.
+이 BlueXP classification 릴리스에서는 데이터 조사 보고서의 내보내기 프로세스가 업데이트되었습니다. 이 내보내기 업데이트는 데이터에 대한 추가 분석을 수행하거나, 데이터에 대한 추가 시각화를 생성하거나, 데이터 조사 결과를 다른 사람들과 공유하는 데 유용합니다.
 
-이전에는 데이터 조사 보고서 내보내기가 10,000개 행으로 제한되었습니다.  이번 릴리스에서는 이러한 제한이 없어져 모든 데이터를 내보낼 수 있게 되었습니다.  이 변경을 통해 데이터 조사 보고서에서 더 많은 데이터를 내보낼 수 있으므로 데이터 분석에 있어 더 많은 유연성이 제공됩니다.
+이전에는 데이터 조사 보고서 내보내기가 10,000개 행으로 제한되었습니다. 이번 릴리스에서는 이러한 제한이 없어져 모든 데이터를 내보낼 수 있게 되었습니다. 이 변경을 통해 데이터 조사 보고서에서 더 많은 데이터를 내보낼 수 있으므로 데이터 분석에 있어 더 많은 유연성이 제공됩니다.
 
-작업 환경, 볼륨, 대상 폴더, JSON 또는 CSV 형식을 선택할 수 있습니다.  내보낸 파일 이름에는 데이터가 언제 내보내졌는지 식별하는 데 도움이 되는 타임스탬프가 포함됩니다.
+작업 환경, 볼륨, 대상 폴더, JSON 또는 CSV 형식을 선택할 수 있습니다. 내보낸 파일 이름에는 데이터가 언제 내보내졌는지 식별하는 데 도움이 되는 타임스탬프가 포함됩니다.
 
 지원되는 작업 환경은 다음과 같습니다.
 
@@ -322,7 +322,7 @@ BlueXP classification 실패한 모든 스캔을 일괄적으로 다시 시도�
 이 BlueXP classification 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 .RHEL 8.10 지원
-이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v8.10에 대한 지원이 제공됩니다.  이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
+이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v8.10에 대한 지원이 제공됩니다. 이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
 
 다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, BlueXP classification 버전 1.30 이상이 필요합니다: Red Hat Enterprise Linux 버전 8.8, 8.10, 9.0, 9.1, 9.2, 9.3 및 9.4.
 
@@ -342,7 +342,7 @@ BlueXP classification 실패한 모든 스캔을 일괄적으로 다시 시도�
 === 버전 1.36
 
 .RHEL 9.4 지원
-이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v9.4에 대한 지원이 제공됩니다.  이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
+이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v9.4에 대한 지원이 제공됩니다. 이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
 
 다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, BlueXP classification 버전 1.30 이상이 필요합니다: Red Hat Enterprise Linux 버전 8.8, 9.0, 9.1, 9.2, 9.3 및 9.4.
 
@@ -437,7 +437,7 @@ BlueXP classification Microsoft Azure 및 Google Cloud Platform(GCP)용 Linux �
 BlueXP classification 이제 커넥터당 최대 500TiB의 스캔 데이터에 대해 추가 비용 없이 BlueXP 의 핵심 기능으로 제공됩니다.  분류 라이센스나 유료 구독이 필요하지 않습니다.  이 새로운 버전에서는 BlueXP classification 기능을 NetApp 스토리지 시스템 스캐닝에 집중하므로 일부 기존 기능은 이전에 라이선스 비용을 지불한 고객만 사용할 수 있습니다.  유료 계약이 종료되면 해당 레거시 기능의 사용은 만료됩니다.
 
 
-NOTE: 데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 않습니다. 각 콘솔 에이전트는 500TiB의 데이터를 스캔하고 표시하는 것을 지원합니다. 500TiB 이상의 데이터를 스캔하려면link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["다른 콘솔 에이전트를 설치하세요"^] 그 다음에link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["다른 데이터 분류 인스턴스 배포"] . + 콘솔 UI는 단일 커넥터의 데이터를 표시합니다. 여러 콘솔 에이전트의 데이터를 보는 방법에 대한 팁은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["여러 콘솔 에이전트와 함께 작업"^] .
+NOTE: 데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 않습니다.  각 콘솔 에이전트는 500TiB의 데이터를 스캔하고 표시하는 것을 지원합니다. 500TiB 이상의 데이터를 스캔하려면link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["다른 콘솔 에이전트를 설치하세요"^] 그 다음에link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["다른 데이터 분류 인스턴스 배포"] .  + 콘솔 UI는 단일 커넥터의 데이터를 표시합니다.  여러 콘솔 에이전트의 데이터를 보는 방법에 대한 팁은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["여러 콘솔 에이전트와 함께 작업"^] .
 
 
 
@@ -692,7 +692,7 @@ BlueXP classification BlueXP classification 스캔에서 식별할 수 있는 �
 "액세스 권한이 있는 사용자 수" 필터는 이제 SharePoint Online 저장소에 저장된 파일을 지원합니다.  과거에는 CIFS 공유에 있는 파일만 지원되었습니다.  현재 Active Directory 기반이 아닌 SharePoint 그룹은 이 필터에 포함되지 않습니다.
 
 .새로운 "부분적 성공" 상태가 작업 상태 패널에 추가되었습니다.
-새로운 "부분적 성공" 상태는 BlueXP classification 작업이 완료되었고 일부 항목은 실패하고 일부 항목은 성공했음을 나타냅니다. 예를 들어, 100개의 파일을 이동하거나 삭제할 때입니다.  또한, "완료" 상태의 이름이 "성공"으로 변경되었습니다.  과거에는 "완료" 상태에 성공한 작업과 실패한 작업이 나열되었습니다.  이제 "성공" 상태는 모든 항목에 대한 모든 작업이 성공했음을 의미합니다. https://docs.netapp.com/us-en/data-services-data-classification/task-view-compliance-actions.html["작업 상태 패널을 보는 방법을 확인하세요."] .
+새로운 "부분적 성공" 상태는 BlueXP classification 작업이 완료되었고 일부 항목은 실패하고 일부 항목은 성공했음을 나타냅니다. 예를 들어, 100개의 파일을 이동하거나 삭제할 때입니다.  또한, "완료" 상태의 이름이 "성공"으로 변경되었습니다.  과거에는 "완료" 상태에 성공한 작업과 실패한 작업이 나열되었습니다.  이제 "성공" 상태는 모든 항목에 대한 모든 작업이 성공했음을 의미합니다. https://docs.netapp.com/us-en/data-services-data-classification/task-view-compliance-actions.html["작업 상태 패널을 보는 방법 보기"] .
 
 
 

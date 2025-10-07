@@ -9,7 +9,7 @@
 이 BlueXP classification 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 .RHEL 8.10 지원
-이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v8.10에 대한 지원이 제공됩니다.  이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
+이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v8.10에 대한 지원이 제공됩니다. 이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
 
 다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, BlueXP classification 버전 1.30 이상이 필요합니다: Red Hat Enterprise Linux 버전 8.8, 8.10, 9.0, 9.1, 9.2, 9.3 및 9.4.
 

@@ -4,7 +4,7 @@ permalink: reference-instance-types.html
 keywords: BlueXP classification, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
 summary: '데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.  클라우드에서 데이터 분류를 배포할 때 모든 기능을 활용하려면 "대규모" 특성을 갖춘 시스템을 사용하는 것이 좋습니다.' 
 ---
-= 지원되는 NetApp 데이터 분류 인스턴스 유형
+= 지원되는 NetApp Data Classification 인스턴스 유형
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: '데이터 분류 소프트웨어는 특정 운영 체제 요구 사항
 
 
 [role="lead"]
-NetApp 데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.  클라우드에서 데이터 분류를 배포할 때 모든 기능을 활용하려면 "대규모" 특성을 갖춘 시스템을 사용하는 것이 좋습니다.
+NetApp Data Classification 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.  클라우드에서 데이터 분류를 배포할 때 모든 기능을 활용하려면 "대규모" 특성을 갖춘 시스템을 사용하는 것이 좋습니다.
 
 CPU와 RAM이 적은 시스템에도 데이터 분류를 배포할 수 있지만, 이러한 덜 강력한 시스템을 사용할 경우 몇 가지 제한 사항이 있습니다. link:concept-classification.html["이러한 제한 사항에 대해 알아보세요"^] .
 

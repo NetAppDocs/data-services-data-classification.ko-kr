@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
 keywords: savings, stale data, duplicate data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, costs of data 
-summary: 조직의 스토리지 리소스에 있는 데이터와 관련된 비용을 제어하세요.  NetApp 데이터 분류는 시스템에서 오래된 데이터, 중복 파일, 매우 큰 파일의 양을 파악하여 일부 파일을 제거할지 아니면 비용이 덜 드는 개체 스토리지로 계층화할지 결정할 수 있도록 도와줍니다. 
+summary: 조직의 스토리지 리소스에 있는 데이터와 관련된 비용을 제어하세요.  NetApp Data Classification 시스템에서 오래된 데이터, 중복 파일, 매우 큰 파일의 양을 파악하여 일부 파일을 제거할지 아니면 비용이 덜 드는 개체 스토리지로 계층화할지 결정할 수 있도록 도와줍니다. 
 ---
-= NetApp 데이터 분류를 사용하여 조직에 저장된 데이터에 대한 거버넌스 세부 정보를 확인하세요.
+= NetApp Data Classification 사용하여 조직에 저장된 데이터에 대한 거버넌스 세부 정보를 확인하세요.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 조직의 스토리지 리소스에 있는 데이터와 관련된 비�
 
 
 [role="lead"]
-조직의 스토리지 리소스에 있는 데이터와 관련된 비용을 제어하세요.  NetApp 데이터 분류는 시스템에서 오래된 데이터, 중복 파일, 매우 큰 파일의 양을 파악하여 일부 파일을 제거할지 아니면 비용이 덜 드는 개체 스토리지로 계층화할지 결정할 수 있도록 도와줍니다.
+조직의 스토리지 리소스에 있는 데이터와 관련된 비용을 제어하세요.  NetApp Data Classification 시스템에서 오래된 데이터, 중복 파일, 매우 큰 파일의 양을 파악하여 일부 파일을 제거할지 아니면 비용이 덜 드는 개체 스토리지로 계층화할지 결정할 수 있도록 도와줍니다.
 
 여기부터 연구를 시작해야 합니다.  거버넌스 대시보드에서 추가 조사할 영역을 선택할 수 있습니다.
 
@@ -29,7 +29,7 @@ summary: 조직의 스토리지 리소스에 있는 데이터와 관련된 비�
 image:screenshot_compliance_governance_dashboard.png["데이터 분류 거버넌스 대시보드의 스크린샷입니다."]
 
 .단계
-. NetApp 콘솔 메뉴에서 *거버넌스 > 분류*를 선택합니다.
+. NetApp Console 메뉴에서 *거버넌스 > 분류*를 선택합니다.
 . *거버넌스*를 선택하세요.
 +
 거버넌스 대시보드가 나타납니다.

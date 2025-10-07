@@ -12,7 +12,7 @@ settings:
   langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: NetApp 데이터 분류 문서
+  - title: NetApp Data Classification 문서
     url: "/index.html"
   - title: 릴리스 노트
     entries:
@@ -90,7 +90,7 @@ sidebar:
       url: "/reference-instance-types.html"
     - title: 데이터 소스에서 수집된 메타데이터
       url: "/reference-collected-metadata.html"
-    - title: 데이터 분류에 로그인
+    - title: 데이터 분류에 로그인하세요
       url: "/reference-log-in-to-instance.html"
     - title: 데이터 분류 API
       url: "/api-classification.html"

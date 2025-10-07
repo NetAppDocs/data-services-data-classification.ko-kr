@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-log-in-to-instance.html 
 keywords: log in, data sense, classification 
-summary: 로그 파일에 액세스하거나 구성 파일을 편집하려면 NetApp 데이터 분류 시스템에 로그인해야 할 때가 있습니다. 
+summary: 로그 파일에 액세스하거나 구성 파일을 편집하려면 NetApp Data Classification 시스템에 로그인해야 할 때가 있습니다. 
 ---
-= NetApp 데이터 분류 시스템에 로그인하세요
+= NetApp Data Classification 시스템에 로그인하세요
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 로그 파일에 액세스하거나 구성 파일을 편집하려면 Ne
 
 
 [role="lead"]
-로그 파일에 액세스하거나 구성 파일을 편집하려면 NetApp 데이터 분류 시스템에 로그인해야 합니다.
+로그 파일에 액세스하거나 구성 파일을 편집하려면 NetApp Data Classification 시스템에 로그인해야 합니다.
 
 데이터 분류가 사내 Linux 머신이나 클라우드에 배포한 Linux 머신에 설치된 경우 구성 파일과 스크립트에 직접 액세스할 수 있습니다.
 

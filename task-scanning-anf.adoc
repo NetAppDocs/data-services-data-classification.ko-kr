@@ -4,7 +4,7 @@ permalink: task-scanning-anf.html
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
 summary: Azure NetApp Files 에 대한 데이터 분류를 시작하려면 몇 가지 단계를 완료하세요. 
 ---
-= NetApp 데이터 분류를 사용하여 Azure NetApp Files 볼륨 스캔
+= NetApp Data Classification 사용하여 Azure NetApp Files 볼륨 스캔
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: Azure NetApp Files 에 대한 데이터 분류를 시작하려면 몇 �
 
 
 [role="lead"]
-Azure NetApp Files 에 대한 NetApp 데이터 분류를 시작하려면 몇 가지 단계를 완료하세요.
+Azure NetApp Files 에 대한 NetApp Data Classification 시작하려면 몇 가지 단계를 완료하세요.
 
 
 
 == 검사하려는 Azure NetApp Files 시스템을 검색하세요.
 
-검사하려는 Azure NetApp Files 시스템이 시스템으로 NetApp 콘솔에 아직 없는 경우link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["시스템 페이지에 추가하세요"^] .
+검사하려는 Azure NetApp Files 시스템이 시스템으로 NetApp Console 에 아직 없는 경우link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["시스템 페이지에 추가하세요"^] .
 
 
 
@@ -118,7 +118,7 @@ image:screenshot_compliance_volume_details.gif["스캔 구성의 세부 정보 �
 
 TIP: 시스템에 추가된 새 볼륨은 제목 영역에서 *지도* 또는 *지도 및 분류* 설정을 지정한 경우에만 자동으로 스캔됩니다.  제목 영역에서 *사용자 지정* 또는 *끄기*로 설정하면 시스템에 추가하는 각 새 볼륨에 대해 매핑 및/또는 전체 스캐닝을 활성화해야 합니다.
 
-기본적으로 페이지 상단의 *"쓰기 속성" 권한이 없는 경우 검사* 스위치는 비활성화되어 있습니다.  즉, 데이터 분류에 CIFS에서 쓰기 속성 권한이 없거나 NFS에서 쓰기 권한이 없는 경우, 데이터 분류는 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없기 때문에 시스템이 파일을 검사하지 않습니다.  마지막 접근 시간이 재설정되어도 상관없다면, 스위치를 켜면 권한에 관계없이 모든 파일이 검사됩니다. link:reference-collected-metadata.html#last-access-time-timestamp["자세히 알아보기"^] .
+기본적으로 페이지 상단의 *"쓰기 속성" 권한이 없는 경우 검사* 스위치는 비활성화되어 있습니다.  즉, 데이터 분류에 CIFS에서 쓰기 속성 권한이 없거나 NFS에서 쓰기 권한이 없는 경우, 데이터 분류는 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없기 때문에 시스템이 파일을 검사하지 않습니다.  마지막 접근 시간이 재설정되어도 상관없다면 스위치를 켜면 권한에 관계없이 모든 파일이 검사됩니다. link:reference-collected-metadata.html#last-access-time-timestamp["자세히 알아보기"^] .
 
 image:screenshot_volume_compliance_selection.png["개별 볼륨의 스캐닝을 활성화하거나 비활성화할 수 있는 구성 페이지의 스크린샷입니다."]
 

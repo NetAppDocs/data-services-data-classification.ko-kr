@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: api-classification.html 
 keywords: api, rest, authorization, data classification, data sense, swagger 
-summary: 웹 UI를 통해 제공되는 NetApp 데이터 분류 기능은 API를 통해서도 사용할 수 있습니다. 
+summary: 웹 UI를 통해 제공되는 NetApp Data Classification 기능은 API를 통해서도 사용할 수 있습니다. 
 ---
-= NetApp 데이터 분류 API
+= NetApp Data Classification API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 웹 UI를 통해 제공되는 NetApp 데이터 분류 기능은 API를 
 
 
 [role="lead"]
-웹 UI를 통해 제공되는 NetApp 데이터 분류 기능은 REST API를 통해서도 사용할 수 있습니다.
+웹 UI를 통해 제공되는 NetApp Data Classification 기능은 REST API를 통해서도 사용할 수 있습니다.
 
 UI의 탭에 해당하는 데이터 분류에는 4가지 범주가 정의되어 있습니다.
 

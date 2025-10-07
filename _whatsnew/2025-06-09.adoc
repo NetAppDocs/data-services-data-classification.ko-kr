@@ -9,7 +9,7 @@
 이 BlueXP classification 릴리스에는 다음이 포함됩니다.
 
 .거버넌스 대시보드의 업데이트 시간이 개선되었습니다.
-거버넌스 대시보드의 개별 구성 요소에 대한 업데이트 시간이 개선되었습니다.  다음 표는 각 구성 요소의 업데이트 빈도를 보여줍니다.
+거버넌스 대시보드의 개별 구성 요소에 대한 업데이트 시간이 개선되었습니다. 다음 표는 각 구성 요소의 업데이트 빈도를 보여줍니다.
 
 [cols="1,1"]
 |===
@@ -57,4 +57,4 @@
 BlueXP 분류의 성능, 메모리 소비, 보안을 개선하기 위해 개선 사항이 적용되었습니다.
 
 .버그 수정
-Redis가 업그레이드되어 BlueXP classification 의 안정성이 향상되었습니다.  BlueXP classification 이제 Elasticsearch를 사용하여 스캔 중 파일 수 보고의 정확도를 향상시킵니다.
+Redis가 업그레이드되어 BlueXP classification 의 안정성이 향상되었습니다. BlueXP classification 이제 Elasticsearch를 사용하여 스캔 중 파일 수 보고의 정확도를 향상시킵니다.

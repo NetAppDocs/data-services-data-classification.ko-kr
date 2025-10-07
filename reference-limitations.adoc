@@ -4,7 +4,7 @@ permalink: reference-limitations.html
 keywords: limitations, data sense, classification, scan shares 
 summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요. 
 ---
-= NetApp 데이터 분류의 알려진 제한 사항
+= NetApp Data Classification 의 알려진 제한 사항
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 
 
 
-== NetApp 데이터 분류 비활성화 옵션
+== NetApp Data Classification 비활성화 옵션
 
 2023년 12월(버전 1.26.6) 릴리스에서는 다음 옵션이 제거되었습니다.
 
