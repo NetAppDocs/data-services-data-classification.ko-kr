@@ -42,14 +42,16 @@ sidebar:
       entries:
       - title: 데이터 소스 개요 스캔
         url: "/task-scanning-overview.html"
-      - title: Azure NetApp Files
-        url: "/task-scanning-anf.html"
       - title: ONTAP 용 Amazon FSx
         url: "/task-scanning-fsx.html"
+      - title: Azure NetApp Files
+        url: "/task-scanning-anf.html"
       - title: Cloud Volumes ONTAP 및 온프레미스 ONTAP
         url: "/task-getting-started-compliance.html"
       - title: 데이터베이스 스키마
         url: "/task-scanning-databases.html"
+      - title: Google Cloud NetApp Volumes
+        url: "/task-scan-google-cloud.html"
       - title: 파일 공유
         url: "/task-scanning-file-shares.html"
       - title: StorageGRID

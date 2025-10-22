@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
-summary: BlueXP classification 의 새로운 기능을 알아보세요. 
+summary: NetApp Data Classification 의 새로운 기능을 알아보세요. 
 ---
 = NetApp Data Classification 의 새로운 기능
 :hardbreaks:
@@ -53,7 +53,7 @@ NetApp Console 엔터프라이즈급 온프레미스 및 클라우드 환경 전
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["데이터 조사"] .
 
 .Google Cloud NetApp Volumes 지원
-데이터 분류는 이제 Google Cloud NetApp Volumes 에서 스캐닝을 지원합니다. NetApp Console 에서 Google Cloud NetApp Volumes 쉽게 추가하여 원활한 데이터 스캔 및 분류를 수행할 수 있습니다.
+데이터 분류는 이제 Google Cloud NetApp Volumes 에서 스캐닝을 지원합니다. NetApp Console 에서 Google Cloud NetApp Volumes 쉽게 추가하여 원활한 데이터 스캔 및 분류를 수행할 수 있습니다. 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-scan-google-cloud.html["Google Cloud NetApp Volumes 스캔"^].
 
 
 
