@@ -1093,7 +1093,6 @@
   <block id="6faa7316e918356238e87a35180d5a8c" category="summary">귀하의 조직 내 개인 데이터(PII) 및 민감한 개인 데이터(SPII)에 대한 세부 정보를 확인하여 개인 데이터를 제어하세요.  데이터 분류가 데이터에서 찾은 범주와 파일 유형을 검토하여 가시성을 얻을 수도 있습니다.</block>
   <block id="bedf3c3b5f85b6881b51c82e987aacb6" category="doc">NetApp Data Classification 사용하여 조직에 저장된 개인 데이터에 대한 규정 준수 세부 정보를 확인하세요.</block>
   <block id="b150bdb391d0c1a200595690e12ccafc" category="paragraph">귀하의 조직 내 개인 데이터(PII) 및 민감한 개인 데이터(SPII)에 대한 세부 정보를 확인하여 개인 데이터를 제어하세요.  NetApp Data Classification 데이터에서 찾은 범주와 파일 유형을 검토하여 가시성을 얻을 수도 있습니다.</block>
-  <block id="0250718154d4bff43956fd8d158badc3" category="admonition">파일 수준 규정 준수 세부 정보는 전체 분류 검사를 수행한 경우에만 사용할 수 있습니다.  매핑 전용 스캔에서는 파일 수준 세부 정보가 생성되지 않습니다.</block>
   <block id="df3a98c599157e875757f5737769d82a" category="paragraph">기본적으로 데이터 분류 대시보드에는 모든 시스템과 데이터베이스에 대한 규정 준수 데이터가 표시됩니다.  일부 시스템에 대한 데이터만 보려면 해당 시스템을 선택하세요.</block>
   <block id="77c3a6438f91ef76936e32e87dfaf3e0" category="inline-image-macro">데이터 분류 대시보드의 스크린샷</block>
   <block id="6fb0e60704ddb660539546b0d73ee807" category="paragraph"><block ref="6fb0e60704ddb660539546b0d73ee807" category="inline-image-macro-rx" type="image"></block></block>
@@ -1101,7 +1100,6 @@
   <block id="6ea10a425f58f819d9e06c9f29ff141d" category="paragraph">데이터 조사 페이지에서 결과를 필터링하고 결과 보고서를 CSV 파일로 다운로드할 수 있습니다. 보다<block ref="70fd9e5a2e3fb16954088b6ec652d9bc" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
   <block id="f9643188d49ee294212ab09521305bdd" category="section-title">개인 정보가 포함된 파일 보기</block>
   <block id="dd1467728450c4a369282c49d1556c37" category="inline-link-macro">예를 들어, 신용카드 번호, 주민등록번호, 은행 계좌번호, 비밀번호 등이 있습니다.</block>
-  <block id="f2fb76fe772f38fe5964daae7588a806" category="paragraph">데이터 분류는 데이터 내의 특정 단어, 문자열, 패턴(정규식)을 자동으로 식별합니다. <block ref="9b071fdcbf97a615ac065063e71f58ca" category="inline-link-macro-rx"></block> 데이터 분류는 개별 파일, 디렉토리(공유 및 폴더) 내의 파일, 데이터베이스 테이블에서 이러한 유형의 정보를 식별합니다.</block>
   <block id="b3d4fb955e1630fd4184c8964a1f4fdb" category="inline-link-macro">사용자 정의 분류 만들기</block>
   <block id="4b760cb0a54b4c608b7deaa08d52f3c3" category="paragraph">귀하의 조직과 관련된 개인 데이터를 식별하기 위해 사용자 정의 검색어를 만들 수도 있습니다. 자세한 내용은 다음을 참조하세요. <block ref="702fa1a9e503f253a2dc3aea49d5216d" category="inline-link-macro-rx"></block> .</block>
   <block id="ff63178a8a067a8614bbbfdf75252bf4" category="inline-link-macro">개인정보 표</block>
@@ -1112,9 +1110,6 @@
   <block id="a57085e0d2cc8f29312af67916a9b6f6" category="inline-image-macro">개인 데이터 유형 옆에 있는 조사 결과 아이콘을 선택할 수 있는 개인 파일 대화 상자의 스크린샷입니다.</block>
   <block id="25bacb716a6ef90884a5d3ec138fabdf" category="paragraph"><block ref="25bacb716a6ef90884a5d3ec138fabdf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c958130fa0d53d18dee7cca66d9897e3" category="list-text">특정 파일에 대한 세부 정보를 검색, 정렬, 확장하여 데이터를 조사하고, *조사 결과* 화살표를 선택하여 가려진 정보를 확인하거나 파일 목록을 다운로드합니다.</block>
-  <block id="2e4a987846fa1e715c9257dcbf994dcc" category="paragraph">다음 이미지는 디렉토리(공유 및 폴더)에서 발견된 개인 데이터를 보여줍니다.  *구조적* 탭에서는 데이터베이스에서 찾은 개인 데이터를 볼 수 있습니다.  *비정형* 탭에서는 파일 수준 데이터를 볼 수 있습니다.</block>
-  <block id="bfe1194df41f0cc26cfdf2f75931ac0d" category="inline-image-macro">조사 결과를 클릭한 후 파일에서 발견된 세부 정보의 스크린샷입니다.</block>
-  <block id="67524a6d2ea2d542c817bd783e914070" category="paragraph"><block ref="67524a6d2ea2d542c817bd783e914070" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5529cbafb2e0562120cf639c1f822fa6" category="inline-image-macro">조사 결과를 클릭한 후 디렉토리에서 찾은 자세한 정보의 스크린샷입니다.</block>
   <block id="886eca0ba693f7fa50ef2d9fe4c0887f" category="paragraph"><block ref="886eca0ba693f7fa50ef2d9fe4c0887f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2d46c3977746d66d8fa8c15b6bc98d6c" category="section-title">민감한 개인 데이터가 포함된 파일 보기</block>
@@ -1798,18 +1793,12 @@
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">보고서를 다운로드 중이라는 메시지가 대화 상자에 표시됩니다.</block>
   <block id="239c6b7b6b21f69be28a2d744f12415f" category="section-title">선택한 필터를 기반으로 저장된 쿼리를 만듭니다.</block>
   <block id="b5a2b88422c8fb1a7a5ed89ddab5b1a7" category="admonition">결과가 저장된 쿼리 페이지에 나타나기까지 최대 15분이 걸릴 수 있습니다.</block>
-  <block id="32d12a01915c880cd8562309834a784c" category="summary">필요한 경우 데이터 분류가 하나 이상의 시스템, 데이터베이스, 파일 공유 그룹, OneDrive 계정, Google Drive 계정 또는 SharePoint 계정을 검사하는 것을 중지할 수 있습니다.</block>
   <block id="1751b4ab0bbbd8808618f730b51665b7" category="doc">NetApp Data Classification 에서 데이터 소스 제거</block>
   <block id="7a80e4c6d3c7f343eb1d975a94ccb55a" category="paragraph">필요한 경우 NetApp Data Classification 하나 이상의 시스템, 데이터베이스 또는 파일 공유 그룹을 스캔하는 것을 중지할 수 있습니다.</block>
-  <block id="f24ba04e977ad9bfd6378f63b69efa7c" category="section-title">시스템에 대한 규정 준수 검사 비활성화</block>
-  <block id="972eb2452b4121fa7140b741a28cbc12" category="paragraph">검사를 비활성화하면 데이터 분류가 더 이상 시스템의 데이터를 검사하지 않고 데이터 분류 인스턴스에서 인덱싱된 규정 준수 인사이트를 제거합니다(시스템 자체의 데이터는 삭제되지 않음).</block>
   <block id="9c80e63be351b07c3f6d89a0342243d4" category="list-text">_구성_ 페이지에서 다음을 선택하세요.<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block> 시스템 행에 있는 버튼을 클릭한 다음 *데이터 분류 비활성화*를 클릭합니다.</block>
-  <block id="c833d2d4e46179fc93a0b799cbd59db1" category="admonition">시스템을 선택하면 서비스 패널에서 해당 시스템의 규정 준수 검사를 비활성화할 수도 있습니다.</block>
   <block id="ecf12691469c058016b0daa71b0a4aac" category="section-title">데이터 분류에서 데이터베이스 제거</block>
-  <block id="2a9d61a027886b5ccbe9404e94a24711" category="paragraph">특정 데이터베이스를 더 이상 스캔하지 않으려면 데이터 분류 인터페이스에서 해당 데이터베이스를 삭제하고 모든 스캔을 중지할 수 있습니다.</block>
   <block id="33a74c27f54695807d7c17126606dd9b" category="list-text">_구성_ 페이지에서 다음을 선택하세요.<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block> 데이터베이스 행에 있는 버튼을 클릭한 다음 *DB 서버 제거*를 클릭합니다.</block>
   <block id="ccc7b20c65cb0c5abb8132c10e481d16" category="section-title">데이터 분류에서 파일 공유 그룹 제거</block>
-  <block id="68e7dbd782620b5af1eafa4fded9329f" category="paragraph">더 이상 파일 공유 그룹에서 사용자 파일을 검사하지 않으려면 데이터 분류 인터페이스에서 파일 공유 그룹을 삭제하고 모든 검사를 중지할 수 있습니다.</block>
   <block id="c16ad793ec0335438d151ae80a49d06f" category="list-text">_구성_ 페이지에서 다음을 선택하세요.<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block> 파일 공유 그룹 행에 있는 버튼을 클릭한 다음 *파일 공유 그룹 제거*를 선택합니다.</block>
   <block id="3d04e82ecfc4b95e7eb8eaf404dffadc" category="inline-image-macro">스캔 구성 페이지에서 DB 서버 제거 버튼의 스크린샷입니다.</block>
   <block id="b695958db24ae26377f1c2e3a62b14eb" category="paragraph"><block ref="b695958db24ae26377f1c2e3a62b14eb" category="inline-image-macro-rx" type="image"></block></block>
@@ -1925,7 +1914,6 @@
   <block id="975a926a0acffc9710e8ecd51beec54b" category="inline-image-macro">데이터베이스를 식별할 수 있는 DB 서버 추가 페이지의 스크린샷입니다.</block>
   <block id="7c6692b3993d10f33b7ccf14b4d921b5" category="paragraph"><block ref="7c6692b3993d10f33b7ccf14b4d921b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="65cc8158f6711bb49f118b7acdf2a0be" category="paragraph">데이터베이스가 시스템 목록에 추가되었습니다.</block>
-  <block id="0dacbfa35e4a190378a78ef8c1f6a644" category="section-title">데이터베이스 스키마에 대한 규정 준수 검사 활성화 및 비활성화</block>
   <block id="b7a17432eb09c32a574991d9b6b0be00" category="paragraph">언제든지 스키마 전체 스캐닝을 중지하거나 시작할 수 있습니다.</block>
   <block id="bee9dc960933af9ecc3b6f30878d28e4" category="admonition">데이터베이스 스키마에 대해 매핑 전용 스캔을 선택하는 옵션은 없습니다.</block>
   <block id="64f99cdcf52c853ffbb49b495c84036b" category="list-text">구성 페이지에서 구성하려는 데이터베이스에 대한 *구성* 버튼을 선택합니다.</block>
@@ -1934,7 +1922,6 @@
   <block id="b1f7c7e36d5ee01af131dd25c658e41f" category="list-text">슬라이더를 오른쪽으로 움직여 검사할 스키마를 선택합니다.</block>
   <block id="cc939570e2fbb3d7e526d9e3e757a5f0" category="inline-image-macro">스캔할 스키마를 선택할 수 있는 스캔 구성 페이지의 스크린샷입니다.</block>
   <block id="46e57bba2892a9df10ae0b7ae9e43f45" category="paragraph"><block ref="46e57bba2892a9df10ae0b7ae9e43f45" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e6fdece27945197e38c908c70523618d" category="paragraph">데이터 분류는 활성화된 데이터베이스 스키마를 스캔하기 시작합니다.  **구성** 메뉴로 이동한 다음 **시스템 구성**을 선택하면 초기 검사의 진행 상황을 추적할 수 있습니다.  각 스캔의 진행 상황은 진행률 표시줄로 표시됩니다.  진행률 표시줄 위에 마우스를 올려 놓으면 볼륨의 전체 파일 대비 검사된 파일 수를 확인할 수 있습니다.  오류가 있는 경우 오류는 상태 열에 표시되고 오류를 수정하는 데 필요한 작업도 함께 표시됩니다.</block>
   <block id="932e89f9a0afb86f1dbbbe9b3df22cd0" category="paragraph">데이터 분류는 하루에 한 번씩 데이터베이스를 스캔합니다. 데이터베이스는 다른 데이터 소스처럼 지속적으로 스캔되지 않습니다.</block>
   <block id="e30d9ca93fc0fd537332d2e38acec91a" category="summary">Data Classification을 사용하여 NetApp NFS 또는 CIFS가 아닌 파일 공유를 직접 스캔하려면 몇 가지 단계를 완료하세요.  이러한 파일 공유는 온프레미스나 클라우드에 있을 수 있습니다.</block>
   <block id="0f72b70bfac03431d35b47a72230f8c2" category="doc">NetApp Data Classification 사용하여 파일 공유 스캔</block>
@@ -1967,7 +1954,6 @@
   <block id="e80b5dfbb6519cb4346daba78481ae2e" category="list-text">파일 공유에 대한 전체 검사를 활성화하려면 *매핑 및 분류*를 선택하세요.</block>
   <block id="6bfd17d888fc4197713ca925797fb9c5" category="list-text">파일 공유에서 스캐닝을 비활성화하려면 *끄기*를 선택하세요.</block>
   <block id="7dddb69b6a0edfdc36d8b02a6d9df2ce" category="inline-link-macro">데이터 분류의 데이터 소스에서 수집된 메타데이터</block>
-  <block id="0d504ad5d6661bc349e04cc645aee29e" category="admonition">기본적으로 페이지 상단의 *"쓰기 속성" 권한이 없는 경우 검사* 스위치는 비활성화되어 있습니다.  즉, 데이터 분류에 CIFS에서 쓰기 속성 권한이 없거나 NFS에서 쓰기 권한이 없는 경우, 데이터 분류는 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없기 때문에 시스템은 파일을 검사하지 않습니다.  + "쓰기 속성" 권한이 없는 경우 검사*를 *켜기*로 전환하면 검사에서 마지막으로 액세스한 시간을 재설정하고 권한에 관계없이 모든 파일을 검사합니다.  + 마지막으로 액세스한 타임스탬프에 대해 자세히 알아보려면 다음을 참조하세요.<block ref="4111f68b8172bf2a11dc2f4f2bf1638d" category="inline-link-macro-rx"></block> .</block>
   <block id="6fd2d8d813fca5453b27470ce0140b6e" category="inline-xref-macro">스캐닝 진행 상황을 추적하세요</block>
   <block id="449d5e7cbe79f73cd89251e014e63c5d" category="paragraph">데이터 분류는 추가한 파일 공유에 있는 파일의 스캔을 시작합니다.  당신은 할 수 있습니다<block ref="49703064e6182ae52c2dba4f03d70acb" category="inline-xref-macro-rx"></block> **대시보드**에서 검사 결과를 확인하세요.</block>
   <block id="20a9fbab57f89c185c5017371353fc11" category="admonition">Kerberos 인증을 사용하는 CIFS 구성에 대한 스캔이 성공적으로 완료되지 않으면 **구성** 탭에서 오류를 확인하세요.</block>
@@ -1981,14 +1967,11 @@
   <block id="37930ddda6375efa5dff13cff9b3134c" category="list-text">인증 방법을 선택하세요: **NTLM** 또는 **Kerberos**.</block>
   <block id="1fe8e9edee1eb819b2183f754c26e179" category="list-text">Active Directory **사용자 이름**과 **암호**를 입력합니다.</block>
   <block id="3a6b529abf055bb666a3d0f7b1f4056a" category="list-text">**저장**을 선택하여 프로세스를 완료하세요.</block>
-  <block id="f7066b9bcef508a56d9d043a9fb1fe1d" category="list-title">규정 준수 검사에 파일 공유 추가</block>
   <block id="ad0577638876c42601046d9f6255f464" category="list-text">**+ 공유 추가**를 선택하세요.</block>
   <block id="3af4ae7b28ddfe38307ff8527d9da313" category="paragraph">이미 구성한 프로토콜에 파일 공유를 추가하는 경우 변경할 필요가 없습니다.</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">전제 조건</block>
-  <block id="61cfa51582cec46d576d45cd093d79ef" category="paragraph">두 번째 프로토콜을 사용하여 파일 공유를 추가하는 경우 다음에서 자세히 설명한 대로 인증을 올바르게 구성했는지 확인하십시오.<block ref="aaf48cddad89107947ab6e7eca766e41" category="inline-link-macro-rx"></block> .</block>
   <block id="4459627c70285484d5cdd635a0dc2851" category="list-text">형식을 사용하여 검사하려는 파일 공유를 추가합니다(줄당 파일 공유 하나).<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block> .</block>
   <block id="dadf1d57ce39c4b00e52377a9d1d4fd7" category="list-text">**계속**을 선택하여 파일 공유 추가를 완료합니다.</block>
-  <block id="0eb30c84638dc32a52a08e70a70b2a55" category="list-title">규정 준수 검사에서 파일 공유 제거</block>
   <block id="673556dfdd8f6028bacdc57618e6a2fc" category="list-text">파일 공유를 제거할 시스템을 선택하세요.</block>
   <block id="f76618a8e4af059632c87ab1f949bbe1" category="list-text">*구성*을 선택하세요.</block>
   <block id="7ce65bddfd6fa76c1434a83bb91b5c59" category="list-text">구성 페이지에서 작업을 선택하세요.<block ref="9599256bd913e17dd34fce684015b2f9" category="inline-image-macro-rx" type="image"></block> 제거하려는 파일 공유에 대해.</block>
@@ -1997,7 +1980,6 @@
   <block id="b42fc0af753e0ff8c5de1ac5d8dfe183" category="list-text">**구성** 메뉴를 선택하세요.</block>
   <block id="84b821970ecbb0174dcf872c53a41c61" category="list-text">**시스템 구성**을 선택하세요.</block>
   <block id="4dab3403a8ef3e75300fdb00c849b967" category="list-text">저장소의 경우, 검사 진행률 열을 확인하여 상태를 확인하세요.</block>
-  <block id="ead021602fced47069d7dd9807d4cc58" category="summary">NetApp Data Classification 사용하여 Amazon FSx for ONTAP 볼륨 스캔을 시작하려면 몇 가지 단계를 완료하세요.</block>
   <block id="59e1dcfd3e173c8343f739b2b614df5b" category="doc">NetApp Data Classification 사용하여 Amazon FSx 에서 ONTAP 볼륨 스캔</block>
   <block id="36f0a71e9bee5a8dc762d73b5add2f4c" category="list-text">데이터 분류를 배포하고 관리하려면 AWS에서 활성 콘솔 에이전트가 필요합니다.</block>
   <block id="6bd47121e87da35c1c6a91d9e139c7e7" category="list-text">시스템을 생성할 때 선택한 보안 그룹은 데이터 분류 인스턴스의 트래픽을 허용해야 합니다.  FSx for ONTAP 파일 시스템에 연결된 ENI를 사용하여 연관된 보안 그룹을 찾고 AWS Management Console을 사용하여 편집할 수 있습니다.</block>
@@ -2014,7 +1996,6 @@
   <block id="0fcb706116784d393e130e46263f6513" category="paragraph">FSx for ONTAP 볼륨에 대한 데이터 분류를 활성화할 수 있습니다.</block>
   <block id="8b65644c82c9ff63e2837ffd13955343" category="list-text">NetApp Console 에서 *거버넌스 &gt; 분류*를 선택합니다.</block>
   <block id="27462f4f526cf4cc66a79a05b8b16d3d" category="paragraph"><block ref="27462f4f526cf4cc66a79a05b8b16d3d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1f7853c0557afea9514ce9a1acd1d091" category="paragraph">데이터 분류는 시스템에서 선택한 볼륨에 대한 스캔을 시작합니다.  데이터 분류가 초기 스캔을 완료하는 즉시 규정 준수 대시보드에서 결과를 확인할 수 있습니다.  걸리는 시간은 데이터 양에 따라 다릅니다. 몇 분이나 몇 시간이 걸릴 수 있습니다.  **구성** 메뉴로 이동한 다음 **시스템 구성**을 선택하면 초기 검사의 진행 상황을 추적할 수 있습니다.  각 스캔의 진행 상황은 진행률 표시줄로 표시됩니다.  진행률 표시줄 위에 마우스를 올려 놓으면 볼륨의 전체 파일 대비 검사된 파일 수를 확인할 수 있습니다.</block>
   <block id="b7867613e8028dc8e311552eb7346350" category="paragraph">네트워킹, 보안 그룹 및 내보내기 정책을 확인하여 데이터 분류가 볼륨에 액세스할 수 있는지 확인하세요.</block>
   <block id="20bf35b225fc9945c8fa998e3fe1a308" category="paragraph">CIFS 볼륨에 액세스할 수 있도록 데이터 분류에 CIFS 자격 증명을 제공해야 합니다.</block>
   <block id="26df3c05a484f6dafaf2085e9f725f92" category="list-text">구성 페이지에서 *세부 정보 보기*를 선택하여 상태를 검토하고 오류를 수정하세요.</block>
@@ -2125,7 +2106,6 @@
   <block id="780ada7e88da33155d8e1741033fefa2" category="inline-image-macro">StorageGRID 서비스에 액세스하기 위해 값을 입력하는 대화 상자의 스크린샷입니다.</block>
   <block id="f0a329a1a31172f9c327937f7f02e88f" category="paragraph"><block ref="f0a329a1a31172f9c327937f7f02e88f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="690634a0e2d86617a916d6604a041d76" category="paragraph">StorageGRID 시스템 목록에 추가되었습니다.</block>
-  <block id="149bb086304a69799f52fb84d5e33370" category="section-title">StorageGRID 버킷에서 규정 준수 검사 활성화 및 비활성화</block>
   <block id="c0a8d0058a2dcc6d89286c21b353249b" category="paragraph">StorageGRID 에서 데이터 분류를 활성화한 후 다음 단계는 스캔할 버킷을 구성하는 것입니다.  데이터 분류는 해당 버킷을 검색하여 사용자가 만든 시스템에 표시합니다.</block>
   <block id="6054a341661a40b8d4ceca9b3794abb7" category="list-text">구성 페이지에서 StorageGRID 시스템을 찾으세요.</block>
   <block id="7d322931eb9196b6f20b43ad0525dc8c" category="list-text">StorageGRID 시스템 타일에서 *구성*을 선택합니다.</block>
@@ -2585,7 +2565,6 @@
   <block id="95a431ef24e5dfc79c56f963ac7152d6" category="paragraph">데이터 분류는 PDF 보고서를 생성합니다.</block>
   <block id="488e0d6ceb8ec3581068670e21c24460" category="list-text">CIFS를 사용하는 경우 CIFS 볼륨을 스캔할 수 있도록 Active Directory 자격 증명을 사용하여 데이터 분류를 제공합니다. 각 시스템에 대해 *CIFS 자격 증명 편집*을 선택하고 데이터 분류가 시스템의 CIFS 볼륨에 액세스하는 데 필요한 사용자 이름과 비밀번호를 입력합니다.</block>
   <block id="47bea0551af7a88193903676421a2884" category="paragraph">자격 증명을 올바르게 입력한 경우 모든 CIFS 볼륨이 성공적으로 인증되었음을 확인하는 메시지가 표시됩니다.</block>
-  <block id="d6031f6c8e1261817237e5395a82b07d" category="section-title">볼륨에서 규정 준수 검사를 활성화하거나 비활성화합니다.</block>
   <block id="5002a922d131391bac1c30df26fed3ac" category="summary">규정 준수 및 거버넌스 표준을 유지하려면 Google Cloud NetApp Volumes 시스템을 스캔하세요.</block>
   <block id="85e2307ed44638546f781d27f1748e91" category="doc">NetApp Data Classification 사용하여 Google Cloud NetApp Volumes 스캔</block>
   <block id="4227556560d7227155d186a336f967ba" category="paragraph">NetApp Data Classification 시스템으로서 Google Cloud NetApp Volumes 지원합니다.  Google Cloud NetApp Volumes 시스템을 스캔하는 방법을 알아보세요.</block>
@@ -2602,8 +2581,31 @@
   <block id="e1332040409adf9251afa1321cf23a20" category="list-text">Google Cloud NetApp Volumes 대한 볼륨이 포함된 각 네트워크와 데이터 분류 인스턴스 사이에 네트워크 연결이 있는지 확인하세요.</block>
   <block id="45da27524d791af6f1e571237da8df65" category="paragraph">검사하려는 Azure NetApp Files 시스템이 시스템으로 NetApp Console 에 아직 없는 경우<block ref="feb1b46dea58df1c0d569dc99576840c" category="inline-link-macro-rx"></block> .</block>
   <block id="8021d90ea4b4eaa60c6b67625b16c3ac" category="list-text">각 볼륨에 대한 스캐닝을 사용자 지정하려면 *또는 각 볼륨에 대한 스캐닝 유형 선택*을 선택한 다음 매핑하거나 매핑하고 분류하려는 볼륨을 선택합니다.</block>
-  <block id="afde9dfecafd1f2bf5ef9e57f63f9a3c" category="paragraph">보다<block ref="1f890962458e680b3a8ca61bbf2ebac4" category="inline-xref-macro-rx"></block> 자세한 내용은.</block>
   <block id="144c87632bc931491147f528950c078a" category="paragraph">데이터 분류는 시스템에서 선택한 볼륨에 대한 스캔을 시작합니다. 데이터 분류가 초기 스캔을 완료하면 규정 준수 대시보드에서 결과를 확인할 수 있습니다. 걸리는 시간은 데이터 양에 따라 다릅니다. 몇 분이나 몇 시간이 걸릴 수 있습니다. **구성** 메뉴로 이동한 다음 **시스템 구성**을 선택하면 초기 검사의 진행 상황을 추적할 수 있습니다. 데이터 분류에서는 각 스캔에 대한 진행률 표시줄이 표시됩니다.  볼륨에 있는 전체 파일 수에 대한 검사된 파일 수를 확인하려면 진행률 표시줄 위에 마우스를 올려놓으세요.</block>
   <block id="548327497cb41bdd13e0097d7dc46a2a" category="paragraph">자격 증명은 읽기 전용일 수 있으며, 관리자 자격 증명을 제공하면 데이터 분류에서 높은 권한이 필요한 모든 데이터를 읽을 수 있습니다. 자격 증명은 데이터 분류 인스턴스에 저장됩니다.</block>
   <block id="3449262b29ef380e61e714ff68b5d32c" category="list-text">구성 페이지에서 *세부 정보 보기*를 선택하여 각 CIFS 및 NFS 볼륨의 상태를 검토합니다.  필요한 경우 네트워크 연결 문제 등의 오류를 수정하세요.</block>
+  <block id="cd514ed653be2ae51991f51ded3f537c" category="admonition">파일 수준 규정 준수 세부 정보는 전체 분류 스캔을 수행한 경우에만 사용할 수 있습니다. 매핑 전용 스캔에서는 파일 수준 세부 정보가 생성되지 않습니다.</block>
+  <block id="7914c7314cd1487f85ca4e63aac4adda" category="paragraph">데이터 분류는 데이터 내의 특정 단어, 문자열, 패턴(정규식)을 자동으로 식별합니다. <block ref="8eea65c990c4a78489b8d3e4e6b97f4d" category="inline-link-macro-rx"></block>데이터 분류는 개별 파일, 디렉토리(공유 및 폴더) 내의 파일, 데이터베이스 테이블에서 이러한 유형의 정보를 식별합니다.</block>
+  <block id="3e5818fd29d048fcd92e901319015392" category="paragraph">다음 이미지는 디렉토리(공유 및 폴더)에서 발견된 개인 데이터를 보여줍니다. *구조적* 탭에서는 데이터베이스에서 찾은 개인 데이터를 볼 수 있습니다. *비정형* 탭에서는 파일 수준 데이터를 볼 수 있습니다.</block>
+  <block id="3c7277a39785ee38a40688e10e12e05f" category="inline-image-macro">'조사 결과'를 클릭한 후 파일에서 발견된 자세한 정보의 스크린샷입니다.</block>
+  <block id="c720fa8d3efc22da94c66e59bba84143" category="paragraph"><block ref="c720fa8d3efc22da94c66e59bba84143" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a801b1d929d4be2f53ad63a279f3d76" category="section-title">볼륨에서 스캔을 활성화하거나 비활성화합니다.</block>
+  <block id="0bc6951d2abddb002c7f04be15da0389" category="summary">필요한 경우 데이터 분류가 시스템, 데이터베이스 또는 파일 공유 그룹을 스캔하는 것을 중지할 수 있습니다.</block>
+  <block id="1e27313fe6835191d8609078072e8e0a" category="section-title">시스템 검사 비활성화</block>
+  <block id="03ee6bef68fb7d51c30b769ae5a4a40d" category="paragraph">검사를 비활성화하면 데이터 분류가 더 이상 시스템의 데이터를 검사하지 않으며 데이터 분류 인스턴스에서 인덱싱된 통찰력을 제거합니다.  시스템 자체의 데이터는 삭제되지 않습니다.</block>
+  <block id="d08c57af0bb12c6deeb47c1035f6ebfd" category="admonition">시스템을 선택하면 서비스 패널에서 시스템 검사를 비활성화할 수도 있습니다.</block>
+  <block id="1090c27e7274f80192fdb01a823bb6c7" category="paragraph">더 이상 특정 데이터베이스를 스캔할 필요가 없다면 데이터 분류 인터페이스에서 해당 데이터베이스를 삭제하고 모든 스캔을 중지할 수 있습니다.</block>
+  <block id="87a7c58f622f64c54d94dcf6131e8301" category="paragraph">더 이상 파일 공유 그룹에서 사용자 파일을 검사하지 않으려면 데이터 분류 인터페이스에서 파일 공유 그룹을 삭제하고 모든 검사를 중지할 수 있습니다.</block>
+  <block id="5671a8dc34db32b5b91ae95b40d2301d" category="section-title">볼륨에서 스캔 활성화 및 비활성화</block>
+  <block id="86e95ca158606e78121192465eaeabb7" category="paragraph">보다<block ref="686e1938325decfc2a79c67557fd799f" category="inline-xref-macro-rx"></block> 자세한 내용은.</block>
+  <block id="d8b681cac56dc69ce3433568af1a665a" category="section-title">데이터베이스 스키마에 대한 스캔 활성화 및 비활성화</block>
+  <block id="917b988c0adb3b0135615d421cf88938" category="paragraph">데이터 분류는 활성화된 데이터베이스 스키마를 스캔하기 시작합니다. **구성** 메뉴로 이동한 다음 **시스템 구성**을 선택하면 초기 검사의 진행 상황을 추적할 수 있습니다. 각 스캔의 진행 상황은 진행률 표시줄로 표시됩니다.  진행률 표시줄 위에 마우스를 올려 놓으면 볼륨에 있는 전체 파일 수에 대한 검사된 파일 수를 확인할 수 있습니다.  오류가 있는 경우 오류 수정에 필요한 작업과 함께 상태 열에 오류가 표시됩니다.</block>
+  <block id="07eed0901150316384032dc417d627a2" category="admonition">기본적으로 페이지 상단의 *"쓰기 속성" 권한이 없는 경우 검사* 스위치는 비활성화되어 있습니다. 즉, 데이터 분류에 CIFS에서 쓰기 속성 권한이 없거나 NFS에서 쓰기 권한이 없는 경우, 데이터 분류는 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없기 때문에 시스템은 파일을 검사하지 않습니다. + "쓰기 속성" 권한이 없는 경우 검사*를 *켜기*로 전환하면 검사에서 마지막으로 액세스한 시간을 재설정하고 권한에 관계없이 모든 파일을 검사합니다. + 마지막으로 액세스한 타임스탬프에 대해 자세히 알아보려면 다음을 참조하세요.<block ref="efbe79d0ae711b4cfcab53d208f81146" category="inline-link-macro-rx"></block> .</block>
+  <block id="08590bff640c2b2f21573d82cabbbf58" category="list-title">스캔에 파일 공유 추가</block>
+  <block id="cdf23675f1cc1c4c447126386d1ad999" category="paragraph">두 번째 프로토콜을 사용하여 파일 공유를 추가하는 경우 다음에서 자세히 설명한 대로 인증을 올바르게 구성했는지 확인하십시오.<block ref="aaf48cddad89107947ab6e7eca766e41" category="inline-link-macro-rx"></block> .</block>
+  <block id="41c35cf711634c651b9ce14c4c087e02" category="list-title">스캔에서 파일 공유 제거</block>
+  <block id="f7a456f89f201e8afb58ab4d822279e3" category="summary">NetApp Data Classification 사용하여 Amazon FSx for ONTAP 볼륨 스캔을 시작하려면 몇 가지 단계를 완료하세요.</block>
+  <block id="36f8a3fbb42c62950bf715fc90c03897" category="paragraph">NetApp Data Classification 사용하여 Amazon FSx for ONTAP 볼륨을 스캔하려면 몇 가지 단계를 완료하세요.</block>
+  <block id="020090d3590a2184408809832f12a6c5" category="paragraph">데이터 분류는 시스템에서 선택한 볼륨에 대한 스캔을 시작합니다. 데이터 분류가 초기 스캔을 완료하는 즉시 규정 준수 대시보드에서 결과를 확인할 수 있습니다. 걸리는 시간은 데이터 양에 따라 다릅니다. 몇 분이나 몇 시간이 걸릴 수 있습니다. **구성** 메뉴로 이동한 다음 **시스템 구성**을 선택하면 초기 검사의 진행 상황을 추적할 수 있습니다. 진행률 표시줄에서 각 검사의 진행 상황을 추적하세요. 진행률 표시줄 위에 마우스를 올리면 볼륨의 전체 파일 대비 검사된 파일 수를 확인할 수 있습니다.</block>
+  <block id="3eb0c5821ef609291db2736478cac268" category="section-title">StorageGRID 버킷에서 스캔 활성화 및 비활성화</block>
 </blocks>
