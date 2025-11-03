@@ -2609,4 +2609,5 @@
   <block id="020090d3590a2184408809832f12a6c5" category="paragraph">데이터 분류는 시스템에서 선택한 볼륨에 대한 스캔을 시작합니다. 데이터 분류가 초기 스캔을 완료하는 즉시 규정 준수 대시보드에서 결과를 확인할 수 있습니다. 걸리는 시간은 데이터 양에 따라 다릅니다. 몇 분이나 몇 시간이 걸릴 수 있습니다. **구성** 메뉴로 이동한 다음 **시스템 구성**을 선택하면 초기 검사의 진행 상황을 추적할 수 있습니다. 진행률 표시줄에서 각 검사의 진행 상황을 추적하세요. 진행률 표시줄 위에 마우스를 올리면 볼륨의 전체 파일 대비 검사된 파일 수를 확인할 수 있습니다.</block>
   <block id="3eb0c5821ef609291db2736478cac268" category="section-title">StorageGRID 버킷에서 스캔 활성화 및 비활성화</block>
   <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/</block>
+  <block id="a326c778205842f816c52ca7e63cae5d" category="cell">\ https://support.compliance.api.bluexp.netapp.com/</block>
 </blocks>
