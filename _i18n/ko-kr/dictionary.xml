@@ -162,7 +162,6 @@
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">BlueXP classification 사용하여 조직에 저장된 데이터를 조사하세요</block>
   <block id="e5ec12d2090a6862ed376344a123c006" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="fceb47647e62ca77cd0675b07a84c97b" category="inline-link-macro-rx"></block> .</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">버전 1.43</block>
-  <block id="bb4c36ac9f10bc64e16bd125cb997dcd" category="paragraph">이 데이터 분류 릴리스에는 다음이 포함됩니다.</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">분류 스캔 우선 순위 지정</block>
   <block id="4aff63c206df7556bccc48f3a5f50de4" category="paragraph">데이터 분류는 매핑 전용 스캔 외에도 맵 및 분류 스캔의 우선순위를 지정하는 기능을 지원하여 어떤 스캔을 먼저 완료할지 선택할 수 있습니다. Map &amp; Classify 스캔의 우선순위 지정은 스캔이 시작되기 전과 시작 중 지원됩니다. 검사가 진행되는 동안 검사의 우선순위를 지정하는 경우 매핑 검사와 분류 검사가 모두 우선순위가 지정됩니다.</block>
   <block id="f5d1ea19c8b9424efdf2f986ffd4074f" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="b9518738dcb31100f52b6bb549f809dc" category="inline-link-macro-rx"></block> .</block>
@@ -1735,8 +1734,6 @@
   <block id="293d9f51d90274c3eb6f28b88bdf5b95" category="list-text">사용자 또는 그룹 이름을 선택하면 조사 페이지가 새로 고쳐져 해당 사용자 또는 그룹이 액세스할 수 있는 모든 파일과 디렉터리를 볼 수 있습니다.</block>
   <block id="33f1c68834e7b02c4c8b3b9dc4f796d3" category="section-title">저장 시스템에서 중복 파일을 확인하세요</block>
   <block id="d353221e429d4e01e167115856394ba7" category="paragraph">저장 시스템에 중복된 파일이 저장되어 있는지 확인할 수 있습니다.  이 기능은 저장 공간을 절약할 수 있는 영역을 파악하는 데 유용합니다.  특정 권한이나 민감한 정보가 있는 특정 파일이 저장 시스템에 불필요하게 복제되지 않도록 하는 것도 좋습니다.</block>
-  <block id="6c8f43fb3633672815a9819858118a4c" category="paragraph">1MB 이상이거나 개인 정보나 민감한 개인 정보가 포함된 모든 파일(데이터베이스 제외)을 비교하여 중복이 있는지 확인합니다.</block>
-  <block id="1767c0592d0d28cdc0d9d1cd49e52537" category="paragraph">데이터 분류는 해싱 기술을 사용하여 중복 파일을 확인합니다.  어떤 파일이 다른 파일과 동일한 해시 코드를 가지고 있다면, 파일 이름이 다르더라도 그 파일이 정확히 중복된 파일이라는 것을 100% 확신할 수 있습니다.</block>
   <block id="54a7c4785d3d9e01ac8323dfbb334a4b" category="list-text">필터 창에서 "파일 크기"와 "중복"("중복 있음")을 선택하여 특정 크기 범위의 파일 중 사용자 환경에서 중복된 파일을 확인합니다.</block>
   <block id="4cf8fbbd65dba65137f55960d10a2882" category="list-text">선택적으로 중복 파일 목록을 다운로드하여 스토리지 관리자에게 보내면 어떤 파일을 삭제할지 결정할 수 있습니다.</block>
   <block id="3d860adc4ff3b65fee4d550f4bf11f96" category="list-text">선택적으로 중복된 파일을 삭제, 태그 지정 또는 이동할 수 있습니다.  작업을 수행할 파일을 선택한 다음, 적절한 작업을 선택합니다.</block>
@@ -1803,7 +1800,6 @@
   <block id="3d04e82ecfc4b95e7eb8eaf404dffadc" category="inline-image-macro">스캔 구성 페이지에서 DB 서버 제거 버튼의 스크린샷입니다.</block>
   <block id="b695958db24ae26377f1c2e3a62b14eb" category="paragraph"><block ref="b695958db24ae26377f1c2e3a62b14eb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a5776459fdb4aaf699684c46e41832a8" category="list-text">확인 대화 상자에서 *공유 그룹 삭제*를 선택합니다.</block>
-  <block id="032990a2d529d70fdd578fbef47579da" category="summary">NetApp Data Classification 사용하면 각 시스템과 데이터 소스에서 데이터가 스캔되는 방식을 관리할 수 있습니다.  "저장소" 기준으로 변경할 수 있습니다. 즉, 스캔하는 데이터 소스의 유형에 따라 각 볼륨, 버킷, 공유, 스키마, 사용자 등에 대해 변경할 수 있습니다.</block>
   <block id="de10ad3938875667137fa1bd63542e62" category="doc">저장소에 대한 NetApp Data Classification 검사 설정 변경</block>
   <block id="161ac81baea8064d1337229d7ba5864f" category="paragraph">각 시스템과 데이터 소스에서 데이터가 스캔되는 방식을 관리할 수 있습니다.  "저장소" 기준으로 변경할 수 있습니다. 즉, 스캔하는 데이터 소스의 유형에 따라 각 볼륨, 스키마, 사용자 등에 대해 변경할 수 있습니다.</block>
   <block id="e4723f182b426a80c2a46707ff02e15e" category="inline-link-macro">매핑 스캔 또는 매핑 및 분류 스캔</block>
@@ -1811,12 +1807,10 @@
   <block id="8f737a8c409b235d7a43941682f2a548" category="section-title">저장소의 스캔 상태 보기</block>
   <block id="4fc4ab7968a59d858d5c460fb64f3f3c" category="paragraph">NetApp Data Classification 각 시스템과 데이터 소스에 대해 스캔하는 개별 저장소(볼륨, 버킷 등)를 볼 수 있습니다.  또한 "매핑"된 항목 수와 "분류"된 항목 수를 확인할 수 있습니다.  전체 AI 식별이 모든 데이터에 대해 수행되므로 분류에 더 오랜 시간이 걸립니다.</block>
   <block id="e415c7da5280de793049e6b59816274d" category="paragraph">각 작업 환경의 스캐닝 상태는 구성 페이지에서 볼 수 있습니다.</block>
-  <block id="209f3dabc722accc7b4db77a133ef209" category="list-text">*초기화* (밝은 파란색 점): 지도 또는 분류 구성이 활성화되었습니다.  이는 "대기 대기열" 상태가 시작되기 전 몇 초 동안 나타납니다.</block>
   <block id="fbbc6bcf9c53aaad4b5476065f315bb1" category="list-text">*보류 대기열* (주황색 점): 스캔 작업이 스캔 대기열에 나열되기를 기다리고 있습니다.</block>
   <block id="ea7971f9c02e5fa9234d7af5cd0b34c7" category="list-text">*대기 중* (주황색 점): 작업이 스캐닝 대기열에 성공적으로 추가되었습니다.  시스템은 대기 순서가 되면 볼륨을 매핑하거나 분류하기 시작합니다.</block>
   <block id="478002532c0e9d87506035f8afb96c61" category="list-text">*실행 중* (녹색 점): 대기 중이던 스캔 작업이 선택한 저장소에서 활발하게 진행 중입니다.</block>
   <block id="1110cfca2e7c6a5f3e560597c03abeab" category="list-text">*완료* (녹색 점): 저장소 스캔이 완료되었습니다.</block>
-  <block id="da30b4408b5e1540ac02763204c943ad" category="list-text">*일시 중지* (회색 점): 스캐닝을 일시 중지하려면 "일시 중지" 옵션을 선택했습니다.  볼륨의 변화는 시스템에 표시되지 않지만, 스캔된 통찰력은 여전히 표시됩니다.</block>
   <block id="7eac8ad7bb67a204924dcc6a4113f103" category="list-text">*오류* (빨간색 점): 문제가 발생하여 검사를 완료할 수 없습니다.  작업을 완료해야 하는 경우, "필수 작업" 열 아래의 도구 설명에 오류가 표시됩니다.  그렇지 않으면 시스템은 "오류" 상태를 표시하고 복구를 시도합니다.  완료되면 상태가 변경됩니다.</block>
   <block id="4c5b4656410d347cf852f162490f2e15" category="list-text">*스캔 안 함*: 볼륨 구성이 "끄기"로 선택되어 시스템이 볼륨을 스캔하지 않습니다.</block>
   <block id="ae3859b6bf604c1664d2e6f3cb311c7f" category="inline-image-macro">시스템의 구성 버튼을 선택하는 방법을 보여주는 스크린샷입니다.</block>
@@ -1825,7 +1819,6 @@
   <block id="c794003b8b71c52d57b2d4a1adc1e35c" category="list-text">스캔 구성 페이지에서 모든 저장소의 스캔 설정을 확인합니다.</block>
   <block id="bf3aeefcdd65b55f2612004f45b7257f" category="inline-image-macro">버킷이 스캔되고 있는지 여부와 현재 스캔 상태를 보여주는 스크린샷입니다.</block>
   <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c6eaacb9399946d9d6cd4ced08320bf" category="list-text">_매핑 상태_ 열의 차트 위에 커서를 올려 놓으면 각 저장소(이 예에서는 버킷)에서 매핑 또는 분류되어야 하는 파일 수가 표시됩니다.</block>
   <block id="0e7c3262eaa1e23e978644965f5cfcad" category="section-title">저장소 스캐닝 유형 변경</block>
   <block id="af0f4aea5a591706300708a645397bc4" category="paragraph">구성 페이지에서 언제든지 시스템의 매핑 전용 스캔이나 매핑 및 분류 스캔을 시작하거나 중지할 수 있습니다.  매핑 전용 스캔에서 매핑 및 분류 스캔으로 변경할 수도 있고, 그 반대로도 가능합니다.</block>
   <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">데이터베이스는 매핑 전용 스캔으로 설정할 수 없습니다.  데이터베이스 스캐닝은 켜거나 끌 수 있습니다. 켜짐은 맵 및 분류와 동일합니다.</block>
@@ -1842,8 +1835,6 @@
   <block id="fbadcaa7267ae823837aff45d0dd7135" category="paragraph">더 이상 규정 준수 여부를 모니터링할 필요가 없으면 저장소(예: 볼륨) 스캔을 중지할 수 있습니다.  스캐닝을 "끄면" 됩니다.  스캐닝을 끄면 해당 볼륨에 대한 모든 인덱싱 및 정보가 시스템에서 제거되고, 데이터 스캐닝에 대한 요금 청구도 중단됩니다.</block>
   <block id="565a8976f79d6c76ecebff0fff08e98a" category="list-text">스캔 구성 페이지에서 *끄기*를 선택하여 특정 버킷에 대한 스캔을 중지합니다.</block>
   <block id="3ea62d70182e6d0c238badaaf224dff9" category="section-title">저장소 스캐닝 일시 중지 및 재개</block>
-  <block id="7445e229a53051f98f4c5bb878a24db4" category="paragraph">특정 콘텐츠 스캔을 일시적으로 중지하려면 저장소에서 스캔을 "일시 중지"할 수 있습니다.  스캐닝을 일시 중지하면 데이터 분류가 저장소의 변경 사항이나 추가 사항에 대해 향후 스캐닝을 수행하지 않지만, 현재 결과는 모두 시스템에 계속 표시됩니다.  스캔을 일시 중지해도 스캔한 데이터에 대한 요금 청구는 중단되지 않습니다. 왜냐하면 데이터는 여전히 존재하기 때문입니다.</block>
-  <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">언제든지 스캐닝을 "다시 시작할" 수 있습니다.</block>
   <block id="5ad3e303fff11348579be9fa7186a3bf" category="inline-image-macro">작업 아이콘</block>
   <block id="ceb02fa059b59b1ab250e24b23e83492" category="list-text">스캔 구성 페이지에서 작업을 선택하세요.<block ref="9599256bd913e17dd34fce684015b2f9" category="inline-image-macro-rx" type="image"></block> 상.</block>
   <block id="d7530ec47cb0f60bf26bff38cfcd4f1f" category="list-text">볼륨에 대한 스캐닝을 일시 중지하려면 *일시 중지*를 선택하고, 이전에 일시 중지했던 볼륨에 대한 스캐닝을 재개하려면 *다시 시작*을 선택합니다.</block>
@@ -1862,8 +1853,6 @@
   <block id="f3bf83f2c7aadc341ac1678567775abc" category="list-text">모든 볼륨을 매핑하려면 *모든 볼륨 매핑*을 선택하세요.</block>
   <block id="c854572c2f5a5368403f0ee57aa1bb29" category="list-text">모든 볼륨을 매핑하고 분류하려면 *모든 볼륨 매핑 및 분류*를 선택하세요.</block>
   <block id="9071a661cd1f2da138650405c0f6579b" category="list-text">각 볼륨에 대한 스캐닝을 사용자 지정하려면 *또는 각 볼륨에 대한 스캐닝 유형 선택*을 선택한 다음 매핑 및/또는 분류하려는 볼륨을 선택합니다.</block>
-  <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">볼륨에서 규정 준수 검사 활성화 및 비활성화</block>
-  <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">보다<block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block> 자세한 내용은.</block>
   <block id="fcb8c9e04be809b808c3a4762413c376" category="list-text">확인 대화 상자에서 *승인*을 선택합니다.</block>
   <block id="4a4bd4695f7ed79b6d5b23795d88275f" category="list-text">기본적으로 데이터 분류에 CIFS에서 쓰기 속성 권한이 없거나 NFS에서 쓰기 권한이 없는 경우 시스템은 볼륨의 파일을 검사하지 않습니다. 데이터 분류는 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없기 때문입니다.  마지막 액세스 시간이 재설정되어도 상관없다면 *또는 각 볼륨에 대한 스캐닝 유형을 선택하세요*를 선택하세요.  결과 페이지에는 데이터 분류가 권한에 관계없이 볼륨을 검사하도록 설정할 수 있는 설정이 있습니다.</block>
   <block id="2c0b9fc0f9659fa0f71a4337b2fc2043" category="inline-link-macro">이 데이터 분류 제한 사항에 대해 알아보세요</block>
@@ -2610,4 +2599,23 @@
   <block id="3eb0c5821ef609291db2736478cac268" category="section-title">StorageGRID 버킷에서 스캔 활성화 및 비활성화</block>
   <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ https://production.cloudflare.docker.com/</block>
   <block id="a326c778205842f816c52ca7e63cae5d" category="cell">\ https://support.compliance.api.bluexp.netapp.com/</block>
+  <block id="649b850f0bca668f5279a8b29028973a" category="paragraph">이 BlueXP 분류 릴리스에는 다음이 포함됩니다.</block>
+  <block id="73bb8d1c85014ba6981a002bd9fc9364" category="doc">버전 1.48</block>
+  <block id="d34f29080dba1970a613ab39b7166d0c" category="paragraph">이번 데이터 분류 릴리스에는 버그 수정, 보안 개선, 성능 향상이 포함되어 있습니다.</block>
+  <block id="8905ad2fb9f028e6bd28666015b4b50a" category="paragraph-title">향상된 스캔 진행 상황 명확성</block>
+  <block id="206c07a2ed5644be711186a00b2c6ae2" category="paragraph">이제 스캔 구성에 스캔 완료에 대한 향상된 통찰력이 포함되었습니다. 이전에는 스캔이 진행 중일 때만 진행률 표시줄이 표시되었습니다. 이제 스캔이 성공적으로 완료되었음을 확인하기 위해 완료 후에도 진행률 표시줄이 계속 표시됩니다. 매핑되고 스캔된 파일의 수도 볼 수 있습니다.</block>
+  <block id="dc9fb8f25cdf758c060f4782f41b0b0f" category="paragraph">스캔 설정에 대한 자세한 내용은 다음을 참조하세요. <block ref="19cf1405cd38e956788f418f2be34a68" category="inline-link-macro-rx"></block>.</block>
+  <block id="eb3cd7064baa457b68c9e6f4bc37005a" category="paragraph">데이터 분류는 다음과 같은 경우 모든 파일(데이터베이스 제외)의 중복을 비교합니다.</block>
+  <block id="0ca96e556827c0f5e25df8d0643f52ed" category="list-text">1MB 이상</block>
+  <block id="618a117288f96069f1cdbf0f4bded643" category="list-text">또는 개인 정보나 민감한 개인 정보가 포함되어 있습니다.</block>
+  <block id="4e1bd09c39656dc2fa486f909e1674e7" category="paragraph">데이터 분류는 해싱 기술을 사용하여 중복 파일을 확인합니다. 어떤 파일의 해시 코드가 다른 파일과 동일하다면, 파일 이름이 다르더라도 두 파일은 정확히 중복됩니다.</block>
+  <block id="b747cc8e0f2203370a4d444fcd5f79d5" category="summary">NetApp Data Classification 에서 시스템의 스캔 설정을 수정하는 방법을 알아보세요.</block>
+  <block id="e27531ce5aac82b10b93cae589814bb8" category="list-text">*초기화* (밝은 파란색 점): 지도 또는 분류 구성이 활성화되었습니다. 이는 "대기 대기열" 상태로 전환되기 직전에 나타납니다.</block>
+  <block id="fc0e8f9e94436c57e95a54ba5403b593" category="list-text">*일시 중지* (회색 점): 스캐닝을 일시 중지했습니다. 볼륨의 변화는 시스템에 표시되지 않지만, 스캔된 통찰력은 계속 사용할 수 있습니다.</block>
+  <block id="2b275cce14d9fa4c2f7c2b688661866a" category="list-text">검사하는 동안 _매핑 상태_ 열의 진행률 표시줄 위에 커서를 올려 놓으면 해당 저장소에 대해 매핑되거나 분류될 대기열의 파일 수를 볼 수 있습니다.</block>
+  <block id="97b34fd1037fad45811be37e77cc8ee3" category="paragraph">특정 콘텐츠 스캔을 일시적으로 중지하려면 저장소에서 스캔을 "일시 중지"할 수 있습니다. 스캐닝을 일시 중지하면 데이터 분류가 향후 저장소의 변경 사항이나 추가 사항에 대한 스캐닝을 수행하지 않습니다. 모든 현재 스캔 결과는 데이터 분류에서 계속 접근할 수 있습니다.</block>
+  <block id="dafb48c379602976f883f38decad477b" category="paragraph">스캔을 일시 중지하더라도 데이터가 시스템에 계속 남아 있기 때문에 요금이 청구되지 않습니다.</block>
+  <block id="76d0e11c30b5dcbca92c93eb0f33daec" category="paragraph">언제든지 스캐닝을 다시 시작할 수 있습니다.</block>
+  <block id="e018b56ef561ad538d1aca1d6fae6b6c" category="paragraph">보다<block ref="15dceb3fb9d388923f206ab616cd56a9" category="inline-xref-macro-rx"></block> 자세한 내용은.</block>
+  <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025년 11월 10일</block>
 </blocks>
