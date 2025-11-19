@@ -1153,9 +1153,7 @@
   <block id="77b5d2f21e25341a3f84901a513bf64c" category="inline-link">AWS에서 콘솔 에이전트 만들기</block>
   <block id="5dc317f5e4506014a6457cea6e36b5e8" category="inline-link">Azure에서 콘솔 에이전트 만들기</block>
   <block id="48c24d9c6f6e8d0b548116a386c62dbe" category="inline-link">GCP에서 콘솔 에이전트 만들기</block>
-  <block id="6cf086fd7e27f5587a9831d78af8c5b6" category="paragraph">아직 콘솔 에이전트가 없으면 하나 만드세요.  보다<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block> ,<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> , 또는<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block> .</block>
   <block id="02559d50684120805e2f264bdea2e4c1" category="inline-link">온프레미스에 콘솔 에이전트 설치</block>
-  <block id="1d9503a33ebe4a2fef4b7e15b1c066cd" category="paragraph">당신도 할 수 있습니다<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block> 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">둘</block>
   <block id="0e2ddd6334405299d1b4c44e894c9e78" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>필수 조건</block>
   <block id="339dbb3aad86454446f85f0a0a7f7606" category="paragraph">귀하의 환경이 전제 조건을 충족하는지 확인하세요.  여기에는 인스턴스에 대한 아웃바운드 인터넷 액세스, 포트 443을 통한 콘솔 에이전트와 데이터 분류 간의 연결 등이 포함됩니다.  &lt;&lt;필수 조건, 전체 목록 보기&gt;&gt;.</block>
@@ -1164,19 +1162,14 @@
   <block id="9f0ba00e2450c6e218eaa2d60c8c8ee7" category="paragraph">설치 마법사를 실행하여 클라우드에 데이터 분류 인스턴스를 배포합니다.</block>
   <block id="f3aee30a3a487c746572616e3f53dc9d" category="section-title">콘솔 에이전트 만들기</block>
   <block id="1f96813eb41ebd0c3dd5544a17de7743" category="inline-link">콘솔 기능에는 콘솔 에이전트가 필요합니다.</block>
-  <block id="6b9d8db86615c626426dac3240a23cd9" category="paragraph">아직 콘솔 에이전트가 없다면 클라우드 공급자에서 콘솔 에이전트를 만드세요.  보다<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block> 또는<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> , 또는<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block> .  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다.<block ref="92d08814b1d84d2ad7da2f290b48da3c" category="inline-link-rx"></block> 하지만 지금 당장 설정해야 하는 경우도 있습니다.</block>
   <block id="529213d44c3711e3260c35b12c2d2580" category="paragraph">특정 클라우드 공급자에 배포된 콘솔 에이전트를 사용해야 하는 몇 가지 시나리오가 있습니다.</block>
   <block id="cfea0a57313e8ccb9a39d4af86e20ca9" category="list-text">AWS의 Cloud Volumes ONTAP 또는 Amazon FSx for ONTAP 버킷에서 데이터를 스캔할 때 AWS의 콘솔 에이전트를 사용합니다.</block>
   <block id="5603e4788fdafa67a19bd479883972c6" category="list-text">Azure의 Cloud Volumes ONTAP 또는 Azure NetApp Files 에서 데이터를 스캔할 때 Azure의 콘솔 에이전트를 사용합니다.</block>
   <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">Azure NetApp Files 의 경우, 스캔하려는 볼륨과 동일한 지역에 배포해야 합니다.</block>
   <block id="2f3343ea56a236ac7df9fd71459af465" category="list-text">GCP에서 Cloud Volumes ONTAP 의 데이터를 스캔할 때 GCP의 콘솔 에이전트를 사용합니다.</block>
   <block id="e49d11048063c821e2d61e7d656352c8" category="paragraph">이러한 클라우드 콘솔 에이전트를 사용하면 온프레미스 ONTAP 시스템, NetApp 파일 공유 및 데이터베이스를 검사할 수 있습니다.</block>
-  <block id="db78195627af3608024c56bc521f4e79" category="paragraph">또한 다음을 수행할 수도 있습니다.<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block> 네트워크나 클라우드 내의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 온프레미스에 콘솔 에이전트를 설치하기로 선택할 수도 있습니다.</block>
-  <block id="7bf578ebca82bd39e9c3d25054af4c2e" category="paragraph">보시다시피, 사용해야 하는 상황이 있을 수 있습니다.<block ref="435c5800eb6a11448025dffd7c93a30f" category="inline-link-rx"></block> .</block>
   <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">정부 지역 지원</block>
   <block id="90476c1dd7be704eec72e67e38b53fff" category="paragraph">콘솔 에이전트가 정부 지역(AWS GovCloud, Azure Gov 또는 Azure DoD)에 배포된 경우 데이터 분류가 지원됩니다.  이런 방식으로 배포할 경우 데이터 분류에는 다음과 같은 제한이 있습니다.</block>
-  <block id="2f39ad11fa41d7d59b3cab13367c7762" category="inline-link">정부 지역에 콘솔 에이전트를 배포하는 방법에 대한 자세한 내용을 확인하세요.</block>
-  <block id="bb3d4632f65d269a14bed66aafbadc3f" category="paragraph"><block ref="7686ee2eb49af977f9d11ac7d13abc66" category="inline-link-rx"></block> .</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="section-title">필수 조건</block>
   <block id="f4df53c9081ea6340923013025dd19a1" category="paragraph">클라우드에 데이터 분류를 배포하기 전에 지원되는 구성이 있는지 확인하려면 다음 필수 구성 요소를 검토하세요.  클라우드에 데이터 분류를 배포하면 콘솔 에이전트와 동일한 서브넷에 위치하게 됩니다.</block>
   <block id="b3afed32875b4a54f2caed1b075ae9f5" category="list-text">데이터 분류에서 아웃바운드 인터넷 액세스 활성화</block>
@@ -1223,11 +1216,8 @@
   <block id="c686f695eeec04f8c4fe350e3159e65d" category="list-text">클라우드 제공업체의 vCPU 한도가 필요한 수의 코어를 갖춘 인스턴스를 배포할 수 있는지 확인하세요.  콘솔이 실행되는 지역에서 해당 인스턴스 패밀리에 대한 vCPU 제한을 확인해야 합니다. <block ref="5843cd637232ef0567b219de30d73e1e" category="inline-link-macro-rx"></block> .</block>
   <block id="1686a92132918f281d54cd603c1a36b8" category="paragraph">vCPU 제한에 대한 자세한 내용은 다음 링크를 참조하세요.</block>
   <block id="2b0807f353a429700271a9351867f260" category="inline-link">AWS 설명서: Amazon EC2 서비스 할당량</block>
-  <block id="33519b7a4b15f32177ee6e24629da21e" category="list-text"><block ref="33519b7a4b15f32177ee6e24629da21e" category="inline-link-rx"></block></block>
   <block id="e0d6a0bc9c3fe66c7c1b32f5fc7989c7" category="inline-link">Azure 설명서: 가상 머신 vCPU 할당량</block>
-  <block id="8a1f7f28105f0b82b916d62dd700157d" category="list-text"><block ref="8a1f7f28105f0b82b916d62dd700157d" category="inline-link-rx"></block></block>
   <block id="679c6b026096af4912243f7d0fe0c56a" category="inline-link">Google Cloud 문서: 리소스 할당량</block>
-  <block id="e0c1891bead6f9e2f86ecf6043345b62" category="list-text"><block ref="e0c1891bead6f9e2f86ecf6043345b62" category="inline-link-rx"></block></block>
   <block id="c35d8883ac588dc663c36bba3983f80b" category="section-title">클라우드에 데이터 분류 배포</block>
   <block id="d67ea3265ba6129264b22f13c6548a5b" category="paragraph">클라우드에 데이터 분류 인스턴스를 배포하려면 다음 단계를 따르세요.  콘솔 에이전트는 클라우드에 인스턴스를 배포한 다음 해당 인스턴스에 데이터 분류 소프트웨어를 설치합니다.</block>
   <block id="8b4cc0616cd3112ce97c78446249e336" category="inline-link-macro">대체 인스턴스 유형</block>
@@ -2618,4 +2608,14 @@
   <block id="76d0e11c30b5dcbca92c93eb0f33daec" category="paragraph">언제든지 스캐닝을 다시 시작할 수 있습니다.</block>
   <block id="e018b56ef561ad538d1aca1d6fae6b6c" category="paragraph">보다<block ref="15dceb3fb9d388923f206ab616cd56a9" category="inline-xref-macro-rx"></block> 자세한 내용은.</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025년 11월 10일</block>
+  <block id="71a65ebb3dc98cbee7a35c227b17a9d2" category="paragraph">아직 콘솔 에이전트가 없으면 하나 만드세요. 보다<block ref="d5bd3e4518f2136cfa2b600a07183cdd" category="inline-link-macro-rx"></block> ,<block ref="8ebe3bab1eaa1107c63d6c8e11f3037a" category="inline-link-macro-rx"></block> , 또는<block ref="289d689c55d02ef047cce8b209e7a21e" category="inline-link-macro-rx"></block> .</block>
+  <block id="546e9d6a80a7f338dcca2f303d981d2a" category="paragraph">당신도 할 수 있습니다<block ref="9335525199017a57f50f3ba5f9c0cf66" category="inline-link-macro-rx"></block> 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.</block>
+  <block id="3235c8cdd5c8a3cd602a2a8decbafa9f" category="paragraph">아직 콘솔 에이전트가 없다면 클라우드 공급자에서 콘솔 에이전트를 만드세요. 보다<block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block> 또는<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block> , 또는<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block> .  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다.<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block> 하지만 지금 당장 설정해야 하는 경우도 있습니다.</block>
+  <block id="b9b4d509fe9e3e77716d45d551ade64d" category="paragraph">또한 다음을 수행할 수도 있습니다.<block ref="66fb3c1341fae0e6f8743c669eb701a1" category="inline-link-rx"></block> 네트워크나 클라우드 내의 Linux 호스트에서. 온프레미스에 데이터 분류를 설치하려는 일부 사용자는 온프레미스에 콘솔 에이전트를 설치하기로 선택할 수도 있습니다.</block>
+  <block id="639d50c4b484797455c51239e20b934e" category="paragraph">사용해야 하는 상황이 있을 수 있습니다.<block ref="b343c1bfd082abc4974fc8258a47d6f6" category="inline-link-rx"></block> .</block>
+  <block id="b5a65ac63c30d18f443b0320e2b34254" category="inline-link-macro">정부 지역에 콘솔 에이전트를 배포하는 방법에 대해 알아보세요.</block>
+  <block id="eb77a4cd659fccb7fe8612f8103da806" category="paragraph"><block ref="c0002063ba45db75f04eb8bb8388dddc" category="inline-link-macro-rx"></block>.</block>
+  <block id="f918c4aee73951e03ee5c0a40ad23d9e" category="list-text"><block ref="f918c4aee73951e03ee5c0a40ad23d9e" category="inline-link-macro-rx"></block></block>
+  <block id="d642b544681a16a1135a35722647009f" category="list-text"><block ref="d642b544681a16a1135a35722647009f" category="inline-link-macro-rx"></block></block>
+  <block id="7a1e3b83c1962dc960f34e0a588fe7c6" category="list-text"><block ref="7a1e3b83c1962dc960f34e0a588fe7c6" category="inline-link-macro-rx"></block></block>
 </blocks>

@@ -26,10 +26,10 @@ NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["하나"]콘솔 에이전트 만들기
 [role="quick-margin-para"]
-아직 콘솔 에이전트가 없으면 하나 만드세요.  보다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] , https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .
+아직 콘솔 에이전트가 없으면 하나 만드세요. 보다link:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWS에서 콘솔 에이전트 만들기"^] ,link:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는link:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP에서 콘솔 에이전트 만들기"^] .
 
 [role="quick-margin-para"]
-당신도 할 수 있습니다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.
+당신도 할 수 있습니다link:https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"]필수 조건
 [role="quick-margin-para"]
@@ -43,7 +43,7 @@ NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할
 
 == 콘솔 에이전트 만들기
 
-아직 콘솔 에이전트가 없다면 클라우드 공급자에서 콘솔 에이전트를 만드세요.  보다 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에서 콘솔 에이전트 만들기"^] 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["GCP에서 콘솔 에이전트 만들기"^] .  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-a-connector-is-required["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
+아직 콘솔 에이전트가 없다면 클라우드 공급자에서 콘솔 에이전트를 만드세요. 보다 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWS에서 콘솔 에이전트 만들기"^] 또는 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP에서 콘솔 에이전트 만들기"^] .  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
 
 특정 클라우드 공급자에 배포된 콘솔 에이전트를 사용해야 하는 몇 가지 시나리오가 있습니다.
 
@@ -58,9 +58,9 @@ NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할
 
 이러한 클라우드 콘솔 에이전트를 사용하면 온프레미스 ONTAP 시스템, NetApp 파일 공유 및 데이터베이스를 검사할 수 있습니다.
 
-또한 다음을 수행할 수도 있습니다. https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크나 클라우드 내의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 온프레미스에 콘솔 에이전트를 설치하기로 선택할 수도 있습니다.
+또한 다음을 수행할 수도 있습니다. https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["온프레미스에 콘솔 에이전트 설치"^] 네트워크나 클라우드 내의 Linux 호스트에서. 온프레미스에 데이터 분류를 설치하려는 일부 사용자는 온프레미스에 콘솔 에이전트를 설치하기로 선택할 수도 있습니다.
 
-보시다시피, 사용해야 하는 상황이 있을 수 있습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#multiple-connectors["여러 콘솔 에이전트"] .
+사용해야 하는 상황이 있을 수 있습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#multiple-systems-and-agents["여러 콘솔 에이전트"^] .
 
 
 TIP: 데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 않습니다.  각 콘솔 에이전트는 500TiB의 데이터를 스캔하고 표시하는 것을 지원합니다. 500TiB 이상의 데이터를 스캔하려면link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["다른 콘솔 에이전트를 설치하세요"^] 그 다음에link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["다른 데이터 분류 인스턴스 배포"] .  + 콘솔 UI는 단일 커넥터의 데이터를 표시합니다.  여러 콘솔 에이전트의 데이터를 보는 방법에 대한 팁은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["여러 콘솔 에이전트와 함께 작업"^] .
@@ -71,7 +71,7 @@ TIP: 데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 
 
 콘솔 에이전트가 정부 지역(AWS GovCloud, Azure Gov 또는 Azure DoD)에 배포된 경우 데이터 분류가 지원됩니다.  이런 방식으로 배포할 경우 데이터 분류에는 다음과 같은 제한이 있습니다.
 
-https://docs.netapp.com/us-en/console-setup-admin/task-install-restricted-mode.html["정부 지역에 콘솔 에이전트를 배포하는 방법에 대한 자세한 내용을 확인하세요."^] .
+link:https://docs.netapp.com/us-en/console-setup-admin/task-install-restricted-mode.html["정부 지역에 콘솔 에이전트를 배포하는 방법에 대해 알아보세요."^].
 
 
 
@@ -179,9 +179,9 @@ vCPU 제한을 확인하세요:: 클라우드 제공업체의 vCPU 한도가 필
 --
 vCPU 제한에 대한 자세한 내용은 다음 링크를 참조하세요.
 
-* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS 설명서: Amazon EC2 서비스 할당량"^]
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure 설명서: 가상 머신 vCPU 할당량"^]
-* https://cloud.google.com/compute/quotas["Google Cloud 문서: 리소스 할당량"^]
+* link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS 설명서: Amazon EC2 서비스 할당량"^]
+* link:https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure 설명서: 가상 머신 vCPU 할당량"^]
+* link:https://docs.cloud.google.com/docs/quotas/view-manage["Google Cloud 문서: 리소스 할당량"^]
 
 
 --
