@@ -78,6 +78,8 @@ sidebar:
       url: "/task-managing-repo-scanning.html"
     - title: 규정 준수 보고서 생성
       url: "/task-generating-compliance-reports.html"
+    - title: 시스템 상태 모니터링
+      url: "/task-health-monitor.html"
   - title: 데이터 분류 관리
     entries:
     - title: 스캔에서 디렉토리 제외
