@@ -6,7 +6,6 @@
   <block id="9c2e66c7cc7479b8b57b9b1aa0225853" category="inline-link-macro">다른 데이터 분류 인스턴스 배포</block>
   <block id="322805244d3cfbc06b20be41ebf54d36" category="inline-link-macro">여러 콘솔 에이전트와 함께 작업</block>
   <block id="813ae9f2c1d0f0f27d01eeab67dcb1d7" category="paragraph">데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 않습니다.  각 콘솔 에이전트는 500TiB의 데이터를 스캔하고 표시하는 것을 지원합니다. 500TiB 이상의 데이터를 스캔하려면<block ref="d1d02c710daba5ea82985e30be7b0051" category="inline-link-macro-rx"></block> 그 다음에<block ref="b84ff2addee2a287f168d097865dda36" category="inline-link-macro-rx"></block> .  + 콘솔 UI는 단일 커넥터의 데이터를 표시합니다.  여러 콘솔 에이전트의 데이터를 보는 방법에 대한 팁은 다음을 참조하세요.<block ref="1fc134af43ed7d59a9071c288f242f94" category="inline-link-macro-rx"></block> .</block>
-  <block id="c459d0d5027551c8ad596d2701837012" category="list-text">다른 애플리케이션과 공유되는 호스트에서는 데이터 분류가 지원되지 않습니다. 호스트는 전용 호스트여야 합니다.</block>
   <block id="14246e64b6cc314c499299b0f4808cdb" category="list-text">사내 호스트 시스템을 구축할 때 데이터 분류를 통해 스캔하려는 데이터 세트의 크기에 따라 다음 시스템 크기 중에서 선택할 수 있습니다.</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">시스템 크기</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
@@ -2167,7 +2166,6 @@
   <block id="1be13928b8bb7dda39b97e766c497b4e" category="summary">Linux 호스트에 Data Classification을 수동으로 설치하기 전에 호스트에서 스크립트를 실행하여 Data Classification을 설치하는 데 필요한 모든 전제 조건이 충족되었는지 확인할 수 있습니다.  이 스크립트는 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서 실행할 수 있습니다.  호스트는 인터넷에 연결되어 있을 수도 있고, 인터넷에 접속할 수 없는 사이트에 있을 수도 있습니다.</block>
   <block id="16b2ab7371415f7c5eda355d2064fce6" category="doc">Linux 호스트가 NetApp Data Classification 설치할 준비가 되었는지 확인하세요.</block>
   <block id="1cd2484a5f2f38d921ddaabe75696063" category="paragraph">Linux 호스트에 NetApp Data Classification 수동으로 설치하기 전에 호스트에서 스크립트를 실행하여 Data Classification을 설치하는 데 필요한 모든 전제 조건이 충족되었는지 확인합니다.  이 스크립트는 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서 실행할 수 있습니다.  호스트는 인터넷에 연결되어 있을 수도 있고, 인터넷에 접속할 수 없는 사이트(_다크 사이트_)에 있을 수도 있습니다.</block>
-  <block id="d415bef0d68feb20309fa2927304dc79" category="paragraph">데이터 분류 설치 스크립트의 일부인 필수 테스트 스크립트도 있습니다.  여기에 설명된 스크립트는 데이터 분류 설치 스크립트를 실행하지 않고도 Linux 호스트를 독립적으로 검증하려는 사용자를 위해 특별히 설계되었습니다.</block>
   <block id="bf647454e36069fd16f1a7a35cf6a865" category="section-title">시작하기</block>
   <block id="88a37f7fbc3214e9153d0377c4db9ded" category="paragraph">다음 작업을 수행하게 됩니다.</block>
   <block id="241053df5606e0d439be4d3e91d4224b" category="list-text">선택적으로, 콘솔 에이전트가 설치되어 있지 않으면 설치하세요.  콘솔 에이전트를 설치하지 않고도 테스트 스크립트를 실행할 수 있지만, 스크립트는 콘솔 에이전트와 데이터 분류 호스트 머신 간의 연결을 확인합니다. 따라서 콘솔 에이전트를 설치하는 것이 좋습니다.</block>
@@ -2176,11 +2174,7 @@
   <block id="1dc78a625057b828e3c9842b6a68f0f6" category="list-text">모든 시스템에서 필요한 포트가 모두 활성화되어 있는지 확인하세요.</block>
   <block id="638dfa4dd42c802c871ad02b969b48ab" category="list-text">필수 테스트 스크립트를 다운로드하여 실행하세요.</block>
   <block id="e9baee2a4f78225d19d9d1c38a6df205" category="paragraph">데이터 분류를 설치하고 사용하려면 콘솔 에이전트가 필요합니다.  하지만 콘솔 에이전트 없이도 필수 구성 요소 스크립트를 실행할 수 있습니다.</block>
-  <block id="faf8844abf71745359231ca0c3b68035" category="paragraph">당신은 할 수 있습니다<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block> 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.  온프레미스에 데이터 분류를 설치하려는 일부 사용자는 온프레미스에 콘솔 에이전트를 설치하기로 선택할 수도 있습니다.</block>
-  <block id="da43836db702b2bca882af8c4b45817c" category="paragraph">클라우드 공급자 환경에서 콘솔 에이전트를 생성하려면 다음을 참조하세요.<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block> ,<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> , 또는<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block> .</block>
-  <block id="e6527c2694cae7b14a8260e681318eb1" category="paragraph">필수 구성 요소 스크립트를 실행할 때는 콘솔 에이전트 시스템의 IP 주소나 호스트 이름이 필요합니다.  사내에 콘솔 에이전트를 설치한 경우 이 정보를 얻을 수 있습니다.  콘솔 에이전트가 클라우드에 배포된 경우 콘솔에서 다음 정보를 찾을 수 있습니다. 도움말 아이콘을 선택한 다음 *지원*을 선택하고 *콘솔 에이전트*를 선택합니다.</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">호스트 요구 사항 확인</block>
-  <block id="5a35c7694b8f3829307dcde4ac0f06a9" category="paragraph">데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.</block>
   <block id="2e7d217490cca9f4436994c93bba3bd5" category="paragraph">추가 데이터 분류 호스트를 스캐너 노드로 사용하려는 경우(분산 모델에서), 이때 다음 규칙을 기본 시스템에 추가하세요.</block>
   <block id="810dff52416162c2f79a643152a575ba" category="admonition">인터넷 연결이 없는 사이트에 설치된 호스트 시스템에는 이 섹션이 필요하지 않습니다.</block>
   <block id="2c9810189a9662217559e6c599b47a67" category="cell">8080(TCP), 443(TCP), 80. 9000</block>
@@ -2650,4 +2644,13 @@
   <block id="6ece59dbc8c65f220411ec2ce290cfd6" category="paragraph"><block ref="6ece59dbc8c65f220411ec2ce290cfd6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025년 12월 8일</block>
   <block id="3b02682cee7334412169a53934571445" category="sidebar">시스템 상태 모니터링</block>
+  <block id="199728aa05786f9f41b3140d025353e2" category="list-text">데이터 분류는 전용 호스트에서 수행되어야 합니다. 호스트는 다른 애플리케이션이나 바이러스 백신과 같은 타사 소프트웨어와 공유할 수 없습니다.</block>
+  <block id="cc2f809338aeb90513fd5d335abc18b2" category="paragraph">데이터 분류 설치 스크립트에는 환경이 요구 사항을 충족하는지 확인하는 테스트 스크립트가 포함되어 있습니다. 설치 스크립트를 실행하기 전에 Linux 호스트의 준비 상태를 확인하기 위해 이 스크립트를 별도로 실행할 수 있습니다.</block>
+  <block id="ac5df91391e146d13ac61a909161e5e5" category="paragraph">당신은 할 수 있습니다 <block ref="b05bc1a82ba8aa93695b18917e23ffd8" category="inline-link-macro-rx"></block> 네트워크 내의 Linux 호스트 또는 클라우드의 Linux 호스트에서 실행할 수 있습니다. 콘솔 에이전트가 온프레미스에 설치되어 있는 경우 데이터 분류 기능도 온프레미스에 설치할 수 있습니다.</block>
+  <block id="6d69772abdf589ea602f8071cbf783ed" category="paragraph">클라우드 공급자 환경에서 콘솔 에이전트를 생성하려면 다음을 참조하세요.</block>
+  <block id="57d97cf09f86f81d75b459840c0ba8eb" category="list-text"><block ref="57d97cf09f86f81d75b459840c0ba8eb" category="inline-link-rx"></block></block>
+  <block id="a3ac13f6218d44f6f15beadc4d86502e" category="list-text"><block ref="a3ac13f6218d44f6f15beadc4d86502e" category="inline-link-rx"></block></block>
+  <block id="99472e84d7b0a6bdf69b082286217650" category="list-text"><block ref="99472e84d7b0a6bdf69b082286217650" category="inline-link-rx"></block></block>
+  <block id="6c1aa195a9abc1b402b9f2ded0d68124" category="paragraph">필수 조건 스크립트를 실행하려면 콘솔 에이전트 시스템의 IP 주소 또는 호스트 이름이 필요합니다. 콘솔 에이전트를 사내에 설치한 경우 이 정보를 확인할 수 있습니다. 콘솔 에이전트가 클라우드에 배포된 경우 콘솔에서 이 정보를 확인할 수 있습니다. 도움말 아이콘을 선택한 다음 *지원*을 선택하고, 에이전트 및 감사 섹션에서 *에이전트로 이동*을 선택하세요.</block>
+  <block id="7a49d8bea04f537bdd8b9c0dadc345aa" category="paragraph">데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항 및 소프트웨어 요구 사항을 충족하는 호스트에서 실행되어야 합니다.</block>
 </blocks>
