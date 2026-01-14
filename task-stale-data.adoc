@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: task-stale-data.html 
+keywords: support registration, register for support, support, nss account, add nss account, 
+summary: NetApp Data Classification 에서 오래된 데이터의 정의를 사용자 지정하여 조직의 요구 사항에 맞는 보고서를 생성할 수 있습니다. 
+---
+= NetApp Data Classification 에서 오래된 데이터 정의를 사용자 지정합니다.
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification 오래된 데이터를 식별하여 비용 절감 기회와 거버넌스 위험을 파악하는 데 도움을 줍니다. 오래된 데이터의 정의는 조직의 상황에 따라 다를 수 있으므로 데이터 분류에서 오래된 데이터를 정의하는 방식을 사용자 지정할 수 있습니다.
+
+오래된 데이터는 마지막 접근 시점 또는 마지막 수정 시점을 기준으로 정의할 수 있습니다. 기간 선택 범위는 6개월 전부터 10년 전까지입니다.
+
+기본적으로 데이터는 마지막 수정일로부터 3년이 지난 경우 오래된 것으로 간주됩니다.
+
+.오래된 데이터를 정의합니다.
+. 랜섬웨어 복원력에서 **구성**을 선택하십시오.
+. 구성 페이지에서 **오래된 데이터 정의** 제목까지 스크롤하십시오.
+. **파일 속성** 드롭다운 메뉴에서 *마지막 액세스* 또는 *마지막 수정* 시간을 기준으로 오래된 데이터를 정의할지 선택하세요.
+. 오래된 데이터 정의에 사용할 기간을 선택하세요.
++
+image:stale-data.png["오래된 데이터 정의 옵션의 스크린샷"]
+
+. **저장**을 선택하세요.
+
