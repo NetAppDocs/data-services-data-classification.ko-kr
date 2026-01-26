@@ -33,7 +33,7 @@ NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"]필수 조건
 [role="quick-margin-para"]
-귀하의 환경이 전제 조건을 충족하는지 확인하세요.  여기에는 인스턴스에 대한 아웃바운드 인터넷 액세스, 포트 443을 통한 콘솔 에이전트와 데이터 분류 간의 연결 등이 포함됩니다.  <<필수 조건, 전체 목록 보기>>.
+사용 환경이 필수 요구 사항을 충족하는지 확인하십시오. 여기에는 인스턴스의 아웃바운드 인터넷 액세스, Console 에이전트와 Data Classification 간의 포트 443을 통한 연결 등이 포함됩니다. <<필수 조건,전체 목록을 확인하세요>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["삼"]데이터 분류 배포
 [role="quick-margin-para"]
