@@ -586,29 +586,10 @@
   <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">필터 선택은 다음과 같습니다.</block>
   <block id="a66a4b74b70237f4c0cbce83303f74d2" category="list-text">"분류되지 않음 - 마지막 액세스 시간을 되돌릴 수 없음" - 쓰기 권한이 없어 분류되지 않은 파일을 표시합니다.</block>
   <block id="3856c8caab06eda61e5fe3e07996939a" category="list-text">"분류 및 업데이트된 마지막 액세스 시간" - 이는 분류된 파일을 보여주며, 데이터 분류는 마지막 액세스 시간을 원래 날짜로 재설정하지 못했습니다.  이 필터는 *"쓰기 속성" 권한이 없는 경우 검사*를 켜둔 환경에만 적용됩니다.</block>
-  <block id="eacfad7ae9e6aba32bdbef2948b1d628" category="summary">데이터베이스 스키마를 스캔할 때 NetApp Data Classification 에서 사용할 수 없는 몇 가지 기능이 있습니다.</block>
-  <block id="e6dbbec80e173d3f91cf2b227477d31c" category="doc">NetApp Data Classification 에서 지원되는 데이터베이스 기능과 지원되지 않는 데이터베이스 기능</block>
-  <block id="ad52d3616ca8f733ae442a642767c792" category="paragraph">데이터베이스 스키마를 스캔할 때 NetApp Data Classification 에서 사용할 수 없는 몇 가지 기능이 있습니다.  아래 목록을 확인하세요.</block>
-  <block id="990222def8053839fd07dd4a3c81e9dc" category="inline-link-macro">여기에 설명된 대로</block>
-  <block id="69ff49bbb82445d0bebdf7216cb4bd32" category="paragraph">스캔할 데이터 분류에 데이터베이스 스키마를 추가할 수 있습니다.<block ref="32350e7a1f032d301549bb941192cdc0" category="inline-link-macro-rx"></block> .</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">유형</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">설명</block>
-  <block id="a71f76c3256e4c206a4841d8eb0fed35" category="cell">SQL 서버</block>
-  <block id="35686630aa3baddc18c904374e570233" category="cell">아마존 RDS</block>
-  <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">행위</block>
-  <block id="d779bee8155408e2ad4426f42de462a9" category="cell">저장된 쿼리 만들기</block>
   <block id="900eba0c97923d74bd8d9e6190e07264" category="cell">✓</block>
-  <block id="c101058e7ea21bbbf2a5ac893088e90b" category="cell">꼬리표</block>
-  <block id="773ecc684d98231f8f23773727622446" category="cell">에 할당하다</block>
-  <block id="cd6ae20e52d83f601c5fa12b66f0f6d0" category="cell">다시 스캔</block>
-  <block id="9dd4e461268c8034f5c8564e155c67a6" category="cell">엑스</block>
-  <block id="f2a6c498fb90ee345d997f888fce3b18" category="cell">삭제</block>
-  <block id="6bc362dbf494c61ea117fe3c71ca48a5" category="cell">이동하다</block>
-  <block id="5fb63579fc981698f97d55bfecb213ea" category="cell">복사</block>
-  <block id="b021df6aac4654c454f46c77646e745f" category="cell">상표</block>
-  <block id="f3f43e30c8c7d78c6ac0173515e57a00" category="cell">필터</block>
   <block id="59f5223754fb9750ccf313de64e06099" category="cell">저장된 쿼리</block>
-  <block id="e80df5ee03a17fe47c471debd1cb6a7b" category="cell">스캔 분석 상태</block>
   <block id="f5cd54184b354671d5c99cf48104cc07" category="cell">시스템 유형</block>
   <block id="a45da96d0bf6575970f2d27af22be28a" category="cell">체계</block>
   <block id="8e1608d6951087912c426bcb53d12280" category="cell">저장 저장소</block>
@@ -621,8 +602,6 @@
   <block id="eed7cc7f64269eb19a98b58ae0d79b6f" category="cell">발견된 시간</block>
   <block id="189f63f277cd73395561651753563065" category="cell">태그</block>
   <block id="3e9f09095e53d4aa46d296b9c32b7be4" category="cell">스캔 분석 이벤트</block>
-  <block id="7c2647ff45382a42029e7a109ef1b4c5" category="cell">파일/디렉토리 경로</block>
-  <block id="c24fd35c406c9694e3bee288f8825b5c" category="cell">권한 필터</block>
   <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">식별자의 수</block>
   <block id="c24fc9c3402e7cb47c72d71cf6d864be" category="cell">디렉토리 유형</block>
   <block id="2fb58660fd44cbdef76a54519a9a9737" category="cell">생성 시간</block>
@@ -2044,10 +2023,6 @@
   <block id="fb8a04662bc42d13ae8a2d1bddbc05b3" category="cell">상태는 항상 "제한된 통찰력"입니다.</block>
   <block id="29344a3c58cf84dcf0144a3627f021d1" category="cell">파일 해시</block>
   <block id="4df26807127a67f2d98166e4384eea07" category="cell">사용자/그룹 권한</block>
-  <block id="ba3e4178a9b73e03e42aae6548738221" category="section-title">데이터 분류는 얼마나 빨리 데이터를 스캔합니까?</block>
-  <block id="9ece336caf3d2b843dafc984e27b323e" category="paragraph">검사 속도는 네트워크 지연 시간, 디스크 지연 시간, 네트워크 대역폭, 환경 크기 및 파일 배포 크기의 영향을 받습니다.</block>
-  <block id="fd09538b9e640fbf352f46c0fa44b064" category="list-text">매핑 전용 스캔을 수행하는 경우 데이터 분류는 하루에 100~150TiB의 데이터를 스캔할 수 있습니다.</block>
-  <block id="7df1c51c08a7ab21455acfcdd0b1cfe4" category="list-text">Map &amp; Classify 스캔을 수행할 때, Data Classification은 하루에 15~40TiB의 데이터를 스캔할 수 있습니다.</block>
   <block id="fa9ebe7c0c0614d0f74c794a58db2fad" category="summary">NetApp Data Classification 사용하여 StorageGRID 내에서 직접 데이터 스캔을 시작하려면 몇 가지 단계를 완료하세요.</block>
   <block id="6638c5bc122a9b4e0222774a95a04fd5" category="doc">NetApp Data Classification 사용하여 StorageGRID 데이터 스캔</block>
   <block id="dc3fd4fe9b1bb66db60a59be3884a90c" category="section-title">StorageGRID 요구 사항 검토</block>
@@ -2688,7 +2663,6 @@
   <block id="dc6d46e682032130076140b1c6b9f422" category="list-text">파일 검사를 수행하려면 데이터 분류에서 **파일 불러오기**를 선택하십시오. 파일이 교육용으로 적합하다고 판단되면 파일 이름, 크기, 유형 및 참고 사항이 나열된 파일 요약을 검토할 수 있습니다.</block>
   <block id="60d2aee5a316a80a131d402c7cfaa44a" category="inline-image-macro">학습을 위해 업로드된 파일 요약을 보여주는 스크린샷입니다.</block>
   <block id="6ca27c96af59179d21a409d88cb4139c" category="paragraph"><block ref="6ca27c96af59179d21a409d88cb4139c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="839860ecb593c72a6c18f98bd45565b0" category="list-text">파일 경로를 변경하거나 파일을 다시 업로드하려면 **경로 변경**을 선택한 다음 데이터를 입력하고 파일을 다시 로드하십시오.</block>
   <block id="78edc8efdc4ac520c8f06ac58e069eac" category="list-text">업로드된 파일에 만족하시면 **다음**을 선택하세요.</block>
   <block id="baacdea09c8bef5361744801ca025b67" category="list-text">**저장**을 선택하여 사용자 지정 카테고리를 만드세요.</block>
   <block id="d2edcb6e893e23e45a9b667d3d7f0c9e" category="paragraph">사용자 지정 카테고리를 생성하면 해당 결과가 다음 예약된 스캔에 반영됩니다. 결과를 더 빨리 얻으려면 수동으로 스캔을 시작하세요.</block>
@@ -2722,4 +2696,17 @@
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 *자격 증명 업데이트* 옵션도 있습니다.<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
   <block id="4a0d328244ebc11cdcdafe7537ab73a0" category="section-title">2026년 1월 14일</block>
   <block id="0683badfe3a5feea962602495f98c990" category="paragraph">사용 환경이 필수 요구 사항을 충족하는지 확인하십시오. 여기에는 인스턴스의 아웃바운드 인터넷 액세스, Console 에이전트와 Data Classification 간의 포트 443을 통한 연결 등이 포함됩니다. <block ref="c513c1ef65e57d26fcca4062f05d2f7b" category="inline-xref-macro-rx"></block>.</block>
+  <block id="9f8adb7ebffc39f306c40ef2d6a377b1" category="paragraph-title">NetApp Console 캔버스에서 Amazon FSxN for ONTAP을 사용하여 데이터 분류 기능을 바로 활성화하세요.</block>
+  <block id="880dc0b44905babcfa6685da86ba8117" category="paragraph">이제 NetApp Console 캔버스에서 직접 ONTAP 시스템용 Amazon FSxN을 활성화할 수 있으므로 FSxN 시스템에 대한 데이터 분류를 더욱 빠르게 시작할 수 있습니다.</block>
+  <block id="dd8a2d3b3415c2980790a672dff3757f" category="inline-link-macro">Amazon FSxN에서 ONTAP 볼륨을 검색합니다</block>
+  <block id="db8b5cff328cee1f4914855b931bae02" category="paragraph">Amazon FSxN for ONTAP에서 Data Classification 사용에 대한 자세한 내용은 <block ref="48a47292b9e31aff1079bbdaa3cd4739" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="3ee3e594e3bac0471e4cda35acc3588a" category="paragraph-title">디렉토리 조사를 위한 내보내기 제한 증가</block>
+  <block id="45f99b8f539f37cc0379b65d3ddafbbf" category="paragraph">조사 대시보드에서 디렉토리에 대한 조사 보고서를 내보낼 때 이제 최대 10,000개의 행을 포함할 수 있습니다. 이전 제한인 5,000개 행에서 증가한 이번 확장을 통해 데이터 거버넌스 및 규정 준수에 대한 대규모 조사가 가능해졌습니다.</block>
+  <block id="e733aab9ce2fc5320fbdd563cba5e12b" category="paragraph">자세한 내용은 <block ref="d8b3109a5818cc0f43ade4650ffede11" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="80f498ef50d7bad5da9acf441b502c0f" category="paragraph-title">복사 및 이동 제한 증가</block>
+  <block id="401f234e1c84943381dd951c39f2ce3c" category="paragraph">파일을 복사하거나 이동할 때 이제 최대 250MB의 파일을 이동할 수 있으며, 이는 이전 제한인 50MB에서 증가한 것입니다.</block>
+  <block id="244d30ed7d7da13b1f80f1fa008af700" category="paragraph-title">저해상도 화면의 디스플레이 개선</block>
+  <block id="80bb2719fe9feeb03d5cc88bd71e8a81" category="paragraph">Data Classification은 저해상도 화면에서의 표시 성능을 개선하여 사용자 경험을 향상시켰습니다.</block>
+  <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">Data Classification은 데이터 학습에 필요한 예상 완료 시간을 표시합니다. .. 파일 경로를 변경하거나 파일을 다시 업로드하려면 **Change path**를 선택한 다음 데이터를 입력하고 파일을 다시 로드하십시오.</block>
+  <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026년 2월 9일</block>
 </blocks>

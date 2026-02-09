@@ -1,0 +1,27 @@
+= 버전 1.50
+:allow-uri-read: 
+
+
+
+
+=== 버전 1.50
+
+이번 Data Classification 릴리스에는 버그 수정과 다음 업데이트가 포함되어 있습니다.
+
+.NetApp Console 캔버스에서 Amazon FSxN for ONTAP을 사용하여 데이터 분류 기능을 바로 활성화하세요.
+이제 NetApp Console 캔버스에서 직접 ONTAP 시스템용 Amazon FSxN을 활성화할 수 있으므로 FSxN 시스템에 대한 데이터 분류를 더욱 빠르게 시작할 수 있습니다.
+
+Amazon FSxN for ONTAP에서 Data Classification 사용에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-data-classification/task-scanning-fsx.html["Amazon FSxN에서 ONTAP 볼륨을 검색합니다"^]을(를) 참조하십시오.
+
+.디렉토리 조사를 위한 내보내기 제한 증가
+조사 대시보드에서 디렉토리에 대한 조사 보고서를 내보낼 때 이제 최대 10,000개의 행을 포함할 수 있습니다. 이전 제한인 5,000개 행에서 증가한 이번 확장을 통해 데이터 거버넌스 및 규정 준수에 대한 대규모 조사가 가능해졌습니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["데이터 조사"^]을 참조하십시오.
+
+.복사 및 이동 제한 증가
+파일을 복사하거나 이동할 때 이제 최대 250MB의 파일을 이동할 수 있으며, 이는 이전 제한인 50MB에서 증가한 것입니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["데이터 조사"^]을 참조하십시오.
+
+.저해상도 화면의 디스플레이 개선
+Data Classification은 저해상도 화면에서의 표시 성능을 개선하여 사용자 경험을 향상시켰습니다.
