@@ -22,7 +22,7 @@ NetApp Data Classification 의 새로운 기능을 알아보세요.
 
 
 
-=== 버전 1.50
+=== 버전 1.51
 
 이번 Data Classification 릴리스에는 버그 수정과 다음 업데이트가 포함되어 있습니다.
 
