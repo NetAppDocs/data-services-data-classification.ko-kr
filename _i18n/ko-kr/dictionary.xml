@@ -54,8 +54,6 @@
   <block id="1d7787fe4a7264402153a51d8513414f" category="list-text">Python 버전 3.6 이상.<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block> .</block>
   <block id="af6e943c488994655555d1536c5ae303" category="list-text">*NTP 고려 사항*: NetApp 데이터 분류 시스템을 구성하여 NTP(네트워크 시간 프로토콜) 서비스를 사용할 것을 권장합니다.  데이터 분류 시스템과 콘솔 에이전트 시스템 간의 시간은 동기화되어야 합니다.</block>
   <block id="408fd119f07cf5e6a0967b9f94eb5f93" category="admonition">이 정보는 레거시 버전 1.30 및 이전 버전에만 해당됩니다.</block>
-  <block id="42e7ba7061f6a314504fc5939b6ee874" category="inline-link-macro">BlueXP 개인 모드에 대한 PDF 문서</block>
-  <block id="e8c16b093f75565bedc28ce42c18387b" category="admonition">BlueXP 개인 모드(레거시 BlueXP 인터페이스)는 일반적으로 인터넷 연결이 없고 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6를 포함하는 보안 클라우드 지역이 있는 온프레미스 환경에서 사용됩니다. NetApp 기존 BlueXP 인터페이스를 통해 이러한 환경을 계속 지원합니다. 레거시 BlueXP 인터페이스의 개인 모드 설명서는 다음을 참조하세요.<block ref="ff61a6d02866e89b5c3ca85de9a7ba21" category="inline-link-macro-rx"></block> .</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
   <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">조사 페이지에서 데이터 필터링</block>
   <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">조사 탭에서 사용할 필터를 선택하여 검색을 정의합니다. 보다<block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
@@ -2710,4 +2708,80 @@
   <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">Data Classification은 데이터 학습에 필요한 예상 완료 시간을 표시합니다. .. 파일 경로를 변경하거나 파일을 다시 업로드하려면 **Change path**를 선택한 다음 데이터를 입력하고 파일을 다시 로드하십시오.</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026년 2월 9일</block>
   <block id="0cd5c5ab4d8a458ece2a760f674c681e" category="doc">버전 1.51</block>
+  <block id="58c2f245ba9fee2040b80ea19d9ccd7c" category="inline-link-macro">Console 에이전트 및 Data Classification의 다양한 배포 모드에 대해 알아보세요</block>
+  <block id="9da1ffd588a2b7dde94c64757653a38a" category="paragraph"><block ref="cb90c21a9c44c9ac5d86b04e8dfb0fb3" category="inline-link-macro-rx"></block>.</block>
+  <block id="3883c68756cb61eec195bb6e108336ba" category="inline-link-macro">인터넷 액세스가 있는 온프레미스 사이트에 Data Classification을 배포합니다</block>
+  <block id="aff289904c75641e7044ceeb9e922006" category="paragraph">또한 <block ref="9d4e9d68c29b6863b7c77f4a02e40d14" category="inline-link-macro-rx"></block>를 통해서도 액세스할 수 있습니다.</block>
+  <block id="eb7c0a54a684e3bfabc7abd5ff6851ad" category="paragraph">개인 모드(때때로 "오프라인" 또는 "다크" 사이트라고도 함)로 설치된 경우 Data Classification은 온프레미스 사이트에 로컬인 데이터 소스의 데이터만 스캔할 수 있습니다. 현재 Data Classification은 다음 *로컬* 데이터 소스를 스캔할 수 있습니다:</block>
+  <block id="318a375199576f5d44d9caad0d810341" category="paragraph">데이터 분류가 비공개 모드로 배포된 경우 현재 Cloud Volumes ONTAP, Azure NetApp Files 또는 FSx for ONTAP 계정을 스캔하는 기능은 지원되지 않습니다.</block>
+  <block id="15626ba7e1a3568f27f269f3c7356d0d" category="paragraph">대부분의 데이터 분류 기능은 인터넷 액세스가 없는 사이트에 배포될 때 작동합니다. 그러나 인터넷 액세스가 필요한 특정 기능은 지원되지 않습니다. 예를 들면 다음과 같습니다.</block>
+  <block id="0a960471aa53e0935822c357979bce1b" category="list-text">다양한 사용자에 대한 Console 역할 설정(예: Account Admin 또는 Compliance Viewer)</block>
+  <block id="75a75ad5f9d6f3eada3bc2d376a1af49" category="list-text">NetApp Copy and Sync를 사용하여 소스 파일 복사 및 동기화</block>
+  <block id="f73f7a9ba36beea1c62f635c6b80bf33" category="list-text">콘솔에서 자동 소프트웨어 업그레이드</block>
+  <block id="5d985fa2e25b1e5f64c61d3b949a0115" category="inline-link-macro">데이터 분류 릴리스 노트</block>
+  <block id="1a243a611907b55cac593a5bf6f0a9ec" category="inline-link">Console 에이전트를 업그레이드하세요</block>
+  <block id="fdb6099e006d1e34e0980a93da741897" category="inline-xref">Data Classification 소프트웨어를 업그레이드하세요</block>
+  <block id="3e4fd25a05e07b0252f31d30edcacd17" category="paragraph">Console 에이전트와 Data Classification 모두 새로운 기능을 활성화하려면 주기적인 수동 업그레이드가 필요합니다. Data Classification UI 페이지 하단에서 Data Classification 버전을 확인할 수 있습니다. <block ref="579336e4b6257d4241fed022ac54ce8d" category="inline-link-macro-rx"></block>을 확인하여 각 릴리스의 새로운 기능과 해당 기능이 필요한지 여부를 확인하십시오. 그런 다음 단계에 따라<block ref="e2b645201e21346aaf6e5246ac969b73" category="inline-link-rx"></block> 및 <block ref="c988b03c9911268b8d73909a35d7a951" category="inline-xref-macro-rx"></block>을 수행할 수 있습니다.</block>
+  <block id="1650bbddb7d8507c1c48c3366a8f1877" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Console 에이전트를 설치합니다</block>
+  <block id="391fba57e5d1e9f418e7be128128ea0a" category="inline-link">Console 에이전트를 배포합니다</block>
+  <block id="0a096664cfec97158e212b2370589415" category="paragraph">개인 모드로 Console 에이전트가 설치되어 있지 않은 경우 지금 Linux 호스트에<block ref="df3c65bd07ffd8c7904c50b763efcb23" category="inline-link-rx"></block> 설치하십시오.</block>
+  <block id="d865ed11a69cb30e8cfd495464fbf2af" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Data Classification 사전 요구 사항 검토</block>
+  <block id="c809d3c5d7781a451f25cc2cfea66167" category="paragraph">Linux 시스템이 <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>를 충족하는지, 필요한 소프트웨어가 모두 설치되어 있는지, 그리고 오프라인 환경이 필요한 <block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>를 충족하는지 확인하십시오.</block>
+  <block id="a036c0c3c25c9be40fc8f6846935a644" category="paragraph">NetApp 지원 사이트에서 데이터 분류 소프트웨어를 다운로드하고 설치 파일을 사용할 Linux 호스트에 복사하십시오. 그런 다음 설치 마법사를 실행하고 안내에 따라 데이터 분류 인스턴스를 배포하십시오.</block>
+  <block id="0306d61e47aa894322ab0c0132696cc8" category="section-title">Console 에이전트를 설치합니다</block>
+  <block id="3a55e7058305278fe68706cba0a3bcf2" category="paragraph">오프라인 사이트의 Linux 호스트에 개인 모드로 Console 에이전트가 설치되어 있지 않은 경우<block ref="df3c65bd07ffd8c7904c50b763efcb23" category="inline-link-rx"></block>.</block>
+  <block id="5a35c7694b8f3829307dcde4ac0f06a9" category="paragraph">Data Classification 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.</block>
+  <block id="277cf494e8db0b6717cad837b1ae46e3" category="section-title">Console 및 Data Classification 필수 조건을 확인하십시오.</block>
+  <block id="7ea1d38180704ea0da1ac54272bbf3cd" category="paragraph">Data Classification을 배포하기 전에 지원되는 구성이 있는지 확인하려면 다음 사전 요구 사항을 검토하십시오.</block>
+  <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">NetApp에서 제공하는 정책</block>
+  <block id="984960560a67fda46a9e523e19133979" category="list-text">Console 에이전트가 Data Classification 인스턴스에 대한 리소스를 배포하고 보안 그룹을 생성할 수 있는 권한이 있는지 확인하십시오. 최신 Console 권한은<block ref="4a2a6e11988d010a6d440ccfbc05a8f0" category="inline-link-rx"></block>에서 확인할 수 있습니다.</block>
+  <block id="424a3327e4edb51b035f659615bb187a" category="list-text">Data Classification을 계속 실행할 수 있도록 하십시오. Data Classification 인스턴스는 데이터를 지속적으로 스캔하기 위해 항상 켜져 있어야 합니다.</block>
+  <block id="aa820f4f486defc502ac08744211a752" category="list-text">Data Classification에 대한 웹 브라우저 연결을 확인하십시오. Data Classification이 활성화된 후에는 사용자가 Data Classification 인스턴스에 연결된 호스트에서 Console 인터페이스에 액세스하는지 확인하십시오.</block>
+  <block id="8bb88fba13168905c7855c431cd09c9f" category="paragraph">Data Classification 인스턴스는 인덱싱된 데이터에 다른 사람이 액세스할 수 없도록 프라이빗 IP 주소를 사용합니다. 따라서 Console에 액세스하는 데 사용하는 웹 브라우저는 해당 프라이빗 IP 주소에 연결되어 있어야 합니다. 이 연결은 Data Classification 인스턴스와 동일한 네트워크 내에 있는 호스트에서 이루어질 수 있습니다.</block>
+  <block id="d2f4e7f4455a3bda8ed865e3c82c3eb1" category="cell">8080(TCP), 6000(TCP), 443(TCP), 80. 9000</block>
+  <block id="4e1dc023343a2a554657f8105534c56b" category="paragraph">Console 에이전트의 보안 그룹은 Data Classification 인스턴스와의 포트 6000 및 443을 통한 인바운드 및 아웃바운드 트래픽을 허용해야 합니다.</block>
+  <block id="c27c7c9e13ebf822684f5bfbf5405964" category="list-text">Data Classification BYOL 라이센스가 다크 사이트에서 작동하려면 포트 6000이 필요합니다.</block>
+  <block id="4d6eacf6dc1b83a9aab9191bb6c9f622" category="list-text">콘솔에서 설치 진행 상황을 확인할 수 있도록 포트 8080이 열려 있어야 합니다.</block>
+  <block id="87669b3f9ce07d9d9a218ff72c43f046" category="list-text">Linux 호스트에서 방화벽을 사용하는 경우 Ubuntu 서버 내의 내부 프로세스에는 포트 9000이 필요합니다.</block>
+  <block id="ad57c3c7748d514ebd8d5bfa23591db0" category="list-text">Console 에이전트 호스트는 포트 443을 통한 아웃바운드 HTTPS 액세스를 허용해야 합니다. Console 에이전트가 클라우드에 있는 경우 모든 아웃바운드 통신은 사전 정의된 보안 그룹에 의해 허용됩니다.</block>
+  <block id="aac02b39ecdb82865aa9de6a6ad6795a" category="paragraph">Data Classification에는 각 Cloud Volumes ONTAP 서브넷 또는 온프레미스 ONTAP 시스템에 대한 네트워크 연결이 필요합니다. Cloud Volumes ONTAP의 보안 그룹은 Data Classification 인스턴스로부터의 인바운드 연결을 허용해야 합니다.</block>
+  <block id="c29fe88a82cdd613769957d60ae7e623" category="cell">Linux 호스트에서 방화벽을 사용하는 경우</block>
+  <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="cell">9000</block>
+  <block id="2c68446a47623409683fed996b7df333" category="cell">Ubuntu 서버 내부 프로세스에 필요합니다.</block>
+  <block id="ab911b02f3c83f7b8747e04d52424221" category="section-title">온프레미스 Linux 호스트에 Data Classification 설치</block>
+  <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">일반적인 구성에서는 소프트웨어를 단일 호스트 시스템에 설치합니다.</block>
+  <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">인터넷 연결 없이 온프레미스에 배포된 단일 Data Classification 인스턴스를 사용할 때 스캔할 수 있는 데이터 소스의 위치를 보여주는 다이어그램입니다.</block>
+  <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="946fda64b6781af330daa1fb854c8c52" category="paragraph">오프라인 환경에서 단일 온프레미스 호스트에 Data Classification 소프트웨어를 설치할 때는 다음 단계를 따르십시오.</block>
+  <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">필수 소프트웨어 패키지 두 가지(Docker Engine 또는 Podman, 그리고 Python 3)가 설치되어 있는지 확인하십시오.</block>
+  <block id="0986e42aa866cf4296d7c23872a54555" category="list-text">오프라인 환경이 필요한 <block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>을(를) 충족하는지 확인하십시오.</block>
+  <block id="528e2987caf60ebcefa62783e2e3b8d0" category="list-text">인터넷에 연결된 시스템에서 <block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>에서 Data Classification 소프트웨어를 다운로드하십시오. 선택해야 할 파일의 이름은 *DataSense-offline-bundle-&lt;version&gt;.tar.gz*입니다.</block>
+  <block id="e441d0b06845e470533ecf90d990663b" category="list-text">개인 모드에서 사용할 Linux 호스트에 설치 프로그램 번들을 복사하십시오.</block>
+  <block id="1eecc2fcccd4fcb3cadd8bec3044d3bb" category="list-text">예를 들어 호스트 시스템에서 설치 프로그램 번들의 압축을 풉니다.</block>
+  <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">이렇게 하면 필요한 소프트웨어와 실제 설치 파일인 *cc_onprem_installer.tar.gz*가 압축 해제됩니다.</block>
+  <block id="6b0f70e5c18db6f7f252ec60af1fdda0" category="list-text">예를 들어 호스트 시스템에서 설치 파일의 압축을 해제합니다.</block>
+  <block id="83c94a9afb163137cc4dc79b7e321458" category="list-text">Data Classification에서 * 온프레미스 또는 클라우드에 Classification 배포 * 를 선택합니다.</block>
+  <block id="e220ba16e07da8175a8f22c929583d56" category="list-text">온프레미스 설치를 시작하려면 *Deploy*를 선택하십시오.</block>
+  <block id="2f556d8d5b92bf21939b1165b4292afa" category="list-text">_Deploy Data Classification On Premises_ 대화 상자가 표시됩니다. 제공된 명령(예:<block ref="4041549bf21d4c7bed0bfcbf52842063" prefix=" " category="inline-code"></block>)을 복사하여 텍스트 파일에 붙여넣어 나중에 사용할 수 있도록 합니다. 그런 다음 *Close*를 선택하여 대화 상자를 닫습니다.</block>
+  <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">설치 프로그램은 성공적인 설치를 위해 시스템 및 네트워킹 요구 사항이 충족되었는지 확인하기 위해 사전 점검을 수행합니다.</block>
+  <block id="04b2719843afa330fd4278f18f551cc0" category="list-text">8단계에서 복사한 정보를 붙여 넣습니다.<block ref="f2d89fd6adc07cc741bd63dae759c280" prefix=" " category="inline-code"></block></block>
+  <block id="6b0aea6c68ef96dbcfc3127ea709758f" category="cell">또는 필요한 호스트 매개 변수를 제공하여 전체 명령을 미리 생성할 수 있습니다.<block ref="30e6510f8ccbe93aadbdbce29e25b293" prefix=" " category="inline-code"></block></block>
+  <block id="18a676ba121b0c5c7d029a5de11e6384" category="list-text">_ds_host_ = Data Classification 시스템의 IP 주소 또는 호스트 이름입니다.</block>
+  <block id="352f10906200e3b1eb42fca6da3bfc6b" category="paragraph">호스트 시스템과 Console 에이전트 인스턴스 간에 포트 8080을 통한 연결이 있는 경우 Data Classification 탭에서 설치 진행 상황을 확인할 수 있습니다.</block>
+  <block id="5d0d87e9be98aaab11076c1b64d38cc3" category="inline-link-macro">사내 ONTAP 클러스터</block>
+  <block id="e61ce3062cb76770658896b778ad06cd" category="inline-link-macro">데이터베이스</block>
+  <block id="c3cea28bb90c637f494d5021dcebdf2d" category="paragraph">구성 페이지에서 스캔할 로컬 <block ref="c23a74d01fbf5deb3a784c3ec1da6439" category="inline-link-macro-rx"></block> 및 <block ref="6d4571a63bcf6d226319383d2911863e" category="inline-link-macro-rx"></block>를 선택할 수 있습니다.</block>
+  <block id="6adc855444e112822971d3dccee13c7b" category="section-title">Data Classification 소프트웨어 업그레이드</block>
+  <block id="2ef1c095f065f6ed9362c577ebcb41cb" category="paragraph">Data Classification 소프트웨어는 정기적으로 새로운 기능으로 업데이트되므로 최신 소프트웨어와 기능을 사용하고 있는지 확인하기 위해 주기적으로 새 버전을 확인하는 습관을 들여야 합니다. 업그레이드를 자동으로 수행할 인터넷 연결이 없으므로 Data Classification 소프트웨어를 수동으로 업그레이드해야 합니다.</block>
+  <block id="973193922b08bb6c1c48f6d2010a3301" category="inline-link">Console 에이전트 업그레이드 단계를 참조하십시오</block>
+  <block id="88dab43991705d2e0e32366a7843e5f2" category="list-text">Console 에이전트 소프트웨어를 사용 가능한 최신 버전으로 업그레이드하는 것이 좋습니다<block ref="2c60b4905c63d330707c3e9f7f760258" category="inline-link-rx"></block>.</block>
+  <block id="5ead123fde96a881f3ea4402d8f3c081" category="list-text">Data Classification 버전 1.24부터는 향후 출시될 모든 버전의 소프트웨어로 업그레이드할 수 있습니다.</block>
+  <block id="a8574915570cec928037dd09f4725d64" category="paragraph">Data Classification 소프트웨어가 1.24 이전 버전을 실행 중인 경우 한 번에 하나의 주요 버전으로만 업그레이드할 수 있습니다. 예를 들어 버전 1.21.x가 설치되어 있는 경우 1.22.x로만 업그레이드할 수 있습니다. 몇 가지 주요 버전이 뒤처져 있는 경우 소프트웨어를 여러 번 업그레이드해야 합니다.</block>
+  <block id="47e841a0bdc25a397d4ba68d0a98f168" category="list-text">Data Classification이 다크 사이트에 설치된 Linux 호스트에 소프트웨어 번들을 복사합니다.</block>
+  <block id="58ac2a8543e710f81085aa9e92e7cd0c" category="list-text">예를 들어 호스트 시스템에서 소프트웨어 번들의 압축을 해제합니다.</block>
+  <block id="7b8f90ccd6fc9dda39797ae84ca7f14d" category="paragraph">이렇게 하면 설치 파일 *cc_onprem_installer.tar.gz*가 추출됩니다.</block>
+  <block id="cdc2b03f6ffa90a892ff07e03233975d" category="paragraph">이렇게 하면 업그레이드 스크립트 *start_darksite_upgrade.sh* 와 필요한 타사 소프트웨어가 추출됩니다.</block>
+  <block id="85455891651214d50e704a4b3e9dde66" category="list-text">예를 들어 호스트 시스템에서 업그레이드 스크립트를 실행합니다.</block>
+  <block id="fe3ff1241868ed00f70bff14bc52b03f" category="paragraph">호스트에서 Data Classification 소프트웨어가 업그레이드되었습니다. 업데이트는 5분에서 10분 정도 소요될 수 있습니다.</block>
+  <block id="49b552306f6783aaacb171a8b657cff7" category="paragraph">Data Classification UI 페이지 하단에 표시되는 버전을 확인하여 소프트웨어가 업데이트되었는지 확인할 수 있습니다.</block>
 </blocks>
