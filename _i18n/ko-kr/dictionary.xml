@@ -2796,4 +2796,6 @@
   <block id="9478b45dce4de73855a8e0b13720f895" category="paragraph">Data Classification은 이제 투명 프록시 구성을 지원하여 프록시 또는 제한된 네트워크 환경에서 더욱 원활한 배포를 가능하게 합니다.</block>
   <block id="89f7afc8a9b178d4b4346f224d8bffc7" category="paragraph">제한된 환경에서의 배포에 대한 자세한 내용은 <block ref="6804ab8e5e77245509e3dc550ef5b67d" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026년 3월 9일</block>
+  <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">인터넷 연결 없이 온프레미스에 배포된 단일 Data Classification 인스턴스를 사용할 때 스캔할 수 있는 데이터 소스의 위치를 보여주는 다이어그램입니다.</block>
+  <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
