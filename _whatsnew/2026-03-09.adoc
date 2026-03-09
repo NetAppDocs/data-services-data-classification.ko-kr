@@ -1,0 +1,27 @@
+= 버전 1.52
+:allow-uri-read: 
+
+
+
+
+=== 버전 1.52
+
+.리소스 유효성 검사
+안정성을 보장하기 위해 Data Classification은 스캔, 보고서 생성 및 작업 전반에 걸쳐 사용 가능한 메모리 및 디스크 리소스를 검증합니다. 메모리 사용량이 95%를 초과하거나 디스크 공간이 6GB 미만으로 떨어지면 Data Classification은 자동으로 작업을 일시 중지합니다. 리소스가 충분해지면 작업이 재개됩니다.
+
+시스템 리소스를 모니터링하려면 link:https://docs.netapp.com/us-en/data-services-data-classification/task-health-monitor.html["데이터 분류 상태 모니터링"^]을 참조하십시오.
+
+.복사 및 이동 제한 증가
+이제 CIFS 대상에 대한 복사 및 이동 기능이 지원됩니다. 두 작업 모두 파일당 크기 제한이 기존 50MB에서 1GB로 증가했습니다. 두 작업 모두 작업량 제한이 1TB 또는 500만 파일로 늘어났습니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["데이터 조사"^]을 참조하십시오.
+
+.Active Directory 통합 구성 권한
+Data Classification에서 Active Directory(AD) 통합 설정 변경은 이제 관리자에게만 허용됩니다. 뷰어는 더 이상 AD 설정을 수정할 수 없습니다.
+
+분류 뷰어 역할에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html#data-service-roles["데이터 서비스 역할"^]을 참조하십시오.
+
+.투명 프록시 지원
+Data Classification은 이제 투명 프록시 구성을 지원하여 프록시 또는 제한된 네트워크 환경에서 더욱 원활한 배포를 가능하게 합니다.
+
+제한된 환경에서의 배포에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-dark-site.html["인터넷 접속이 없는 Linux 호스트에 NetApp Data Classification 설치"^]을 참조하십시오.

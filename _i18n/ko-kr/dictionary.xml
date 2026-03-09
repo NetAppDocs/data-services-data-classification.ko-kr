@@ -2563,7 +2563,6 @@
   <block id="c257ad0ab1dd1ba68f40f6d92155f5dd" category="paragraph-title">Health Monitoring 대시보드에서 메트릭과 성능을 모니터링합니다.</block>
   <block id="d62744b30354624c6087760cfd47ae58" category="paragraph">데이터 분류는 이제 리소스에 대한 실시간 모니터링과 메모리 사용량, 디스크 사용량, 디스크 활용도 등에 대한 통찰력을 제공하는 상태 모니터링 대시보드를 제공합니다. 상태 모니터링 대시보드의 통찰력을 통해 배포 인프라를 검토하고 스토리지와 성능을 최적화하기 위한 통찰력을 얻을 수 있습니다.</block>
   <block id="3b3cf1105e8b8d40f3cb14b9f956e666" category="inline-link-macro">데이터 분류 상태 모니터링</block>
-  <block id="699330677c1a0f32d795bf5b4ef62c06" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="47a26f0a929ccc455d276fcbc1329665" category="inline-link-macro-rx"></block>.</block>
   <block id="bf17c0b6bb3350440ee2a9bb4f2c9d89" category="paragraph-title">향상된 로딩 성능</block>
   <block id="b6a3c9ea2c8f586e05010be520e7c46c" category="paragraph">데이터 분류의 모든 페이지에 대한 로딩 성능이 개선되어 사용자 경험이 더욱 효율적으로 개선되었습니다.</block>
   <block id="c7a647b1e9f70e39870907a0d37fc861" category="summary">데이터 분류는 사용 및 활용에 대한 통찰력을 제공하여 성능을 최적화하고 문제를 해결하는 데 도움이 됩니다.</block>
@@ -2746,8 +2745,6 @@
   <block id="2c68446a47623409683fed996b7df333" category="cell">Ubuntu 서버 내부 프로세스에 필요합니다.</block>
   <block id="ab911b02f3c83f7b8747e04d52424221" category="section-title">온프레미스 Linux 호스트에 Data Classification 설치</block>
   <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">일반적인 구성에서는 소프트웨어를 단일 호스트 시스템에 설치합니다.</block>
-  <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">인터넷 연결 없이 온프레미스에 배포된 단일 Data Classification 인스턴스를 사용할 때 스캔할 수 있는 데이터 소스의 위치를 보여주는 다이어그램입니다.</block>
-  <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
   <block id="946fda64b6781af330daa1fb854c8c52" category="paragraph">오프라인 환경에서 단일 온프레미스 호스트에 Data Classification 소프트웨어를 설치할 때는 다음 단계를 따르십시오.</block>
   <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">필수 소프트웨어 패키지 두 가지(Docker Engine 또는 Podman, 그리고 Python 3)가 설치되어 있는지 확인하십시오.</block>
   <block id="0986e42aa866cf4296d7c23872a54555" category="list-text">오프라인 환경이 필요한 <block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>을(를) 충족하는지 확인하십시오.</block>
@@ -2784,4 +2781,19 @@
   <block id="c360e0cba3ce8612a20efd7da0fa5d7a" category="paragraph">Swagger에 접속하려면 Data Classification 인스턴스의 IP 주소가 필요합니다. 클라우드 배포 환경의 경우 공용 IP 주소를 사용합니다. 그런 다음 다음 엔드포인트에 접속해야 합니다.</block>
   <block id="421d31e2b03d6dcfd776134e6cc90fb8" category="list-text">Governance 대시보드의 각 Savings Opportunities 타일 내에서 *Optimize Storage*를 선택하여 Investigation 페이지에서 필터링된 결과를 확인합니다. 삭제하거나 비용이 저렴한 스토리지로 계층화해야 하는 데이터를 검색하려면 _Saving Opportunities_를 조사하십시오.</block>
   <block id="18b124736f5cbc7b1873c54b1dac2d6f" category="paragraph">NetApp Data Classification은 사용자가 선택한 리포지토리(볼륨, 데이터베이스 스키마 또는 기타 사용자 데이터)의 데이터를 스캔하여 개인 정보 및 민감한 데이터를 식별합니다. Data Classification은 조직 데이터를 매핑하고 각 파일을 범주화하며 데이터에서 미리 정의된 패턴을 식별합니다. 스캔 결과는 개인 정보, 민감한 개인 정보, 데이터 범주 및 파일 유형의 인덱스입니다.</block>
+  <block id="115a395f1bda3cdb62e75cfe1529d431" category="paragraph">자세한 내용은 <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="59ff8a6991a0f51816a1d27ab0590821" category="paragraph-title">복사 및 이동에 대한 제한 증가</block>
+  <block id="5db4431afc8c4647c29360449ee80225" category="doc">버전 1.52</block>
+  <block id="1cc9fa7904bbb11e4569869878e58bbb" category="paragraph-title">리소스 유효성 검사</block>
+  <block id="19458db6dfda018080434d803401d712" category="paragraph">안정성을 보장하기 위해 Data Classification은 스캔, 보고서 생성 및 작업 전반에 걸쳐 사용 가능한 메모리 및 디스크 리소스를 검증합니다. 메모리 사용량이 95%를 초과하거나 디스크 공간이 6GB 미만으로 떨어지면 Data Classification은 자동으로 작업을 일시 중지합니다. 리소스가 충분해지면 작업이 재개됩니다.</block>
+  <block id="0c246fa8aa5b9bb6f56169910551448c" category="paragraph">시스템 리소스를 모니터링하려면 <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="427468160760189964c9cf7fcaa52709" category="paragraph">이제 CIFS 대상에 대한 복사 및 이동 기능이 지원됩니다. 두 작업 모두 파일당 크기 제한이 기존 50MB에서 1GB로 증가했습니다. 두 작업 모두 작업량 제한이 1TB 또는 500만 파일로 늘어났습니다.</block>
+  <block id="6d965e454a055e436e41408f02aad8e1" category="paragraph-title">Active Directory 통합 구성 권한</block>
+  <block id="a14fc25490ab294bb8fb754cd29f6486" category="paragraph">Data Classification에서 Active Directory(AD) 통합 설정 변경은 이제 관리자에게만 허용됩니다. 뷰어는 더 이상 AD 설정을 수정할 수 없습니다.</block>
+  <block id="40abfc355f5aea2697c05cedc7637005" category="inline-link-macro">데이터 서비스 역할</block>
+  <block id="86b37aec2cfdfa690aeb8de2465ae8f4" category="paragraph">분류 뷰어 역할에 대한 자세한 내용은 <block ref="152b8a96499e0e41ff478a993b579623" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="262af560e91bb5d3ce2340e565954dbf" category="paragraph-title">투명 프록시 지원</block>
+  <block id="9478b45dce4de73855a8e0b13720f895" category="paragraph">Data Classification은 이제 투명 프록시 구성을 지원하여 프록시 또는 제한된 네트워크 환경에서 더욱 원활한 배포를 가능하게 합니다.</block>
+  <block id="89f7afc8a9b178d4b4346f224d8bffc7" category="paragraph">제한된 환경에서의 배포에 대한 자세한 내용은 <block ref="6804ab8e5e77245509e3dc550ef5b67d" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026년 3월 9일</block>
 </blocks>
