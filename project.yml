@@ -38,7 +38,7 @@ sidebar:
         url: "/task-deploy-compliance-onprem.html"
       - title: 인터넷 접속 없이 온프레미스 Linux 호스트에 설치
         url: "/task-deploy-compliance-dark-site.html"
-      - title: Linux 호스트가 데이터 분류를 설치할 준비가 되었는지 확인하세요.
+      - title: Linux 호스트의 준비 상태를 확인하세요
         url: "/task-test-linux-system.html"
     - title: 데이터 소스에서 스캐닝을 활성화하세요
       entries:
@@ -68,18 +68,18 @@ sidebar:
       url: "/task-controlling-private-data.html"
     - title: 개인 정보의 범주
       url: "/reference-private-data-categories.html"
-    - title: 사용자 정의 스캔 만들기
-      url: "/task-custom-classification.html"
     - title: 데이터 조사
       url: "/task-investigate-data.html"
+    - title: 데이터 복사, 이동 및 삭제
+      url: "/task-copy-move.html"
+    - title: 사용자 정의 분류 만들기
+      url: "/task-custom-classification.html"
     - title: 저장된 쿼리 관리
       url: "/task-using-policies.html"
     - title: 스캔 설정 수정
       url: "/task-managing-repo-scanning.html"
     - title: 규정 준수 보고서 생성
       url: "/task-generating-compliance-reports.html"
-    - title: 시스템 상태 모니터링
-      url: "/task-health-monitor.html"
   - title: 데이터 분류 관리
     entries:
     - title: 스캔에서 디렉토리 제외
@@ -88,7 +88,9 @@ sidebar:
       url: "/task-add-group-id-as-open.html"
     - title: 오래된 데이터를 정의합니다.
       url: "/task-stale-data.html"
-    - title: 데이터 분류에서 데이터 소스 제거
+    - title: 시스템 상태 모니터링
+      url: "/task-health-monitor.html"
+    - title: 데이터 소스 제거
       url: "/task-managing-compliance.html"
     - title: 데이터 분류 제거
       url: "/task-uninstall.html"

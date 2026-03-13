@@ -14,7 +14,7 @@
 .복사 및 이동 제한 증가
 이제 CIFS 대상에 대한 복사 및 이동 기능이 지원됩니다. 두 작업 모두 파일당 크기 제한이 기존 50MB에서 1GB로 증가했습니다. 두 작업 모두 작업량 제한이 1TB 또는 500만 파일로 늘어났습니다.
 
-자세한 내용은 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["데이터 조사"^]을 참조하십시오.
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-data-classification/task-copy-move.html["데이터 복사, 이동 및 삭제"^]를 참조하십시오.
 
 .Active Directory 통합 구성 권한
 Data Classification에서 Active Directory(AD) 통합 설정 변경은 이제 관리자에게만 허용됩니다. 뷰어는 더 이상 AD 설정을 수정할 수 없습니다.

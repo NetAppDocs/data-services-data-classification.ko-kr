@@ -664,7 +664,6 @@
   <block id="5215d51f00cbd59bd4f5379564dd2607" category="section-title">마지막으로 액세스한 타임스탬프</block>
   <block id="766aa8e7cd2a6b2b085c6107a7da9b88" category="paragraph">데이터 분류가 디렉토리를 스캔할 때, 해당 스캔은 디렉토리의 **마지막 액세스** 필드에 영향을 미칩니다.  **마지막으로 접근한 날짜** 필드를 보면 해당 메타데이터는 스캔 날짜와 시간 또는 사용자가 디렉토리에 마지막으로 접근한 시간을 반영합니다.</block>
   <block id="e96a6a2be46b8b1357ec2a787a1d1300" category="summary">로그 파일에 액세스하거나 구성 파일을 편집하려면 NetApp Data Classification 시스템에 로그인해야 할 때가 있습니다.</block>
-  <block id="3bdd1ff20ed6998a7cc8219fdca4e271" category="doc">NetApp Data Classification 시스템에 로그인하세요</block>
   <block id="3ce6ca22e847cbd536ba7c715301377a" category="paragraph">로그 파일에 액세스하거나 구성 파일을 편집하려면 NetApp Data Classification 시스템에 로그인해야 합니다.</block>
   <block id="2b5271618e7493a8c77e7b4639d819b8" category="paragraph">데이터 분류가 사내 Linux 머신이나 클라우드에 배포한 Linux 머신에 설치된 경우 구성 파일과 스크립트에 직접 액세스할 수 있습니다.</block>
   <block id="b432bef38adffbc05fc1ceb150787a02" category="paragraph">데이터 분류가 클라우드에 배포되는 경우 데이터 분류 인스턴스에 SSH를 사용해야 합니다.  사용자 이름과 비밀번호를 입력하거나 콘솔 에이전트 설치 중에 제공한 SSH 키를 사용하여 시스템에 SSH를 실행합니다.  SSH 명령은 다음과 같습니다.</block>
@@ -1569,7 +1568,6 @@
   <block id="0079344bb0661607100d432cde92e6a5" category="list-text">구성 페이지에서 *구성*을 선택하여 각 CIFS 및 NFS 볼륨의 상태를 검토하고 오류를 수정합니다.</block>
   <block id="e90444baa59788bd6471cf703b12a16e" category="summary">데이터 조사 페이지에서 세부 정보를 확인하여 조직의 데이터를 조사할 수 있습니다.  거버넌스 대시보드를 살펴본 후 여기에서 연구를 계속할 수 있습니다.</block>
   <block id="4c257f0482d661d1986f92f057e1c581" category="doc">NetApp Data Classification 사용하여 조직에 저장된 데이터를 조사하세요</block>
-  <block id="7ce237dbe0011dccdc7c96c7be17d6ec" category="paragraph">데이터 조사 대시보드는 파일 및 디렉터리 수준의 데이터 통찰력을 표시하여 결과를 정렬하고 필터링할 수 있습니다.  데이터 조사 페이지에서는 파일 및 디렉토리 메타데이터와 권한에 대한 통찰력을 제공하고 중복 파일을 식별합니다.  파일, 디렉토리, 데이터베이스 수준의 통찰력을 바탕으로 조직의 규정 준수를 개선하고 저장 공간을 절약하기 위한 조치를 취할 수 있습니다.  데이터 조사 페이지에서는 파일 이동, 복사, 삭제도 지원합니다.</block>
   <block id="8d6bb2090f1e71e8cabff59cd97a6f5f" category="admonition">조사 페이지에서 통찰력을 얻으려면 데이터 소스에 대한 전체 분류 스캔을 수행해야 합니다.  매핑 전용 스캔을 거친 데이터 소스에는 파일 수준 세부 정보가 표시되지 않습니다.</block>
   <block id="adbc89b69fed239a539f916b53592ab9" category="section-title">데이터 조사 구조</block>
   <block id="7fc46b0c25bc13694774a84c4a0f5b4b" category="paragraph">데이터 조사 페이지는 데이터를 세 개의 탭으로 분류합니다.</block>
@@ -2429,7 +2427,6 @@
   <block id="a1b1318193a35f78be2416bedbe04261" category="sidebar">데이터에 대한 거버넌스 세부 정보 보기</block>
   <block id="056f094fced7be2185f9f1e21b455e6b" category="sidebar">귀하의 데이터에 대한 규정 준수 세부 정보 보기</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="sidebar">개인 정보의 범주</block>
-  <block id="d208d030068b6bbb840e4e251deaf193" category="sidebar">사용자 정의 스캔 만들기</block>
   <block id="bd3668f2876c07e4375041fda913dc31" category="sidebar">저장된 쿼리 관리</block>
   <block id="91cace02ed792be8683fda1544dfb32c" category="sidebar">스캔 설정 수정</block>
   <block id="2a79af6160ec8fbec237f8058c6c9de3" category="sidebar">데이터 분류 관리</block>
@@ -2797,5 +2794,49 @@
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026년 3월 9일</block>
   <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">인터넷 연결 없이 온프레미스에 배포된 단일 Data Classification 인스턴스를 사용할 때 스캔할 수 있는 데이터 소스의 위치를 보여주는 다이어그램입니다.</block>
   <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e70d49c282a7c52a8996f7a8357c7524" category="doc">NetApp Data Classification에 대한 FAQ</block>
+  <block id="4ccc6bc65ccfbf776471461699df7790" category="inline-link-macro">데이터 복사, 이동 및 삭제</block>
+  <block id="26f19c45862fe8f967db0b3b7d289ad3" category="paragraph">자세한 내용은 <block ref="151ab796904ad3ebe669fb675d8fec0a" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="ad5b3224be1d6831dcf88a793785b1f1" category="doc">NetApp Data Classification에 대한 FAQ</block>
+  <block id="621a6cff40fed66e7b90194843eb20fb" category="doc">NetApp Data Classification에 대한 법적 고지</block>
+  <block id="b231d70c2e9c026262bda45de2cf8e61" category="doc">NetApp Data Classification에 로그인하십시오</block>
+  <block id="f214292b356953b67175bbd37992066d" category="summary">조사 대시보드에서 데이터를 필터링한 후 비정형 데이터를 복사, 이동 및 삭제할 수 있습니다.</block>
+  <block id="645af234aa1818d98e8bb6c780fb0e42" category="doc">NetApp Data Classification을 사용하여 파일을 복사, 이동 및 삭제합니다</block>
+  <block id="4c6b11e5b29f298bdccac50248f21007" category="paragraph">거버넌스 및 비용 절감 기회에 대한 통찰력을 제공할 뿐만 아니라 NetApp Data Classification을 사용하면 Investigation 대시보드에서 파일에 대한 작업을 수행할 수 있습니다. Investigation 대시보드에서 데이터를 필터링한 후 비정형 데이터를 복사, 이동 및 삭제할 수 있습니다. 이러한 작업을 수행하면 파일을 더 안전한 위치로 이동하여 규정 준수를 개선하거나 오래되거나 중복된 파일을 삭제하여 비용 절감 기회를 창출할 수 있습니다.</block>
+  <block id="558f28628ba8ab4cb8420949524832d3" category="section-title">파일 복사</block>
+  <block id="e54a222aee96b176f405c4031ff80909" category="paragraph">Data Classification은 최대 1GB 크기의 파일 복사를 지원합니다. 총 1TB의 데이터 또는 500만 개의 파일 중 먼저 도달하는 제한까지 복사할 수 있습니다. CIFS 공유 또는 NFS 대상으로 파일을 복사할 수 있습니다. 파일을 복사할 때 소스 파일에는 영향을 미치지 않습니다.</block>
+  <block id="37214830ec688e601a722f40084e9795" category="list-text">조사 대시보드에서 복사할 파일을 선택합니다.</block>
+  <block id="2d2f00419a0dd0229c58522ea98e71ae" category="list-text">파일 목록 위에서 **복사**를 선택합니다.</block>
+  <block id="b9e9b1bb4d8b072a482f32c6e7d7ff72" category="inline-image-macro">조사 페이지의 작업 스크린샷</block>
+  <block id="cca60a4ec6a536a71654abbbd1c54e3a" category="paragraph"><block ref="cca60a4ec6a536a71654abbbd1c54e3a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="07f527a3198ae416b045c995367ab422" category="list-text">복사본의 대상 프로토콜을 선택합니다. **NFS** 또는 **CIFS**.</block>
+  <block id="4885cff36928d8614fad0e3d21b27679" category="list-text">NFS를 선택한 경우, 슬래시를 사용하여 대상 경로를 입력합니다(예:<block ref="8ed050b486343bdef7b6adadf5b986b8" prefix=" " category="inline-code"></block>).</block>
+  <block id="6a3331936dcbbbfa4db946e4d0f00e9b" category="paragraph">CIFS를 선택한 경우, 대상 경로를 백슬래시(\)를 사용하여 입력하십시오(예: <block ref="52938cbc0a420230679e4ae98bb4a89a" prefix=" " category="inline-code"></block>). 또한 CIFS 공유에 대한 **Username** 및 **Password** 자격 증명을 입력하십시오.</block>
+  <block id="c64976420b21ffb4d1ba97533079e81c" category="inline-image-macro">NFS 파일 복사 기능의 스크린샷</block>
+  <block id="12ceb039500c1e7536d6a926d04beed0" category="paragraph"><block ref="12ceb039500c1e7536d6a926d04beed0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="005315d0bf05e5d249f46e46e20423d3" category="list-text">**제출**을 선택합니다.</block>
+  <block id="ed86a97d5bcbda5898269baae37b79f7" category="section-title">파일 이동</block>
+  <block id="0ac97eb58eed3141f29d93b87eb4d0b7" category="paragraph">Data Classification은 최대 1GB 크기의 파일 이동을 지원합니다. 총 1TB의 데이터 또는 500만 개의 파일 중 먼저 도달하는 제한까지 이동할 수 있습니다. CIFS 또는 NFS 대상으로 파일을 이동할 수 있습니다.</block>
+  <block id="fbb338a6c6a711b7c940515c513f15de" category="list-text">조사 대시보드에서 이동할 파일을 선택합니다.</block>
+  <block id="2066527d248d6275b0ce325ff50ec8fb" category="list-text">파일 목록 위에서 **이동**을 선택합니다.</block>
+  <block id="2a993e09d9313401f99dcee0ed7245f9" category="list-text">대상의 프로토콜을 선택합니다. **NFS** 또는 **CIFS**.</block>
+  <block id="1ab5ecdad0b7cf47d71967b3f0e1f51b" category="list-text">선택적으로 **Leave breadcrumb**를 선택하면 파일이 이동된 위치와 이유를 설명하는 breadcrumb 파일이 소스 볼륨에 남게 됩니다.</block>
+  <block id="465b61ed91de19635de96ea746fcd8dd" category="list-text">**Leave breadcrumb**을 선택한 경우 파일 이동 이유와 필요한 경우 새 위치를 설명하는 텍스트를 입력합니다.</block>
+  <block id="f7e4b92188f5354ca61e9869df6224cc" category="inline-image-macro">NFS 파일 이동 기능의 스크린샷</block>
+  <block id="9b1a8f320a2c08a8370e356510090979" category="paragraph"><block ref="9b1a8f320a2c08a8370e356510090979" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7afd3db29a42496704a6705958fec121" category="list-text">**항목 이동**을 선택합니다.</block>
+  <block id="19e43848563797a6f937c7895b604754" category="section-title">파일 삭제</block>
+  <block id="bf7a8fa340e92f5931d748d2f4929afb" category="paragraph">Investigation 대시보드에서 데이터를 필터링하여 스토리지 공간 및 비용 절감 기회를 찾을 때 해당 파일을 삭제할 수 있습니다. 파일 삭제는 비정형 파일에 대해서만 지원됩니다.</block>
+  <block id="fe3f40b2ceb6ec005d118e22ab125813" category="list-text">조사 대시보드에서 삭제할 파일을 선택하세요.</block>
+  <block id="9f9603fa59f6dd606ff86c8b621cae42" category="list-text">확인 대화 상자에서 "permanently delete"를 입력합니다.</block>
+  <block id="de44f74c0cf208f9b074a847f28871e1" category="list-text">작업을 확인하려면 **파일 삭제**를 선택하십시오.</block>
+  <block id="9c213e0d48408ad93cdfc881eb4f22dd" category="inline-image-macro">삭제 대화 상자의 스크린샷</block>
+  <block id="d5c79828ec7e224f24ce0c5c7bdfd94a" category="paragraph"><block ref="d5c79828ec7e224f24ce0c5c7bdfd94a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1e91143d215d79313744660e8a25c51" category="inline-link-macro">파일 이동, 복사 및 삭제</block>
+  <block id="5f346df67220a8ad49f8534209369421" category="paragraph">Data Investigation 대시보드는 파일 및 디렉터리 수준의 데이터 분석 정보를 표시하여 결과를 정렬하고 필터링할 수 있도록 합니다. Data Investigation 페이지는 파일 및 디렉터리 메타데이터와 권한에 대한 정보를 제공하고 중복 파일을 식별합니다. 파일, 디렉터리 및 데이터베이스 수준의 분석 정보를 통해 조직의 규정 준수를 개선하고 스토리지 공간을 절약할 수 있습니다. Data Investigation 페이지는 <block ref="53552aaf1401627b381eb7f88c3339dc" category="inline-link-macro-rx"></block>도 지원합니다.</block>
+  <block id="f394fbb29081ecb4ff4624bf5701d2c0" category="inline-link-macro">구조화되지 않은 파일 복사, 이동 및 삭제</block>
+  <block id="380916f8eca732c161f7d63bc771658e" category="admonition">데이터를 필터링한 후에는 <block ref="80925d04faafa25188db966788d6cf44" category="inline-link-macro-rx"></block> 규정 준수를 개선하거나 스토리지 공간을 최적화할 수 있습니다.</block>
+  <block id="a05935ba37500bcaabc75b8fac4a4d69" category="inline-link-macro">조사 대시보드에서 데이터 복사, 이동 및 삭제</block>
+  <block id="dccdd7229b11ad459b3b6fd7edf24186" category="list-text"><block ref="dccdd7229b11ad459b3b6fd7edf24186" category="inline-link-macro-rx"></block></block>
+  <block id="5b077e4667590c350e8809dec7c16b8f" category="sidebar">Linux 호스트의 준비 상태를 확인하세요</block>
+  <block id="44c26efa4311ed85b7e12474f8bd2eaf" category="sidebar">데이터 소스 제거</block>
 </blocks>
