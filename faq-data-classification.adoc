@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: faq-cloud-compliance.html 
+permalink: faq-data-classification.html 
 keywords: faq, frequently asked questions, questions, cloud compliance, data sense 
 summary: 이 FAQ는 질문에 대한 빠른 답변을 찾는 데 도움이 될 수 있습니다. 
 ---

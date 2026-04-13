@@ -965,7 +965,6 @@
   <block id="ca3e2e8380ad6cedd810ec4fc49fa9e7" category="paragraph">Active Directory 통합에서 값을 수정해야 하는 경우 *편집* 버튼을 클릭하고 변경합니다.</block>
   <block id="024205acf9405311336c02bbd2193b70" category="inline-image-macro">더보기 버튼</block>
   <block id="59cb665cd7462a904eefb54d13262d58" category="paragraph">통합을 선택하여 삭제할 수도 있습니다.<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block> 버튼을 클릭한 다음 *Active Directory 제거*를 클릭합니다.</block>
-  <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">NFS 파일 공유의 파일이나 폴더에 그룹 ID가 추가되면 해당 파일이나 폴더에 대한 권한이 정의됩니다. 예를 들어, "조직에 공개"할지 여부 등이 정의됩니다.  일부 그룹 ID(GID)가 처음에 "조직에 공개" 권한 수준으로 설정되지 않은 경우 해당 권한을 GID에 추가하여 해당 GID가 첨부된 모든 파일과 폴더가 "조직에 공개"된 것으로 간주되도록 할 수 있습니다.</block>
   <block id="fdb7ec2123850e91ea909a1c5335e442" category="doc">NetApp Data Classification 에서 조직에 공개된 추가 그룹 ID 정의</block>
   <block id="b838209e951016249a0803fc3f2aabb9" category="paragraph">NFS 파일 공유의 파일이나 폴더에 그룹 ID(GID)가 추가되면 파일이나 폴더에 대한 사용 권한이 정의됩니다. 예를 들어, "조직에 공개"할지 여부가 정의됩니다.  일부 GID가 처음에 "조직에 공개" 권한 수준으로 설정되지 않은 경우 해당 권한을 GID에 추가하여 해당 GID가 첨부된 모든 파일과 폴더가 "조직에 공개"된 것으로 간주되도록 할 수 있습니다.</block>
   <block id="bd4a9628c6b0a95d8b9d51e8beb243af" category="paragraph">이 변경을 하고 NetApp Data Classification 파일과 폴더를 다시 검사하면 이러한 그룹 ID가 첨부된 모든 파일과 폴더에 조사 세부 정보 페이지에 이 권한이 표시되고 파일 권한을 표시하는 보고서에도 나타납니다.</block>
@@ -2842,4 +2841,7 @@
   <block id="05ae2f7ed42f24ad34227986da264aae" category="paragraph-title">RHEL 9.7 지원</block>
   <block id="3864a6ab3937a10a6f13bfa0f593150c" category="paragraph">Data Classification에 Red Hat Enterprise Linux v9.7이 추가되어 다크 사이트 배포를 포함한 수동 온프레미스 설치가 가능합니다.</block>
   <block id="900e4148b2c0433fc2c6d0435cf489cd" category="paragraph">다음 운영 체제는 Podman 컨테이너 엔진을 사용해야 하며 Data Classification 버전 1.30 이상이 필요합니다: Red Hat Enterprise Linux 버전 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5, 9.6 및 9.7.</block>
+  <block id="9011586cd2cbb8095aa94a58c4af72fd" category="doc">버전 1.53</block>
+  <block id="0afc92b0bdc2ed57893a82b6cc2587d3" category="summary">NFS 파일 공유에서 그룹 ID가 파일이나 폴더에 연결되면 해당 파일이나 폴더에 대한 권한을 정의합니다. 그룹 ID가 "조직에 공개" 권한 수준으로 설정되어 있지 않은 경우, 해당 GID에 해당 권한을 추가하여 해당 GID가 연결된 모든 파일과 폴더가 "조직에 공개"된 것으로 간주되도록 할 수 있습니다.</block>
+  <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026년 4월 13일</block>
 </blocks>
