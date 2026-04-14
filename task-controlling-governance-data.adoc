@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
 keywords: savings, stale data, duplicate data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, costs of data 
-summary: 조직의 스토리지 리소스에 있는 데이터와 관련된 비용을 제어하세요.  NetApp Data Classification 시스템에서 오래된 데이터, 중복 파일, 매우 큰 파일의 양을 파악하여 일부 파일을 제거할지 아니면 비용이 덜 드는 개체 스토리지로 계층화할지 결정할 수 있도록 도와줍니다. 
+summary: Data Classification을 사용하면 오래된 데이터, 중복 파일 및 대용량 파일을 식별한 다음 제거하거나 비용이 저렴한 오브젝트 스토리지로 계층화하여 스토리지 비용을 절감할 수 있습니다 
 ---
-= NetApp Data Classification 사용하여 조직에 저장된 데이터에 대한 거버넌스 세부 정보를 확인하세요.
+= NetApp Data Classification을 통해 조직 데이터에 대한 거버넌스 세부 정보를 확인하세요
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
