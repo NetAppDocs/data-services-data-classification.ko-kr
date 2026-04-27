@@ -74,9 +74,9 @@ link:https://www.netapp.com/data-services/classification/["데이터 분류 사�
 * Amazon FSx for NetApp ONTAP
 * Azure NetApp Files
 * Cloud Volumes ONTAP (AWS, Azure 또는 GCP에 배포됨)
+* Google Cloud NetApp Volumes
 * 온프레미스 ONTAP 클러스터
 * StorageGRID
-* Google Cloud NetApp Volumes
 
 
 *데이터 출처*
@@ -132,7 +132,7 @@ image:diagram_cloud_compliance_instance.png["클라우드 공급자에서 실행
 
 기본 인스턴스에 대해 다음 사항을 참고하세요.
 
-* AWS에서는 데이터 분류가 실행됩니다. https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge 인스턴스"^] 500GiB GP2 디스크 포함.  운영체제 이미지는 Amazon Linux 2입니다.  AWS에 배포하는 경우 소량의 데이터를 스캔하는 경우 더 작은 인스턴스 크기를 선택할 수 있습니다.
+* AWS에서 Data Classification은 500 GiB GP2 디스크가 있는 https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge 인스턴스"^]에서 실행됩니다. 운영 체제 이미지는 Amazon Linux 2입니다.
 * Azure에서 데이터 분류는 다음에서 실행됩니다.link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] 500GiB 디스크 포함.  운영체제 이미지는 Ubuntu 22.04입니다.
 * GCP에서 데이터 분류는 다음에서 실행됩니다.link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-standard-16 VM"^] 500GiB 표준 영구 디스크를 사용합니다.  운영체제 이미지는 Ubuntu 22.04입니다.
 * 기본 인스턴스를 사용할 수 없는 지역에서는 데이터 분류가 대체 인스턴스에서 실행됩니다. link:reference-instance-types.html["대체 인스턴스 유형을 확인하세요"] .
@@ -159,8 +159,6 @@ TIP: 데이터 분류는 지속적으로 데이터를 스캔하므로 인스턴�
 
 | 대형(기본값) | CPU 16개, 64GB RAM, 500GiB SSD | 최대 2억 5천만 개의 파일을 스캔할 수 있습니다. 
 |===
-Azure 또는 GCP에서 데이터 분류를 배포할 때 더 작은 인스턴스 유형을 사용하려면 ng-contact-data-sense@netapp.com으로 이메일을 보내 지원을 요청하세요.
-
 
 
 == 데이터 분류 스캐닝 작동 방식

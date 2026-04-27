@@ -276,7 +276,7 @@ NetApp Console 사용하면 사용자는 온프레미스, 클라우드, 하이�
 
 언제link:task-deploy-cloud-compliance.html["클라우드에 배포됨"] :
 
-* AWS에서 데이터 분류는 500GiB GP2 디스크가 있는 m6i.4xlarge 인스턴스에서 실행됩니다.  배포 중에 더 작은 인스턴스 유형을 선택할 수 있습니다.
+* AWS에서 Data Classification은 500GiB GP2 디스크가 장착된 m6i.4xlarge 인스턴스에서 실행됩니다.
 * Azure에서 데이터 분류는 500GiB 디스크가 있는 Standard_D16s_v3 VM에서 실행됩니다.
 * GCP에서 데이터 분류는 500GiB Standard 영구 디스크가 있는 n2-standard-16 VM에서 실행됩니다.
 
