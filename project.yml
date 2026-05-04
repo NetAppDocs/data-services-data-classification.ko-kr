@@ -36,6 +36,8 @@ sidebar:
         url: "/task-deploy-cloud-compliance.html"
       - title: 인터넷 접속이 가능한 Linux 호스트에 설치
         url: "/task-deploy-compliance-onprem.html"
+      - title: OVA를 사용하여 온프레미스에 설치
+        url: "/task-deploy-ova.html"
       - title: 인터넷 접속 없이 온프레미스 Linux 호스트에 설치
         url: "/task-deploy-compliance-dark-site.html"
       - title: Linux 호스트의 준비 상태를 확인하세요

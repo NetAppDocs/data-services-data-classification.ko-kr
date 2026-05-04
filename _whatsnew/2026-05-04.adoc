@@ -1,0 +1,11 @@
+= OVA를 사용하여 NetApp Data Classification 배포
+:allow-uri-read: 
+
+
+
+
+=== OVA를 사용하여 NetApp Data Classification 배포
+
+NetApp Data Classification은 이제 VMware Open Virtual Appliance(OVA)를 통한 배포를 지원하여 온프레미스 VMware vSphere 환경을 위한 간소화된 배포 전략을 제공합니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-ova.html["OVA를 사용하여 NetApp Data Classification 배포"^]을 참조하십시오.

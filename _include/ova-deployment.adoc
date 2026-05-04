@@ -1,0 +1,6 @@
+= 
+:allow-uri-read: 
+
+
+
+TIP: 온프레미스 VMware vSphere 배포의 경우 Data Classification은 간소화된 link:task-deploy-ova.html["OVA를 사용한 배포"]을 지원합니다.
