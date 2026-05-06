@@ -478,7 +478,6 @@
   <block id="705900ff5dfc71b7fab21e0a2b91555c" category="section-title">콘솔 에이전트란 무엇인가요?</block>
   <block id="cec155912a2ab722f7c2cf854b71ac8c" category="paragraph">콘솔 에이전트는 클라우드 계정 내부 또는 온프레미스의 컴퓨팅 인스턴스에서 실행되는 소프트웨어로, NetApp Console 클라우드 리소스를 안전하게 관리할 수 있도록 해줍니다.  데이터 분류를 사용하려면 콘솔 에이전트를 배포해야 합니다.</block>
   <block id="315a4734119ef2ab25e03ee01718971d" category="section-title">콘솔 에이전트는 어디에 설치해야 합니까?</block>
-  <block id="e843321c8bae82c4d6f4061b3f93bf39" category="paragraph">데이터를 스캔할 때 NetApp Console 에이전트를 다음 위치에 설치해야 합니다.</block>
   <block id="07bffd39dd72da3f20260b9a6907adc1" category="list-text">AWS의 Cloud Volumes ONTAP 또는 Amazon FSx for ONTAP 의 경우: 콘솔 에이전트가 AWS에 있습니다.</block>
   <block id="288ed4c5031b1ff115f43b30ece3261f" category="list-text">Azure 또는 Azure NetApp Files 의 Cloud Volumes ONTAP 의 경우: 콘솔 에이전트가 Azure에 있습니다.</block>
   <block id="bcdb2f393c3c29bc329a8b2e81ff4d7b" category="list-text">GCP의 Cloud Volumes ONTAP 의 경우: 콘솔 에이전트가 GCP에 있습니다.</block>
@@ -891,7 +890,6 @@
   <block id="04e7e9631c93eec889b2ab99b5143465" category="section-title">Active Directory 서버에 연결</block>
   <block id="2870ffcb03b7e55be580adce9e49dedc" category="paragraph">데이터 분류를 배포하고 데이터 소스에 대한 스캐닝을 활성화한 후에는 데이터 분류를 Active Directory와 통합할 수 있습니다.  Active Directory는 DNS 서버 IP 주소나 LDAP 서버 IP 주소를 사용하여 액세스할 수 있습니다.</block>
   <block id="9d553dac60477ef9e0919509b66ec352" category="paragraph">Active Directory 자격 증명은 읽기 전용일 수 있지만, 관리자 자격 증명을 제공하면 데이터 분류에서 높은 권한이 필요한 모든 데이터를 읽을 수 있습니다.  자격 증명은 데이터 분류 인스턴스에 저장됩니다.</block>
-  <block id="1b27da1c6c8ab8d350478de2c14a8b2a" category="paragraph">CIFS 볼륨/파일 공유의 경우 데이터 분류 검사에서 파일의 "마지막 액세스 시간"이 변경되지 않았는지 확인하려면 사용자에게 쓰기 속성 권한이 있어야 합니다.  가능하다면 Active Directory로 구성된 사용자를 모든 파일에 대한 권한이 있는 조직 내 상위 그룹에 포함하는 것이 좋습니다.</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="list-title">요구 사항</block>
   <block id="f116dfc235147909ef3b37492dd58497" category="list-text">회사 사용자를 위해 Active Directory가 이미 설정되어 있어야 합니다.</block>
   <block id="6fcd963bedffc4e92b9378afcac66a5a" category="list-text">Active Directory에 대한 정보가 있어야 합니다.</block>
@@ -2312,7 +2310,6 @@
   <block id="303c6c3b9289ea073f455b6be5394610" category="paragraph"><block ref="a4a7f22b048c40ec69122e1f7c39cfdb" category="inline-link-rx"></block> .</block>
   <block id="4b273eb22f0e890dce8d8a73dba2425e" category="paragraph-title">BlueXP classification 일본 개인 번호를 식별할 수 있습니다.</block>
   <block id="b614eb1e8ba4ff347cc77ea1b9148636" category="paragraph">BlueXP classification 일본 개인 번호(마이 넘버라고도 함)가 포함된 파일을 식별하고 분류할 수 있습니다.  여기에는 개인 및 회사 내 번호가 모두 포함됩니다.<block ref="c29cfbce54672755b7557a8e95ef0ae4" category="inline-link-rx"></block> .</block>
-  <block id="7acae0ba2f29c1b7556d813227ddd12d" category="sidebar">NetApp 데이터 분류를 사용하면 조직의 하이브리드 멀티클라우드에서 데이터를 스캔하고 분류할 수 있습니다.  데이터 분류는 상황에 맞는 데이터 분석 및 분류를 위해 AI 기반 자연어 처리(NLP)를 활용하여 규정 준수 요구 사항을 충족하고, 보안 취약성을 탐지하고, 비용을 최적화하고, 마이그레이션을 가속화할 수 있는 실행 가능한 데이터 통찰력을 제공합니다.</block>
   <block id="e6d9434fa5832019fb3968212fe539d4" category="sidebar">NetApp Data Classification 문서</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하기</block>
   <block id="06e283ee316863d38f0fea16ba5785cc" category="sidebar">데이터 분류에 대해 알아보세요</block>
@@ -2509,7 +2506,6 @@
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025년 12월 8일</block>
   <block id="3b02682cee7334412169a53934571445" category="sidebar">시스템 상태 모니터링</block>
   <block id="199728aa05786f9f41b3140d025353e2" category="list-text">데이터 분류는 전용 호스트에서 수행되어야 합니다. 호스트는 다른 애플리케이션이나 바이러스 백신과 같은 타사 소프트웨어와 공유할 수 없습니다.</block>
-  <block id="cc2f809338aeb90513fd5d335abc18b2" category="paragraph">데이터 분류 설치 스크립트에는 환경이 요구 사항을 충족하는지 확인하는 테스트 스크립트가 포함되어 있습니다. 설치 스크립트를 실행하기 전에 Linux 호스트의 준비 상태를 확인하기 위해 이 스크립트를 별도로 실행할 수 있습니다.</block>
   <block id="ac5df91391e146d13ac61a909161e5e5" category="paragraph">당신은 할 수 있습니다 <block ref="b05bc1a82ba8aa93695b18917e23ffd8" category="inline-link-macro-rx"></block> 네트워크 내의 Linux 호스트 또는 클라우드의 Linux 호스트에서 실행할 수 있습니다. 콘솔 에이전트가 온프레미스에 설치되어 있는 경우 데이터 분류 기능도 온프레미스에 설치할 수 있습니다.</block>
   <block id="6d69772abdf589ea602f8071cbf783ed" category="paragraph">클라우드 공급자 환경에서 콘솔 에이전트를 생성하려면 다음을 참조하세요.</block>
   <block id="57d97cf09f86f81d75b459840c0ba8eb" category="list-text"><block ref="57d97cf09f86f81d75b459840c0ba8eb" category="inline-link-rx"></block></block>
@@ -2883,4 +2879,8 @@
   <block id="ea618accf4845a405569f1ffa72274f5" category="paragraph">"액세스 권한이 있는 사용자 수" 필터가 이제 SharePoint Online 리포지토리에 저장된 파일도 지원합니다. 이전에는 CIFS 공유에 있는 파일만 지원되었습니다. SharePoint 그룹 중 Active Directory 기반이 아닌 그룹은 현재 이 필터에 포함되지 않습니다.</block>
   <block id="fd472c68167f5fc3fdb653a650f9fd55" category="paragraph">*버전 1.19*</block>
   <block id="2c6be179dba321b242cbe88c550f1815" category="sidebar">OVA를 사용하여 온프레미스에 설치</block>
+  <block id="2ec24b538cd35ccc98148dea4e4a3985" category="paragraph">데이터를 스캔할 때 NetApp Console 에이전트는 다음 위치에 설치해야 합니다.</block>
+  <block id="ef6714f5aeceef76c2ac34e1adaeefa3" category="paragraph">CIFS 볼륨/파일 공유의 경우, Data Classification 스캔으로 인해 파일의 "마지막 액세스 시간"이 변경되지 않도록 하려면 사용자에게 Write Attributes 권한이 있어야 합니다. 가능하면 Active Directory에 구성된 사용자를 조직의 모든 파일에 대한 권한을 가진 상위 그룹에 포함시키는 것이 좋습니다.</block>
+  <block id="e4f6181944f0dc7535179eb25f2c38b5" category="paragraph">NetApp Data Classification 설치 스크립트에는 환경이 요구 사항을 충족하는지 확인하는 테스트 스크립트가 포함되어 있습니다. 설치 스크립트를 실행하기 전에 이 스크립트를 별도로 실행하여 Linux 호스트의 준비 상태를 확인할 수 있습니다.</block>
+  <block id="a10f0eec47f9088e070063edbfdc4194" category="sidebar">NetApp Data Classification을 사용하면 조직의 하이브리드 멀티클라우드 환경 전반에서 데이터를 스캔하고 분류할 수 있습니다. Data Classification은 AI 기반 자연어 처리(NLP)를 활용하여 문맥에 맞는 데이터 분석 및 분류를 수행함으로써 규정 준수 요구 사항을 충족하고, 보안 취약점을 탐지하고, 비용을 최적화하고, 마이그레이션을 가속화하는 데 도움이 되는 실행 가능한 인사이트를 제공합니다.</block>
 </blocks>

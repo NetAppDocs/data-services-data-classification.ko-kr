@@ -1,14 +1,16 @@
 ---
 indexpage:
   title: NetApp Data Classification 문서
-  summary: NetApp 데이터 분류를 사용하면 조직의 하이브리드 멀티클라우드에서 데이터를 스캔하고 분류할 수 있습니다.  데이터 분류는 상황에
-    맞는 데이터 분석 및 분류를 위해 AI 기반 자연어 처리(NLP)를 활용하여 규정 준수 요구 사항을 충족하고, 보안 취약성을 탐지하고, 비용을
-    최적화하고, 마이그레이션을 가속화할 수 있는 실행 가능한 데이터 통찰력을 제공합니다.
+  summary: NetApp Data Classification을 사용하면 조직의 하이브리드 멀티클라우드 환경 전반에서 데이터를 스캔하고 분류할
+    수 있습니다. Data Classification은 AI 기반 자연어 처리(NLP)를 활용하여 문맥에 맞는 데이터 분석 및 분류를 수행함으로써
+    규정 준수 요구 사항을 충족하고, 보안 취약점을 탐지하고, 비용을 최적화하고, 마이그레이션을 가속화하는 데 도움이 되는 실행 가능한 인사이트를
+    제공합니다.
   keywords: bluexp, data classification, cloud data sense, data sense, compliance,
     security, netapp console, bluexp classification
-  lead: NetApp 데이터 분류를 사용하면 조직의 하이브리드 멀티클라우드에서 데이터를 스캔하고 분류할 수 있습니다.  데이터 분류는 상황에
-    맞는 데이터 분석 및 분류를 위해 AI 기반 자연어 처리(NLP)를 활용하여 규정 준수 요구 사항을 충족하고, 보안 취약성을 탐지하고, 비용을
-    최적화하고, 마이그레이션을 가속화할 수 있는 실행 가능한 데이터 통찰력을 제공합니다.
+  lead: NetApp Data Classification을 사용하면 조직의 하이브리드 멀티클라우드 환경 전반에서 데이터를 스캔하고 분류할 수
+    있습니다. Data Classification은 AI 기반 자연어 처리(NLP)를 활용하여 문맥에 맞는 데이터 분석 및 분류를 수행함으로써
+    규정 준수 요구 사항을 충족하고, 보안 취약점을 탐지하고, 비용을 최적화하고, 마이그레이션을 가속화하는 데 도움이 되는 실행 가능한 인사이트를
+    제공합니다.
   tiles:
   - title: 시작하기
     links:

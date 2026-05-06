@@ -234,7 +234,7 @@ NetApp 민감한 데이터에 액세스할 수 없으며 이를 UI에 표시하�
 
 === 콘솔 에이전트는 어디에 설치해야 합니까?
 
-데이터를 스캔할 때 NetApp Console 에이전트를 다음 위치에 설치해야 합니다.
+데이터를 스캔할 때 NetApp Console 에이전트는 다음 위치에 설치해야 합니다.
 
 * AWS의 Cloud Volumes ONTAP 또는 Amazon FSx for ONTAP 의 경우: 콘솔 에이전트가 AWS에 있습니다.
 * Azure 또는 Azure NetApp Files 의 Cloud Volumes ONTAP 의 경우: 콘솔 에이전트가 Azure에 있습니다.
