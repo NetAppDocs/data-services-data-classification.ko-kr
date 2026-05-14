@@ -6,7 +6,7 @@
 
 === 분류 스캔 우선 순위 지정
 
-데이터 분류는 매핑 전용 스캔 외에도 맵 및 분류 스캔의 우선순위를 지정하는 기능을 지원하여 어떤 스캔을 먼저 완료할지 선택할 수 있습니다. Map & Classify 스캔의 우선순위 지정은 스캔이 시작되기 전과 시작 중 지원됩니다. 검사가 진행되는 동안 검사의 우선순위를 지정하는 경우 매핑 검사와 분류 검사가 모두 우선순위가 지정됩니다.
+Data Classification은 Map 전용 스캔뿐만 아니라 Map & Classify 스캔의 우선순위를 지정할 수 있도록 지원하여 어떤 스캔을 먼저 완료할지 선택할 수 있게 합니다. Map & Classify 스캔의 우선순위 지정은 스캔 시작 전과 도중 모두 지원됩니다. 진행 중인 스캔의 우선순위를 지정하면 매핑 스캔과 분류 스캔 모두 우선순위가 적용됩니다.
 
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["스캔 우선 순위 지정"] .
 
