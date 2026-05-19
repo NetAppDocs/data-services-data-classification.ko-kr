@@ -115,7 +115,7 @@ image:screenshot-compliance-report-buttons.png["데이터 검색 평가 보고�
 |===
 .단계
 . 데이터 분류에서 *거버넌스*를 선택합니다.
-. 보고서 타일에서 *전체 데이터 매핑 개요 보고서*를 선택합니다.
+. 보고서 타일에서 전체 데이터 매핑 개요 보고서 제목의 **다운로드** 버튼을 선택합니다.
 +
 image:screenshot-compliance-report-buttons.png["데이터 매핑 보고서를 시작하는 방법을 보여주는 거버넌스 대시보드의 스크린샷입니다."]
 

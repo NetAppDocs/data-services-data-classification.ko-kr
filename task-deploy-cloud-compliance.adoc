@@ -43,7 +43,7 @@ NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할
 
 == 콘솔 에이전트 만들기
 
-아직 콘솔 에이전트가 없다면 클라우드 공급자에서 콘솔 에이전트를 만드세요. 보다 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWS에서 콘솔 에이전트 만들기"^] 또는 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azure에서 콘솔 에이전트 만들기"^] , 또는 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP에서 콘솔 에이전트 만들기"^] .  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다. https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."] 하지만 지금 당장 설정해야 하는 경우도 있습니다.
+Console 에이전트가 아직 없는 경우 클라우드 공급자에서 Console 에이전트를 생성하세요.  https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWS에서 콘솔 에이전트 만들기"^] 또는 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azure에서 콘솔 에이전트 만들기"^], 또는 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP에서 콘솔 에이전트 만들기"^]을 참조하세요. 대부분의 경우 Data Classification을 활성화하기 전에 Console 에이전트가 설정되어 있을 가능성이 높지만 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."], 지금 설정해야 하는 경우도 있습니다.
 
 특정 클라우드 공급자에 배포된 콘솔 에이전트를 사용해야 하는 몇 가지 시나리오가 있습니다.
 

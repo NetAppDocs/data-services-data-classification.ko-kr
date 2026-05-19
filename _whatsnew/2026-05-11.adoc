@@ -12,6 +12,18 @@ link:https://youtu.be/_8YJ3KyZ7nI["비디오 둘러보기"^]을(를) 검토하�
 
 
 
+=== 규정 준수 관리자 IAM 역할
+
+Data Classification은 이제 Data Classification의 권한을 관리하기 위한 Compliance admin 역할을 지원합니다. Compliance admin 역할은 Console 에이전트 및 작업 영역을 포함한 리소스에 대한 액세스 권한이 없습니다. Compliance admin 역할을 가진 사용자는 최소한 하나 이상의 다른 역할과 연결되어야 합니다.
+
+Data Classification을 설치하려면 Console 플랫폼 관리자 역할 또는 Compliance 관리자 역할이 있어야 합니다.
+
+기존 사용자라면 평소와 같이 액세스 권한이 유지됩니다. 예를 들어, 폴더 또는 프로젝트 관리자 역할을 가진 플랫폼 역할은 기존 액세스 권한을 그대로 유지합니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-data-classification.html["Data Classification 역할"^]을 참조하세요.
+
+
+
 === OVA를 사용하여 NetApp Data Classification 배포
 
 NetApp Data Classification은 이제 VMware Open Virtual Appliance(OVA)를 통한 배포를 지원하여 온프레미스 VMware vSphere 환경을 위한 간소화된 배포 전략을 제공합니다.

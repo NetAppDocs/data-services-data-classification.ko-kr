@@ -436,7 +436,6 @@
   <block id="7a86e1b46f8a8bc6d38b11447af57092" category="list-text">*데이터 매핑 스캔(매핑 전용 스캔)*: 데이터 분류는 메타데이터만 스캔합니다.  이는 전반적인 데이터 관리 및 거버넌스, 신속한 프로젝트 범위 설정, 대규모 자산 및 우선 순위 지정에 유용합니다.  데이터 매핑은 메타데이터를 기반으로 하며 *빠른* 스캔으로 간주됩니다.</block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">빠른 검사 후 데이터 매핑 보고서를 생성할 수 있습니다.  이 보고서는 기업 데이터 소스에 저장된 데이터에 대한 개요를 제공하며, 이를 통해 리소스 활용, 마이그레이션, 백업, 보안 및 규정 준수 프로세스에 대한 의사 결정을 내리는 데 도움이 됩니다.</block>
   <block id="59918b13530817c9008f5a24533dcfbc" category="paragraph">전체 검사 후에는 데이터 조사 페이지에서 데이터 보기 및 세분화, 파일 내에서 이름 검색, 소스 파일 복사, 이동 및 삭제 등 데이터에 적용할 수 있는 추가 데이터 분류 기능이 많이 있습니다.</block>
-  <block id="8f6adf4dbf6fab8e9a0fa95709bc6780" category="paragraph">데이터 분류는 파일 이름, 권한, 생성 시간, 마지막 액세스, 마지막 수정과 같은 메타데이터를 캡처합니다.  여기에는 데이터 조사 세부 정보 페이지와 데이터 조사 보고서에 나타나는 모든 메타데이터가 포함됩니다.</block>
   <block id="b8ede2d0f0baf0dbbcd6b1caa3c24a82" category="inline-xref-macro">데이터 분류가 스캔하는 개인 데이터 범주</block>
   <block id="0a2a2726fa4f033804e23ae8e734f53d" category="paragraph">데이터 분류를 통해 개인 정보(PII) 및 민감한 개인 정보(SPII) 등 다양한 유형의 비공개 데이터를 식별할 수 있습니다.  개인 정보에 대한 자세한 내용은 다음을 참조하세요.<block ref="99786247576d4194bfb6afa2ffe45770" category="inline-xref-macro-rx"></block> .</block>
   <block id="cc6c818a7ff4844f95f831b7fea5d028" category="section-title">데이터 분류 정보를 특정 사용자에게만 제한할 수 있나요?</block>
@@ -958,7 +957,6 @@
   <block id="5cb140d3eff23c8e0c3f2d43f10a7dbb" category="cell">모든 시스템에 대해: 각 시스템의 파일 수와 사용된 용량을 나열합니다.  단일 시스템의 경우: 가장 많은 용량을 사용하는 파일을 나열합니다.</block>
   <block id="6a0fd0952390e8ad81d681946aa5dcab" category="cell">파일이 생성된 날짜, 마지막으로 수정된 날짜 또는 마지막으로 액세스된 날짜에 대한 세 가지 차트와 그래프를 제공합니다.  특정 날짜 범위를 기준으로 파일 수와 사용된 용량을 나열합니다.</block>
   <block id="02d0f0696835f69cefa2384249b76fd7" category="cell">시스템의 특정 크기 범위 내에 존재하는 파일의 수를 나열합니다.</block>
-  <block id="43bdc51d30bd77ef382a419cb3655312" category="list-text">보고서 타일에서 *전체 데이터 매핑 개요 보고서*를 선택합니다.</block>
   <block id="fb5cbffc5e8f979523247654de6b0102" category="inline-image-macro">데이터 매핑 보고서를 시작하는 방법을 보여주는 거버넌스 대시보드의 스크린샷입니다.</block>
   <block id="a1fe048fbf4d3c352f8807ca8e61a815" category="paragraph"><block ref="a1fe048fbf4d3c352f8807ca8e61a815" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6406cf838275117ab30c7dd6e659bb2b" category="paragraph">데이터 분류는 필요에 따라 검토하고 다른 그룹으로 보낼 수 있는 PDF 보고서를 생성합니다.</block>
@@ -1659,7 +1657,6 @@
   <block id="ea7971f9c02e5fa9234d7af5cd0b34c7" category="list-text">*대기 중* (주황색 점): 작업이 스캐닝 대기열에 성공적으로 추가되었습니다.  시스템은 대기 순서가 되면 볼륨을 매핑하거나 분류하기 시작합니다.</block>
   <block id="478002532c0e9d87506035f8afb96c61" category="list-text">*실행 중* (녹색 점): 대기 중이던 스캔 작업이 선택한 저장소에서 활발하게 진행 중입니다.</block>
   <block id="1110cfca2e7c6a5f3e560597c03abeab" category="list-text">*완료* (녹색 점): 저장소 스캔이 완료되었습니다.</block>
-  <block id="7eac8ad7bb67a204924dcc6a4113f103" category="list-text">*오류* (빨간색 점): 문제가 발생하여 검사를 완료할 수 없습니다.  작업을 완료해야 하는 경우, "필수 작업" 열 아래의 도구 설명에 오류가 표시됩니다.  그렇지 않으면 시스템은 "오류" 상태를 표시하고 복구를 시도합니다.  완료되면 상태가 변경됩니다.</block>
   <block id="4c5b4656410d347cf852f162490f2e15" category="list-text">*스캔 안 함*: 볼륨 구성이 "끄기"로 선택되어 시스템이 볼륨을 스캔하지 않습니다.</block>
   <block id="ae3859b6bf604c1664d2e6f3cb311c7f" category="inline-image-macro">시스템의 구성 버튼을 선택하는 방법을 보여주는 스크린샷입니다.</block>
   <block id="4e66daf871fdc1f576f2af568e8fb4c4" category="paragraph"><block ref="4e66daf871fdc1f576f2af568e8fb4c4" category="inline-image-macro-rx" type="image"></block></block>
@@ -2343,7 +2340,6 @@
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025년 11월 10일</block>
   <block id="71a65ebb3dc98cbee7a35c227b17a9d2" category="paragraph">아직 콘솔 에이전트가 없으면 하나 만드세요. 보다<block ref="d5bd3e4518f2136cfa2b600a07183cdd" category="inline-link-macro-rx"></block> ,<block ref="8ebe3bab1eaa1107c63d6c8e11f3037a" category="inline-link-macro-rx"></block> , 또는<block ref="289d689c55d02ef047cce8b209e7a21e" category="inline-link-macro-rx"></block> .</block>
   <block id="546e9d6a80a7f338dcca2f303d981d2a" category="paragraph">당신도 할 수 있습니다<block ref="9335525199017a57f50f3ba5f9c0cf66" category="inline-link-macro-rx"></block> 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에서.</block>
-  <block id="3235c8cdd5c8a3cd602a2a8decbafa9f" category="paragraph">아직 콘솔 에이전트가 없다면 클라우드 공급자에서 콘솔 에이전트를 만드세요. 보다<block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block> 또는<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block> , 또는<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block> .  대부분의 경우 데이터 분류를 활성화하기 전에 콘솔 에이전트를 설정했을 가능성이 높습니다.<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block> 하지만 지금 당장 설정해야 하는 경우도 있습니다.</block>
   <block id="b9b4d509fe9e3e77716d45d551ade64d" category="paragraph">또한 다음을 수행할 수도 있습니다.<block ref="66fb3c1341fae0e6f8743c669eb701a1" category="inline-link-rx"></block> 네트워크나 클라우드 내의 Linux 호스트에서. 온프레미스에 데이터 분류를 설치하려는 일부 사용자는 온프레미스에 콘솔 에이전트를 설치하기로 선택할 수도 있습니다.</block>
   <block id="639d50c4b484797455c51239e20b934e" category="paragraph">사용해야 하는 상황이 있을 수 있습니다.<block ref="b343c1bfd082abc4974fc8258a47d6f6" category="inline-link-rx"></block> .</block>
   <block id="b5a65ac63c30d18f443b0320e2b34254" category="inline-link-macro">정부 지역에 콘솔 에이전트를 배포하는 방법에 대해 알아보세요.</block>
@@ -2465,7 +2461,6 @@
   <block id="24ece81002d5816b98626cc57ced872d" category="paragraph">기본적으로 데이터는 마지막 수정일로부터 3년이 지난 경우 오래된 것으로 간주됩니다.</block>
   <block id="c3d635823e7267511f7a0ba59b131053" category="list-title">오래된 데이터를 정의합니다.</block>
   <block id="41c8212e8259ff083fe9cdf357f8a4a6" category="list-text">랜섬웨어 복원력에서 **구성**을 선택하십시오.</block>
-  <block id="de1a225a67ee04f4d574bda78a6c7680" category="list-text">**파일 속성** 드롭다운 메뉴에서 *마지막 액세스* 또는 *마지막 수정* 시간을 기준으로 오래된 데이터를 정의할지 선택하세요.</block>
   <block id="656961d589e5ba765f1a77e91cdda2d0" category="list-text">오래된 데이터 정의에 사용할 기간을 선택하세요.</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">**저장**을 선택하세요.</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2755,9 +2750,6 @@
   <block id="a10f0eec47f9088e070063edbfdc4194" category="sidebar">NetApp Data Classification을 사용하면 조직의 하이브리드 멀티클라우드 환경 전반에서 데이터를 스캔하고 분류할 수 있습니다. Data Classification은 AI 기반 자연어 처리(NLP)를 활용하여 문맥에 맞는 데이터 분석 및 분류를 수행함으로써 규정 준수 요구 사항을 충족하고, 보안 취약점을 탐지하고, 비용을 최적화하고, 마이그레이션을 가속화하는 데 도움이 되는 실행 가능한 인사이트를 제공합니다.</block>
   <block id="0997d7248674796f4e9772751d9f8905" category="paragraph">구성 페이지에서 언제든지 모든 시스템의 스캔을 시작하거나 중지할 수 있습니다. 또한 매핑 전용 스캔에서 매핑 및 분류 스캔으로, 또는 그 반대로 스캔 유형을 전환할 수 있습니다. 시스템의 모든 볼륨을 스캔하는 것이 좋습니다.</block>
   <block id="b9f4fbd6355c3f44311a98b062b34192" category="paragraph">페이지 상단의 *쓰기 권한 없이 스캔* 스위치는 기본적으로 비활성화되어 있습니다. 즉, Data Classification에 CIFS의 쓰기 속성 권한 또는 NFS의 쓰기 권한이 없는 경우, Data Classification이 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 시스템에서 파일을 스캔하지 않습니다. 마지막 액세스 시간이 재설정되어도 상관없다면 스위치를 켜십시오. 그러면 권한과 관계없이 모든 파일이 스캔됩니다. <block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>.</block>
-  <block id="fb3614a6e0ed7682cf436cfe7c5fae5d" category="admonition">시스템에 새로 추가된 볼륨은 제목 영역에서 *Map* 또는 *Full scan* 설정을 해 놓은 경우에만 자동으로 스캔됩니다. 모든 볼륨의 설정이 *Custom* 또는 *Off*로 되어 있는 경우, 새로 추가하는 각 볼륨에 대해 스캔 기능을 수동으로 활성화해야 합니다.</block>
-  <block id="d9db1fafb114dbc932e2b11cb164a604" category="list-text">스캔할 시스템을 식별합니다. **스캔 활성화**를 선택합니다. 드롭다운 메뉴에서 **전체 스캔**, **맵만** 또는 **스캔 관리**를 선택하여 시스템 메뉴를 열고 특정 볼륨 또는 공유에 대한 스캔을 구성합니다.</block>
-  <block id="b9302979813572e59ebecefdfa33f678" category="paragraph">개별 볼륨에 대한 검사를 활성화 또는 비활성화하려면 목록에서 해당 볼륨 또는 공유를 찾은 다음 볼륨 이름 옆에 있는 **Map**, **Full scan** 또는 **Off**를 선택하십시오.</block>
   <block id="42ce018d4794bc10a2de7729c1be000e" category="list-text">*맵 전용 스캔*은 데이터에 대한 개략적인 개요만 제공합니다. 매핑은 내부 데이터를 확인하기 위해 파일에 액세스하지 않기 때문에 데이터 소스에서 매우 빠르게 수행할 수 있습니다.</block>
   <block id="cdd10c18a4e0061a31cb6aef6cce9d9b" category="paragraph">Map 전용 스캔을 사용하여 데이터를 빠르게 스캔하고 추가 조사가 필요한 데이터 소스를 식별한 다음, 나중에 필요한 데이터 소스 또는 볼륨에 대해서만 Map 및 분류 스캔을 활성화하면 도움이 될 수 있습니다.</block>
   <block id="d3f4fe41f6b9f72067ddd679470cf2f2" category="paragraph">우선순위는 Map 전용 스캔에만 할당되며 Map 및 분류 스캔에는 할당되지 않습니다.</block>
@@ -2853,4 +2845,21 @@
   <block id="c5efbb0c5c86f10e09723fd321118168" category="list-text">대화 상자에 "uninstall"을 입력하여 Data Classification 인스턴스를 Console 에이전트에서 연결 해제합니다. **Uninstall**을 선택하여 확인합니다.</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026년 5월 11일</block>
   <block id="bbb6c300cb8841042895c9d8861857a2" category="paragraph">*버전 1.54*</block>
+  <block id="4c6fc95f3cbd5ec1525e1e6fc454b0a0" category="admonition">시스템에 새로 추가된 볼륨은 모든 볼륨에 대해 스캔 기능을 활성화한 경우에만 자동으로 스캔됩니다. 특정 볼륨에 대해서만 스캔 기능을 활성화한 경우에는 새로 추가된 볼륨에서 스캔 기능을 수동으로 활성화해야 합니다.</block>
+  <block id="d8ec5f9e43a5c50ccad1744ea2a31c6e" category="list-text">스캔할 시스템을 식별합니다. **스캔 활성화**를 선택합니다. 드롭다운 메뉴에서 **모든 볼륨 스캔: 전체 스캔**, **모든 볼륨 스캔: 매핑만**, 또는 **스캔 관리**를 선택하여 시스템 메뉴를 열고 특정 볼륨에 대한 스캔을 구성합니다.</block>
+  <block id="a8349eec03103165ecc719d7e32b3318" category="paragraph">개별 볼륨에 대한 스캔을 활성화 또는 비활성화하려면 목록에서 해당 볼륨을 찾으세요. 스캔 유형 열에서 **Map only** 또는 **Full scan**을 선택하세요.</block>
+  <block id="cf975b28ba57e8d6ba85ec36d74a06c3" category="section-title">규정 준수 관리자 IAM 역할</block>
+  <block id="7cd2bb6be419d190aa59909bb89ac3d8" category="paragraph">Data Classification은 이제 Data Classification의 권한을 관리하기 위한 Compliance admin 역할을 지원합니다. Compliance admin 역할은 Console 에이전트 및 작업 영역을 포함한 리소스에 대한 액세스 권한이 없습니다. Compliance admin 역할을 가진 사용자는 최소한 하나 이상의 다른 역할과 연결되어야 합니다.</block>
+  <block id="dc778a1e9a5cca347a8492c869a90dc5" category="paragraph">Data Classification을 설치하려면 Console 플랫폼 관리자 역할 또는 Compliance 관리자 역할이 있어야 합니다.</block>
+  <block id="0d1a008033e3d9d27f9dd95b4127ec91" category="paragraph">기존 사용자라면 평소와 같이 액세스 권한이 유지됩니다. 예를 들어, 폴더 또는 프로젝트 관리자 역할을 가진 플랫폼 역할은 기존 액세스 권한을 그대로 유지합니다.</block>
+  <block id="eeeb9dcaeb66c431b51b12eff19105f3" category="inline-link-macro">Data Classification 역할</block>
+  <block id="c105c16486992d9ad71af50fd3100019" category="paragraph">자세한 내용은 <block ref="96736731356e89817dd51fb3ef396df7" category="inline-link-macro-rx"></block>을 참조하세요.</block>
+  <block id="3b25e99cf35d3d075098a86e0854063e" category="paragraph">데이터 분류는 파일 이름, 권한, 생성 시간, 마지막 액세스 및 마지막 수정과 같은 메타데이터를 캡처합니다. 여기에는 데이터 조사 세부 정보 페이지 및 데이터 조사 보고서에 나타나는 모든 메타데이터가 포함됩니다.</block>
+  <block id="9dda8f9b32e4530c6a33ed3ca126bddd" category="list-text">보고서 타일에서 전체 데이터 매핑 개요 보고서 제목의 **다운로드** 버튼을 선택합니다.</block>
+  <block id="e963c800edae5dd04e2ad17bb722cbf6" category="paragraph">Console 에이전트가 아직 없는 경우 클라우드 공급자에서 Console 에이전트를 생성하세요. <block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block> 또는<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block>, 또는<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block>을 참조하세요. 대부분의 경우 Data Classification을 활성화하기 전에 Console 에이전트가 설정되어 있을 가능성이 높지만<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block>, 지금 설정해야 하는 경우도 있습니다.</block>
+  <block id="e4ba5595b199379fdf62976ff9dafe7a" category="list-text">*오류*(빨간색 점): 스캔 중 문제가 발생하여 완료할 수 없습니다. 필요한 조치가 있는 경우, 오류 내용은 툴팁의 "필수 조치" 열에 표시됩니다. 그렇지 않으면 시스템에서 "오류" 상태를 표시하고 복구를 시도합니다. 복구가 완료되면 상태가 변경됩니다.</block>
+  <block id="b9ea20ef9eb4c32abc0e2419fb5f8e92" category="paragraph">자세한 내용은 <block ref="5a1aa5110d4426eba46219fc7de6d695" category="inline-xref-macro-rx"></block>을 참조하세요.</block>
+  <block id="2b038039f3ef8f9ce689f8c48df69b42" category="list-text">**파일 속성** 드롭다운 메뉴에서 *마지막 액세스* 또는 *마지막 수정* 시간을 기준으로 오래된 데이터를 정의할지 선택합니다.</block>
+  <block id="b868c7529304443a7b5d84b6c738cde0" category="inline-image-macro">오래된 데이터 정의 창의 스크린샷</block>
+  <block id="da2b03a9c6f1e52ca9a910698a9351e1" category="paragraph"><block ref="da2b03a9c6f1e52ca9a910698a9351e1" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
