@@ -82,7 +82,7 @@ NetApp Data Classification 설치 스크립트에는 환경이 요구 사항을 
 * 데이터 분류 설치를 위해 클라우드에 컴퓨팅 인스턴스를 배포할 때 위의 "대규모" 시스템 요구 사항을 충족하는 시스템을 사용하는 것이 좋습니다.
 +
 ** *Amazon Elastic Compute Cloud(Amazon EC2) 인스턴스 유형*: "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["추가 AWS 인스턴스 유형 보기"^] .
-** *Azure VM 크기*: "Standard_D16s_v3". link:reference-instance-types.html#azure-instance-types["추가 Azure 인스턴스 유형 보기"^] .
+** *Azure VM 크기*: "Standard_D16_v5". link:reference-instance-types.html#azure-instance-types["추가 Azure 인스턴스 유형 보기"^].
 ** *GCP 머신 유형*: "n2-standard-16". link:reference-instance-types.html#gcp-instance-types["추가 GCP 인스턴스 유형을 참조하세요."^] .
 
 

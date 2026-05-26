@@ -41,10 +41,10 @@ NetApp Data Classification 소프트웨어는 특정 운영 체제 요구 사항
 | 시스템 크기 | 명세서 | 인스턴스 유형 
 
 
-| 특대 | 32개 CPU, 128GB RAM, OS 디스크(2,048GiB, 최소 250MB/s 처리량), 데이터 디스크(1TiB SSD, 최소 750MB/s 처리량) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^](기본) 
+| 특대 | CPU 16개, RAM 64GB, OS 디스크(2,048GiB, 최소 처리량 250MB/s), 데이터 디스크(1TiB SSD, 최소 처리량 750MB/s) | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv5-series["Standard_D32s_v5 또는 Standard_D32_v5"^] 
 
 
-| 크기가 큰 | CPU 16개, 64GB RAM, 500GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^](기본) 
+| 크기가 큰 | CPU 16개, 64GB RAM, 500GiB SSD | link:https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv5-series?tabs=sizebasic["Standard_D16_v5 또는 Standard_D16s_v5"^] (기본값) 
 |===
 
 
