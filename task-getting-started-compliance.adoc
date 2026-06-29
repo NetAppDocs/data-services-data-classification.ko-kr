@@ -62,7 +62,7 @@ NetApp Data Classification 사용하여 Cloud Volumes ONTAP 및 온프레미스 
 
 구성 페이지에서 언제든지 모든 시스템의 스캔을 시작하거나 중지할 수 있습니다. 또한 매핑 전용 스캔에서 매핑 및 분류 스캔으로, 또는 그 반대로 스캔 유형을 전환할 수 있습니다. 시스템의 모든 볼륨을 스캔하는 것이 좋습니다.
 
-페이지 상단의 *쓰기 권한 없이 스캔* 스위치는 기본적으로 비활성화되어 있습니다. 즉, Data Classification에 CIFS의 쓰기 속성 권한 또는 NFS의 쓰기 권한이 없는 경우, Data Classification이 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 시스템에서 파일을 스캔하지 않습니다. 마지막 액세스 시간이 재설정되어도 상관없다면 스위치를 켜십시오. 그러면 권한과 관계없이 모든 파일이 스캔됩니다. link:reference-collected-metadata.html#last-access-time-timestamp["자세히 알아보기"^].
+*쓰기 권한 없이 스캔* 옵션은 기본적으로 비활성화되어 있습니다. 즉, NetApp Data Classification에 적절한 쓰기 권한이 없는 경우 Data Classification이 "마지막 접근 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 시스템에서 파일을 스캔하지 않습니다. 시스템에서 마지막 접근 시간이 수정되는 것을 허용하는 경우 이 옵션을 선택하십시오. link:reference-collected-metadata.html#last-accessed-time-timestamp["자세히 알아보기"^].
 
 
 NOTE: 시스템에 새로 추가된 볼륨은 모든 볼륨에 대해 스캔 기능을 활성화한 경우에만 자동으로 스캔됩니다. 특정 볼륨에 대해서만 스캔 기능을 활성화한 경우에는 새로 추가된 볼륨에서 스캔 기능을 수동으로 활성화해야 합니다.
