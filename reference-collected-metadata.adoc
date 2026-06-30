@@ -56,19 +56,3 @@ image:screenshot_scan_missing_permissions.png["Data Classification이 마지막 
 
 
 NOTE: ONTAP 볼륨이 SnapLock으로 구성된 경우 읽기 전용 권한을 가지며 마지막 액세스 시간을 원래 타임스탬프로 되돌릴 수 없습니다.
-
-
-
-=== 스캔 분석 이벤트
-
-조사 페이지에는 _Scan Analysis Event_라는 필터가 있는데, 이 필터를 사용하면 Data Classification에서 마지막 액세스 시간을 되돌릴 수 없어서 분류되지 않은 파일 또는 Data Classification에서 마지막 액세스 시간을 되돌릴 수 없었음에도 불구하고 분류된 파일을 표시할 수 있습니다.
-
-image:screenshot_scan_analysis_event_filter.png["쓰기 권한이 있는지 없는지에 따라 어떤 파일이 검사되었고 어떤 파일이 검사되지 않았는지 확인하는 필터의 스크린샷입니다."]
-
-필터 선택은 다음과 같습니다.
-
-* "분류되지 않음 -- 마지막 액세스 시간을 되돌릴 수 없음" - 이는 쓰기 권한이 없어 분류되지 않은 파일을 나타냅니다.
-* "분류 및 최종 액세스 시간 업데이트됨" - 이 필터는 분류되었지만 NetApp Data Classification이 최종 액세스 시간을 원래 날짜로 재설정할 수 없었던 파일을 표시합니다. 이 필터는 *쓰기 권한 없이 스캔*이 활성화된 환경에서만 유효합니다.
-
-
-필요한 경우, 이러한 결과를 보고서로 내보내 권한 문제로 인해 어떤 파일이 검사되고 어떤 파일이 검사되지 않는지 확인할 수 있습니다. link:task-investigate-data.html#download-your-report["데이터 조사 보고서에 대해 자세히 알아보세요"^].
