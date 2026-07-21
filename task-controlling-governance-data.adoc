@@ -22,6 +22,7 @@ summary: Data Classification을 사용하면 오래된 데이터, 중복 파일 
 
 
 
+[[review-the-governance-dashboard]]
 == 거버넌스 대시보드를 검토하세요
 
 거버넌스 대시보드는 스토리지 리소스에 저장된 데이터와 관련된 비용을 제어하고 효율성을 높이는 데 도움이 되는 정보를 제공합니다.
@@ -38,6 +39,7 @@ image:screenshot_compliance_governance_dashboard.png["데이터 분류 거버넌
 
 
 
+[[review-savings-opportunities]]
 === 저축 기회 검토
 
 _Saving Opportunities_ 구성 요소는 삭제하거나 비용이 덜 드는 개체 저장소로 계층화할 수 있는 데이터를 보여줍니다.  _Saving Opportunities_의 데이터는 2시간마다 업데이트됩니다.  수동으로 데이터를 업데이트할 수도 있습니다.
@@ -57,6 +59,7 @@ NOTE: 데이터 소스 중 하나라도 데이터 계층화를 구현하는 경�
 
 
 
+[[create-the-data-discovery-assessment-report]]
 == 데이터 발견 평가 보고서 작성
 
 데이터 발견 평가 보고서는 스캔된 환경에 대한 높은 수준의 분석을 제공하여 문제가 있는 영역과 잠재적인 수정 단계를 보여줍니다. 결과는 데이터 매핑과 분류를 기반으로 합니다. 이 보고서의 목적은 데이터 세트의 세 가지 중요한 측면에 대한 인식을 높이는 것입니다.
@@ -94,6 +97,7 @@ image:screenshot-compliance-report-buttons.png["데이터 검색 평가 보고�
 
 
 
+[[create-the-data-mapping-overview-report]]
 == 데이터 매핑 개요 보고서 만들기
 
 데이터 매핑 개요 보고서는 마이그레이션, 백업, 보안 및 규정 준수 프로세스에 대한 결정을 내리는 데 도움이 되도록 회사 데이터 소스에 저장된 데이터에 대한 개요를 제공합니다.  이 보고서는 모든 시스템과 데이터 소스를 요약합니다.  또한 각 시스템에 대한 분석도 제공합니다.
@@ -128,6 +132,7 @@ image:screenshot-compliance-report-buttons.png["데이터 매핑 보고서를 �
 
 
 
+[[review-the-top-data-repositories-listed-by-data-sensitivity]]
 === 데이터 민감도별로 나열된 상위 데이터 저장소를 검토하세요.
 
 데이터 매핑 개요 보고서의 _민감도 수준별 상위 데이터 저장소_ 영역에는 가장 민감한 항목이 포함된 상위 4개 데이터 저장소(시스템 및 데이터 소스)가 나열됩니다.  각 시스템의 막대형 차트는 다음과 같이 구분됩니다.
@@ -146,6 +151,7 @@ image:screenshot-compliance-report-buttons.png["데이터 매핑 보고서를 �
 
 
 
+[[review-sensitive-data-and-wide-permissions]]
 === 민감한 데이터와 광범위한 권한 검토
 
 거버넌스 대시보드의 _민감한 데이터 및 광범위한 권한_ 영역에서는 민감한 데이터가 포함되어 있고 광범위한 권한이 있는 파일의 수가 표시됩니다.  표에는 다음과 같은 유형의 권한이 나와 있습니다.
@@ -161,6 +167,7 @@ image:screenshot-compliance-report-buttons.png["데이터 매핑 보고서를 �
 
 
 
+[[review-data-listed-by-types-of-open-permissions]]
 === 공개 허가 유형별로 나열된 데이터 검토
 
 데이터 매핑 개요 보고서의 _열린 권한_ 영역에는 스캔 중인 모든 파일에 대해 각 유형의 권한에 대한 백분율이 표시됩니다.  차트에서는 다음과 같은 유형의 권한을 보여줍니다.
@@ -178,6 +185,7 @@ image:screenshot-compliance-report-buttons.png["데이터 매핑 보고서를 �
 
 
 
+[[review-the-age-and-size-of-data]]
 === 데이터의 연령과 크기를 검토하세요
 
 데이터 매핑 개요 보고서의 _연령_ 및 _크기_ 그래프에 있는 항목을 조사하여 삭제하거나 비용이 덜 드는 개체 저장소로 계층화해야 할 데이터가 있는지 확인할 수 있습니다.

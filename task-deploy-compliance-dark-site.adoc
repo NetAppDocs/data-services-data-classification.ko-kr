@@ -25,6 +25,7 @@ TIP: 온프레미스 VMware vSphere 배포의 경우 Data Classification은 간�
 
 
 
+[[supported-data-sources]]
 == 지원되는 데이터 소스
 
 개인 모드(때때로 "오프라인" 또는 "다크" 사이트라고도 함)로 설치된 경우 Data Classification은 온프레미스 사이트에 로컬인 데이터 소스의 데이터만 스캔할 수 있습니다. 현재 Data Classification은 다음 *로컬* 데이터 소스를 스캔할 수 있습니다:
@@ -37,6 +38,7 @@ TIP: 온프레미스 VMware vSphere 배포의 경우 Data Classification은 간�
 
 
 
+[[limitations]]
 == 제한 사항
 
 대부분의 데이터 분류 기능은 인터넷 액세스가 없는 사이트에 배포될 때 작동합니다. 그러나 인터넷 액세스가 필요한 특정 기능은 지원되지 않습니다. 예를 들면 다음과 같습니다.
@@ -51,6 +53,7 @@ Console 에이전트와 Data Classification 모두 새로운 기능을 활성화
 
 
 
+[[quick-start]]
 == 빠른 시작
 
 다음 단계에 따라 빠르게 시작하거나, 나머지 섹션으로 스크롤하여 자세한 내용을 확인하세요.
@@ -69,12 +72,14 @@ NetApp 지원 사이트에서 데이터 분류 소프트웨어를 다운로드�
 
 
 
+[[install-the-console-agent]]
 == Console 에이전트를 설치합니다
 
 오프라인 사이트의 Linux 호스트에 개인 모드로 Console 에이전트가 설치되어 있지 않은 경우 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-private-mode.html["Console 에이전트를 배포합니다"^].
 
 
 
+[[prepare-the-linux-host-system]]
 == Linux 호스트 시스템 준비
 
 Data Classification 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.
@@ -185,7 +190,11 @@ Docker 또는 Podman을 활성화하거나 업데이트할 때마다 다시 시�
 TIP: 데이터 분류 호스트 시스템의 IP 주소는 설치 후 변경할 수 없습니다.
 
 
+NOTE: 데이터 분류 설치 프로그램은 UID 4321과 GID 4321을 예약해 두고 있습니다. 설치를 시작하기 전에 호스트 컴퓨터에서 UID 4321과 GID 4321이 사용 중이 아닌지 확인하십시오. 사용 중인 경우 "잘못된 사용자" 오류 메시지와 함께 설치가 실패합니다.
 
+
+
+[[verify-console-and-data-classification-prerequisites]]
 == Console 및 Data Classification 필수 조건을 확인하십시오.
 
 Data Classification을 배포하기 전에 지원되는 구성이 있는지 확인하려면 다음 사전 요구 사항을 검토하십시오.
@@ -200,6 +209,7 @@ Data Classification 인스턴스는 인덱싱된 데이터에 다른 사람이 �
 
 
 
+[[verify-that-all-required-ports-are-enabled]]
 == 모든 필수 포트가 활성화되어 있는지 확인하세요
 
 콘솔 에이전트, 데이터 분류, Active Directory 및 데이터 소스 간 통신에 필요한 모든 포트가 열려 있는지 확인해야 합니다.
@@ -263,6 +273,7 @@ Active Directory에 대한 정보가 있어야 합니다.
 |===
 
 
+[[install-data-classification-on-the-on-premises-linux-host]]
 == 온프레미스 Linux 호스트에 Data Classification 설치
 
 일반적인 구성에서는 소프트웨어를 단일 호스트 시스템에 설치합니다.
@@ -346,6 +357,7 @@ image:screenshot-deploy-classification.png["데이터 분류를 활성화하기 
 
 
 
+[[upgrade-data-classification-software]]
 == Data Classification 소프트웨어 업그레이드
 
 Data Classification 소프트웨어는 정기적으로 새로운 기능으로 업데이트되므로 최신 소프트웨어와 기능을 사용하고 있는지 확인하기 위해 주기적으로 새 버전을 확인하는 습관을 들여야 합니다. 업그레이드를 자동으로 수행할 인터넷 연결이 없으므로 Data Classification 소프트웨어를 수동으로 업그레이드해야 합니다.
@@ -394,6 +406,7 @@ Data Classification UI 페이지 하단에 표시되는 버전을 확인하여 �
 
 
 
+[[next-steps]]
 == 다음 단계
 
 * link:task-scanning-overview.html["데이터 소스에 대한 스캔 구성"]

@@ -4,6 +4,7 @@
 
 
 
+[[support-for-rhel-8-10]]
 === RHEL 8.10 지원
 
 이 릴리스에서는 이전에 지원되었던 버전 외에도 Red Hat Enterprise Linux v8.10에 대한 지원이 제공됩니다. 이는 다크 사이트 배포를 포함하여 BlueXP classification 의 모든 수동 온프레미스 설치에 적용됩니다.
@@ -14,6 +15,7 @@
 
 
 
+[[support-for-nfs-v4-1]]
 === NFS v4.1 지원
 
 이 릴리스에서는 이전에 지원되었던 버전 외에도 NFS v4.1에 대한 지원이 제공됩니다.

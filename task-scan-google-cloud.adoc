@@ -18,12 +18,14 @@ NetApp Data Classification 시스템으로서 Google Cloud NetApp Volumes 지원
 
 
 
+[[discover-the-google-cloud-netapp-volumes-system-that-you-want-to-scan]]
 == 스캔하려는 Google Cloud NetApp Volumes 시스템을 검색하세요.
 
 스캔하려는 Google Cloud NetApp Volumes 시스템이 NetApp Console 에 시스템으로 아직 없는 경우link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["시스템 페이지에 추가하세요"^] .
 
 
 
+[[deploy-the-data-classification-instance]]
 == 데이터 분류 인스턴스 배포
 
 link:task-deploy-cloud-compliance.html["데이터 분류 배포"^]아직 배포된 인스턴스가 없는 경우.
@@ -34,6 +36,7 @@ Google Cloud NetApp Volumes 스캔할 때는 데이터 분류를 클라우드에
 
 
 
+[[enable-data-classification-in-your-systems]]
 == 시스템에서 데이터 분류를 활성화하세요
 
 Google Cloud NetApp Volumes 시스템에서 데이터 분류를 활성화할 수 있습니다.
@@ -59,6 +62,7 @@ Data Classification은 시스템에서 선택한 볼륨 스캔을 시작합니�
 
 
 
+[[verify-that-data-classification-has-access-to-volumes]]
 == 데이터 분류가 볼륨에 액세스할 수 있는지 확인하세요.
 
 네트워킹, 보안 그룹 및 내보내기 정책을 확인하여 데이터 분류가 볼륨에 액세스할 수 있는지 확인하세요.  CIFS 볼륨의 경우 CIFS 자격 증명을 사용하여 데이터 분류를 제공해야 합니다.
@@ -97,6 +101,7 @@ NOTE: Google Cloud NetApp Volumes 의 경우 데이터 분류는 콘솔과 동�
 
 
 
+[[enable-and-disable-scans-on-volumes]]
 == 볼륨에서 스캔 활성화 및 비활성화
 
 구성 페이지에서 언제든지 모든 시스템의 스캔을 시작하거나 중지할 수 있습니다. 또한 매핑 전용 스캔에서 매핑 및 분류 스캔으로, 또는 그 반대로 스캔 유형을 전환할 수 있습니다. 시스템의 모든 볼륨을 스캔하는 것이 좋습니다.

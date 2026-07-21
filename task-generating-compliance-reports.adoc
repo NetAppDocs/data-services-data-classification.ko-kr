@@ -38,6 +38,7 @@ NetApp Data Classification 조직의 데이터 개인정보 보호 프로그램 
 
 
 
+[[select-the-systems-for-reports]]
 == 보고서를 위한 시스템을 선택하세요
 
 데이터 분류 규정 준수 대시보드의 내용을 필터링하여 모든 시스템과 데이터베이스에 대한 규정 준수 데이터를 보거나 특정 시스템에 대한 규정 준수 데이터만 볼 수 있습니다.
@@ -55,6 +56,7 @@ image:screenshot-report-filter.png["시스템 필터링을 보여주는 화면�
 
 
 
+[[data-subject-access-request-report]]
 == 데이터 주체 접근 요청 보고서
 
 유럽 GDPR과 같은 개인정보 보호 규정은 데이터 주체(고객이나 직원 등)에게 개인 데이터에 접근할 권리를 부여합니다.  데이터 주체가 이러한 정보를 요청하는 경우, 이를 DSAR(데이터 주체 접근 요청)이라고 합니다.  각 기관은 이러한 요청에 "불필요한 지연 없이", 늦어도 접수 후 한 달 이내에 응답해야 합니다.
@@ -104,6 +106,7 @@ NOTE: 데이터 주체의 이름을 검색할 때 영어, 독일어, 일본어, 
 
 
 
+[[health-insurance-portability-and-accountability-act-hipaa-report]]
 == 건강보험 이동성 및 책임법(HIPAA) 보고서
 
 건강보험 양도성 및 책임법(HIPAA) 보고서는 건강 정보가 포함된 파일을 식별하는 데 도움이 될 수 있습니다.  이는 귀하의 조직이 HIPAA 데이터 개인정보 보호법을 준수하도록 돕기 위해 고안되었습니다.  데이터 분류에서 찾는 정보는 다음과 같습니다.
@@ -141,6 +144,7 @@ image:screenshot-report-options.png["규정 준수 페이지의 보고서 옵션
 
 
 
+[[payment-card-industry-data-security-standard-pci-dss-report]]
 == 결제 카드 산업 데이터 보안 표준(PCI DSS) 보고서
 
 결제 카드 업계 데이터 보안 표준(PCI DSS) 보고서는 파일 전체에서 신용카드 정보의 분포를 파악하는 데 도움이 될 수 있습니다.
@@ -171,6 +175,7 @@ image:screenshot-report-options.png["규정 준수 페이지의 보고서 옵션
 
 
 
+[[privacy-risk-assessment-report]]
 == 개인정보 위험 평가 보고서
 
 개인정보 위험 평가 보고서는 GDPR 및 CCPA와 같은 개인정보 보호 규정에서 요구하는 대로 조직의 개인정보 위험 상태에 대한 개요를 제공합니다.

@@ -4,6 +4,7 @@
 
 
 
+[[improved-configuration-page]]
 === 개선된 구성 페이지
 
 데이터 분류 기능이 구성 페이지를 업데이트하고 개선하여 설정, 시스템 관리, 스캔 활성화 및 시스템 상태 모니터링을 더욱 편리하게 관리할 수 있는 향상된 사용 편의성 환경을 제공합니다. 새로운 구성 페이지는 기존 기능을 더욱 사용하기 쉬운 형식으로 제공하며, 시스템 유형, 오류 상태 및 스캔 상태별로 시스템을 필터링할 수 있는 기능을 추가했습니다. 또한 연결된 시스템 요약 정보와 활성 및 구성된 스캔 개요를 제공합니다.
@@ -12,6 +13,7 @@ link:https://youtu.be/_8YJ3KyZ7nI["비디오 둘러보기"^]을(를) 검토하�
 
 
 
+[[compliance-admin-iam-role]]
 === 규정 준수 관리자 IAM 역할
 
 Data Classification은 이제 Data Classification의 권한을 관리하기 위한 Compliance admin 역할을 지원합니다. Compliance admin 역할은 Console 에이전트 및 작업 영역을 포함한 리소스에 대한 액세스 권한이 없습니다. Compliance admin 역할을 가진 사용자는 최소한 하나 이상의 다른 역할과 연결되어야 합니다.
@@ -24,6 +26,7 @@ Data Classification을 설치하려면 Console 플랫폼 관리자 역할 또는
 
 
 
+[[deploy-data-classification-with-ova]]
 === OVA를 사용하여 NetApp Data Classification 배포
 
 NetApp Data Classification은 이제 VMware Open Virtual Appliance(OVA)를 통한 배포를 지원하여 온프레미스 VMware vSphere 환경을 위한 간소화된 배포 전략을 제공합니다.

@@ -22,6 +22,7 @@ NFS 파일 공유의 파일이나 폴더에 그룹 ID(GID)가 추가되면 파�
 
 
 
+[[add-the-open-to-organization-permission-to-group-ids]]
 == 그룹 ID에 "조직에 공개" 권한 추가
 
 이 작업을 시작하기 전에 그룹 ID 번호(GID)가 필요합니다.
@@ -50,6 +51,7 @@ NFS 파일 공유의 파일이나 폴더에 그룹 ID(GID)가 추가되면 파�
 
 
 
+[[view-the-current-list-of-group-ids]]
 == 현재 그룹 ID 목록 보기
 
 내용의 경우 가능합니다. `data_provider.yaml` 실행 후 실제로 커밋된 내용과 다르게 구성 파일을 설정합니다. `update_data_providers_from_config_file.sh` 스크립트.  데이터 분류에 추가한 그룹 ID의 현재 목록을 보려면 "/opt/netapp/Datasense/tools/customer_configuration/data_providers"에서 다음 명령을 실행하세요.

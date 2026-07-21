@@ -18,6 +18,7 @@ summary: 조사 대시보드에서 데이터를 필터링한 후 비정형 데�
 
 
 
+[[copy-files]]
 == 파일 복사
 
 Data Classification은 최대 1GB 크기의 파일 복사를 지원합니다. 총 1TB의 데이터 또는 500만 개의 파일 중 먼저 도달하는 제한까지 복사할 수 있습니다. CIFS 공유 또는 NFS 대상으로 파일을 복사할 수 있습니다. 파일을 복사할 때 소스 파일에는 영향을 미치지 않습니다.
@@ -41,6 +42,7 @@ image:screenshot-copy-nfs.png["NFS 파일 복사 기능의 스크린샷"]
 
 
 
+[[move-files]]
 == 파일 이동
 
 Data Classification은 최대 1GB 크기의 파일 이동을 지원합니다. 총 1TB의 데이터 또는 500만 개의 파일 중 먼저 도달하는 제한까지 이동할 수 있습니다. CIFS 또는 NFS 대상으로 파일을 이동할 수 있습니다.
@@ -69,6 +71,7 @@ image:screenshot-move-nfs.png["NFS 파일 이동 기능의 스크린샷"]
 
 
 
+[[delete-files]]
 == 파일 삭제
 
 Investigation 대시보드에서 데이터를 필터링하여 스토리지 공간 및 비용 절감 기회를 찾을 때 해당 파일을 삭제할 수 있습니다. 파일 삭제는 비정형 파일에 대해서만 지원됩니다.

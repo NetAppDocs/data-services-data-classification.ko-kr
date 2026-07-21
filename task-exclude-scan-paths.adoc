@@ -21,6 +21,7 @@ NOTE: 기본적으로 데이터 분류 스캔에서는 볼륨의 소스와 동�
 
 
 
+[[supported-data-sources]]
 == 지원되는 데이터 소스
 
 다음 데이터 소스의 NFS 및 CIFS 공유에 대해 데이터 분류 검사에서 특정 디렉토리를 제외하는 기능이 지원됩니다.
@@ -34,6 +35,7 @@ NOTE: 기본적으로 데이터 분류 스캔에서는 볼륨의 소스와 동�
 
 
 
+[[define-the-directories-to-exclude-from-scanning]]
 == 스캔에서 제외할 디렉토리를 정의합니다.
 
 디렉토리를 분류 스캐닝에서 제외하려면 먼저 데이터 분류 시스템에 로그인하여 구성 파일을 편집하고 스크립트를 실행해야 합니다.  방법을 확인하세요link:reference-log-in-to-instance.html["데이터 분류 시스템에 로그인하세요"] Linux 시스템에 소프트웨어를 수동으로 설치했는지, 아니면 클라우드에 인스턴스를 배포했는지에 따라 다릅니다.
@@ -70,6 +72,7 @@ exclude:
 
 
 
+[[examples]]
 == 예시
 
 .구성 1:
@@ -140,6 +143,7 @@ data_providers:
 
 
 
+[[escaping-special-characters-in-folder-names]]
 == 폴더 이름에서 특수 문자 이스케이프
 
 다음 특수 문자 중 하나가 포함된 폴더 이름이 있고 해당 폴더의 데이터를 검사에서 제외하려면 폴더 이름 앞에 이스케이프 시퀀스 \\를 사용해야 합니다.
@@ -153,6 +157,7 @@ data_providers:
 
 
 
+[[view-the-current-exclusion-list]]
 == 현재 제외 목록 보기
 
 내용의 경우 가능합니다. `data_provider.yaml` 실행 후 실제로 커밋된 내용과 다르게 구성 파일을 작성합니다. `update_data_providers_from_config_file.sh` 스크립트.  데이터 분류 검사에서 제외한 디렉토리의 현재 목록을 보려면 "/opt/netapp/Datasense/tools/customer_configuration/data_providers"에서 다음 명령을 실행하세요.

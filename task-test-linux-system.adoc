@@ -20,6 +20,7 @@ NetApp Data Classification 설치 스크립트에는 환경이 요구 사항을 
 
 
 
+[[getting-started]]
 == 시작하기
 
 다음 작업을 수행하게 됩니다.
@@ -33,6 +34,7 @@ NetApp Data Classification 설치 스크립트에는 환경이 요구 사항을 
 
 
 
+[[create-a-console-agent]]
 == 콘솔 에이전트 만들기
 
 데이터 분류를 설치하고 사용하려면 콘솔 에이전트가 필요합니다.  하지만 콘솔 에이전트 없이도 필수 구성 요소 스크립트를 실행할 수 있습니다.
@@ -50,6 +52,7 @@ NetApp Data Classification 설치 스크립트에는 환경이 요구 사항을 
 
 
 
+[[verify-host-requirements]]
 == 호스트 요구 사항 확인
 
 데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항 및 소프트웨어 요구 사항을 충족하는 호스트에서 실행되어야 합니다.
@@ -168,6 +171,7 @@ Docker 또는 Podman을 활성화하거나 업데이트할 때마다 다시 시�
 
 
 
+[[enable-outbound-internet-access-from-data-classification]]
 == 데이터 분류에서 아웃바운드 인터넷 액세스 활성화
 
 데이터 분류에는 아웃바운드 인터넷 액세스가 필요합니다.  가상 또는 물리적 네트워크에서 인터넷 접속을 위해 프록시 서버를 사용하는 경우, 데이터 분류 인스턴스에 다음 엔드포인트에 연결할 수 있는 아웃바운드 인터넷 접속 권한이 있는지 확인하세요.
@@ -199,6 +203,7 @@ TIP: 인터넷 연결이 없는 사이트에 설치된 호스트 시스템에는
 |===
 
 
+[[verify-that-all-required-ports-are-enabled]]
 == 모든 필수 포트가 활성화되어 있는지 확인하세요
 
 콘솔 에이전트, 데이터 분류, Active Directory 및 데이터 소스 간 통신에 필요한 모든 포트가 열려 있는지 확인해야 합니다.
@@ -217,6 +222,7 @@ TIP: 인터넷 연결이 없는 사이트에 설치된 호스트 시스템에는
 |===
 
 
+[[run-the-data-classification-prerequisites-script]]
 == 데이터 분류 필수 조건 스크립트 실행
 
 데이터 분류 필수 조건 스크립트를 실행하려면 다음 단계를 따르세요.

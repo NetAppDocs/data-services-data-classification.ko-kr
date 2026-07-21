@@ -33,6 +33,7 @@ image:diagram_deploy_onprem_cloud_instance.png["필수 콘솔 및 네트워크 �
 
 
 
+[[quick-start]]
 == 빠른 시작
 
 다음 단계에 따라 빠르게 시작하거나, 나머지 섹션으로 스크롤하여 자세한 내용을 확인하세요.
@@ -57,6 +58,7 @@ NetApp 지원 사이트에서 클라우드 데이터 분류 소프트웨어를 �
 
 
 
+[[create-a-console-agent]]
 == 콘솔 에이전트 만들기
 
 Data Classification을 설치하고 사용하려면 Console 에이전트가 필요합니다. 대부분의 경우 Data Classification을 활성화하기 전에 Console 에이전트가 이미 설정되어 있을 것입니다.
@@ -81,6 +83,7 @@ Azure NetApp Files 의 경우, 스캔하려는 볼륨과 동일한 지역에 배
 
 
 
+[[prepare-the-linux-host-system]]
 == Linux 호스트 시스템 준비
 
 데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.  Linux 호스트는 네트워크에 있을 수도 있고 클라우드에 있을 수도 있습니다.
@@ -204,6 +207,7 @@ NOTE: 데이터 분류 호스트 시스템의 IP 주소는 설치 후 변경할 
 
 
 
+[[enable-outbound-internet-access-from-data-classification]]
 == 데이터 분류에서 아웃바운드 인터넷 액세스 활성화
 
 데이터 분류에는 아웃바운드 인터넷 액세스가 필요합니다.  가상 또는 물리적 네트워크에서 인터넷 접속을 위해 프록시 서버를 사용하는 경우, 데이터 분류 인스턴스에 다음 엔드포인트에 연결할 수 있는 아웃바운드 인터넷 접속 권한이 있는지 확인하세요.
@@ -232,6 +236,7 @@ NOTE: 데이터 분류 호스트 시스템의 IP 주소는 설치 후 변경할 
 |===
 
 
+[[verify-that-all-required-ports-are-enabled]]
 == 모든 필수 포트가 활성화되어 있는지 확인하세요
 
 콘솔 에이전트, 데이터 분류, Active Directory 및 데이터 소스 간 통신에 필요한 모든 포트가 열려 있는지 확인해야 합니다.
@@ -285,6 +290,7 @@ Active Directory에 대한 정보가 있어야 합니다.
 |===
 
 
+[[install-data-classification-on-the-linux-host]]
 == Linux 호스트에 데이터 분류 설치
 
 일반적인 구성의 경우 단일 호스트 시스템에 소프트웨어를 설치합니다. <<일반적인 구성을 위한 단일 호스트 설치,여기에서 해당 단계를 확인하세요>> .
@@ -300,6 +306,7 @@ NOTE: 현재 데이터 분류 기능은 온프레미스에 소프트웨어가 �
 
 
 
+[[single-host-installation-for-typical-configurations]]
 === 일반적인 구성을 위한 단일 호스트 설치
 
 단일 온프레미스 호스트에 데이터 분류 소프트웨어를 설치할 때 요구 사항을 검토하고 다음 단계를 따르세요.
@@ -389,6 +396,7 @@ image:screenshot-deploy-classification.png["데이터 분류를 활성화하기 
 
 
 
+[[next-steps]]
 == 다음 단계
 
 * link:task-scanning-overview.html["데이터 소스에 대한 스캔 구성"]

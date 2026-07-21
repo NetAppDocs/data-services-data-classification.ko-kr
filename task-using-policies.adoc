@@ -26,6 +26,7 @@ image:screenshot_compliance_highlights_tab.png["데이터 분류 대시보드의
 
 
 
+[[view-saved-queries-results-in-the-investigation-page]]
 == 조사 페이지에서 저장된 쿼리 결과 보기
 
 조사 페이지에서 저장된 쿼리에 대한 결과를 표시하려면 다음을 선택하십시오.image:button-gallery-options.gif["더보기 버튼"] 특정 검색에 대한 버튼을 클릭한 다음 *결과 조사*를 선택하세요.
@@ -34,6 +35,7 @@ image:screenshot_compliance_highlights_investigate.png["저장된 쿼리 탭에�
 
 
 
+[[create-saved-queries-and-policies]]
 == 저장된 쿼리 및 정책 생성
 
 귀하의 조직에 맞는 특정 쿼리에 대한 결과를 제공하는 사용자 정의 저장된 쿼리를 만들 수 있습니다.  검색 기준과 일치하는 모든 파일과 디렉토리(공유 및 폴더)에 대한 결과가 반환됩니다.
@@ -61,6 +63,7 @@ image:../media/screenshot_compliance_save_highlight2.png["저장된 쿼리를 �
 
 
 
+[[edit-saved-queries-or-policies]]
 == 저장된 쿼리 또는 정책 편집
 
 저장된 쿼리의 이름과 설명을 수정할 수 있습니다.  쿼리를 정책으로 변환할 수도 있고, 그 반대로도 가능합니다.
@@ -81,6 +84,7 @@ image:screenshot-edit-search.png["저장된 쿼리 편집을 보여주는 스크
 
 
 
+[[delete-saved-queries]]
 == 저장된 쿼리 삭제
 
 더 이상 필요하지 않은 사용자 정의 저장된 쿼리나 정책을 삭제할 수 있습니다.  기본적으로 저장된 쿼리는 삭제할 수 없습니다.
@@ -89,6 +93,7 @@ image:screenshot-edit-search.png["저장된 쿼리 편집을 보여주는 스크
 
 
 
+[[default-queries]]
 == 기본 쿼리
 
 데이터 분류는 다음과 같은 시스템 정의 검색 쿼리를 제공합니다.

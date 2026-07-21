@@ -18,6 +18,7 @@ NetApp Data Classification 사용하여 Amazon FSx for ONTAP 볼륨을 스캔하
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 * 데이터 분류를 배포하고 관리하려면 AWS에서 활성 콘솔 에이전트가 필요합니다.
@@ -41,6 +42,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 탄력�
 
 
 
+[[deploy-the-data-classification-instance]]
 == 데이터 분류 인스턴스 배포
 
 link:task-deploy-cloud-compliance.html["데이터 분류 배포"^]아직 배포된 인스턴스가 없는 경우.
@@ -53,6 +55,7 @@ AWS용 콘솔 에이전트와 스캔하려는 FSx 볼륨과 동일한 AWS 네트
 
 
 
+[[enable-data-classification-in-your-systems]]
 == 시스템에서 데이터 분류를 활성화하세요
 
 FSx for ONTAP 볼륨에 대한 데이터 분류를 활성화할 수 있습니다.
@@ -82,6 +85,7 @@ Data Classification이 시스템에서 선택한 볼륨 스캔을 시작합니�
 ====
 
 
+[[verify-that-data-classification-has-access-to-volumes]]
 == 데이터 분류가 볼륨에 액세스할 수 있는지 확인하세요.
 
 네트워킹, 보안 그룹 및 내보내기 정책을 확인하여 데이터 분류가 볼륨에 액세스할 수 있는지 확인하세요.
@@ -116,6 +120,7 @@ NOTE: FSx for ONTAP 의 경우 데이터 분류는 콘솔과 동일한 지역의
 
 
 
+[[enable-and-disable-scans-on-volumes]]
 == 볼륨에서 스캔 활성화 및 비활성화
 
 구성 페이지에서 언제든지 모든 시스템의 스캔을 시작하거나 중지할 수 있습니다. 또한 매핑 전용 스캔에서 매핑 및 분류 스캔으로, 또는 그 반대로 스캔 유형을 전환할 수 있습니다. 시스템의 모든 볼륨을 스캔하는 것이 좋습니다.
@@ -140,6 +145,7 @@ image:screenshot_volume_compliance_selection.png["개별 볼륨의 스캐닝을 
 
 
 
+[[scan-data-protection-volumes]]
 == 데이터 보호 볼륨 스캔
 
 기본적으로 데이터 보호(DP) 볼륨은 외부에 노출되지 않고 데이터 분류에서 액세스할 수 없으므로 스캔되지 않습니다.  이는 FSx for ONTAP 파일 시스템의 SnapMirror 작업을 위한 대상 볼륨입니다.

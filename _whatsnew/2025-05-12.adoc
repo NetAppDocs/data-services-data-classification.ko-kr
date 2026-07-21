@@ -4,6 +4,7 @@
 
 
 
+[[prioritize-classification-scans]]
 === 분류 스캔 우선 순위 지정
 
 Data Classification은 Map 전용 스캔뿐만 아니라 Map & Classify 스캔의 우선순위를 지정할 수 있도록 지원하여 어떤 스캔을 먼저 완료할지 선택할 수 있게 합니다. Map & Classify 스캔의 우선순위 지정은 스캔 시작 전과 도중 모두 지원됩니다. 진행 중인 스캔의 우선순위를 지정하면 매핑 스캔과 분류 스캔 모두 우선순위가 적용됩니다.
@@ -12,6 +13,7 @@ Data Classification은 Map 전용 스캔뿐만 아니라 Map & Classify 스캔�
 
 
 
+[[support-for-canadian-personally-identifiable-information-pii-data-categories]]
 === 캐나다 개인 식별 정보(PII) 데이터 범주 지원
 
 데이터 분류 스캔은 캐나다 PII 데이터 범주를 식별합니다. 이러한 범주에는 모든 캐나다 주와 지역의 은행 정보, 여권 번호, 사회보장번호, 운전면허증 번호, 건강카드 번호가 포함됩니다.
@@ -20,6 +22,7 @@ Data Classification은 Map 전용 스캔뿐만 아니라 Map & Classify 스캔�
 
 
 
+[[custom-classification-preview]]
 === 사용자 정의 분류(미리 보기)
 
 데이터 분류는 Map & Classify 스캔에 대한 사용자 정의 분류를 지원합니다. 사용자 정의 분류를 사용하면 정규 표현식을 사용하여 조직에 맞는 데이터를 캡처하도록 데이터 분류 검사를 맞춤화할 수 있습니다. 이 기능은 현재 미리보기 단계에 있습니다.
@@ -28,18 +31,21 @@ Data Classification은 Map 전용 스캔뿐만 아니라 Map & Classify 스캔�
 
 
 
+[[saved-searches-tab]]
 === 저장된 검색 탭
 
 **정책** 탭의 이름이 변경되었습니다.link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["**저장된 검색**"] . 기능은 변경되지 않았습니다.
 
 
 
+[[send-scan-events-to-the-audit-page]]
 === 감사 페이지로 스캔 이벤트 보내기
 
 Data Classification은 분류 이벤트(스캔이 시작될 때와 종료될 때)를 link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["NetApp Console 감사 페이지"^]로 전송하는 것을 지원합니다.
 
 
 
+[[security-updates]]
 === 보안 업데이트
 
 * Keras 패키지가 업데이트되어 취약점(BDSA-2025-0107 및 BDSA-2025-1984)이 완화되었습니다.
@@ -48,12 +54,14 @@ Data Classification은 분류 이벤트(스캔이 시작될 때와 종료될 때
 
 
 
+[[performance-enhancements]]
 === 성능 향상
 
 RAM 사용량을 줄이고 데이터 분류의 전반적인 성능을 개선하기 위해 코드 개선이 구현되었습니다.
 
 
 
+[[bug-fixes]]
 === 버그 수정
 
 StorageGRID 검사가 실패하고, 조사 페이지 필터 옵션이 로드되지 않으며, 대용량 평가의 경우 데이터 검색 평가가 다운로드되지 않는 버그가 수정되었습니다.

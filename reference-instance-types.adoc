@@ -20,6 +20,7 @@ NetApp Data Classification 소프트웨어는 특정 운영 체제 요구 사항
 
 
 
+[[aws-instance-types]]
 == AWS 인스턴스 유형
 
 [cols="20,30,25"]
@@ -34,6 +35,7 @@ NetApp Data Classification 소프트웨어는 특정 운영 체제 요구 사항
 |===
 
 
+[[azure-instance-types]]
 == Azure 인스턴스 유형
 
 [cols="20,30,25"]
@@ -48,6 +50,7 @@ NetApp Data Classification 소프트웨어는 특정 운영 체제 요구 사항
 |===
 
 
+[[gcp-instance-types]]
 == GCP 인스턴스 유형
 
 [cols="20,30,25"]

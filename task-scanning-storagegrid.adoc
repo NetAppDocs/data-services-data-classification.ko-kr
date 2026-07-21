@@ -18,6 +18,7 @@ NetApp Data Classification 사용하여 StorageGRID 내에서 직접 데이터 �
 
 
 
+[[review-storagegrid-requirements]]
 == StorageGRID 요구 사항 검토
 
 데이터 분류를 활성화하기 전에 지원되는 구성이 있는지 확인하려면 다음 필수 구성 요소를 검토하세요.
@@ -28,6 +29,7 @@ NetApp Data Classification 사용하여 StorageGRID 내에서 직접 데이터 �
 
 
 
+[[deploy-the-data-classification-instance]]
 == 데이터 분류 인스턴스 배포
 
 아직 배포된 인스턴스가 없으면 데이터 분류를 배포합니다.
@@ -38,6 +40,7 @@ NetApp Data Classification 사용하여 StorageGRID 내에서 직접 데이터 �
 
 
 
+[[add-the-storagegrid-service-to-data-classification]]
 == 데이터 분류에 StorageGRID 서비스 추가
 
 StorageGRID 서비스를 추가합니다.
@@ -62,6 +65,7 @@ StorageGRID 시스템 목록에 추가되었습니다.
 
 
 
+[[enable-and-disable-scans-on-storagegrid-buckets]]
 == StorageGRID 버킷에서 스캔 활성화 및 비활성화
 
 StorageGRID 에서 데이터 분류를 활성화한 후 다음 단계는 스캔할 버킷을 구성하는 것입니다.  데이터 분류는 해당 버킷을 검색하여 사용자가 만든 시스템에 표시합니다.

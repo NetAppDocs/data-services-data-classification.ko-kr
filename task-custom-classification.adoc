@@ -21,6 +21,7 @@ NetApp Data Classification 하면 조직의 규제 및 준수 요구 사항에 �
 
 
 
+[[create-a-custom-personal-identifier]]
 == 사용자 지정 개인 식별자를 생성하세요
 
 데이터 분류 기능을 사용하면 문맥 키워드 또는 정규 표현식을 사용하여 조직 고유의 데이터를 식별하는 맞춤형 개인 식별자를 생성할 수 있습니다.
@@ -63,6 +64,7 @@ image:screenshot-create-logic-regex.png["정규 표현식을 생성하는 대화
 
 
 
+[[create-a-custom-category]]
 == 사용자 지정 카테고리를 만드세요
 
 사용자 지정 카테고리를 사용하면 조직에 특화된 데이터 분류가 가능합니다. 사용자 지정 카테고리는 사용자가 업로드한 텍스트 파일을 기반으로 생성되며, 데이터 분류 기능은 이를 바탕으로 AI 모델을 만들어 다른 파일에서 유사한 정보를 식별합니다.
@@ -99,6 +101,7 @@ Data Classification은 데이터 학습에 필요한 예상 완료 시간을 표
 
 
 
+[[edit-a-custom-classifier]]
 == 사용자 지정 분류기를 편집합니다
 
 개인 식별자를 생성한 후에도 해당 식별자의 로직을 수정할 수 있습니다. 개인 식별자의 유형이나 논리 유형은 변경할 수 없습니다. 예를 들어 사용자 지정 범주를 사용자 지정 개인 식별자로 변경할 수 없습니다. 키워드 기반 사용자 지정 식별자를 정규 표현식 기반 사용자 지정 식별자로 변경할 수도 없습니다.
@@ -113,6 +116,7 @@ Data Classification은 데이터 학습에 필요한 예상 완료 시간을 표
 
 
 
+[[delete-a-custom-classifier]]
 == 사용자 지정 분류기를 삭제합니다
 
 . NetApp Data Classification 에서 *사용자 지정 분류*를 선택합니다.
@@ -122,6 +126,7 @@ Data Classification은 데이터 학습에 필요한 예상 완료 시간을 표
 
 
 
+[[next-steps]]
 == 다음 단계
 
 * xref:task-generating-compliance-reports.html[규정 준수 보고서 생성]

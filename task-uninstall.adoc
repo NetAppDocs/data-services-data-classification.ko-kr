@@ -20,6 +20,7 @@ summary: 문제를 해결하거나 호스트에서 소프트웨어를 영구적�
 
 
 
+[[uninstall-data-classification-from-a-cloud-provider]]
 == 클라우드 공급자로부터 데이터 분류 제거
 
 . 데이터 분류에서 **구성**을 선택합니다.
@@ -32,6 +33,7 @@ summary: 문제를 해결하거나 호스트에서 소프트웨어를 영구적�
 
 
 
+[[uninstall-data-classification-from-an-on-premises-deployment]]
 == 온프레미스 배포에서 데이터 분류 제거
 
 . 데이터 분류에서 **구성**을 선택합니다.

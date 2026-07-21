@@ -20,6 +20,7 @@ NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할
 
 
 
+[[quick-start]]
 == 빠른 시작
 
 다음 단계에 따라 빠르게 시작하거나, 나머지 섹션으로 스크롤하여 자세한 내용을 확인하세요.
@@ -41,6 +42,7 @@ NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할
 
 
 
+[[create-a-console-agent]]
 == 콘솔 에이전트 만들기
 
 Console 에이전트가 아직 없는 경우 클라우드 공급자에서 Console 에이전트를 생성하세요.  https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWS에서 콘솔 에이전트 만들기"^] 또는 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azure에서 콘솔 에이전트 만들기"^], 또는 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP에서 콘솔 에이전트 만들기"^]을 참조하세요. 대부분의 경우 Data Classification을 활성화하기 전에 Console 에이전트가 설정되어 있을 가능성이 높지만 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."], 지금 설정해야 하는 경우도 있습니다.
@@ -67,6 +69,7 @@ TIP: 데이터 분류는 스캔할 수 있는 데이터 양에 제한을 두지 
 
 
 
+[[government-region-support]]
 === 정부 지역 지원
 
 콘솔 에이전트가 정부 지역(AWS GovCloud, Azure Gov 또는 Azure DoD)에 배포된 경우 데이터 분류가 지원됩니다.  이런 방식으로 배포할 경우 데이터 분류에는 다음과 같은 제한이 있습니다.
@@ -75,6 +78,7 @@ link:https://docs.netapp.com/us-en/console-setup-admin/task-install-restricted-m
 
 
 
+[[prerequisites]]
 == 필수 조건
 
 클라우드에 데이터 분류를 배포하기 전에 지원되는 구성이 있는지 확인하려면 다음 필수 구성 요소를 검토하세요.  클라우드에 데이터 분류를 배포하면 콘솔 에이전트와 동일한 서브넷에 위치하게 됩니다.
@@ -189,6 +193,7 @@ vCPU 제한에 대한 자세한 내용은 다음 링크를 참조하세요.
 
 
 
+[[deploy-data-classification-in-the-cloud]]
 == 클라우드에 데이터 분류 배포
 
 클라우드에 데이터 분류 인스턴스를 배포하려면 다음 단계를 따르세요.  콘솔 에이전트는 클라우드에 인스턴스를 배포한 다음 해당 인스턴스에 데이터 분류 소프트웨어를 설치합니다.

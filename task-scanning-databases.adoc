@@ -18,12 +18,14 @@ NetApp Data Classification 사용하여 데이터베이스 스키마 스캔을 �
 
 
 
+[[review-prerequisites]]
 == 필수 조건 검토
 
 데이터 분류를 활성화하기 전에 지원되는 구성이 있는지 확인하려면 다음 필수 구성 요소를 검토하세요.
 
 
 
+[[supported-databases]]
 === 지원되는 데이터베이스
 
 데이터 분류는 다음 데이터베이스에서 스키마를 스캔할 수 있습니다.
@@ -42,6 +44,7 @@ CAUTION: 데이터베이스에서 통계 수집 기능을 *활성화*해야 합�
 
 
 
+[[database-requirements]]
 === 데이터베이스 요구 사항
 
 데이터 분류 인스턴스에 연결된 모든 데이터베이스는 호스팅 위치에 관계없이 스캔할 수 있습니다.  데이터베이스에 연결하려면 다음 정보가 필요합니다.
@@ -60,6 +63,7 @@ NOTE: MongoDB의 경우 읽기 전용 관리자 역할이 필요합니다.
 
 
 
+[[deploy-the-data-classification-instance]]
 == 데이터 분류 인스턴스 배포
 
 아직 배포된 인스턴스가 없으면 데이터 분류를 배포합니다.
@@ -70,6 +74,7 @@ NOTE: MongoDB의 경우 읽기 전용 관리자 역할이 필요합니다.
 
 
 
+[[add-the-database-server]]
 == 데이터베이스 서버 추가
 
 스키마가 있는 데이터베이스 서버를 추가합니다.
@@ -94,6 +99,7 @@ image:screenshot_compliance_add_db_server_dialog.png["데이터베이스를 식�
 
 
 
+[[enable-and-disable-scans-on-database-schemas]]
 == 데이터베이스 스키마에 대한 스캔 활성화 및 비활성화
 
 언제든지 스키마 전체 스캐닝을 중지하거나 시작할 수 있습니다.

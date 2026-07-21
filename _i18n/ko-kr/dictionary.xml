@@ -524,9 +524,6 @@
   <block id="bcead494d002e9572dc3500b60795eec" category="cell">사용할 수 없음(NFS 사용자는 일반적으로 서버에서 로컬로 관리되므로 동일한 개인이 각 서버에서 다른 UID를 가질 수 있음)</block>
   <block id="97804fec1fa581f14632ae2006d395c1" category="list-text">데이터 분류는 데이터베이스 데이터 소스에서 "마지막 액세스 시간"을 추출하지 않습니다.</block>
   <block id="41adaaf0716718eecf1f4d48b84b258e" category="paragraph">이 기능은 온프레미스 ONTAP 시스템, Cloud Volumes ONTAP, Azure NetApp Files, Amazon FSx for NetApp ONTAP 관리 및 타사 파일 공유에 적용할 수 있습니다.</block>
-  <block id="2e9bf0fba1b77a1da35499a6b728c5e6" category="inline-image-macro">쓰기 권한이 있는지 없는지에 따라 어떤 파일이 검사되었고 어떤 파일이 검사되지 않았는지 확인하는 필터의 스크린샷입니다.</block>
-  <block id="ee9a6cd4eeadce3c62fa7db3af1981ac" category="paragraph"><block ref="ee9a6cd4eeadce3c62fa7db3af1981ac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">필터 선택은 다음과 같습니다.</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">유형</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">설명</block>
   <block id="900eba0c97923d74bd8d9e6190e07264" category="cell">✓</block>
@@ -2240,7 +2237,6 @@
   <block id="0613f78859d4c1ee40ebf4902778200d" category="paragraph">데이터 분류는 이제 Google Cloud NetApp Volumes 에서 스캐닝을 지원합니다. NetApp Console 에서 Google Cloud NetApp Volumes 쉽게 추가하여 원활한 데이터 스캔 및 분류를 수행할 수 있습니다. 자세한 내용은 다음을 참조하세요. <block ref="ebe8ee8c7142d7ba7fe5b46fcd6a51db" category="inline-link-macro-rx"></block>.</block>
   <block id="78fec667589f53471f473945289b1df5" category="list-text">비활성 데이터를 식별하여 비용이 덜 드는 개체 스토리지로 계층화하여 스토리지 비용을 절감하세요.<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> .<block ref="f128c1ddd39d7ff58f7de848fcd36c2d" category="inline-link-rx"></block> .</block>
   <block id="ead4fb59aecd6e825b2032029bb14d83" category="list-text">*범주*: 데이터 분류는 스캔한 데이터를 여러 유형의 범주로 분류합니다. 카테고리는 각 파일의 콘텐츠와 메타데이터에 대한 AI 분석을 기반으로 한 주제입니다. <block ref="47725b7d77a9ed7fa3f732d2d0956fde" category="inline-link-macro-rx"></block>.</block>
-  <block id="3c17f47784918dfcb6d4bc5ed771d8e0" category="inline-link-macro">데이터 조사 보고서에 대해 자세히 알아보세요</block>
   <block id="33b4c33e0d5c61070467f208c8da0e6c" category="section-title">데이터 발견 평가 보고서 작성</block>
   <block id="78fcc8f2d90c3a80b48d02edc4a150f6" category="paragraph">데이터 발견 평가 보고서는 스캔된 환경에 대한 높은 수준의 분석을 제공하여 문제가 있는 영역과 잠재적인 수정 단계를 보여줍니다. 결과는 데이터 매핑과 분류를 기반으로 합니다. 이 보고서의 목적은 데이터 세트의 세 가지 중요한 측면에 대한 인식을 높이는 것입니다.</block>
   <block id="4a32c4b09fba1c841da1e2c6f4a5096e" category="list-text">클라우드에서 준비한 인스턴스에 데이터 분류를 설치하는지, 아니면 사내에서 준비한 인스턴스에 데이터 분류를 설치하는지에 따라 적절한 *배포* 옵션을 선택하여 데이터 분류 설치를 시작합니다.</block>
@@ -2858,12 +2854,8 @@
   <block id="735015b572b2dc81aeebb2df9ee39c93" category="inline-image-macro">Data Classification이 마지막 액세스 시간을 원래 타임스탬프로 되돌릴 수 있는 올바른 권한이 없더라도 파일을 스캔하는 데 사용할 수 있는 스위치를 보여주는 스크린샷입니다.</block>
   <block id="7bcb97cafb36c44f084efcbc1c5be830" category="paragraph"><block ref="7bcb97cafb36c44f084efcbc1c5be830" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a7ad8a73e69c5d5f2aa0b3925d314af6" category="admonition">ONTAP 볼륨이 SnapLock으로 구성된 경우 읽기 전용 권한을 가지며 마지막 액세스 시간을 원래 타임스탬프로 되돌릴 수 없습니다.</block>
-  <block id="fb9e57bde1ebc255f8112f03d368ba3d" category="section-title">스캔 분석 이벤트</block>
-  <block id="2d7467e91b9232ed23a46789156fd0df" category="paragraph">조사 페이지에는 _Scan Analysis Event_라는 필터가 있는데, 이 필터를 사용하면 Data Classification에서 마지막 액세스 시간을 되돌릴 수 없어서 분류되지 않은 파일 또는 Data Classification에서 마지막 액세스 시간을 되돌릴 수 없었음에도 불구하고 분류된 파일을 표시할 수 있습니다.</block>
-  <block id="36e3fa5a59068e8d4e581c88a91ade4e" category="list-text">"분류되지 않음 -- 마지막 액세스 시간을 되돌릴 수 없음" - 이는 쓰기 권한이 없어 분류되지 않은 파일을 나타냅니다.</block>
-  <block id="c08d4ba8dd4b618c703259c0efe64f7f" category="list-text">"분류 및 최종 액세스 시간 업데이트됨" - 이 필터는 분류되었지만 NetApp Data Classification이 최종 액세스 시간을 원래 날짜로 재설정할 수 없었던 파일을 표시합니다. 이 필터는 *쓰기 권한 없이 스캔*이 활성화된 환경에서만 유효합니다.</block>
-  <block id="cd76351b9e3a96611e6478f208d2a089" category="paragraph">필요한 경우, 이러한 결과를 보고서로 내보내 권한 문제로 인해 어떤 파일이 검사되고 어떤 파일이 검사되지 않는지 확인할 수 있습니다. <block ref="33ef7f32333657211456cfb75a487331" category="inline-link-macro-rx"></block>.</block>
   <block id="8cdefa787a746da6737b670208407756" category="list-text">기본적으로 Data Classification에 CIFS의 쓰기 속성 권한 또는 NFS의 쓰기 권한이 없는 경우, Data Classification이 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 볼륨의 파일을 검사하지 않습니다. 마지막 액세스 시간 재설정이 중요하지 않은 경우, *또는 각 볼륨에 대한 검사 유형 선택*을 선택하십시오. 그러면 권한 여부와 관계없이 Data Classification이 볼륨을 검사하도록 설정하는 옵션이 표시됩니다.</block>
   <block id="48d7af530cc27d49af5ade8fe42c3203" category="list-text">NetApp Data Classification은 7-Mode 시스템에서 권한이나 "마지막 접속 시간"을 추출할 수 없습니다.</block>
   <block id="d286f8a3091b047a9ce2123e0d54cc64" category="admonition">시스템 개요 페이지에는 기본적으로 비활성화된 *쓰기 권한 없이 스캔* 옵션이 있습니다. Data Classification에 적절한 권한이 없으면 Data Classification이 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 파일을 스캔하지 않습니다. + *쓰기 권한 없이 스캔* 옵션을 사용하여 이 설정을 재정의할 수 있습니다. 이 옵션에 대한 자세한 내용은 <block ref="475bb2fa4f19f7292416b967e8d92ecb" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="308857218552b597ea9cae644ef5a86a" category="admonition">데이터 분류 설치 프로그램은 UID 4321과 GID 4321을 예약해 두고 있습니다. 설치를 시작하기 전에 호스트 컴퓨터에서 UID 4321과 GID 4321이 사용 중이 아닌지 확인하십시오. 사용 중인 경우 "잘못된 사용자" 오류 메시지와 함께 설치가 실패합니다.</block>
 </blocks>
