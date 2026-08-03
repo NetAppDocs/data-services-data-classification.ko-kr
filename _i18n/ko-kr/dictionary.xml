@@ -386,7 +386,6 @@
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link-macro">API 문서</block>
   <block id="c60d8912991913ddd6b9f743a592511c" category="paragraph">네, 데이터 분류에는 콘솔 핵심 플랫폼의 일부인 데이터 분류 버전의 지원되는 기능에 대한 REST API가 있습니다. 보다 <block ref="66d6eeee3cdd1145e7194200ace05e36" category="inline-link-macro-rx"></block> .</block>
   <block id="ca3545f9022d57ae33eb493cb41afd19" category="section-title">클라우드 마켓플레이스를 통해 데이터 분류를 이용할 수 있나요?</block>
-  <block id="0692a00bf8c746154454f1ab43fbb4c8" category="paragraph">데이터 분류는 NetApp Console 핵심 기능의 일부이므로 이 서비스를 위해 마켓플레이스를 사용할 필요가 없습니다.</block>
   <block id="25534560556ecfce50508e26175329db" category="section-title">데이터 분류 스캐닝 및 분석</block>
   <block id="24a4132768e6098eec85404390afef8c" category="paragraph">다음 질문은 데이터 분류 스캐닝 성능과 분석과 관련이 있습니다.</block>
   <block id="5f92862e4bdeced1587c5a6862cbfac3" category="section-title">데이터 분류는 얼마나 자주 데이터를 스캔합니까?</block>
@@ -2858,4 +2857,7 @@
   <block id="48d7af530cc27d49af5ade8fe42c3203" category="list-text">NetApp Data Classification은 7-Mode 시스템에서 권한이나 "마지막 접속 시간"을 추출할 수 없습니다.</block>
   <block id="d286f8a3091b047a9ce2123e0d54cc64" category="admonition">시스템 개요 페이지에는 기본적으로 비활성화된 *쓰기 권한 없이 스캔* 옵션이 있습니다. Data Classification에 적절한 권한이 없으면 Data Classification이 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 파일을 스캔하지 않습니다. + *쓰기 권한 없이 스캔* 옵션을 사용하여 이 설정을 재정의할 수 있습니다. 이 옵션에 대한 자세한 내용은 <block ref="475bb2fa4f19f7292416b967e8d92ecb" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="308857218552b597ea9cae644ef5a86a" category="admonition">데이터 분류 설치 프로그램은 UID 4321과 GID 4321을 예약해 두고 있습니다. 설치를 시작하기 전에 호스트 컴퓨터에서 UID 4321과 GID 4321이 사용 중이 아닌지 확인하십시오. 사용 중인 경우 "잘못된 사용자" 오류 메시지와 함께 설치가 실패합니다.</block>
+  <block id="7a6e24dc300a73a85d44ed828d28c3db" category="paragraph">데이터 분류는 NetApp Console의 핵심 기능에 포함되어 있습니다. 클라우드 마켓플레이스에서 데이터 분류 기능을 배포할 필요가 없습니다.</block>
+  <block id="e99dacbe5fb8f13a88a038ccac0ae040" category="section-title">스캔 도중에 VM을 재시작하면 스캔에 어떤 영향이 있습니까?</block>
+  <block id="c11dddbf642df4798f94fb3c97c30774" category="paragraph">검사는 계속 진행됩니다. 검사가 실행 중인 동안 가상 머신을 다시 시작하면 가상 머신이 성공적으로 재부팅된 후 중단된 부분부터 검사가 재개됩니다.</block>
 </blocks>
