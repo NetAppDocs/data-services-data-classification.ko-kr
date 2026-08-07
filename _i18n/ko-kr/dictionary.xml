@@ -2802,7 +2802,6 @@
   <block id="5b727e9ed04fc43b0f4e0f294915a248" category="section-title">스캔 유형 이해</block>
   <block id="486c832e76fd0638886898fc9c62ff69" category="list-text">**매핑 전용 스캔**은 데이터에 대한 개략적인 개요만 제공하며 선택한 데이터 소스에서 수행됩니다. 매핑 전용 스캔은 내부 데이터를 확인하기 위해 파일에 액세스하지 않으므로 전체 스캔보다 시간이 덜 걸립니다.</block>
   <block id="71ebf849818df3526b1f19c48d22ee23" category="list-text">**전체 스캔**은 데이터에 대한 심층적인 스캔을 제공합니다. 전체 스캔에는 매핑 스캔과 파일 내 데이터 분류가 포함됩니다.</block>
-  <block id="81f9f5fbbc14757a16be8eb963cfb5bb" category="admonition">매핑 전용 스캔을 수행하면 데이터 개요를 파악하고 전체 스캔을 수행해야 할 특정 영역을 식별하는 데 도움이 될 수 있습니다.</block>
   <block id="8666915a830702ebb197dde305a34dc5" category="paragraph">표를 검토하여 맵 전용 스캔과 전체 스캔에서 어떤 정보가 표시되는지 확인하십시오.</block>
   <block id="4cc971a27d1b8959788abcd1eab8e72b" category="cell">전체 스캔</block>
   <block id="7f138c4c12db7bfc5e7b57acbcffe2d2" category="cell">맵 전용 스캔</block>
@@ -2860,4 +2859,7 @@
   <block id="7a6e24dc300a73a85d44ed828d28c3db" category="paragraph">데이터 분류는 NetApp Console의 핵심 기능에 포함되어 있습니다. 클라우드 마켓플레이스에서 데이터 분류 기능을 배포할 필요가 없습니다.</block>
   <block id="e99dacbe5fb8f13a88a038ccac0ae040" category="section-title">스캔 도중에 VM을 재시작하면 스캔에 어떤 영향이 있습니까?</block>
   <block id="c11dddbf642df4798f94fb3c97c30774" category="paragraph">검사는 계속 진행됩니다. 검사가 실행 중인 동안 가상 머신을 다시 시작하면 가상 머신이 성공적으로 재부팅된 후 중단된 부분부터 검사가 재개됩니다.</block>
+  <block id="4c9398ce1129f1601e4d55b176ae4cd8" category="inline-link-macro">수동으로 우선순위를 지정합니다</block>
+  <block id="b053d0df91aae10a4ef1dd644b52ec10" category="paragraph">초기 스캔 후, 데이터 분류 기능은 점진적인 변화를 감지하기 위해 라운드 로빈 방식으로 데이터를 지속적으로 스캔합니다. 스캔은 매일 자동으로 수행됩니다. 데이터 분류 기능은 6개씩 일괄적으로 스캔을 진행하며, 스캔을 일시 중지하거나 <block ref="eb2a9ee088a42a6c145bd3fba80d3402" category="inline-link-macro-rx"></block>.</block>
+  <block id="65f7cd44708007c7eaad8b5c146ed3dc" category="admonition">맵 전용 스캔을 수행하면 데이터 개요를 파악하는 데 도움이 될 수 있습니다. 이렇게 얻은 개괄적인 정보를 바탕으로 전체 스캔을 수행할 데이터 소스를 결정할 수 있습니다.</block>
 </blocks>
