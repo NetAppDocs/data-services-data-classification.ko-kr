@@ -1160,7 +1160,6 @@
   <block id="196004c131c20b6770256be1148132f8" category="list-text">서버의 사용자 이름 및 비밀번호</block>
   <block id="c5a32a433a4a6a349b1c917b51959e47" category="section-title">Linux 호스트에 데이터 분류 설치</block>
   <block id="92aadc02d249003db0a3c659eb74f06b" category="inline-xref">여기에서 해당 단계를 확인하세요</block>
-  <block id="cdcaeff13fccb06b7b310f6f966ada4f" category="paragraph">일반적인 구성의 경우 단일 호스트 시스템에 소프트웨어를 설치합니다. <block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block> .</block>
   <block id="31e7f243ce8de6b2655624e7d7969f44" category="inline-image-macro">인터넷 접속이 가능한 온프레미스에 단일 데이터 분류 인스턴스를 배포할 때 스캔할 수 있는 데이터 소스의 위치를 보여주는 다이어그램입니다.</block>
   <block id="ab0e7b32181d9f9a6ee2bf396f53d64b" category="paragraph"><block ref="ab0e7b32181d9f9a6ee2bf396f53d64b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ab6f827b404fc74a3d59a176e44dce54" category="inline-xref">Linux 호스트 시스템 준비</block>
@@ -2494,7 +2493,6 @@
   <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="cell">9000</block>
   <block id="2c68446a47623409683fed996b7df333" category="cell">Ubuntu 서버 내부 프로세스에 필요합니다.</block>
   <block id="ab911b02f3c83f7b8747e04d52424221" category="section-title">온프레미스 Linux 호스트에 Data Classification 설치</block>
-  <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">일반적인 구성에서는 소프트웨어를 단일 호스트 시스템에 설치합니다.</block>
   <block id="946fda64b6781af330daa1fb854c8c52" category="paragraph">오프라인 환경에서 단일 온프레미스 호스트에 Data Classification 소프트웨어를 설치할 때는 다음 단계를 따르십시오.</block>
   <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">필수 소프트웨어 패키지 두 가지(Docker Engine 또는 Podman, 그리고 Python 3)가 설치되어 있는지 확인하십시오.</block>
   <block id="0986e42aa866cf4296d7c23872a54555" category="list-text">오프라인 환경이 필요한 <block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>을(를) 충족하는지 확인하십시오.</block>
@@ -2862,4 +2860,6 @@
   <block id="4c9398ce1129f1601e4d55b176ae4cd8" category="inline-link-macro">수동으로 우선순위를 지정합니다</block>
   <block id="b053d0df91aae10a4ef1dd644b52ec10" category="paragraph">초기 스캔 후, 데이터 분류 기능은 점진적인 변화를 감지하기 위해 라운드 로빈 방식으로 데이터를 지속적으로 스캔합니다. 스캔은 매일 자동으로 수행됩니다. 데이터 분류 기능은 6개씩 일괄적으로 스캔을 진행하며, 스캔을 일시 중지하거나 <block ref="eb2a9ee088a42a6c145bd3fba80d3402" category="inline-link-macro-rx"></block>.</block>
   <block id="65f7cd44708007c7eaad8b5c146ed3dc" category="admonition">맵 전용 스캔을 수행하면 데이터 개요를 파악하는 데 도움이 될 수 있습니다. 이렇게 얻은 개괄적인 정보를 바탕으로 전체 스캔을 수행할 데이터 소스를 결정할 수 있습니다.</block>
+  <block id="054d46968a7383743285f7a0e8b6508c" category="paragraph">대부분의 경우 데이터 분류는 단일 호스트 시스템에 설치합니다. 이 시스템은 콘솔 에이전트가 설치된 VM 호스트와는 다른 시스템입니다.</block>
+  <block id="ad54f23b3db54b6c128eb84641ffe234" category="paragraph">대부분의 경우 데이터 분류는 단일 호스트 시스템에 설치합니다. 이는 콘솔 에이전트가 설치된 VM 호스트와는 다른 호스트입니다. <block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block>.</block>
 </blocks>
