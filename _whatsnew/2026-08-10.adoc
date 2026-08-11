@@ -1,0 +1,12 @@
+= 활성 스캔 탭으로 스캔 관리 향상
+:allow-uri-read: 
+
+
+
+
+[[active-scans-tab-to-enhance-scan-management]]
+=== 활성 스캔 탭으로 스캔 관리 향상
+
+데이터 분류 기능의 구성 메뉴에 *활성 스캔* 탭이 추가되어 스캔 관리가 더욱 편리해졌습니다. 활성 스캔 탭에서는 스캔을 활성화한 모든 볼륨을 한눈에 볼 수 있으며, 익숙한 필터를 사용하여 리소스를 정렬할 수 있습니다. 또한, 이 탭은 스캔 우선순위 지정, 스캔 일시 중지, 오류 검토를 위한 중앙 위치를 제공합니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html["스캔 관리"^]을 참조하십시오.

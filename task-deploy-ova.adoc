@@ -82,6 +82,8 @@ NOTE: 이 비밀번호는 루트 액세스, SSH 액세스 및 시스템 관리�
 +
 *DATASENSE-INSTALLER-<version>.tar.gz*라는 이름의 파일을 선택하십시오.
 
+. 설치 파일(Installer file)을 VM 호스트에 복사합니다. `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`.
+. 호스트 컴퓨터에서 설치 파일의 압축을 해제하십시오.
 . 콘솔에서 *거버넌스 > 분류*를 선택합니다.
 . *Deploy Classification*을 선택합니다.
 +
