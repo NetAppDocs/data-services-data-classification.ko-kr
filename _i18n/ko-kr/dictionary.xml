@@ -2432,7 +2432,6 @@
   <block id="a19fda4781709630dbfb543922e4d612" category="paragraph">오래된 데이터는 마지막 접근 시점 또는 마지막 수정 시점을 기준으로 정의할 수 있습니다. 기간 선택 범위는 6개월 전부터 10년 전까지입니다.</block>
   <block id="24ece81002d5816b98626cc57ced872d" category="paragraph">기본적으로 데이터는 마지막 수정일로부터 3년이 지난 경우 오래된 것으로 간주됩니다.</block>
   <block id="c3d635823e7267511f7a0ba59b131053" category="list-title">오래된 데이터를 정의합니다.</block>
-  <block id="41c8212e8259ff083fe9cdf357f8a4a6" category="list-text">랜섬웨어 복원력에서 **구성**을 선택하십시오.</block>
   <block id="656961d589e5ba765f1a77e91cdda2d0" category="list-text">오래된 데이터 정의에 사용할 기간을 선택하세요.</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">**저장**을 선택하세요.</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2552,7 +2551,6 @@
   <block id="b231d70c2e9c026262bda45de2cf8e61" category="doc">NetApp Data Classification에 로그인하십시오</block>
   <block id="f214292b356953b67175bbd37992066d" category="summary">조사 대시보드에서 데이터를 필터링한 후 비정형 데이터를 복사, 이동 및 삭제할 수 있습니다.</block>
   <block id="645af234aa1818d98e8bb6c780fb0e42" category="doc">NetApp Data Classification을 사용하여 파일을 복사, 이동 및 삭제합니다</block>
-  <block id="4c6b11e5b29f298bdccac50248f21007" category="paragraph">거버넌스 및 비용 절감 기회에 대한 통찰력을 제공할 뿐만 아니라 NetApp Data Classification을 사용하면 Investigation 대시보드에서 파일에 대한 작업을 수행할 수 있습니다. Investigation 대시보드에서 데이터를 필터링한 후 비정형 데이터를 복사, 이동 및 삭제할 수 있습니다. 이러한 작업을 수행하면 파일을 더 안전한 위치로 이동하여 규정 준수를 개선하거나 오래되거나 중복된 파일을 삭제하여 비용 절감 기회를 창출할 수 있습니다.</block>
   <block id="558f28628ba8ab4cb8420949524832d3" category="section-title">파일 복사</block>
   <block id="e54a222aee96b176f405c4031ff80909" category="paragraph">Data Classification은 최대 1GB 크기의 파일 복사를 지원합니다. 총 1TB의 데이터 또는 500만 개의 파일 중 먼저 도달하는 제한까지 복사할 수 있습니다. CIFS 공유 또는 NFS 대상으로 파일을 복사할 수 있습니다. 파일을 복사할 때 소스 파일에는 영향을 미치지 않습니다.</block>
   <block id="37214830ec688e601a722f40084e9795" category="list-text">조사 대시보드에서 복사할 파일을 선택합니다.</block>
@@ -2576,7 +2574,6 @@
   <block id="9b1a8f320a2c08a8370e356510090979" category="paragraph"><block ref="9b1a8f320a2c08a8370e356510090979" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7afd3db29a42496704a6705958fec121" category="list-text">**항목 이동**을 선택합니다.</block>
   <block id="19e43848563797a6f937c7895b604754" category="section-title">파일 삭제</block>
-  <block id="bf7a8fa340e92f5931d748d2f4929afb" category="paragraph">Investigation 대시보드에서 데이터를 필터링하여 스토리지 공간 및 비용 절감 기회를 찾을 때 해당 파일을 삭제할 수 있습니다. 파일 삭제는 비정형 파일에 대해서만 지원됩니다.</block>
   <block id="fe3f40b2ceb6ec005d118e22ab125813" category="list-text">조사 대시보드에서 삭제할 파일을 선택하세요.</block>
   <block id="9f9603fa59f6dd606ff86c8b621cae42" category="list-text">확인 대화 상자에서 "permanently delete"를 입력합니다.</block>
   <block id="de44f74c0cf208f9b074a847f28871e1" category="list-text">작업을 확인하려면 **파일 삭제**를 선택하십시오.</block>
@@ -2870,4 +2867,6 @@
   <block id="687c102bfd5cd4e0df7368ee54670aa2" category="list-text">필요에 따라 적절한 필터를 적용하여 수정할 리소스를 식별합니다. 일시 중지할 리소스를 식별합니다. 각 리소스에 대해 작업 메뉴<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> 옵션을 선택한 다음 *스캔 일시 중지*를 선택합니다.</block>
   <block id="6ffc226d668d783acc3c710ae22bd61d" category="section-title">2026년 8월 10일</block>
   <block id="05ad566aec59d2434a4789dad053f408" category="paragraph">*버전 1.56*</block>
+  <block id="2a6207bf09c73302b5baadda003d21a2" category="paragraph">NetApp Data Classification을 사용하면 조사 대시보드에서 검색된 파일에 대한 작업을 수행할 수 있습니다. 데이터를 필터링한 후 비정형 데이터를 복사, 이동 및 삭제하여 규정 준수를 강화하거나(예: 민감한 파일을 더 안전한 위치로 이동), 오래되거나 중복된 파일을 삭제하여 용량을 절약할 수 있습니다.</block>
+  <block id="f011267af7448f5cee47e71e75b30301" category="paragraph">조사 대시보드에서 데이터를 필터링하여 공간 및 비용 절감 기회를 찾을 때 해당 파일을 삭제할 수 있습니다. 비정형 파일만 삭제할 수 있습니다.</block>
 </blocks>
