@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
-  <block id="c808b9abfcd411d8df508cf84c03df5b" category="paragraph">+ 데이터 분류 검사를 통해 파일의 "마지막 액세스 시간"이 변경되지 않았는지 확인하려면 사용자에게 CIFS에서 쓰기 속성 권한이나 NFS에서 쓰기 권한이 있는 것이 좋습니다. 가능하다면 Active Directory 사용자를 모든 파일에 대한 권한이 있는 조직의 상위 그룹의 일부로 구성하세요.</block>
   <block id="610f7d5f79f384f359db6b6e03367472" category="inline-link-macro">다른 콘솔 에이전트를 설치하세요</block>
   <block id="9c2e66c7cc7479b8b57b9b1aa0225853" category="inline-link-macro">다른 데이터 분류 인스턴스 배포</block>
   <block id="322805244d3cfbc06b20be41ebf54d36" category="inline-link-macro">여러 콘솔 에이전트와 함께 작업</block>
@@ -44,7 +43,6 @@
   <block id="462a3ff626aa57006db763d5cc9f2a9b" category="list-text">Ubuntu 24.04(데이터 분류 버전 1.23 이상 필요)</block>
   <block id="8118250de488638095b55cd46b5772ef" category="list-text">다음 운영 체제에서는 Podman 컨테이너 엔진을 사용해야 하며, Data Classification 버전 1.30 이상이 필요합니다.</block>
   <block id="d4113e36e86a18cdd4a4813e9e66b30e" category="list-text">호스트 시스템에서 고급 벡터 확장(AVX2)을 활성화해야 합니다.</block>
-  <block id="f2183b09e54e4aa491c008ea8ca08bbc" category="list-text">*Red Hat Subscription Management*: 호스트는 Red Hat Subscription Management에 등록되어야 합니다.  등록되지 않은 경우, 설치 중에 시스템은 저장소에 접근하여 필요한 타사 소프트웨어를 업데이트할 수 없습니다.</block>
   <block id="c925667b183375955ce7e62c22a4acdf" category="list-text">*추가 소프트웨어*: 데이터 분류를 설치하기 전에 호스트에 다음 소프트웨어를 설치해야 합니다.</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">설치 지침 보기</block>
   <block id="42b04f3730744d602d0c4b812384dce9" category="list-text">Docker Engine 버전 19.3.1 이상.<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block> .</block>
@@ -55,7 +53,6 @@
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
   <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">조사 페이지에서 데이터 필터링</block>
   <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">조사 탭에서 사용할 필터를 선택하여 검색을 정의합니다. 보다<block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
-  <block id="e90978cdcc2cff568cf451945bcc0a04" category="list-text">모든 필터 특성을 원하는 대로 설정한 후 *쿼리 저장*을 선택하세요.</block>
   <block id="9f8e2d7fe62472b4be2487ce12321ad1" category="inline-image-macro">필터링된 쿼리를 저장된 쿼리로 저장하는 방법을 보여주는 스크린샷입니다.</block>
   <block id="8779001fb20068ec9239274c0aa1de8c" category="paragraph"><block ref="8779001fb20068ec9239274c0aa1de8c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b2fd0c3456cecfc91c83d3bcbdcfde88" category="list-text">저장된 쿼리의 이름을 지정하고 설명을 추가합니다.  이름은 고유해야 합니다.</block>
@@ -65,7 +62,6 @@
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">*저장*을 선택하세요.</block>
   <block id="672224b23e2b17f35b0d4bf8aa4f1c43" category="inline-image-macro">저장된 쿼리를 구성하고 저장하는 방법을 보여주는 스크린샷입니다.</block>
   <block id="47a922638f32c230008676e9ffb143c9" category="paragraph"><block ref="47a922638f32c230008676e9ffb143c9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="02d6fe4579b4d035f1741bff636a2bf4" category="paragraph">검색이나 정책을 만든 후에는 **저장된 쿼리** 탭에서 볼 수 있습니다.</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="paragraph-title">StorageGRID 데이터 스캔</block>
   <block id="3c857514c210414567713ffec9077aff" category="paragraph">BlueXP classification StorageGRID 에서 데이터 스캐닝을 지원합니다.</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">자세한 내용은 다음을 참조하세요.<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block> .</block>
@@ -220,7 +216,6 @@
   <block id="89d69ff3dca93dc4c1c160728186e722" category="paragraph-title">Google Cloud NetApp Volumes 지원</block>
   <block id="5eb2a16d2fa5bf1cf608a92f8904a2ae" category="summary">웹 UI를 통해 제공되는 NetApp Data Classification 기능은 API를 통해서도 사용할 수 있습니다.</block>
   <block id="e5ae04a842e199bfb2c83e0176275a5e" category="doc">NetApp Data Classification API</block>
-  <block id="8d1948df96be05c01e7136dc702e5932" category="paragraph">웹 UI를 통해 제공되는 NetApp Data Classification 기능은 REST API를 통해서도 사용할 수 있습니다.</block>
   <block id="3b84053c0a70504d371f27a17a18d249" category="paragraph">UI의 탭에 해당하는 데이터 분류에는 4가지 범주가 정의되어 있습니다.</block>
   <block id="5cbac16d406ddfc92080f39efa7437d8" category="list-text">조사</block>
   <block id="9c0408c775a2b61052a2e700a89f396f" category="list-text">규정 준수</block>
@@ -231,9 +226,7 @@
   <block id="0834282da4451153933b764b7c467961" category="paragraph">API를 사용하면 다음 기능을 수행할 수 있습니다.</block>
   <block id="e9877434dd91b8be501cfda768f3d62d" category="list-text">수출 정보</block>
   <block id="9a69ba3b52dc90f668cf2dab5adcc31b" category="list-text">UI에서 사용 가능한 모든 것은 API를 통해 내보낼 수 있습니다(보고서 제외)</block>
-  <block id="0604d5a0ddef533e3d68308ba271ce3c" category="list-text">데이터는 JSON 형식으로 내보내집니다(Splunk와 같은 타사 애플리케이션에 쉽게 구문 분석하고 푸시할 수 있음)</block>
   <block id="78d5f8e107a8cbb07d42f849c3a75df8" category="list-text">"AND" 및 "OR" 문을 사용하여 쿼리를 만들고, 정보를 포함하거나 제외하는 등의 작업을 수행합니다.</block>
-  <block id="108bb92a1232380b4fb0f0145732e3d0" category="paragraph">예를 들어, 특정 개인 식별 정보(PII)가 _없는_ 파일을 찾을 수 있습니다(이 기능은 UI에서 사용할 수 없습니다).  내보내기 작업에서 특정 필드를 제외할 수도 있습니다.</block>
   <block id="cff5f769d885300f77250bd96cd0eba3" category="list-text">작업 수행</block>
   <block id="7e5773dd5089c77c99fd8d8158864437" category="list-text">CIFS 자격 증명 업데이트</block>
   <block id="8d4462bd75d514bcb1e0545bfb9272d9" category="list-text">작업 보기 및 취소</block>
@@ -246,20 +239,13 @@
   <block id="b62dbbecd6533f9627427d34160e7d75" category="section-title">API를 사용한 예</block>
   <block id="b7fd2e4068e2c6cc68317c7892c5290c" category="paragraph">다음 예제는 파일을 복사하는 API 호출을 보여줍니다.</block>
   <block id="7d9faab09c1d85e60360dfca30ab77cc" category="paragraph-title">API 요청</block>
-  <block id="55563c183b715e7036f5748d32a87d86" category="paragraph">조사 탭의 모든 필터를 보려면 먼저 시스템에 필요한 모든 관련 필드와 옵션을 확보해야 합니다.</block>
   <block id="d64ed3e9c10229648e069f56e32f4c8e" category="listing-title">응답</block>
-  <block id="de47d5ffc03a894916b0d9b2eab236ab" category="paragraph">우리는 복사하려는 원하는 파일을 필터링하기 위해 요청 매개변수에서 해당 응답을 사용할 것입니다.</block>
   <block id="79182acec3ee2a0e035fadc56831073b" category="paragraph">여러 항목에 작업을 적용할 수 있습니다.  지원되는 작업 유형에는 이동, 삭제, 복사가 있습니다.</block>
-  <block id="0ac331cece7c559ed07957dfa637e510" category="paragraph">복사 작업을 생성합니다.</block>
-  <block id="8ad0c8a225121bfff89f847893f0d610" category="paragraph">다음 API는 액션 API이며 이를 통해 여러 액션을 생성할 수 있습니다.</block>
   <block id="87d1cd52d2ec66c4978b4d90f9069a04" category="paragraph">응답에서는 작업 객체가 반환되므로 get 및 delete API를 사용하여 작업에 대한 상태를 얻거나 작업을 취소할 수 있습니다.</block>
   <block id="80e0816a480abfbbb6f50d0c8a877b3f" category="summary">데이터 분류는 NetApp Console 위한 데이터 거버넌스 서비스로, 기업의 온프레미스 및 클라우드 데이터 소스를 스캔하여 데이터를 매핑하고 분류하며 개인 정보를 식별합니다. 이를 통해 보안 및 규정 준수 위험을 줄이고, 스토리지 비용을 절감하고, 데이터 마이그레이션 프로젝트를 지원할 수 있습니다.</block>
   <block id="4964a8f5f86e15358c2fc765883fe9b2" category="doc">NetApp Data Classification 에 대해 알아보세요</block>
-  <block id="e209066c1623e4fbc1d1f5b2b437b0d8" category="paragraph">NetApp Data Classification 는 NetApp Console 위한 데이터 거버넌스 서비스로, 기업의 온프레미스 및 클라우드 데이터 소스를 스캔하여 데이터를 매핑하고 분류하며 개인 정보를 식별합니다. 이를 통해 보안 및 규정 준수 위험을 줄이고, 스토리지 비용을 절감하고, 데이터 마이그레이션 프로젝트를 지원할 수 있습니다.</block>
-  <block id="d02fa6635925593eea32516c1ea6b958" category="admonition">버전 1.31부터 데이터 분류가 NetApp Console 의 핵심 기능으로 제공됩니다.  추가 비용은 없습니다.  분류 라이센스나 구독이 필요하지 않습니다.  + 기존 버전 1.30 또는 이전 버전을 사용 중이신 경우, 구독이 만료될 때까지 해당 버전을 사용할 수 있습니다.</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="section-title">NetApp Console</block>
   <block id="6e333b6c93480f6d32d540f9875aaf58" category="paragraph">데이터 분류는 NetApp Console 통해 접근할 수 있습니다.</block>
-  <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetApp Console 엔터프라이즈급 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지 및 데이터 서비스를 중앙에서 관리할 수 있는 기능을 제공합니다. NetApp 데이터 서비스에 액세스하고 사용하려면 콘솔이 필요합니다. 관리 인터페이스로서, 하나의 인터페이스에서 여러 스토리지 리소스를 관리할 수 있습니다. 콘솔 관리자는 기업 내 모든 시스템의 저장소와 서비스에 대한 액세스를 제어할 수 있습니다.</block>
   <block id="874065797510ef71853078d085cab4b0" category="paragraph">NetApp Console 사용하려면 라이선스나 구독이 필요하지 않으며, 스토리지 시스템이나 NetApp 데이터 서비스에 대한 연결을 보장하기 위해 클라우드에 Console 에이전트를 배포해야 할 때만 요금이 부과됩니다. 그러나 콘솔에서 액세스할 수 있는 일부 NetApp 데이터 서비스는 라이선스 기반이거나 구독 기반입니다.</block>
   <block id="a139b69cf2c6a37377eea224685da3f6" category="paragraph">자세히 알아보세요<block ref="6d844886de4fe963e1e4b97f495f829d" category="inline-link-macro-rx"></block> .</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">특징</block>
@@ -268,7 +254,6 @@
   <block id="89073ebfdec87f01ba2de97bf2838871" category="paragraph"><block ref="f4803e06203a33d5098bb13a3ce23454" category="inline-link-macro-rx"></block> .</block>
   <block id="5e27c5cc9f66f543d963585b42d1709d" category="paragraph-title">규정 준수 유지</block>
   <block id="eefee6760c920e2f37921a16b9f4ddc6" category="paragraph">데이터 분류는 규정 준수 노력에 도움이 되는 다양한 도구를 제공합니다.  데이터 분류를 사용하여 다음을 수행할 수 있습니다.</block>
-  <block id="6858b5f69ec006bf6e2de7960deffea9" category="list-text">개인 식별 정보(PII)를 식별합니다.</block>
   <block id="3a1ce1b3df0ddd54818235c5f83820d9" category="list-text">GDPR, CCPA, PCI 및 HIPAA 개인정보 보호 규정에서 요구하는 대로 광범위한 민감한 개인 정보를 식별합니다.</block>
   <block id="aa1b21b925a987e64de4f7ff816313c0" category="list-text">이름이나 이메일 주소를 기반으로 데이터 주체 접근 요청(DSAR)에 응답합니다.</block>
   <block id="947194b810ea64bcea87e2425aed8a89" category="paragraph-title">보안 강화</block>
@@ -278,7 +263,6 @@
   <block id="29c9ae62d38a9d393cc687207b213fa5" category="list-text">데이터 보존 정책을 준수합니다.</block>
   <block id="ca5877ce323984fac661618517ce77b9" category="list-text">__정책__을 사용하면 새로운 보안 문제를 자동으로 감지하여 보안 직원이 즉시 조치를 취할 수 있습니다.</block>
   <block id="c5f92f73b9ea92063c2fc24f82a835d2" category="paragraph-title">저장 공간 사용량 최적화</block>
-  <block id="bdfebfb74740453cfffe123c1ef0b934" category="paragraph">데이터 분류는 스토리지 총 소유 비용(TCO)을 절감하는 데 도움이 되는 도구를 제공합니다.  데이터 분류를 사용하여 다음을 수행할 수 있습니다.</block>
   <block id="12745f1753f4a2151c5bd9d0d7cadbd9" category="list-text">중복된 데이터나 업무와 관련 없는 데이터를 식별하여 저장 효율성을 높입니다.</block>
   <block id="d54227dbf49473f423d5988bdb7771ff" category="inline-link">Cloud Volumes ONTAP 시스템의 계층화에 대해 자세히 알아보세요.</block>
   <block id="aeaf9676bf6ac22ff407af9053be1238" category="inline-link">온프레미스 ONTAP 시스템의 계층화에 대해 자세히 알아보세요.</block>
@@ -310,7 +294,6 @@
   <block id="e1229dd3741de325a7a26a00931944cd" category="inline-link">각 클라우드 공급자에 배포되는 인스턴스 유형</block>
   <block id="1f3c3a2b9e4ca2f543ead53a3346f67f" category="list-text">데이터 분류를 위해서는 콘솔 에이전트를 배포해야 합니다.  많은 경우 콘솔에서 다른 저장소와 서비스를 사용하고 있기 때문에 이미 콘솔 에이전트가 있는 것입니다.  콘솔 에이전트 인스턴스는 배포된 클라우드 공급자로부터 요금이 부과됩니다. 를 참조하십시오<block ref="3226d03483e6ef310354bdd4ac85d9e3" category="inline-link-rx"></block> .  온프레미스 시스템에 콘솔 에이전트를 설치하는 경우 비용이 발생하지 않습니다.</block>
   <block id="17dc12e433367516ebb888f04d0428a7" category="section-title">데이터 전송 비용</block>
-  <block id="20a016b26127d34612cd81d9ef817efe" category="paragraph">데이터 전송 비용은 설정에 따라 달라집니다.  데이터 분류 인스턴스와 데이터 소스가 동일한 가용성 영역 및 지역에 있는 경우 데이터 전송 비용이 발생하지 않습니다.  하지만 Cloud Volumes ONTAP 시스템과 같은 데이터 소스가 _다른_ 가용성 영역이나 지역에 있는 경우 클라우드 공급자가 데이터 전송 비용을 청구합니다.  자세한 내용은 다음 링크를 참조하세요.</block>
   <block id="f3d1244221881043e7d38d834935042d" category="inline-link">AWS: Amazon Elastic Compute Cloud(Amazon EC2) 가격</block>
   <block id="8de1990a68818d4a3c6e1ae7c064bcf9" category="list-text"><block ref="8de1990a68818d4a3c6e1ae7c064bcf9" category="inline-link-rx"></block></block>
   <block id="ec41ccef0058f3bdb78fe38313b87456" category="inline-link">Microsoft Azure: 대역폭 가격 세부 정보</block>
@@ -378,8 +361,6 @@
   <block id="91d5470ff0de1d64ddb0c8c3bef0b246" category="section-title">NetApp Data Classification</block>
   <block id="46e8d23cf6731fff45d8d2f8b0904245" category="paragraph">다음 질문은 데이터 분류에 대한 일반적인 이해를 제공합니다.</block>
   <block id="5c96bb1e94b5c40e2b4c67e86da9035b" category="section-title">데이터 분류는 어떻게 작동하나요?</block>
-  <block id="1c3dae615edaced827205b274d60a30f" category="paragraph">데이터 분류는 NetApp Console 시스템 및 스토리지 시스템과 함께 또 다른 계층의 AI를 배포합니다.  그런 다음 볼륨, 버킷, 데이터베이스 및 기타 스토리지 계정의 데이터를 스캔하고 발견된 데이터 통찰력을 인덱싱합니다.  데이터 분류는 일반적으로 정규 표현식과 패턴 매칭을 중심으로 구축되는 대체 솔루션과 달리 인공 지능과 자연어 처리를 모두 활용합니다.</block>
-  <block id="28ae03af38397e53979f167e22dde3ec" category="paragraph">데이터 분류는 AI를 사용하여 데이터에 대한 맥락적 이해를 제공하여 정확한 탐지 및 분류를 제공합니다.  최신 데이터 유형과 규모에 맞춰 설계되었기 때문에 AI를 기반으로 합니다.  또한 강력하고 정확한 검색 및 분류를 제공하기 위해 데이터 컨텍스트를 이해합니다.</block>
   <block id="69f53784345b32a25fe734a19ae13310" category="inline-link-macro">데이터 분류가 작동하는 방식에 대해 자세히 알아보세요</block>
   <block id="2d1e0aad948d43deac89a802d5bce8f4" category="paragraph"><block ref="1bb3f55ec91d163a1822a0087bd5a3d8" category="inline-link-macro-rx"></block> .</block>
   <block id="459799378d6e17ed64a54b616182ff05" category="section-title">데이터 분류에 REST API가 있나요? 타사 도구와도 호환되나요?</block>
@@ -396,7 +377,6 @@
   <block id="47cbe0a62499f701bd878444c5a9f55c" category="paragraph">데이터 스캔은 저장 시스템과 데이터에 미치는 영향이 미미합니다.</block>
   <block id="c50a6cbc569afa1deaa247aaeb038787" category="section-title">스캔 성능은 다양합니까?</block>
   <block id="eb34870265447c9a7faedb940ce37cd2" category="inline-link-macro">데이터 분류 배포</block>
-  <block id="33d2b9101587e34a9147f4e52e4cb396" category="paragraph">검사 성능은 네트워크 대역폭과 사용자 환경의 평균 파일 크기에 따라 달라질 수 있습니다.  또한 호스트 시스템(클라우드 또는 온프레미스)의 크기 특성에 따라 달라질 수 있습니다. 다음을 참조하세요. <block ref="a3df54ddf9d7afe458352d9d936eb35c" category="inline-link-macro-rx"></block> 그리고 <block ref="a5b872c942a928a25b61050c0d988d76" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
   <block id="c72ddbd3da276cbf637af7b47f849896" category="section-title">데이터 분류를 사용하여 데이터를 검색할 수 있나요?</block>
   <block id="9be1f335c2ef769a400d78ab0a800b8e" category="paragraph">데이터 분류는 모든 연결된 소스에서 특정 파일이나 데이터를 쉽게 검색할 수 있는 광범위한 검색 기능을 제공합니다.  데이터 분류를 통해 사용자는 메타데이터가 반영하는 것 이상의 심층적인 검색을 수행할 수 있습니다.  이름, ID 등 다양한 민감한 데이터 유형을 읽고 분석할 수 있는 언어에 구애받지 않는 서비스입니다.  예를 들어, 사용자는 구조화된 데이터 저장소와 구조화되지 않은 데이터 저장소를 모두 검색하여 회사 정책을 위반하여 데이터베이스에서 사용자 파일로 유출되었을 수 있는 데이터를 찾을 수 있습니다.  검색 결과는 나중에 사용할 수 있도록 저장할 수 있으며, 정책을 만들어서 일정 빈도로 검색 결과를 검색하고 조치를 취할 수 있습니다.</block>
   <block id="2d31401a32265d70cbeabb4ea0f7860c" category="paragraph">관심 있는 파일을 찾으면 태그, 시스템 계정, 버킷, 파일 경로, 범주(분류에서 가져옴), 파일 크기, 마지막 수정, 권한 상태, 중복, 민감도 수준, 개인 데이터, 파일 내의 민감한 데이터 유형, 소유자, 파일 유형, 파일 크기, 생성 시간, 파일 해시, 데이터가 주의를 끌기 위해 누군가에게 할당되었는지 여부 등의 특성을 나열할 수 있습니다.  필터를 적용하면 관련성이 없는 특성을 걸러낼 수 있습니다.</block>
@@ -409,7 +389,6 @@
   <block id="e5ee2d62309d708ddc57b020b6f59148" category="admonition">데이터 소스에서 데이터 분류를 활성화하면 즉각적인 초기 검사가 수행됩니다.  검사 결과는 곧 표시됩니다.</block>
   <block id="1f331ac479f3d43568c69da751fb1d65" category="inline-link-macro">데이터 분류에서 데이터 소스 제거</block>
   <block id="6fe2dbadc149d02bd55d58fc1816135f" category="paragraph">데이터 분류 구성 페이지에서 개별 시스템, 데이터베이스 또는 파일 공유 그룹을 스캔하는 데이터 분류를 비활성화할 수 있습니다. 보다 <block ref="5b3ccef88b6a660263ccff7921c70581" category="inline-link-macro-rx"></block> .</block>
-  <block id="c8458d5edabb5453017e8f3e5f3c27e7" category="paragraph">데이터 분류 인스턴스를 완전히 제거하려면 클라우드 공급자의 포털이나 온프레미스 위치에서 데이터 분류 인스턴스를 수동으로 제거하세요.</block>
   <block id="8545554878488aa590058ac6eff05a2a" category="section-title">이 서비스는 특정 디렉토리의 스캐닝 데이터를 제외할 수 있나요?</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">자세히 알아보기</block>
   <block id="39c9bbd3c8891c8c9670863dd31bb54c" category="paragraph">네. 특정 데이터 소스 디렉토리에 있는 스캐닝 데이터를 데이터 분류에서 제외하려면 분류 엔진에 해당 목록을 제공하면 됩니다.  해당 변경 사항을 적용하면 데이터 분류에서 지정된 디렉토리의 스캐닝 데이터가 제외됩니다. <block ref="9eb9374bdadf51dbee6c9b223e02f7ca" category="inline-link-macro-rx"></block> .</block>
@@ -427,10 +406,8 @@
   <block id="c6b920b524033c55e0dbc0115eae5c7e" category="list-text">S3(Simple Storage Service) 프로토콜을 사용하는 개체 스토리지</block>
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">어떤 파일 형식이 지원되나요?</block>
   <block id="6585b5cb472c233a6aef35c2c6fa7acc" category="paragraph">데이터 분류는 모든 파일을 스캔하여 범주 및 메타데이터에 대한 통찰력을 제공하고 대시보드의 파일 유형 섹션에 모든 파일 유형을 표시합니다.</block>
-  <block id="faeba49f15158f3798c8ea4b18af2291" category="paragraph">데이터 분류가 개인 식별 정보(PII)를 감지하거나 DSAR 검색을 수행하는 경우 다음 파일 형식만 지원됩니다.</block>
   <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
   <block id="435a79cd362c0dbb62bbe01a17b51bb0" category="section-title">데이터 분류는 어떤 종류의 데이터와 메타데이터를 수집합니까?</block>
-  <block id="d5b42b420bbf9cde73e6b4a866e40b84" category="paragraph">데이터 분류를 사용하면 데이터 소스에 대한 일반적인 "매핑" 스캔이나 전체 "분류" 스캔을 실행할 수 있습니다.  매핑은 데이터에 대한 개략적인 개요만 제공하는 반면, 분류는 데이터에 대한 심층적인 스캐닝을 제공합니다.  데이터 내부에 있는 데이터를 보기 위해 파일에 접근하지 않기 때문에 데이터 소스에서 매우 빠르게 매핑을 수행할 수 있습니다.</block>
   <block id="7a86e1b46f8a8bc6d38b11447af57092" category="list-text">*데이터 매핑 스캔(매핑 전용 스캔)*: 데이터 분류는 메타데이터만 스캔합니다.  이는 전반적인 데이터 관리 및 거버넌스, 신속한 프로젝트 범위 설정, 대규모 자산 및 우선 순위 지정에 유용합니다.  데이터 매핑은 메타데이터를 기반으로 하며 *빠른* 스캔으로 간주됩니다.</block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">빠른 검사 후 데이터 매핑 보고서를 생성할 수 있습니다.  이 보고서는 기업 데이터 소스에 저장된 데이터에 대한 개요를 제공하며, 이를 통해 리소스 활용, 마이그레이션, 백업, 보안 및 규정 준수 프로세스에 대한 의사 결정을 내리는 데 도움이 됩니다.</block>
   <block id="59918b13530817c9008f5a24533dcfbc" category="paragraph">전체 검사 후에는 데이터 조사 페이지에서 데이터 보기 및 세분화, 파일 내에서 이름 검색, 소스 파일 복사, 이동 및 삭제 등 데이터에 적용할 수 있는 추가 데이터 분류 기능이 많이 있습니다.</block>
@@ -440,7 +417,6 @@
   <block id="6a1848c615c0a6fa2147d1c6a685db83" category="paragraph">네, 데이터 분류는 NetApp Console 과 완벽하게 통합되어 있습니다.  NetApp Console 사용자는 자신의 권한에 따라 볼 수 있는 시스템에 대한 정보만 볼 수 있습니다.</block>
   <block id="bd09e325dd3fadca882741496ea0db32" category="paragraph">또한, 특정 사용자가 데이터 분류 설정을 관리할 수 없도록 데이터 분류 검사 결과만 볼 수 있도록 허용하려면 해당 사용자에게 *분류 뷰어* 역할( NetApp Console 표준 모드로 사용하는 경우) 또는 *규정 준수 뷰어* 역할( NetApp Console 제한 모드로 사용하는 경우)을 할당할 수 있습니다. <block ref="d17fd0889fdecbf44291c8706a754975" category="inline-link-macro-rx"></block> .</block>
   <block id="258dd16f25d1e7c62b8709aae19d0a6d" category="section-title">내 브라우저와 데이터 분류 간에 전송되는 개인 데이터에 누구든지 접근할 수 있나요?</block>
-  <block id="0b78e60b4d8a0bae10e97bdf631170b2" category="paragraph">아니요. 브라우저와 데이터 분류 인스턴스 간에 전송되는 개인 데이터는 TLS 1.2를 사용하여 종단 간 암호화로 보호되므로 NetApp 과 비 NetApp 당사자는 해당 데이터를 읽을 수 없습니다.  데이터 분류는 귀하가 액세스를 요청하고 승인하지 않는 한 NetApp 과 어떠한 데이터나 결과도 공유하지 않습니다.</block>
   <block id="74d4d96e624f192d4ebed96b99d9cedd" category="paragraph">스캔된 데이터는 사용자 환경 내에 유지됩니다.</block>
   <block id="b39079257432aa2e0ea1ac3e4e36cdf8" category="section-title">민감한 데이터는 어떻게 처리되나요?</block>
   <block id="35a8814c3eaa26f66ca3a0eea1193f70" category="paragraph">NetApp 민감한 데이터에 액세스할 수 없으며 이를 UI에 표시하지 않습니다.  민감한 데이터는 가려집니다. 예를 들어, 신용카드 정보의 경우 마지막 4자리 숫자가 표시됩니다.</block>
@@ -471,7 +447,6 @@
   <block id="329c759a1ec5ced846e0c58abfae36d2" category="section-title">데이터 분류 배포</block>
   <block id="692790f3033121c9490e8a4977983d87" category="paragraph">다음 질문은 별도의 데이터 분류 인스턴스와 관련이 있습니다.</block>
   <block id="6114d1126a463011c217791fd91ae200" category="section-title">데이터 분류는 어떤 배포 모델을 지원합니까?</block>
-  <block id="b125d1e0ae4b8f91dfe67594d9a3d4c1" category="paragraph">NetApp Console 사용하면 사용자는 온프레미스, 클라우드, 하이브리드 환경을 포함한 거의 모든 곳에서 시스템을 검사하고 보고할 수 있습니다.  데이터 분류는 일반적으로 SaaS 모델을 사용하여 배포됩니다. 즉, 서비스는 콘솔 인터페이스를 통해 활성화되며 하드웨어나 소프트웨어를 설치할 필요가 없습니다.  이러한 클릭 앤 런 배포 모드에서도 데이터 저장소가 온프레미스에 있든 퍼블릭 클라우드에 있든 관계없이 데이터 관리를 수행할 수 있습니다.</block>
   <block id="dde19a0f40a28ec93e840744c9acff6b" category="section-title">데이터 분류에는 어떤 유형의 인스턴스 또는 VM이 필요합니까?</block>
   <block id="21470a3e6a3feaf105174d0e14c5f537" category="inline-link-macro">클라우드에 배포됨</block>
   <block id="3cf31c18e1b66993cf63511a5ea327f3" category="paragraph">언제<block ref="63b25124667f9a48140e6efc7dc1fd70" category="inline-link-macro-rx"></block> :</block>
@@ -513,7 +488,6 @@
   <block id="a045f318999c936720f61814bf4d2c2e" category="cell">*타임스탬프*</block>
   <block id="7e06380ecab9614af588d8a05ba6d6b0" category="cell">_생성 시간_</block>
   <block id="78945de8de090e90045d299651a68a9b" category="cell">사용 가능</block>
-  <block id="f9b9ab70f8d1cbd522aba5cea3dbb026" category="cell">사용할 수 없음(Linux에서는 지원되지 않음)</block>
   <block id="06d8b12cf1272ab914790a8734a08c8e" category="cell">*권한*</block>
   <block id="e9349d6c7fc3f860e75fd091e850b861" category="cell">_열기 권한_</block>
   <block id="fbd9c4028bea4c13eb992144e5923bc4" category="cell">"EVERYONE" 그룹이 파일에 액세스할 수 있는 경우 해당 파일은 "조직에 공개"로 간주됩니다.</block>
@@ -565,7 +539,6 @@
   <block id="f51b3d7bd6e956de0335612c9b14e8cb" category="section-title">NetApp Data Classification 비활성화 옵션</block>
   <block id="01bd3cbe95ecfc71aaa7abc34ae52e07" category="paragraph">2023년 12월(버전 1.26.6) 릴리스에서는 다음 옵션이 제거되었습니다.</block>
   <block id="bd387dbe20d15a2a0ff5e7602549388e" category="list-text">감사 로그 수집을 활성화하는 옵션이 비활성화되었습니다.</block>
-  <block id="26bd123fab8351108bdebb31f296711d" category="list-text">디렉토리 조사 중에 디렉토리별 개인 식별 정보(PII) 데이터 수를 계산하는 옵션을 사용할 수 없습니다.</block>
   <block id="6b1b1c56d9e50ead02cb1c15240f6672" category="list-text">Azure Information Protection(AIP) 레이블을 사용하여 데이터를 통합하는 옵션이 비활성화되었습니다.</block>
   <block id="6ab120d20829955f80b50c20609655c9" category="section-title">데이터 분류 스캐닝</block>
   <block id="6cde9ac59f6d751761a9df6f32d8179c" category="paragraph">데이터 분류 스캔에는 다음과 같은 제한 사항이 있습니다.</block>
@@ -1003,7 +976,6 @@
   <block id="e7d1c98dba976d189ba1f2507302b650" category="doc">NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포합니다.</block>
   <block id="6ce84a46ad99469863f22b588d00cd1b" category="paragraph">NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할 수 있습니다.  콘솔은 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다.</block>
   <block id="e1d68ffc673d6a1e71e75d1b732a7d25" category="inline-link-macro">인터넷 접속이 가능한 Linux 호스트에 데이터 분류 설치</block>
-  <block id="e72a08e02cbb4ea35529b55329c987dd" category="paragraph">또한 다음을 수행할 수도 있습니다.<block ref="5be30f09756f4a63d11643ef4bf59d3f" category="inline-link-macro-rx"></block> .  온프레미스 ONTAP 시스템을 온프레미스에 있는 데이터 분류 인스턴스를 사용하여 스캔하려는 경우 이러한 유형의 설치가 좋은 옵션일 수 있지만, 이는 필수 사항은 아닙니다.  어떤 설치 방법을 선택하든 소프트웨어의 기능은 정확히 동일합니다.</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">빠른 시작</block>
   <block id="91e06e9a9ef97681b798e2e5e007ba97" category="paragraph">다음 단계에 따라 빠르게 시작하거나, 나머지 섹션으로 스크롤하여 자세한 내용을 확인하세요.</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">하나</block>
@@ -1096,7 +1068,6 @@
   <block id="9b305ee4bd352f956f4cb24478769e42" category="paragraph">구성 페이지에서 스캔할 데이터 소스를 선택할 수 있습니다.</block>
   <block id="0af1d9f272de63befefd69f441dc7fab" category="summary">인터넷 접속이 불가능한 온프레미스 사이트의 Linux 호스트에 NetApp Data Classification 설치하려면 몇 가지 단계를 완료하세요. 이를 "개인 모드"라고도 합니다. 이러한 유형의 설치는 보안 사이트에 적합합니다.</block>
   <block id="365a447377f6e5c0e423f1aee2b9e99f" category="doc">인터넷 접속이 없는 Linux 호스트에 NetApp Data Classification 설치</block>
-  <block id="f02ba335dcb9bba391d04f5b63ec3ba5" category="paragraph">인터넷 접속이 불가능한 온프레미스 사이트의 Linux 호스트에 NetApp Data Classification 설치하는 것을 _개인 모드_라고 합니다.  설치 스크립트를 사용하는 이 유형의 설치는 NetApp Console SaaS 계층에 연결되지 않습니다.</block>
   <block id="04c9a5a89561cb946041a3696037c669" category="paragraph">온프레미스 설치는 온프레미스에 있는 데이터 분류 인스턴스를 사용하여 온프레미스 ONTAP 시스템을 스캔하는 것을 선호하는 경우에 좋은 옵션입니다.  이것은 필수사항이 아닙니다.  어떤 설치 방법을 선택하든 소프트웨어의 기능은 동일합니다.</block>
   <block id="e8562561fd690a579bf484d92c56900a" category="inline-link-macro">Linux 호스트가 데이터 분류를 설치할 준비가 되었는지 확인하는 방법을 알아보세요.</block>
   <block id="d80ccf73602d462b3c75179b8666d350" category="paragraph">데이터 분류 설치 스크립트는 시스템과 환경이 필수 전제 조건을 충족하는지 확인하는 것으로 시작됩니다.  모든 전제 조건이 충족되면 설치가 시작됩니다.  데이터 분류 설치를 실행하지 않고도 전제 조건을 독립적으로 확인하려면 전제 조건만 테스트하는 별도의 소프트웨어 패키지를 다운로드할 수 있습니다. <block ref="73a6280d3a4870acf61b76881089c551" category="inline-link-macro-rx"></block> .</block>
@@ -1218,9 +1189,7 @@
   <block id="a7955816207c66ef93518de3b208c0d2" category="inline-link-macro">콘솔을 사용하여 클라우드에 배포</block>
   <block id="61e7b2134b2bd5446d16fd5d98582544" category="list-text"><block ref="718e5bf832b7dc2d474175d5c8eba439" category="inline-link-macro-rx"></block> . 콘솔은 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다.</block>
   <block id="7c454725651fa93e75c3603da01e3ae2" category="inline-link-macro">인터넷 접속이 가능한 Linux 호스트에 설치</block>
-  <block id="08858c16551aba16c4305089845b505e" category="list-text"><block ref="953e3010369667b8110edc0847a61543" category="inline-link-macro-rx"></block> . 인터넷 접속이 가능한 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에 데이터 분류를 설치합니다.  온프레미스 ONTAP 시스템을 온프레미스에 있는 데이터 분류 인스턴스를 사용하여 스캔하려는 경우 이러한 유형의 설치가 좋은 옵션일 수 있지만, 이는 필수 사항은 아닙니다.</block>
   <block id="5be81ee840734d5fff39d8fb451e87de" category="inline-link-macro">인터넷 접속이 불가능한 온프레미스 사이트의 Linux 호스트에 설치</block>
-  <block id="53732c49c909038650b435483c435d88" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>_비공개 모드_라고도 합니다. 설치 스크립트를 사용하는 이 유형의 설치는 콘솔 SaaS 계층에 연결할 수 없습니다.</block>
   <block id="e1e216bf40960616935ca16f6eb23050" category="summary">NetApp Data Classification 특정 데이터 소스 디렉토리에 있는 스캐닝 데이터를 제외하려면 이러한 디렉토리 이름을 구성 파일에 추가할 수 있습니다.  이 변경 사항을 적용하면 데이터 분류 엔진이 해당 디렉토리의 스캐닝 데이터를 제외합니다.</block>
   <block id="24559753da5c8b45ef15b1ad5d8f01de" category="doc">NetApp Data Classification 검사에서 특정 디렉토리 제외</block>
   <block id="7d9aed9048d0f40617358d6c89d937c2" category="paragraph">NetApp Data Classification 특정 디렉토리를 검사에서 제외하려면 이러한 디렉토리 이름을 구성 파일에 추가할 수 있습니다.  이 변경 사항을 적용하면 데이터 분류 엔진이 해당 디렉토리를 검사에서 제외합니다.</block>
@@ -1445,9 +1414,7 @@
   <block id="a2bbcc880bc925fcb9628a10c1e7b25d" category="inline-link-macro">이 데이터 분류 제한에 대한 자세한 내용을 확인하세요.</block>
   <block id="a8daee0219cefa4a18a4479f1e1157b4" category="admonition">데이터 분류는 볼륨 아래의 파일 공유를 하나만 스캔합니다.  볼륨에 여러 개의 주식이 있는 경우 다른 주식을 주식 그룹으로 별도로 스캔해야 합니다. <block ref="6dfc18994c4552d1f1c67fa40d6a2418" category="inline-link-macro-rx"></block> .</block>
   <block id="4ebb6b3e78fe363abc8cca5976bcf110" category="section-title">데이터 분류가 볼륨에 액세스할 수 있는지 확인하세요.</block>
-  <block id="344f5ea90a7553ee999fa46e4769b1b6" category="paragraph">네트워킹, 보안 그룹 및 내보내기 정책을 확인하여 데이터 분류가 볼륨에 액세스할 수 있는지 확인하세요.  CIFS 볼륨에 액세스할 수 있도록 데이터 분류에 CIFS 자격 증명을 제공해야 합니다.</block>
   <block id="a5d727df2ce2d168bae39c78df4b9054" category="list-title">체크리스트</block>
-  <block id="d0a78972e571309109a272ea782a3a1b" category="list-text">데이터 분류 인스턴스와 Cloud Volumes ONTAP 또는 온프레미스 ONTAP 클러스터의 볼륨이 포함된 각 네트워크 간에 네트워크 연결이 있는지 확인하세요.</block>
   <block id="1da60e205d29e073bd7fd30e4a0fdc96" category="list-text">Cloud Volumes ONTAP 의 보안 그룹이 데이터 분류 인스턴스에서 들어오는 트래픽을 허용하는지 확인하세요.</block>
   <block id="b70afa530c4cdfc09ac2c1e2f5493937" category="paragraph">데이터 분류 인스턴스의 IP 주소에서 발생하는 트래픽에 대해 보안 그룹을 열거나, 가상 네트워크 내부의 모든 트래픽에 대해 보안 그룹을 열 수 있습니다.</block>
   <block id="cb95847988547647f53dba4f37025693" category="list-text">NFS 볼륨 내보내기 정책에 데이터 분류 인스턴스의 IP 주소가 포함되어 있는지 확인하여 각 볼륨의 데이터에 액세스할 수 있도록 합니다.</block>
@@ -1470,7 +1437,6 @@
   <block id="33399d32771439fb4356bebcb3641046" category="cell">선택하세요<block ref="cbf64d77e33a53f16ad429da7b163a2e" category="inline-link-macro-rx"></block> .</block>
   <block id="86171ac828a961155f1ccf4dfa1eb93f" category="cell">민감도 수준</block>
   <block id="cc8f113115a15a733dabb8452c0006ca" category="cell">민감도 수준을 선택하세요: 개인, 민감한 개인, 민감하지 않음.</block>
-  <block id="f44ce8133d49b6c98a33b959c0b56e86" category="cell">파일별로 감지된 민감한 식별자의 범위를 선택합니다.  개인정보와 민감한 개인정보가 포함됩니다.  디렉토리에서 필터링할 때, 데이터 분류는 각 폴더(및 하위 폴더)에 있는 모든 파일의 일치 항목을 합산합니다.  참고: 2023년 12월(버전 1.26.6) 릴리스에서는 디렉토리별 개인 식별 정보(PII) 데이터 수를 계산하는 옵션이 제거되었습니다.</block>
   <block id="d0902d27bce16ddeb2cb9c788db8ddcd" category="cell">개인 정보</block>
   <block id="7a3dcbf3ed229470d34578d4f4f6fc43" category="inline-link-macro">개인 정보 유형</block>
   <block id="65b6b7baa7e4d65af02da4a28d7e4bab" category="cell">선택하세요<block ref="d6673982dd91cd362c9b6d1d0d52a74d" category="inline-link-macro-rx"></block> .</block>
@@ -1665,7 +1631,6 @@
   <block id="ee082fc5e705eb74a1257da353642e29" category="list-text">NFS 볼륨 내보내기 정책에 데이터 분류 인스턴스의 IP 주소가 포함되어 있는지 확인하여 각 볼륨의 데이터에 액세스할 수 있도록 합니다.</block>
   <block id="c6d18e8dc3105cdc3c04a6ff979086ce" category="list-text">CIFS(SMB)를 사용하는 경우 Active Directory 자격 증명이 올바른지 확인하세요.  각 시스템에 대해 *CIFS 자격 증명 편집*을 선택한 다음 데이터 분류가 시스템의 CIFS 볼륨에 액세스하는 데 필요한 사용자 이름과 비밀번호를 입력합니다.</block>
   <block id="eae0b230e8b04a25db4f549a4075116d" category="paragraph">자격 증명은 읽기 전용일 수 있지만, 관리자 자격 증명을 제공하면 데이터 분류에서 높은 권한이 필요한 모든 데이터를 읽을 수 있습니다.  자격 증명은 데이터 분류 인스턴스에 저장됩니다.</block>
-  <block id="843d8d723fb1f3cdc277bbb7e7cc145f" category="paragraph">데이터 분류 검사를 통해 파일의 "마지막 액세스 시간"이 변경되지 않았는지 확인하려면 사용자에게 CIFS에서 쓰기 속성 권한이나 NFS에서 쓰기 권한이 있는 것이 좋습니다. 가능하다면 Active Directory 사용자를 모든 파일에 대한 권한이 있는 조직의 상위 그룹의 일부로 구성하세요.</block>
   <block id="b401c479fc7a1b8aa216a7173ee8782f" category="paragraph">자격 증명을 입력한 후 모든 CIFS 볼륨이 성공적으로 인증되었다는 메시지가 표시됩니다.</block>
   <block id="61777805153edfb68af7738669a8fa28" category="list-text">구성 페이지에서 *세부 정보 보기*를 선택하여 각 CIFS 및 NFS 볼륨의 상태를 검토하고 오류를 수정합니다.</block>
   <block id="7cac696e69d17c5d85711c514e2a9a5a" category="inline-image-macro">개별 볼륨의 스캐닝을 활성화하거나 비활성화할 수 있는 구성 페이지의 스크린샷입니다.</block>
@@ -1971,26 +1936,19 @@
   <block id="5329573dbeef0c22dd209dcf5e0f96da" category="paragraph">스크립트는 다음 위치에 있습니다.<block ref="ef7bc183495180bf03292b7d03184b05" prefix=" " category="inline-code"></block> 예배 규칙서. 방법을 확인하세요<block ref="557ce6d03d4f2417a4f10931c3feef84" category="inline-link-macro-rx"></block> .</block>
   <block id="6e85f0f42746489d232cb424f56682fd" category="summary">저장된 쿼리는 일반적으로 요청되는 규정 준수 쿼리에 대한 조사 페이지에서 검색 결과를 제공하는 사용자 지정 필터입니다.  데이터 분류는 일반적인 요청에 따라 기본적으로 저장된 쿼리 세트를 제공하거나 사용자가 직접 쿼리를 만들 수도 있습니다.</block>
   <block id="5456fffd07ecd131cf8f255e4fd5b425" category="doc">NetApp Data Classification 사용하여 저장된 쿼리 관리</block>
-  <block id="de706e3335fdf0fff48988fb042c655d" category="paragraph">NetaApp 데이터 분류는 검색어 저장을 지원합니다.  저장된 쿼리를 사용하면 사용자 정의 필터를 만들어 데이터 조사 페이지에서 자주 사용되는 쿼리를 정렬할 수 있습니다.  데이터 분류에는 일반적인 요청을 기반으로 한 미리 정의된 저장된 쿼리도 포함됩니다.</block>
   <block id="ffa87fca622076bb37f7692ca4ca2cfe" category="paragraph">규정 준수 대시보드의 *저장된 쿼리* 탭에는 이 데이터 분류 인스턴스에서 사용할 수 있는 모든 사전 정의 및 사용자 지정 저장된 쿼리가 나열됩니다.</block>
-  <block id="5424d7a46f39a223815bc44afb5cb47a" category="paragraph">저장된 쿼리는 **정책**으로도 저장할 수 있습니다.  쿼리가 데이터를 필터링하는 반면, 정책을 사용하면 데이터에 대한 작업을 수행할 수 있습니다.  정책을 사용하면 발견된 데이터를 삭제하거나 발견된 데이터에 대한 이메일 업데이트를 보낼 수 있습니다.</block>
   <block id="b2b8ad7bb551fae41d48f61f57e277bc" category="paragraph">저장된 쿼리는 조사 페이지의 필터 목록에도 표시됩니다.</block>
   <block id="3f3f5f34af97f64840ccbf80d1e5d501" category="inline-image-macro">데이터 분류 대시보드의 저장된 쿼리 탭 스크린샷입니다.</block>
   <block id="0ea29be2684781882458fae5cdcd9df1" category="paragraph"><block ref="0ea29be2684781882458fae5cdcd9df1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="477afdaca267ba76617dac71eab98efd" category="section-title">조사 페이지에서 저장된 쿼리 결과 보기</block>
-  <block id="3e8afae6cfff58ff1128b3d5bacd2a3e" category="paragraph">조사 페이지에서 저장된 쿼리에 대한 결과를 표시하려면 다음을 선택하십시오.<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block> 특정 검색에 대한 버튼을 클릭한 다음 *결과 조사*를 선택하세요.</block>
   <block id="98779ae64c16b24d55b8022555fed338" category="inline-image-macro">저장된 쿼리 탭에서 특정 검색에 대한 조사 결과를 선택하는 스크린샷입니다.</block>
   <block id="a05850479ce9652b11b099d3381eccf9" category="paragraph"><block ref="a05850479ce9652b11b099d3381eccf9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e71b1c71ee2b0ae559296e82d0d66f0c" category="section-title">저장된 쿼리 및 정책 생성</block>
-  <block id="334109e123bf96ec591c0e937760f5f9" category="paragraph">귀하의 조직에 맞는 특정 쿼리에 대한 결과를 제공하는 사용자 정의 저장된 쿼리를 만들 수 있습니다.  검색 기준과 일치하는 모든 파일과 디렉토리(공유 및 폴더)에 대한 결과가 반환됩니다.</block>
   <block id="af5cac86c93cafe88408d0d886003310" category="section-title">저장된 쿼리 또는 정책 편집</block>
   <block id="61bb12c700a3013ab7d845a67807bf00" category="paragraph">저장된 쿼리의 이름과 설명을 수정할 수 있습니다.  쿼리를 정책으로 변환할 수도 있고, 그 반대로도 가능합니다.</block>
-  <block id="8c2d6d00ba1397d433adab24e24a49a1" category="paragraph">기본으로 저장된 쿼리는 수정할 수 없습니다.  저장된 쿼리의 필터는 수정할 수 없습니다.  저장된 쿼리의 조사 결과를 다시 보고, 필터를 변경하거나 수정한 다음 새 쿼리나 정책으로 저장할 수 있습니다.</block>
   <block id="cd6bbc18b4f554b3b39fb9f2377a83ed" category="list-text">저장된 쿼리 페이지에서 변경하려는 검색에 대해 *검색 편집*을 선택합니다.</block>
   <block id="7579e7a131f79f9ec890953a30a59470" category="inline-image-macro">저장된 쿼리 편집을 보여주는 스크린샷입니다.</block>
   <block id="bebb6139a8b90d3b4e1fc6f349fcde6a" category="paragraph"><block ref="bebb6139a8b90d3b4e1fc6f349fcde6a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="69af940045298c888b69d5b805e01674" category="list-text">이름과 설명 필드를 변경합니다.  이름과 설명 필드만 변경합니다.</block>
-  <block id="26119e8c8b231f546a9a41a3d9d3dc86" category="paragraph">선택적으로 쿼리를 정책으로 변환하거나 정책을 저장된 쿼리로 변환할 수 있습니다.  필요에 따라 *정책으로 실행* 토글을 전환합니다. ..  쿼리를 정책으로 변환하는 경우 *영구적으로 삭제* 또는 *이메일 업데이트 보내기*를 선택하세요.  이메일 업데이트를 선택하면 쿼리 결과를 매일, 매주 또는 매월 모든 콘솔 사용자에게 이메일로 보낼 수 있습니다.  또는 동일한 빈도로 특정 이메일 주소로 알림을 보낼 수도 있습니다.</block>
   <block id="1db66b04a947f37f0aead18e462a355d" category="list-text">변경 사항을 완료하려면 *저장*을 선택하세요.</block>
   <block id="d494763bcfe6eef2986d4a10d6484866" category="section-title">저장된 쿼리 삭제</block>
   <block id="23b31d3b6c40462aeb2655b909be754b" category="paragraph">더 이상 필요하지 않은 사용자 정의 저장된 쿼리나 정책을 삭제할 수 있습니다.  기본적으로 저장된 쿼리는 삭제할 수 없습니다.</block>
@@ -2004,13 +1962,10 @@
   <block id="0e7fbf33b52073f6bc8f18d55796a211" category="list-text">**개인 정보 - 고위험**</block>
   <block id="5197b44c8d7d1e69dc7e95558ebe5b62" category="paragraph">개인 데이터 식별자가 20개 이상인 파일 또는 개인 데이터 식별자가 포함된 행이 50% 이상인 데이터베이스 열</block>
   <block id="a89e4564535d2510e52bd6e6d1c99ac0" category="list-text">**개인 데이터 - 7년 이상 보관됨**</block>
-  <block id="f7eca6ddef457d0fdf1335d5c4ada293" category="paragraph">개인 정보 또는 민감한 개인 정보가 포함된 파일(최종 수정일로부터 7년 이상)</block>
   <block id="967750771e3d93ad96804feaaa489729" category="list-text">**보호 - 높음**</block>
   <block id="53532655a36720e6e89d0ee34a4b6bb5" category="paragraph">비밀번호, 신용 카드 정보, IBAN 번호 또는 사회 보장 번호가 포함된 파일 또는 데이터베이스 열</block>
   <block id="c5bcbe698a08e29f3a73f73b33178fe7" category="list-text">**보호 - 낮음**</block>
-  <block id="8942b8664e055291e5e39d816e5d46e7" category="paragraph">3년 이상 접근되지 않은 파일</block>
   <block id="7b67d7b1e7fb500aff7c6f34e99b281b" category="list-text">**보호 - 중간**</block>
-  <block id="6c15cae74da0ae1c51b06ea41b437e7d" category="paragraph">신분증 번호, 세금 식별 번호, 운전면허증 번호, 의료 ID 또는 여권 번호를 포함한 개인 데이터 식별자가 포함된 파일 또는 데이터베이스 열이 포함된 파일</block>
   <block id="67b38a87fd423cd16109e7aa22a63937" category="list-text">**민감한 개인 정보 - 고위험**</block>
   <block id="375ac9949171e44e5a3bcb3367e9d309" category="paragraph">민감한 개인 데이터 식별자가 20개 이상인 파일 또는 민감한 개인 데이터가 포함된 행이 50% 이상인 데이터베이스 열</block>
   <block id="d0e6c573ecf8ac47b2b78a9239242114" category="doc">NetApp Data Classification 의 새로운 기능</block>
@@ -2347,7 +2302,6 @@
   <block id="6ece59dbc8c65f220411ec2ce290cfd6" category="paragraph"><block ref="6ece59dbc8c65f220411ec2ce290cfd6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025년 12월 8일</block>
   <block id="3b02682cee7334412169a53934571445" category="sidebar">시스템 상태 모니터링</block>
-  <block id="199728aa05786f9f41b3140d025353e2" category="list-text">데이터 분류는 전용 호스트에서 수행되어야 합니다. 호스트는 다른 애플리케이션이나 바이러스 백신과 같은 타사 소프트웨어와 공유할 수 없습니다.</block>
   <block id="ac5df91391e146d13ac61a909161e5e5" category="paragraph">당신은 할 수 있습니다 <block ref="b05bc1a82ba8aa93695b18917e23ffd8" category="inline-link-macro-rx"></block> 네트워크 내의 Linux 호스트 또는 클라우드의 Linux 호스트에서 실행할 수 있습니다. 콘솔 에이전트가 온프레미스에 설치되어 있는 경우 데이터 분류 기능도 온프레미스에 설치할 수 있습니다.</block>
   <block id="6d69772abdf589ea602f8071cbf783ed" category="paragraph">클라우드 공급자 환경에서 콘솔 에이전트를 생성하려면 다음을 참조하세요.</block>
   <block id="57d97cf09f86f81d75b459840c0ba8eb" category="list-text"><block ref="57d97cf09f86f81d75b459840c0ba8eb" category="inline-link-rx"></block></block>
@@ -2428,8 +2382,6 @@
   <block id="9d0d45f702bd2dff4853a9920dd0f534" category="list-text"><block ref="9d0d45f702bd2dff4853a9920dd0f534" category="inline-xref-macro-rx"></block></block>
   <block id="14e54339fc3ec740d220afd6b1ee35ed" category="summary">NetApp Data Classification 에서 오래된 데이터의 정의를 사용자 지정하여 조직의 요구 사항에 맞는 보고서를 생성할 수 있습니다.</block>
   <block id="b5a4424f99a791a0f222cc5ae7923d73" category="doc">NetApp Data Classification 에서 오래된 데이터 정의를 사용자 지정합니다.</block>
-  <block id="9c7dd10cb5831cf239a4bc5dedbb332b" category="paragraph">NetApp Data Classification 오래된 데이터를 식별하여 비용 절감 기회와 거버넌스 위험을 파악하는 데 도움을 줍니다. 오래된 데이터의 정의는 조직의 상황에 따라 다를 수 있으므로 데이터 분류에서 오래된 데이터를 정의하는 방식을 사용자 지정할 수 있습니다.</block>
-  <block id="a19fda4781709630dbfb543922e4d612" category="paragraph">오래된 데이터는 마지막 접근 시점 또는 마지막 수정 시점을 기준으로 정의할 수 있습니다. 기간 선택 범위는 6개월 전부터 10년 전까지입니다.</block>
   <block id="24ece81002d5816b98626cc57ced872d" category="paragraph">기본적으로 데이터는 마지막 수정일로부터 3년이 지난 경우 오래된 것으로 간주됩니다.</block>
   <block id="c3d635823e7267511f7a0ba59b131053" category="list-title">오래된 데이터를 정의합니다.</block>
   <block id="656961d589e5ba765f1a77e91cdda2d0" category="list-text">오래된 데이터 정의에 사용할 기간을 선택하세요.</block>
@@ -2525,7 +2477,6 @@
   <block id="fe3ff1241868ed00f70bff14bc52b03f" category="paragraph">호스트에서 Data Classification 소프트웨어가 업그레이드되었습니다. 업데이트는 5분에서 10분 정도 소요될 수 있습니다.</block>
   <block id="49b552306f6783aaacb171a8b657cff7" category="paragraph">Data Classification UI 페이지 하단에 표시되는 버전을 확인하여 소프트웨어가 업데이트되었는지 확인할 수 있습니다.</block>
   <block id="cba92860b6fdcba3c2c5e8085cf4c2b9" category="paragraph">BlueXP classification은 작업 환경에 대한 일괄 작업을 지원합니다. 매핑 스캔 활성화, Map &amp; Classify 스캔 활성화, 스캔 비활성화 또는 작업 환경 내 볼륨 전체에 대한 사용자 지정 구성을 선택할 수 있습니다. 개별 볼륨에 대한 선택은 일괄 선택 사항을 재정의합니다. 일괄 작업을 수행하려면 **Configuration** 페이지로 이동하여 원하는 옵션을 선택하십시오.</block>
-  <block id="c360e0cba3ce8612a20efd7da0fa5d7a" category="paragraph">Swagger에 접속하려면 Data Classification 인스턴스의 IP 주소가 필요합니다. 클라우드 배포 환경의 경우 공용 IP 주소를 사용합니다. 그런 다음 다음 엔드포인트에 접속해야 합니다.</block>
   <block id="421d31e2b03d6dcfd776134e6cc90fb8" category="list-text">Governance 대시보드의 각 Savings Opportunities 타일 내에서 *Optimize Storage*를 선택하여 Investigation 페이지에서 필터링된 결과를 확인합니다. 삭제하거나 비용이 저렴한 스토리지로 계층화해야 하는 데이터를 검색하려면 _Saving Opportunities_를 조사하십시오.</block>
   <block id="18b124736f5cbc7b1873c54b1dac2d6f" category="paragraph">NetApp Data Classification은 사용자가 선택한 리포지토리(볼륨, 데이터베이스 스키마 또는 기타 사용자 데이터)의 데이터를 스캔하여 개인 정보 및 민감한 데이터를 식별합니다. Data Classification은 조직 데이터를 매핑하고 각 파일을 범주화하며 데이터에서 미리 정의된 패턴을 식별합니다. 스캔 결과는 개인 정보, 민감한 개인 정보, 데이터 범주 및 파일 유형의 인덱스입니다.</block>
   <block id="115a395f1bda3cdb62e75cfe1529d431" category="paragraph">자세한 내용은 <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
@@ -2601,7 +2552,6 @@
   <block id="2bd444b4fd657b2b6e6cad3cc0ac0a80" category="doc">인터넷에 접속 가능한 호스트에 NetApp Data Classification 설치</block>
   <block id="68e669f4da53f4693708a3699bcf0534" category="paragraph">네트워크의 Linux 호스트 또는 인터넷에 연결된 클라우드의 Linux 호스트에 NetApp Data Classification을 배포하려면 네트워크 또는 클라우드에 Linux 호스트를 수동으로 배포해야 합니다.</block>
   <block id="9436d99a3557748cc8540f514bc0f9ff" category="paragraph">Data Classification을 설치하고 사용하려면 Console 에이전트가 필요합니다. 대부분의 경우 Data Classification을 활성화하기 전에 Console 에이전트가 이미 설정되어 있을 것입니다.</block>
-  <block id="27e351ceaea88bb8b92ed4c0302d28fd" category="doc">NetApp Data Classification 배포 방법을 선택하십시오.</block>
   <block id="f15acb0d4fe22bbfd7a457efbbb0c466" category="doc">NetApp Data Classification에서 규정 준수 보고서를 확인하세요</block>
   <block id="d8a9eef33f1bf33c7498d8f206f3d120" category="doc">NetApp Data Classification을 사용하여 조직 내 데이터를 분석하세요</block>
   <block id="12c9b2fe1ef95f2e5943fca98c33135f" category="doc">NetApp Data Classification에서 스캔 설정 변경</block>
@@ -2617,14 +2567,12 @@
   <block id="d939a4c3efbccb14bb6a8b8ec450f62d" category="doc">OVA를 사용하여 NetApp Data Classification 배포</block>
   <block id="c58a3e421744f0b78f692f20d074d1f6" category="paragraph">NetApp Data Classification은 이제 VMware Open Virtual Appliance(OVA)를 통한 배포를 지원하여 온프레미스 VMware vSphere 환경을 위한 간소화된 배포 전략을 제공합니다.</block>
   <block id="1a4ea23de9d17b2e28a82a012795f402" category="paragraph">자세한 내용은 <block ref="671ddfd34f6defdc139134bff6f63dc9" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
-  <block id="8744e3889336c440e17e4a85c0573d80" category="paragraph">NetApp Data Classification 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항 및 소프트웨어 요구 사항을 충족하는 호스트에서 실행되어야 합니다. 클라우드에 Data Classification을 배포할 경우, 모든 기능을 제대로 활용하려면 "대용량" 사양의 시스템을 사용하는 것이 좋습니다.</block>
   <block id="da49eae2f2697eebbdfcb923e399ee06" category="paragraph">다음 표에서 "default"로 표시된 시스템을 NetApp Data Classification을 설치하는 지역에서 사용할 수 없는 경우 표에 나열된 다음 인스턴스 유형이 배포됩니다.</block>
   <block id="6b9707300ae2253b20a1508cdef29b86" category="inline-link-macro">데이터 소스에 대한 스캔 구성</block>
   <block id="32c268474be77292e0a04f91871ff5ae" category="list-text"><block ref="32c268474be77292e0a04f91871ff5ae" category="inline-link-macro-rx"></block></block>
   <block id="37bdabd730f5e2aa9c95ca046c4a528d" category="list-text"><block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>에서 Data Classification 소프트웨어를 다운로드하십시오. *DATASENSE-INSTALLER-&lt;version&gt;.tar.gz*라는 파일을 선택하십시오.</block>
   <block id="3990c3483164e3d71f7feb035dcc5d2e" category="summary">NetApp Data Classification은 OVA(Open Virtual Appliance)를 사용하여 온프레미스 vSphere 환경에 배포할 수 있도록 지원합니다. OVA 배포 방식은 사전 검증된 NetApp 관리 환경을 제공하여 배포를 간소화합니다.</block>
   <block id="d9a33ab3030c9b5fd7a102e28aba7be3" category="doc">VMware Open Virtual Appliance로 NetApp Data Classification 배포</block>
-  <block id="a130e61bd4b704e7fe34c433d0d11621" category="paragraph">NetApp Data Classification은 VMware Open Virtual Appliance(OVA)를 통한 배포를 지원하며, 온프레미스 VMware vSphere 환경에 Data Classification을 설치하고 실행할 수 있는 관리형 패키지를 제공합니다. OVA 배포 방식은 사전 검증된 NetApp 관리 환경을 제공하여 배포를 간소화합니다.</block>
   <block id="3aa8474d5b875cbd9fa36a9b295450c1" category="paragraph">이 방법은 새로운 VMware 기반 배포에 권장됩니다.</block>
   <block id="86b7d468352815e2bd2fcebcf1707ed0" category="paragraph">Data Classification을 설치하기 위해 OVA 파일을 사용하기 전에 다음 사항을 확인해야 합니다.</block>
   <block id="e6c02e5ccba91b0f8a2da6080936e5f5" category="list-text">VMware vSphere 환경</block>
@@ -2644,7 +2592,6 @@
   <block id="8958a7a71bfe0f4a5a40d760f7e3c2f6" category="cell"><block ref="8cd39dc4f7544e158d7ef1dfbc5c4070" prefix="" category="inline-code"></block></block>
   <block id="c758b0781d6f7df6c0ae256696eddbf2" category="cell">대규모 운영 워크로드: CPU 32개, RAM 128GB, 디스크 1TB</block>
   <block id="d5f0912c122421def604836efc37e147" category="cell">5억 개의 파일</block>
-  <block id="39da8715f80fcb97588e0413c8d421b1" category="list-text">vSphere 클라이언트를 실행합니다. 대상 클러스터 또는 호스트를 마우스 오른쪽 버튼으로 클릭한 다음 *Deploy OVF Template* &gt; *Create VM from OVA*를 선택합니다.</block>
   <block id="a86160c84f70e41fb0b3c1ec91660a92" category="list-text">1단계에서 다운로드한 OVA 파일을 업로드하십시오.</block>
   <block id="ea42daee36ca14f2930377ea9c60593a" category="list-text">*VM 이름*과 대상 데이터 센터, 호스트 또는 클러스터 및 데이터 저장소를 지정합니다.</block>
   <block id="0a9aa37d2e353e096772c5f826a07f7f" category="list-text">NetApp 최종 사용자 라이선스 계약에 동의하십시오.</block>
@@ -2663,13 +2610,9 @@
   <block id="f1cbf08f5744cd499f0689de8053c832" category="list-text"><block ref="1853466d175c8da4cfe77a84a98fc767" category="inline-link-macro-rx"></block>에서 Data Classification 소프트웨어를 다운로드하십시오.</block>
   <block id="6cac65ee9c5b85cb06427233e5bdb208" category="paragraph">*DATASENSE-INSTALLER-&lt;version&gt;.tar.gz*라는 이름의 파일을 선택하십시오.</block>
   <block id="4d4bda9c294a00ba7df9db822f19e797" category="list-text">*Deploy Classification*을 선택합니다.</block>
-  <block id="d9f71f47f93d634da4ff095ee023a20e" category="list-text">관리자 사용자를 사용하여 SSH를 통해 OVA 어플라이언스에 연결합니다.</block>
   <block id="b49d72dce505eca7dd3d8a331d97211c" category="list-text">생성한 설치 명령을 실행하여 설치를 완료하고 시스템을 조직에 등록하십시오.</block>
-  <block id="2e64cc6066537ce6e812349f63c7e206" category="paragraph">NetApp Data Classification은 다양한 방식으로 배포할 수 있습니다. 사용 가능한 방법을 검토하여 필요에 가장 적합한 방법을 선택하십시오.</block>
   <block id="30dabb33051152f55606045c5b5163f8" category="section-title">온프레미스 설치 스크립트</block>
-  <block id="c0dd91183d065fa262aad92cd66f17bf" category="paragraph">인터넷에 접속 가능한 Linux 호스트에 설치하는 경우와 인터넷에 접속할 수 없는 Linux 호스트에 온프레미스로 설치하는 경우 모두 설치 스크립트를 사용합니다. 스크립트는 먼저 시스템 및 환경이 필수 조건을 충족하는지 확인합니다. 필수 조건이 충족되면 설치가 시작됩니다.</block>
   <block id="4fabfbf691d67364aed0fc8d0476cd38" category="inline-link-macro">Linux 호스트에 NetApp Data Classification을 설치할 준비가 되었는지 확인하십시오</block>
-  <block id="4ad6bc72849add23a7cdca295638a87d" category="paragraph">Linux의 준비 상태를 확인할 수 있는 별도의 소프트웨어 패키지가 제공됩니다. 검증 패키지를 실행하려면 <block ref="a3ff8db6958b78e3d36fc9bc3fcfe254" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="c4bc4e2f20f342faa62434be75cb6ee5" category="paragraph">*버전 1.53*</block>
   <block id="8411d6925cd29126d060394c08a4b4ca" category="paragraph">*버전 1.52*</block>
   <block id="65a0258fc15834bf0f84ceaa52ada501" category="paragraph">*버전 1.51*</block>
@@ -2716,7 +2659,6 @@
   <block id="ef6714f5aeceef76c2ac34e1adaeefa3" category="paragraph">CIFS 볼륨/파일 공유의 경우, Data Classification 스캔으로 인해 파일의 "마지막 액세스 시간"이 변경되지 않도록 하려면 사용자에게 Write Attributes 권한이 있어야 합니다. 가능하면 Active Directory에 구성된 사용자를 조직의 모든 파일에 대한 권한을 가진 상위 그룹에 포함시키는 것이 좋습니다.</block>
   <block id="e4f6181944f0dc7535179eb25f2c38b5" category="paragraph">NetApp Data Classification 설치 스크립트에는 환경이 요구 사항을 충족하는지 확인하는 테스트 스크립트가 포함되어 있습니다. 설치 스크립트를 실행하기 전에 이 스크립트를 별도로 실행하여 Linux 호스트의 준비 상태를 확인할 수 있습니다.</block>
   <block id="a10f0eec47f9088e070063edbfdc4194" category="sidebar">NetApp Data Classification을 사용하면 조직의 하이브리드 멀티클라우드 환경 전반에서 데이터를 스캔하고 분류할 수 있습니다. Data Classification은 AI 기반 자연어 처리(NLP)를 활용하여 문맥에 맞는 데이터 분석 및 분류를 수행함으로써 규정 준수 요구 사항을 충족하고, 보안 취약점을 탐지하고, 비용을 최적화하고, 마이그레이션을 가속화하는 데 도움이 되는 실행 가능한 인사이트를 제공합니다.</block>
-  <block id="0997d7248674796f4e9772751d9f8905" category="paragraph">구성 페이지에서 언제든지 모든 시스템의 스캔을 시작하거나 중지할 수 있습니다. 또한 매핑 전용 스캔에서 매핑 및 분류 스캔으로, 또는 그 반대로 스캔 유형을 전환할 수 있습니다. 시스템의 모든 볼륨을 스캔하는 것이 좋습니다.</block>
   <block id="42ce018d4794bc10a2de7729c1be000e" category="list-text">*맵 전용 스캔*은 데이터에 대한 개략적인 개요만 제공합니다. 매핑은 내부 데이터를 확인하기 위해 파일에 액세스하지 않기 때문에 데이터 소스에서 매우 빠르게 수행할 수 있습니다.</block>
   <block id="cdd10c18a4e0061a31cb6aef6cce9d9b" category="paragraph">Map 전용 스캔을 사용하여 데이터를 빠르게 스캔하고 추가 조사가 필요한 데이터 소스를 식별한 다음, 나중에 필요한 데이터 소스 또는 볼륨에 대해서만 Map 및 분류 스캔을 활성화하면 도움이 될 수 있습니다.</block>
   <block id="d3f4fe41f6b9f72067ddd679470cf2f2" category="paragraph">우선순위는 Map 전용 스캔에만 할당되며 Map 및 분류 스캔에는 할당되지 않습니다.</block>
@@ -2733,12 +2675,10 @@
   <block id="965d40b67934a8f4646edf9fa0e700cc" category="list-text">하나 이상의 데이터 소스에 대한 검사를 활성화합니다.</block>
   <block id="041395d90e0ff197d7658ae6f6563b58" category="section-title">매핑 및 전체 스캔</block>
   <block id="22c39fbe76aa470b7877ac4b8c269e52" category="list-text">**매핑 전용 스캔**은 데이터에 대한 개략적인 개요만 제공하며 선택한 데이터 소스에서 수행됩니다. 매핑 전용 스캔은 내부 데이터를 보기 위해 파일에 액세스하지 않으므로 전체 스캔보다 시간이 덜 걸립니다. 처음에 이 방법을 사용하여 조사 영역을 식별한 다음 해당 영역에 대해 전체 스캔을 수행할 수 있습니다.</block>
-  <block id="216abd2c1f6ae4c20ff4033a97619b05" category="list-text">**전체 스캔**은 데이터에 대한 심층적인 스캔을 제공합니다. 전체 스캔에는 매핑 전용 스캔과 파일 내 데이터 분류가 포함됩니다.</block>
   <block id="a0c0b27235986ec7aa7ae7bb9a9c668e" category="paragraph">맵 전용 스캔과 전체 스캔의 차이점에 대한 분석은 <block ref="323939a2597e9b17834689d82c0946fb" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="5ab7b3af0a0e193e3b83ae51e966dbce" category="inline-link-macro">매핑 스캔과 분류 스캔의 차이점을 이해하십시오</block>
   <block id="02614bcf82c61a4fbe02e60329718d62" category="paragraph">새로운 데이터 소스를 처음 추가할 때 매핑 전용 스캔만 수행하거나 전체 스캔을 수행할지 선택할 수 있습니다. 매핑은 파일에 액세스하여 내부 데이터를 확인하지 않으므로 데이터 소스에서 매우 빠르게 수행할 수 있습니다. <block ref="3ab547d3f21adb58594a31c5258e2654" category="inline-link-macro-rx"></block>.</block>
   <block id="0d3599d119195f22defab144ac7686d8" category="paragraph">데이터 분류 기능이 맵 전용 스캔을 사용하여 콜드 데이터가 객체 스토리지로 계층화된 볼륨을 스캔할 때, 로컬 디스크의 데이터와 객체 스토리지로 계층화된 콜드 데이터를 포함한 모든 데이터를 스캔합니다. 이는 계층화를 구현하는 NetApp 제품이 아닌 경우에도 마찬가지입니다.</block>
-  <block id="2da1890c189ef0fa38d3d53cc9cf8ee8" category="paragraph">맵 전용 스캔은 콜드 데이터를 가열하지 않습니다. 콜드 데이터는 그대로 객체 스토리지에 저장됩니다. 반면 전체 스캔을 수행하면 일부 구성에서 콜드 데이터가 가열될 수 있습니다.</block>
   <block id="9a359b7272907e979fce955c43bd3550" category="list-text">*데이터 분류 심층 검사(전체 검사)*: 데이터 분류는 표준 프로토콜과 읽기 전용 권한을 사용하여 환경 전체의 데이터를 검사합니다. 선택된 파일을 열어 민감한 비즈니스 관련 데이터, 개인 정보 및 랜섬웨어 관련 문제를 검사합니다.</block>
   <block id="4029bdbd0165ca9b5362505519c89547" category="list-text">"모든 권한 보기" 버튼을 선택하면 각 파일 및 디렉터리에 대한 <block ref="3e9bb1533fcbed587af1c2c23ff12e21" category="inline-link-macro-rx"></block>를 확인할 수 있습니다.</block>
   <block id="574b787aab93bac5079f73578cff6c98" category="list-text">**Settings** 탭으로 전환하세요.</block>
@@ -2805,7 +2745,6 @@
   <block id="c5efbb0c5c86f10e09723fd321118168" category="list-text">대화 상자에 "uninstall"을 입력하여 Data Classification 인스턴스를 Console 에이전트에서 연결 해제합니다. **Uninstall**을 선택하여 확인합니다.</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026년 5월 11일</block>
   <block id="bbb6c300cb8841042895c9d8861857a2" category="paragraph">*버전 1.54*</block>
-  <block id="4c6fc95f3cbd5ec1525e1e6fc454b0a0" category="admonition">시스템에 새로 추가된 볼륨은 모든 볼륨에 대해 스캔 기능을 활성화한 경우에만 자동으로 스캔됩니다. 특정 볼륨에 대해서만 스캔 기능을 활성화한 경우에는 새로 추가된 볼륨에서 스캔 기능을 수동으로 활성화해야 합니다.</block>
   <block id="d8ec5f9e43a5c50ccad1744ea2a31c6e" category="list-text">스캔할 시스템을 식별합니다. **스캔 활성화**를 선택합니다. 드롭다운 메뉴에서 **모든 볼륨 스캔: 전체 스캔**, **모든 볼륨 스캔: 매핑만**, 또는 **스캔 관리**를 선택하여 시스템 메뉴를 열고 특정 볼륨에 대한 스캔을 구성합니다.</block>
   <block id="a8349eec03103165ecc719d7e32b3318" category="paragraph">개별 볼륨에 대한 스캔을 활성화 또는 비활성화하려면 목록에서 해당 볼륨을 찾으세요. 스캔 유형 열에서 **Map only** 또는 **Full scan**을 선택하세요.</block>
   <block id="cf975b28ba57e8d6ba85ec36d74a06c3" category="section-title">규정 준수 관리자 IAM 역할</block>
@@ -2816,7 +2755,6 @@
   <block id="c105c16486992d9ad71af50fd3100019" category="paragraph">자세한 내용은 <block ref="96736731356e89817dd51fb3ef396df7" category="inline-link-macro-rx"></block>을 참조하세요.</block>
   <block id="3b25e99cf35d3d075098a86e0854063e" category="paragraph">데이터 분류는 파일 이름, 권한, 생성 시간, 마지막 액세스 및 마지막 수정과 같은 메타데이터를 캡처합니다. 여기에는 데이터 조사 세부 정보 페이지 및 데이터 조사 보고서에 나타나는 모든 메타데이터가 포함됩니다.</block>
   <block id="9dda8f9b32e4530c6a33ed3ca126bddd" category="list-text">보고서 타일에서 전체 데이터 매핑 개요 보고서 제목의 **다운로드** 버튼을 선택합니다.</block>
-  <block id="e963c800edae5dd04e2ad17bb722cbf6" category="paragraph">Console 에이전트가 아직 없는 경우 클라우드 공급자에서 Console 에이전트를 생성하세요. <block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block> 또는<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block>, 또는<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block>을 참조하세요. 대부분의 경우 Data Classification을 활성화하기 전에 Console 에이전트가 설정되어 있을 가능성이 높지만<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block>, 지금 설정해야 하는 경우도 있습니다.</block>
   <block id="e4ba5595b199379fdf62976ff9dafe7a" category="list-text">*오류*(빨간색 점): 스캔 중 문제가 발생하여 완료할 수 없습니다. 필요한 조치가 있는 경우, 오류 내용은 툴팁의 "필수 조치" 열에 표시됩니다. 그렇지 않으면 시스템에서 "오류" 상태를 표시하고 복구를 시도합니다. 복구가 완료되면 상태가 변경됩니다.</block>
   <block id="b9ea20ef9eb4c32abc0e2419fb5f8e92" category="paragraph">자세한 내용은 <block ref="5a1aa5110d4426eba46219fc7de6d695" category="inline-xref-macro-rx"></block>을 참조하세요.</block>
   <block id="2b038039f3ef8f9ce689f8c48df69b42" category="list-text">**파일 속성** 드롭다운 메뉴에서 *마지막 액세스* 또는 *마지막 수정* 시간을 기준으로 오래된 데이터를 정의할지 선택합니다.</block>
@@ -2831,17 +2769,12 @@
   <block id="2c230f06afd3e4f3ed09632a70041ab6" category="paragraph">이번 Data Classification 릴리스에는 보안 개선 사항과 성능 향상이 포함되어 있습니다.</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026년 6월 8일</block>
   <block id="1dc91751896208f145bedd2bec6c3c49" category="paragraph">*버전 1.55*</block>
-  <block id="400d643b71c3364f054f36d1a364b010" category="paragraph">*쓰기 권한 없이 스캔* 옵션은 기본적으로 비활성화되어 있습니다. 즉, NetApp Data Classification에 적절한 쓰기 권한이 없는 경우 Data Classification이 "마지막 접근 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 시스템에서 파일을 스캔하지 않습니다. 시스템에서 마지막 접근 시간이 수정되는 것을 허용하는 경우 이 옵션을 선택하십시오. <block ref="916573eea998ab8bbc3e4ef591a53b7d" category="inline-link-macro-rx"></block>.</block>
-  <block id="08d690ae4b804cef391f5252bd5c8790" category="paragraph">NetApp Data Classification은 데이터 소스와 시스템을 스캔하는 동안 메타데이터를 수집합니다. 대부분의 메타데이터를 사용할 수 있지만, 일부 속성은 모든 프로토콜에서 사용 가능한 것은 아닙니다.</block>
   <block id="248175bb24e6c3f827fdcf2829459c43" category="cell">마지막 접속 시간</block>
   <block id="8bf7825b2500bcd9e4136974d34b441d" category="cell">최종 수정 시간</block>
   <block id="f0561a3763aafb48cd008a051f3c7fc9" category="list-text">Windows 7 및 Windows 8과 같은 이전 버전의 Windows OS에서는 "마지막 액세스 시간" 속성 수집이 시스템 성능에 영향을 줄 수 있으므로 기본적으로 비활성화되어 있습니다. 이 속성이 수집되지 않으면 "마지막 액세스 시간"을 기반으로 하는 Data Classification 분석에 영향을 미칩니다. 필요한 경우 이러한 이전 버전의 Windows 시스템에서 마지막 액세스 시간 수집을 활성화할 수 있습니다.</block>
   <block id="85d5603a6e68c4c44680e10abf168fa3" category="section-title">마지막 액세스 시간</block>
-  <block id="6d08aea005b1d5d4f7acfd946936e69f" category="paragraph">데이터 분류 기능이 파일 공유에서 데이터를 추출하면 운영 체제는 이를 액세스 이벤트로 간주하고 "마지막 액세스 시간"을 업데이트합니다.  스캔 후 데이터 분류 기능은 마지막 액세스 시간을 원래 타임스탬프로 되돌리려고 시도합니다.  데이터 분류 기능에 CIFS의 쓰기 속성 권한 또는 NFS의 쓰기 권한이 없는 경우 시스템은 마지막 액세스 시간을 원래 타임스탬프로 되돌릴 수 없습니다.</block>
-  <block id="fc6dae26cc8f14598d77a643ee9241e1" category="paragraph">기본적으로 Data Classification은 원래 타임스탬프를 복원할 쓰기 권한이 없는 파일은 검사하지 않습니다. 데이터의 마지막 접근 시간이 원래 타임스탬프로 재설정되지 않아도 괜찮은 경우, 시스템 구성 페이지에서 *쓰기 권한 없이 검사* 옵션을 활성화하십시오.</block>
   <block id="735015b572b2dc81aeebb2df9ee39c93" category="inline-image-macro">Data Classification이 마지막 액세스 시간을 원래 타임스탬프로 되돌릴 수 있는 올바른 권한이 없더라도 파일을 스캔하는 데 사용할 수 있는 스위치를 보여주는 스크린샷입니다.</block>
   <block id="7bcb97cafb36c44f084efcbc1c5be830" category="paragraph"><block ref="7bcb97cafb36c44f084efcbc1c5be830" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a7ad8a73e69c5d5f2aa0b3925d314af6" category="admonition">ONTAP 볼륨이 SnapLock으로 구성된 경우 읽기 전용 권한을 가지며 마지막 액세스 시간을 원래 타임스탬프로 되돌릴 수 없습니다.</block>
   <block id="8cdefa787a746da6737b670208407756" category="list-text">기본적으로 Data Classification에 CIFS의 쓰기 속성 권한 또는 NFS의 쓰기 권한이 없는 경우, Data Classification이 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 볼륨의 파일을 검사하지 않습니다. 마지막 액세스 시간 재설정이 중요하지 않은 경우, *또는 각 볼륨에 대한 검사 유형 선택*을 선택하십시오. 그러면 권한 여부와 관계없이 Data Classification이 볼륨을 검사하도록 설정하는 옵션이 표시됩니다.</block>
   <block id="48d7af530cc27d49af5ade8fe42c3203" category="list-text">NetApp Data Classification은 7-Mode 시스템에서 권한이나 "마지막 접속 시간"을 추출할 수 없습니다.</block>
   <block id="d286f8a3091b047a9ce2123e0d54cc64" category="admonition">시스템 개요 페이지에는 기본적으로 비활성화된 *쓰기 권한 없이 스캔* 옵션이 있습니다. Data Classification에 적절한 권한이 없으면 Data Classification이 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 파일을 스캔하지 않습니다. + *쓰기 권한 없이 스캔* 옵션을 사용하여 이 설정을 재정의할 수 있습니다. 이 옵션에 대한 자세한 내용은 <block ref="475bb2fa4f19f7292416b967e8d92ecb" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
@@ -2858,8 +2791,6 @@
   <block id="a0cea6bf19dc575d443135e2757e9433" category="paragraph">데이터 분류 기능의 구성 메뉴에 *활성 스캔* 탭이 추가되어 스캔 관리가 더욱 편리해졌습니다. 활성 스캔 탭에서는 스캔을 활성화한 모든 볼륨을 한눈에 볼 수 있으며, 익숙한 필터를 사용하여 리소스를 정렬할 수 있습니다. 또한, 이 탭은 스캔 우선순위 지정, 스캔 일시 중지, 오류 검토를 위한 중앙 위치를 제공합니다.</block>
   <block id="3a5a93243a84be3819139aaa12091950" category="inline-link-macro">스캔 관리</block>
   <block id="4654bf4010ded28801b1ead2622546bd" category="paragraph">자세한 내용은 <block ref="baaf78fc7ed88d18ef7a900963d01435" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
-  <block id="05db99f9bf3fa30a45391861bf68ea89" category="list-text">설치 파일(Installer file)을 VM 호스트에 복사합니다.<block ref="074de13e1cbe978eb55769428ed6d266" prefix=" " category="inline-code"></block>.</block>
-  <block id="113d759ea479c7065aec91bafa8eea6a" category="list-text">호스트 컴퓨터에서 설치 파일의 압축을 해제하십시오.</block>
   <block id="a7ddf9b71123a47ee9a5c6dbd14045c6" category="list-text">개별 버킷, 공유 또는 볼륨의 스캔 유형을 변경하려면 **활성 스캔** 탭을 선택하십시오. 수정하려는 리소스를 식별하려면 적절한 필터를 적용하십시오.</block>
   <block id="32ac8127b347019da93e705c38cb8c41" category="paragraph">스캔 유형 열에서 지정된 리소스를 선택하고 **매핑만** 또는 **전체 스캔**으로 변경합니다.</block>
   <block id="26a9735f63e866a3d0de3e4e266e7af8" category="list-text">**활성 스캔** 탭을 선택합니다.</block>
@@ -2869,4 +2800,79 @@
   <block id="05ad566aec59d2434a4789dad053f408" category="paragraph">*버전 1.56*</block>
   <block id="2a6207bf09c73302b5baadda003d21a2" category="paragraph">NetApp Data Classification을 사용하면 조사 대시보드에서 검색된 파일에 대한 작업을 수행할 수 있습니다. 데이터를 필터링한 후 비정형 데이터를 복사, 이동 및 삭제하여 규정 준수를 강화하거나(예: 민감한 파일을 더 안전한 위치로 이동), 오래되거나 중복된 파일을 삭제하여 용량을 절약할 수 있습니다.</block>
   <block id="f011267af7448f5cee47e71e75b30301" category="paragraph">조사 대시보드에서 데이터를 필터링하여 공간 및 비용 절감 기회를 찾을 때 해당 파일을 삭제할 수 있습니다. 비정형 파일만 삭제할 수 있습니다.</block>
+  <block id="83acebb976e3ef6ea0b5028ba9f6ec61" category="paragraph">+ 데이터 분류 검사로 인해 파일의 "마지막 액세스 시간"이 변경되지 않도록 하려면 Active Directory 사용자에게 CIFS에서 쓰기 속성 권한 또는 NFS에서 쓰기 권한을 부여하십시오. 가능하면 Active Directory 사용자를 조직 내 모든 파일에 대한 권한이 있는 상위 그룹의 일부로 구성하십시오.</block>
+  <block id="820ccacca4d9b319f70ac3b2d6a554d0" category="paragraph">구성 메뉴에서 언제든지 모든 시스템의 스캔을 시작하거나 중지할 수 있습니다. 또한 지도 전용 스캔에서 전체 스캔으로, 또는 그 반대로 스캔 모드를 전환할 수도 있습니다.</block>
+  <block id="d924df34155c96f7b69a4670206f2357" category="paragraph">*쓰기 권한 없이 스캔* 옵션은 기본적으로 비활성화되어 있습니다. 즉, Data Classification에 적절한 쓰기 권한이 없는 경우 Data Classification은 "마지막 접근 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 파일을 스캔하지 않습니다. 시스템에서 마지막 접근 시간이 수정되는 것을 허용하는 경우 이 옵션을 선택하십시오. <block ref="916573eea998ab8bbc3e4ef591a53b7d" category="inline-link-macro-rx"></block>.</block>
+  <block id="c95d86ab5258661f46b408abab24b335" category="admonition">시스템에 새로 추가된 볼륨은 모든 볼륨에 대해 스캔 기능을 활성화한 경우에만 자동으로 스캔됩니다. 특정 볼륨에 대해서만 스캔 기능을 활성화한 경우에는 새로 추가된 볼륨에서 스캔 기능을 수동으로 활성화해야 합니다.</block>
+  <block id="533019dd2d13b284e4074d5fc5486981" category="list-text">Data Classification은 전용 호스트에 있어야 합니다. 호스트는 바이러스 백신 등 다른 애플리케이션이나 타사 소프트웨어와 공유할 수 없습니다.</block>
+  <block id="6f8540c98f414e05fe3d89ecd544ad3c" category="list-text">*Red Hat Subscription Management*: 호스트는 Red Hat Subscription Management에 등록되어 있어야 합니다. 등록되어 있지 않으면 시스템이 설치 중에 필요한 타사 소프트웨어를 업데이트하기 위한 저장소에 액세스할 수 없습니다.</block>
+  <block id="8d08fccda0893d8d40e2c5d869a5a753" category="list-text">필터 특성을 모두 구성했으면 *쿼리 저장*을 선택합니다.</block>
+  <block id="e222598bc566cac0f43ace03c8e6f293" category="paragraph">검색 또는 정책을 생성한 후에는 **저장된 쿼리** 탭에서 확인할 수 있습니다.</block>
+  <block id="dacf5aea7e7319324c9628d70a61bee9" category="paragraph">NetApp 데이터 분류 REST API를 사용하면 웹 UI에서 사용할 수 있는 것과 동일한 기능을 이용할 수 있습니다.</block>
+  <block id="2785718a055ce3eb6cb5ed15935f7914" category="list-text">데이터는 JSON 형식으로 내보내집니다(Splunk 등 타사 애플리케이션으로 파싱 및 전송하기 용이함).</block>
+  <block id="5654ffd000b9fbe18c30b01a639117e0" category="paragraph">예를 들어, 특정 개인 식별 정보(PII)가 포함되지 않은 파일을 찾을 수 있습니다(사용자 인터페이스에서는 제공되지 않는 기능). 또한 내보내기 작업에서 특정 필드를 제외할 수도 있습니다.</block>
+  <block id="9fc8ab2cce2e84a70b93bbab4bd2e736" category="paragraph">Swagger에 액세스하려면 Data Classification 인스턴스의 IP 주소가 필요합니다. 클라우드 배포의 경우 공용 IP 주소를 사용합니다. 그런 다음 이 엔드포인트에 액세스해야 합니다.</block>
+  <block id="a7af04a4f6baaf0f19d1c0df5a362c7f" category="paragraph">조사 탭에서 모든 필터를 보려면 시스템에 필요한 모든 관련 필드와 옵션을 가져와야 합니다.</block>
+  <block id="ff54c307542c9abb29acf27c12ae98b6" category="paragraph">요청 매개변수의 응답을 사용하여 복사할 파일을 필터링합니다.</block>
+  <block id="7365fe263e123fa4b8618090c10eaad8" category="paragraph">복사 작업을 생성합니다.</block>
+  <block id="33fc5c0160f0350d4934cdd9f713f8ac" category="paragraph">이 API를 사용하면 여러 작업을 생성할 수 있습니다.</block>
+  <block id="1a33b468af6ff748a98764d1235e6249" category="paragraph">NetApp Data Classification은 NetApp Console에서 제공되는 데이터 거버넌스 서비스로, 온프레미스 및 클라우드 데이터 소스를 스캔하여 데이터를 매핑 및 분류하고 개인 정보를 식별합니다. 이를 통해 보안 및 규정 준수 위험을 줄이고 스토리지 비용을 절감하며 데이터 마이그레이션 프로젝트를 지원할 수 있습니다.</block>
+  <block id="81bee52bd79fbafb6488e16f85f33023" category="admonition">버전 1.31부터 데이터 분류 기능은 NetApp Console의 핵심 기능으로 제공됩니다. 추가 비용은 없습니다. 데이터 분류 라이선스나 구독도 필요하지 않습니다. + 기존 버전 1.30 이하를 사용 중인 경우 구독 만료일까지 해당 버전을 계속 사용할 수 있습니다.</block>
+  <block id="d07b485359c52169277c3ff7aaed95d4" category="paragraph">NetApp Console은 엔터프라이즈 규모의 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지 및 데이터 서비스의 중앙 집중식 관리를 제공합니다. NetApp 데이터 서비스에 액세스하고 사용하려면 Console이 필요합니다. 관리 인터페이스로서 하나의 인터페이스에서 많은 스토리지 리소스를 관리할 수 있도록 지원합니다. Console 관리자는 엔터프라이즈 내의 모든 시스템에 대한 스토리지 및 서비스 액세스를 제어할 수 있습니다.</block>
+  <block id="9e7e966e8dd8a4b11f1fc4cc3a27b1f3" category="list-text">개인 식별 정보(PII)를 식별합니다.</block>
+  <block id="be79c6f9ac15f1838890e37d04c74a9a" category="paragraph">Data Classification은 스토리지 총 소유 비용(TCO)을 줄이는 데 도움이 되는 툴을 제공합니다. Data Classification을 사용하여 다음을 수행할 수 있습니다.</block>
+  <block id="361ec1b9b487842d75e66fa45e2f85c2" category="paragraph">데이터 전송 비용은 설정에 따라 다릅니다. 데이터 분류 인스턴스와 데이터 소스가 동일한 가용 영역 및 지역에 있는 경우 데이터 전송 비용이 발생하지 않습니다. 하지만 Cloud Volumes ONTAP 시스템 등 데이터 소스가 _다른_ 가용 영역 또는 지역에 있는 경우 클라우드 공급자로부터 데이터 전송 비용이 청구됩니다. 자세한 내용은 다음 링크를 참조하십시오.</block>
+  <block id="eb2b1d84772eaf7263ffe839f723f811" category="list-text">**전체 스캔**은 데이터에 대한 심층적인 스캔을 제공합니다. 전체 스캔에는 지도 전용 스캔과 파일 내 데이터 분류가 포함됩니다.</block>
+  <block id="1e7afecd12f3ad2f3b36c9bc5c65b8a3" category="paragraph">이 FAQ를 통해 NetApp Data Classification에 대한 일반적인 질문에 대한 빠른 답변을 찾을 수 있습니다.</block>
+  <block id="c7a0b68ab5e1b9989e75208e4b60c482" category="paragraph">데이터 분류는 NetApp Console 시스템 및 스토리지 시스템과 함께 또 다른 AI 계층을 배포합니다. 볼륨, 버킷, 데이터베이스 및 기타 스토리지 계정의 데이터를 스캔하고 발견된 데이터 인사이트를 인덱싱합니다. 데이터 분류는 정규 표현식 및 패턴 매칭을 기반으로 구축된 기존 솔루션과 달리 인공지능과 자연어 처리를 모두 활용합니다.</block>
+  <block id="792306851cb54cc02061a869562290a4" category="paragraph">Data Classification은 AI를 활용하여 데이터에 대한 맥락적 이해를 바탕으로 정확한 탐지 및 분류를 수행합니다. 최신 데이터 유형과 규모에 맞춰 설계되었기 때문에 AI 기반으로 구동됩니다. 또한 데이터의 맥락을 파악하여 정확하고 강력한 탐지 및 분류 결과를 제공합니다.</block>
+  <block id="8808538d9e96ef9be943cb00144b2422" category="paragraph">스캔 성능은 네트워크 대역폭과 환경의 평균 파일 크기에 따라 달라질 수 있습니다. 또한 호스트 시스템의 크기와 위치(클라우드 또는 온프레미스 여부)에 따라서도 달라질 수 있습니다. 자세한 내용은 <block ref="a3df54ddf9d7afe458352d9d936eb35c" category="inline-link-macro-rx"></block> 및 <block ref="a5b872c942a928a25b61050c0d988d76" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="e4f4d44ffb582b26687ab77d79db13bf" category="paragraph">데이터 분류 인스턴스를 완전히 제거하려면 클라우드 공급자 포털 또는 온프레미스 위치에서 데이터 분류 인스턴스를 수동으로 제거하십시오.</block>
+  <block id="58bd3dbeeaebd8bd98c21361d17c5e4e" category="paragraph">맵 전용 스캔은 콜드 데이터를 워밍업하지 않습니다. 콜드 데이터는 그대로 오브젝트 스토리지에 저장됩니다. 반면 전체 스캔을 수행하는 경우, 일부 구성에서는 콜드 데이터가 워밍업될 수 있습니다.</block>
+  <block id="594b91969de4b3e8751ae6329ba37816" category="paragraph">데이터 분류 기능이 개인 식별 정보(PII)를 감지하거나 DSAR 검색을 수행할 때 지원되는 파일 형식은 다음과 같습니다.</block>
+  <block id="81ff94e423f4efc455b51a1185448a7f" category="paragraph">데이터 분류 기능을 사용하면 데이터 소스에 대해 맵 전용 스캔 또는 전체 스캔을 실행할 수 있습니다. 맵 전용 스캔은 데이터에 대한 개략적인 정보만 제공하는 반면, 전체 스캔은 데이터에 대한 심층적인 스캔을 제공합니다. 맵 전용 스캔은 파일 내부의 데이터를 확인하기 위해 파일에 액세스하지 않으므로 데이터 소스를 매우 빠르게 처리할 수 있습니다.</block>
+  <block id="c2fcc0103968e36bbcfb33c6e05a6c11" category="paragraph">아니요. 브라우저와 데이터 분류 인스턴스 간에 전송되는 개인 데이터는 TLS 1.2를 사용한 종단 간 암호화로 보호되므로 NetApp 및 제3자는 해당 데이터를 읽을 수 없습니다. 데이터 분류는 사용자가 액세스를 요청하고 승인하지 않는 한 NetApp과 어떠한 데이터나 결과도 공유하지 않습니다.</block>
+  <block id="d33287bf12c56cd5e0ae7edf2fe62750" category="paragraph">NetApp Console을 사용하면 온프레미스, 클라우드 및 하이브리드 환경을 포함하여 사실상 모든 곳에서 시스템을 스캔하고 보고할 수 있습니다. Data Classification은 일반적으로 SaaS 모델로 배포되며, Console 인터페이스를 통해 서비스를 활성화할 수 있고 하드웨어 또는 소프트웨어 설치가 필요하지 않습니다. 이러한 클릭 앤 런 방식의 배포 모드에서도 데이터 저장소가 온프레미스에 있든 퍼블릭 클라우드에 있든 관계없이 데이터 관리를 수행할 수 있습니다.</block>
+  <block id="c2b6da2d4c3663504314e2d7248d0d46" category="paragraph">NetApp Data Classification은 데이터 소스와 시스템을 스캔하는 동안 메타데이터를 수집합니다. 일부 메타데이터 속성은 모든 프로토콜에서 사용할 수 있는 것은 아닙니다.</block>
+  <block id="debf3e6e945e7fbdb447ffb61f557199" category="cell">사용할 수 없음 (Linux에서 지원되지 않음)</block>
+  <block id="f873725d05f920f88082d8cf5804fd53" category="paragraph">데이터 분류 기능이 파일 공유에서 데이터를 추출하면 운영 체제는 이를 액세스 이벤트로 처리하고 "마지막 액세스 시간"을 그에 따라 업데이트합니다.  스캔 후 데이터 분류 기능은 마지막 액세스 시간을 원래 타임스탬프로 되돌리려고 시도합니다.  데이터 분류 기능에 CIFS에 대한 쓰기 속성 권한이 없거나 NFS에 대한 쓰기 권한이 없는 경우 시스템은 마지막 액세스 시간을 원래 타임스탬프로 되돌릴 수 없습니다.</block>
+  <block id="4a4f7d7dd8f83b6912dca766836e2e46" category="paragraph">기본적으로 Data Classification은 원래 타임스탬프를 복원할 쓰기 권한이 없는 파일은 검사하지 않습니다. 데이터의 마지막 접근 시간이 원래 타임스탬프로 재설정되지 않아도 괜찮은 경우, 시스템 구성 페이지에서 *쓰기 권한 없이 검사*를 활성화하십시오.</block>
+  <block id="2a0f73140238b60fd86ff11bd66184b0" category="admonition">ONTAP 볼륨이 SnapLock으로 구성된 경우 읽기 전용 권한을 가지며 마지막 액세스 시간을 원래 타임스탬프로 되돌릴 수 없습니다.</block>
+  <block id="17ceedeea11758f3c5c60288d5b8cf7e" category="paragraph">NetApp 데이터 분류 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항 및 소프트웨어 요구 사항을 충족하는 호스트에서 실행되어야 합니다. 클라우드에 데이터 분류를 배포할 경우, 모든 기능을 활용하려면 "large" 사양의 시스템을 사용하십시오.</block>
+  <block id="fd1f124f20efe05160a442217b5561d7" category="list-text">디렉토리 조사 중에는 디렉토리별 개인 식별 정보(PII) 데이터 수를 계산하는 옵션을 사용할 수 없습니다.</block>
+  <block id="9e236df86e964bef7fcc51a227a55889" category="paragraph">참고로, <block ref="5be30f09756f4a63d11643ef4bf59d3f" category="inline-link-macro-rx"></block>. 온프레미스에 있는 Data Classification 인스턴스를 사용하여 온프레미스 ONTAP 시스템을 스캔하는 것을 선호하는 경우 이 설치 유형이 좋은 선택일 수 있지만, 필수 사항은 아닙니다. 어떤 설치 방법을 선택하든 소프트웨어의 기능은 완전히 동일합니다.</block>
+  <block id="e7403f206495eaa7a8b4ad8b82d44847" category="paragraph">콘솔 에이전트가 아직 없는 경우 클라우드 공급자에서 콘솔 에이전트를 생성하십시오. <block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block> 또는 <block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block>, 또는 <block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block>을 참조하십시오. 대부분의 경우 Data Classification을 활성화하기 전에 콘솔 에이전트가 설정되어 있을 가능성이 높지만<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block>, 지금 설정해야 하는 경우도 있습니다.</block>
+  <block id="2024235cc750e8a78398d856645b6221" category="paragraph">특정 클라우드 공급자에 배포된 콘솔 에이전트를 사용해야 하는 경우가 있습니다.</block>
+  <block id="8be6fc274612dd95c5c61096d76101f7" category="doc">프라이빗 모드의 Linux 호스트에 NetApp Data Classification 설치</block>
+  <block id="f986d80be616be392eef42e61eaa03f3" category="paragraph">인터넷에 접속할 수 없는 온프레미스 사이트의 Linux 호스트에 NetApp Data Classification을 설치하려면 _프라이빗 모드_를 사용하십시오. 이 배포 방식은 설치 스크립트를 사용하며 데이터 분류 인스턴스를 NetApp Console SaaS 계층에서 분리된 상태로 유지하므로 격리된 환경에서 로컬 데이터 소스를 스캔할 수 있습니다.</block>
+  <block id="52cc6c5c5119ce23df5222266c788298" category="paragraph">데이터 분류 설치 스크립트는 시스템 및 환경이 필수 요구 사항을 충족하는지 확인합니다. 요구 사항을 충족하면 설치가 시작됩니다. 데이터 분류 설치를 실행하기 전에 별도로 요구 사항을 확인하려면 요구 사항만 테스트하는 별도의 소프트웨어 패키지를 다운로드할 수 있습니다. <block ref="73a6280d3a4870acf61b76881089c551" category="inline-link-macro-rx"></block>.</block>
+  <block id="65f8261465925974e48975862e4b3526" category="paragraph">설치 및 운영을 간소화하는 관리형 패키지인 사전 검증된 Open Virtual Appliance(OVA)를 사용하여 온프레미스 VMware vSphere 환경에 NetApp Data Classification을 배포합니다.</block>
+  <block id="408d01175a02c0b79ef407289a1d2244" category="list-text">vSphere 클라이언트를 엽니다. 대상 클러스터 또는 호스트를 마우스 오른쪽 버튼으로 클릭하고 *OVF 템플릿 배포* &gt; *OVA에서 VM 생성*을 선택합니다.</block>
+  <block id="f4bc6166e7df940fd2d75df3d3224895" category="list-text">VM 호스트에서 <block ref="074de13e1cbe978eb55769428ed6d266" prefix=" " category="inline-code"></block>을(를) 실행하여 설치 프로그램 아카이브를 압축 해제합니다.</block>
+  <block id="40bd417b10a370fe4b3217e008ed97af" category="list-text">호스트 컴퓨터에서 설치 프로그램 압축 파일을 해제하십시오.</block>
+  <block id="56d16acd0e3bc0d5c59016cbba576fbd" category="list-text">인스턴스 유형에 따라 클라우드 또는 온프레미스 중 적절한 *배포* 옵션을 선택하십시오.</block>
+  <block id="51b7b19fce3b6bb7307e430297627254" category="list-text">_온프레미스 데이터 분류 배포_ 대화 상자가 나타납니다. 제공된 명령(예: <block ref="a402a6c8a10b4c24d7596599c6dfb7db" prefix=" " category="inline-code"></block>)을 텍스트 파일에 복사하여 나중에 사용하십시오. *닫기*를 선택하여 대화 상자를 닫습니다.</block>
+  <block id="44ff83113f1a40ebb141ea0894346f8e" category="list-text">SSH를 사용하여 관리자 계정으로 OVA 어플라이언스에 연결하십시오.</block>
+  <block id="ce53e9a3542d9025f5fdd4f9c75fa0c0" category="doc">NetApp Data Classification 배포 방법</block>
+  <block id="60da4469359085c4d992dfaf384b3652" category="paragraph">NetApp Data Classification은 다양한 네트워크 및 연결 요구 사항에 맞춰 여러 배포 방법을 지원합니다. 사용 가능한 방법을 검토하여 환경에 가장 적합한 옵션을 선택하십시오.</block>
+  <block id="53d94298cbe1640a4ac6a9e01e20592b" category="list-text"><block ref="953e3010369667b8110edc0847a61543" category="inline-link-macro-rx"></block>. 네트워크 또는 클라우드의 Linux 호스트에 Data Classification을 설치하십시오. 이 옵션은 온프레미스에 있는 Data Classification 인스턴스에서 온프레미스 ONTAP 시스템을 스캔하려는 경우 유용할 수 있지만, 인스턴스를 온프레미스에 배치하는 것이 필수 사항은 아닙니다.</block>
+  <block id="a0ba5130f442948da538b01739337b44" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>, 이를 _프라이빗 모드_ 라고 합니다. 설치 스크립트를 사용하는 이 설치 유형은 Console SaaS 계층과 연결되지 않습니다.</block>
+  <block id="106ac53ed99f5c31a172e50c96478261" category="paragraph">두 설치 방법 모두 설치 스크립트를 사용합니다. 스크립트는 시스템 및 환경이 필수 조건을 충족하는지 확인합니다. 조건을 충족하면 설치가 시작됩니다.</block>
+  <block id="58e3f7e73b147c29d9dd8edaf5af4786" category="paragraph">Linux 호스트가 준비되었는지 확인하는 데 사용할 수 있는 별도의 소프트웨어 패키지가 있습니다. 확인 패키지를 실행하려면 <block ref="a3ff8db6958b78e3d36fc9bc3fcfe254" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="e5e50f15e110fb381ca8296c8ffdc046" category="list-text">데이터 분류 인스턴스와 Cloud Volumes ONTAP 또는 온프레미스 ONTAP 클러스터용 볼륨이 포함된 각 네트워크 간에 네트워크 연결이 설정되어 있는지 확인하십시오.</block>
+  <block id="a82663d9c7605ad24dc4cbdd0e4e6983" category="paragraph">데이터 분류 검사로 인해 파일의 "마지막 액세스 시간"이 변경되지 않도록 하려면 Active Directory 사용자에게 CIFS에서 쓰기 속성 권한 또는 NFS에서 쓰기 권한을 구성하십시오. 가능하면 Active Directory 사용자를 조직 내 모든 파일에 대한 권한을 가진 상위 그룹의 일부로 구성하십시오.</block>
+  <block id="b413257632307fcb882ba8e50f680c0e" category="admonition">Data Classification은 볼륨 아래에 있는 하나의 파일 공유만 검사합니다. 볼륨에 여러 개의 공유가 있는 경우, 나머지 공유는 공유 그룹으로 묶어 별도로 검사해야 합니다. <block ref="6dfc18994c4552d1f1c67fa40d6a2418" category="inline-link-macro-rx"></block>.</block>
+  <block id="a854f1390cc6770e5c3ac54f23286041" category="cell">파일별로 감지된 민감 식별자의 범위를 선택하십시오. 개인 데이터 및 민감 개인 데이터가 포함됩니다. 디렉터리에서 필터링할 때 Data Classification은 각 폴더(및 하위 폴더)의 모든 파일에서 일치하는 항목의 합계를 계산합니다. 참고: 2023년 12월(버전 1.26.6) 릴리스에서 디렉터리별 개인 식별 정보(PII) 데이터 수를 계산하는 옵션이 제거되었습니다.</block>
+  <block id="3210b2d3712304d5d94daabc2b9ca55d" category="paragraph">NetApp 데이터 분류는 오래된 데이터를 식별하여 비용 절감 기회를 찾고 거버넌스 위험을 해결할 수 있도록 지원합니다. 조직의 요구 사항에 맞게 오래된 데이터 정의를 사용자 지정하고 마지막 액세스 또는 마지막 수정 시간을 기준으로 오래된 데이터를 식별할 수 있습니다.</block>
+  <block id="3ee48686bfb5ef35c021c8c597b867ba" category="paragraph">오래된 데이터는 마지막 접근 시점 또는 마지막 수정 시점을 기준으로 정의할 수 있습니다. 기간은 6개월에서 10년까지 선택할 수 있습니다.</block>
+  <block id="86379cb5a875fa77c1367c58d8fb41b6" category="paragraph">NetApp 데이터 분류 기능을 사용하면 검색 쿼리를 저장하고 사용자 지정 필터를 만들어 조사 페이지에서 데이터를 찾을 수 있습니다. 미리 정의된 쿼리를 사용하거나 저장된 쿼리 및 정책을 생성하여 일치하는 데이터에 대해 작업을 수행할 수 있습니다.</block>
+  <block id="08466ab9483610bf11ec4c8d97b7de69" category="paragraph">저장된 쿼리를 **정책**으로 변환할 수 있습니다. 쿼리는 데이터를 필터링하는 반면, 정책은 데이터에 대한 작업을 수행할 수 있도록 합니다. 정책을 사용하면 발견된 데이터를 삭제하거나 관련 이메일 업데이트를 보낼 수 있습니다.</block>
+  <block id="396db08211eecd6a0bdfd77bb1c14d74" category="paragraph">조사 페이지에 저장된 쿼리 결과를 표시하려면 검색에 대한 <block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block> 버튼을 선택한 다음 *조사 결과*를 선택하십시오.</block>
+  <block id="6f5ceb3ee7914dcd6ecc211eaa743409" category="paragraph">조직에 특화된 결과를 반환하는 사용자 지정 저장 쿼리를 만들 수 있습니다. 검색 조건과 일치하는 모든 파일 및 디렉터리(공유 폴더 및 폴더)에 대한 결과가 반환됩니다.</block>
+  <block id="f73a79c8c377158b52358889b7d9e09e" category="paragraph">기본 저장된 쿼리 또는 기존 저장된 쿼리의 필터는 수정할 수 없습니다. 대신 저장된 쿼리의 조사 결과를 확인하고 필터를 변경한 다음 결과를 새 쿼리 또는 정책으로 저장하십시오.</block>
+  <block id="b1501778914a2b9cb038b7acb0d4c812" category="list-text">이름 및 설명 필드를 변경합니다.</block>
+  <block id="994d4f6fffb91fd569c780ee4ab86568" category="paragraph">필요에 따라 쿼리를 정책으로 변환하거나 정책을 저장된 쿼리로 변환할 수 있습니다. *정책으로 실행* 토글을 필요에 따라 전환하십시오. .. 쿼리를 정책으로 변환하는 경우 *영구 삭제* 또는 *이메일 업데이트 전송* 중에서 선택하십시오. 이메일 업데이트를 선택하면 모든 Console 사용자에게 쿼리 결과를 매일, 매주 또는 매월 이메일로 전송할 수 있습니다. 또는 특정 이메일 주소로 동일한 주기로 알림을 보낼 수 있습니다.</block>
+  <block id="a482ccaec906fdea018c252d7b469289" category="paragraph">개인 정보 또는 민감한 개인 정보가 포함된 파일, 마지막 수정일로부터 7년 이상 경과</block>
+  <block id="750f1f9e452fdbe4031761e5c11be5fd" category="paragraph">3년 이상 접근되지 않은 파일</block>
+  <block id="97717d7dfa17c00b3d260b7c4e76dca4" category="paragraph">신분증 번호, 세금 식별 번호, 운전면허증 번호, 의료 ID 또는 여권 번호 등 개인 데이터 식별자가 포함된 파일 또는 데이터베이스 열</block>
 </blocks>

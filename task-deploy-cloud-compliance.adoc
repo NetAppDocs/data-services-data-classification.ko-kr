@@ -16,7 +16,7 @@ summary: 클라우드에 NetApp Data Classification 배포하려면 몇 가지 �
 [role="lead"]
 NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할 수 있습니다.  콘솔은 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다.
 
-또한 다음을 수행할 수도 있습니다.link:task-deploy-compliance-onprem.html["인터넷 접속이 가능한 Linux 호스트에 데이터 분류 설치"] .  온프레미스 ONTAP 시스템을 온프레미스에 있는 데이터 분류 인스턴스를 사용하여 스캔하려는 경우 이러한 유형의 설치가 좋은 옵션일 수 있지만, 이는 필수 사항은 아닙니다.  어떤 설치 방법을 선택하든 소프트웨어의 기능은 정확히 동일합니다.
+참고로, link:task-deploy-compliance-onprem.html["인터넷 접속이 가능한 Linux 호스트에 데이터 분류 설치"]. 온프레미스에 있는 Data Classification 인스턴스를 사용하여 온프레미스 ONTAP 시스템을 스캔하는 것을 선호하는 경우 이 설치 유형이 좋은 선택일 수 있지만, 필수 사항은 아닙니다. 어떤 설치 방법을 선택하든 소프트웨어의 기능은 완전히 동일합니다.
 
 
 
@@ -45,9 +45,9 @@ NetApp Console 사용하여 클라우드에 NetApp Data Classification 배포할
 [[create-a-console-agent]]
 == 콘솔 에이전트 만들기
 
-Console 에이전트가 아직 없는 경우 클라우드 공급자에서 Console 에이전트를 생성하세요.  https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWS에서 콘솔 에이전트 만들기"^] 또는 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azure에서 콘솔 에이전트 만들기"^], 또는 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP에서 콘솔 에이전트 만들기"^]을 참조하세요. 대부분의 경우 Data Classification을 활성화하기 전에 Console 에이전트가 설정되어 있을 가능성이 높지만 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."], 지금 설정해야 하는 경우도 있습니다.
+콘솔 에이전트가 아직 없는 경우 클라우드 공급자에서 콘솔 에이전트를 생성하십시오.  https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["AWS에서 콘솔 에이전트 만들기"^] 또는  https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["Azure에서 콘솔 에이전트 만들기"^], 또는  https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["GCP에서 콘솔 에이전트 만들기"^]을 참조하십시오. 대부분의 경우 Data Classification을 활성화하기 전에 콘솔 에이전트가 설정되어 있을 가능성이 높지만 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["콘솔 기능에는 콘솔 에이전트가 필요합니다."], 지금 설정해야 하는 경우도 있습니다.
 
-특정 클라우드 공급자에 배포된 콘솔 에이전트를 사용해야 하는 몇 가지 시나리오가 있습니다.
+특정 클라우드 공급자에 배포된 콘솔 에이전트를 사용해야 하는 경우가 있습니다.
 
 * AWS의 Cloud Volumes ONTAP 또는 Amazon FSx for ONTAP 버킷에서 데이터를 스캔할 때 AWS의 콘솔 에이전트를 사용합니다.
 * Azure의 Cloud Volumes ONTAP 또는 Azure NetApp Files 에서 데이터를 스캔할 때 Azure의 콘솔 에이전트를 사용합니다.

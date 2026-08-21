@@ -4,7 +4,7 @@ permalink: task-deploy-overview.html
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, bluexp classification 
 summary: 귀하의 요구 사항에 맞는 NetApp Data Classification 배포를 계획하세요. 
 ---
-= NetApp Data Classification 배포 방법을 선택하십시오.
+= NetApp Data Classification 배포 방법
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: 귀하의 요구 사항에 맞는 NetApp Data Classification 배포를 
 
 
 [role="lead"]
-NetApp Data Classification은 다양한 방식으로 배포할 수 있습니다. 사용 가능한 방법을 검토하여 필요에 가장 적합한 방법을 선택하십시오.
+NetApp Data Classification은 다양한 네트워크 및 연결 요구 사항에 맞춰 여러 배포 방법을 지원합니다. 사용 가능한 방법을 검토하여 환경에 가장 적합한 옵션을 선택하십시오.
 
 * link:task-deploy-cloud-compliance.html["콘솔을 사용하여 클라우드에 배포"] . 콘솔은 콘솔 에이전트와 동일한 클라우드 공급자 네트워크에 데이터 분류 인스턴스를 배포합니다.
-* link:task-deploy-compliance-onprem.html["인터넷 접속이 가능한 Linux 호스트에 설치"] . 인터넷 접속이 가능한 네트워크의 Linux 호스트나 클라우드의 Linux 호스트에 데이터 분류를 설치합니다.  온프레미스 ONTAP 시스템을 온프레미스에 있는 데이터 분류 인스턴스를 사용하여 스캔하려는 경우 이러한 유형의 설치가 좋은 옵션일 수 있지만, 이는 필수 사항은 아닙니다.
-* link:task-deploy-compliance-dark-site.html["인터넷 접속이 불가능한 온프레미스 사이트의 Linux 호스트에 설치"]_비공개 모드_라고도 합니다. 설치 스크립트를 사용하는 이 유형의 설치는 콘솔 SaaS 계층에 연결할 수 없습니다.
+* link:task-deploy-compliance-onprem.html["인터넷 접속이 가능한 Linux 호스트에 설치"]. 네트워크 또는 클라우드의 Linux 호스트에 Data Classification을 설치하십시오. 이 옵션은 온프레미스에 있는 Data Classification 인스턴스에서 온프레미스 ONTAP 시스템을 스캔하려는 경우 유용할 수 있지만, 인스턴스를 온프레미스에 배치하는 것이 필수 사항은 아닙니다.
+* link:task-deploy-compliance-dark-site.html["인터넷 접속이 불가능한 온프레미스 사이트의 Linux 호스트에 설치"], 이를 _프라이빗 모드_ 라고 합니다. 설치 스크립트를 사용하는 이 설치 유형은 Console SaaS 계층과 연결되지 않습니다.
 
 
 
@@ -29,6 +29,6 @@ TIP: 온프레미스 VMware vSphere 배포의 경우 Data Classification은 간�
 [[on-premises-installation-script]]
 == 온프레미스 설치 스크립트
 
-인터넷에 접속 가능한 Linux 호스트에 설치하는 경우와 인터넷에 접속할 수 없는 Linux 호스트에 온프레미스로 설치하는 경우 모두 설치 스크립트를 사용합니다. 스크립트는 먼저 시스템 및 환경이 필수 조건을 충족하는지 확인합니다. 필수 조건이 충족되면 설치가 시작됩니다.
+두 설치 방법 모두 설치 스크립트를 사용합니다. 스크립트는 시스템 및 환경이 필수 조건을 충족하는지 확인합니다. 조건을 충족하면 설치가 시작됩니다.
 
-Linux의 준비 상태를 확인할 수 있는 별도의 소프트웨어 패키지가 제공됩니다. 검증 패키지를 실행하려면 link:task-test-linux-system.html["Linux 호스트에 NetApp Data Classification을 설치할 준비가 되었는지 확인하십시오"]을 참조하십시오.
+Linux 호스트가 준비되었는지 확인하는 데 사용할 수 있는 별도의 소프트웨어 패키지가 있습니다. 확인 패키지를 실행하려면 link:task-test-linux-system.html["Linux 호스트에 NetApp Data Classification을 설치할 준비가 되었는지 확인하십시오"]을 참조하십시오.

@@ -14,7 +14,7 @@ summary: 'NetApp Data Classification은 OVA(Open Virtual Appliance)를 사용하
 
 
 [role="lead"]
-NetApp Data Classification은 VMware Open Virtual Appliance(OVA)를 통한 배포를 지원하며, 온프레미스 VMware vSphere 환경에 Data Classification을 설치하고 실행할 수 있는 관리형 패키지를 제공합니다. OVA 배포 방식은 사전 검증된 NetApp 관리 환경을 제공하여 배포를 간소화합니다.
+설치 및 운영을 간소화하는 관리형 패키지인 사전 검증된 Open Virtual Appliance(OVA)를 사용하여 온프레미스 VMware vSphere 환경에 NetApp Data Classification을 배포합니다.
 
 이 방법은 새로운 VMware 기반 배포에 권장됩니다.
 
@@ -48,7 +48,7 @@ Data Classification을 설치하기 위해 OVA 파일을 사용하기 전에 다
 
 | `DataClassification-<version>-XL.ova` | 대규모 운영 워크로드: CPU 32개, RAM 128GB, 디스크 1TB | 5억 개의 파일 
 |===
-. vSphere 클라이언트를 실행합니다. 대상 클러스터 또는 호스트를 마우스 오른쪽 버튼으로 클릭한 다음 *Deploy OVF Template* > *Create VM from OVA*를 선택합니다.
+. vSphere 클라이언트를 엽니다. 대상 클러스터 또는 호스트를 마우스 오른쪽 버튼으로 클릭하고 *OVF 템플릿 배포* > *OVA에서 VM 생성*을 선택합니다.
 . 1단계에서 다운로드한 OVA 파일을 업로드하십시오.
 . *VM 이름*과 대상 데이터 센터, 호스트 또는 클러스터 및 데이터 저장소를 지정합니다.
 . NetApp 최종 사용자 라이선스 계약에 동의하십시오.
@@ -82,16 +82,16 @@ NOTE: 이 비밀번호는 루트 액세스, SSH 액세스 및 시스템 관리�
 +
 *DATASENSE-INSTALLER-<version>.tar.gz*라는 이름의 파일을 선택하십시오.
 
-. 설치 파일(Installer file)을 VM 호스트에 복사합니다. `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`.
-. 호스트 컴퓨터에서 설치 파일의 압축을 해제하십시오.
+. VM 호스트에서  `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`을(를) 실행하여 설치 프로그램 아카이브를 압축 해제합니다.
+. 호스트 컴퓨터에서 설치 프로그램 압축 파일을 해제하십시오.
 . 콘솔에서 *거버넌스 > 분류*를 선택합니다.
 . *Deploy Classification*을 선택합니다.
 +
 image:screenshot-deploy-classification.png["데이터 분류를 활성화하기 위한 버튼을 선택하는 스크린샷입니다."]
 
-. 클라우드에서 준비한 인스턴스에 데이터 분류를 설치하는지, 아니면 사내에서 준비한 인스턴스에 데이터 분류를 설치하는지에 따라 적절한 *배포* 옵션을 선택하여 데이터 분류 설치를 시작합니다.
-. _온프레미스에 데이터 분류 배포_ 대화 상자가 표시됩니다.  제공된 명령을 복사합니다(예: `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq` )을 텍스트 파일에 붙여넣어 나중에 사용할 수 있습니다.  그런 다음 *닫기*를 선택하여 대화 상자를 닫습니다.
-. 관리자 사용자를 사용하여 SSH를 통해 OVA 어플라이언스에 연결합니다.
+. 인스턴스 유형에 따라 클라우드 또는 온프레미스 중 적절한 *배포* 옵션을 선택하십시오.
+. _온프레미스 데이터 분류 배포_ 대화 상자가 나타납니다. 제공된 명령(예:  `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`)을 텍스트 파일에 복사하여 나중에 사용하십시오. *닫기*를 선택하여 대화 상자를 닫습니다.
+. SSH를 사용하여 관리자 계정으로 OVA 어플라이언스에 연결하십시오.
 . 생성한 설치 명령을 실행하여 설치를 완료하고 시스템을 조직에 등록하십시오.
 
 

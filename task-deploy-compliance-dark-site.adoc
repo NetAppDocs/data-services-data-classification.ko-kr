@@ -4,7 +4,7 @@ permalink: task-deploy-compliance-dark-site.html
 keywords: cloud compliance, data sense, get started, web browser connectivity, cloud compliance access, privacy, linux, ubuntu, compliance, on-premises, dark site, upgrade, private mode, docker, podman, rhel, bluexp classification, classification, install, cloud data sense, linux host 
 summary: '인터넷 접속이 불가능한 온프레미스 사이트의 Linux 호스트에 NetApp Data Classification 설치하려면 몇 가지 단계를 완료하세요. 이를 "개인 모드"라고도 합니다. 이러한 유형의 설치는 보안 사이트에 적합합니다.' 
 ---
-= 인터넷 접속이 없는 Linux 호스트에 NetApp Data Classification 설치
+= 프라이빗 모드의 Linux 호스트에 NetApp Data Classification 설치
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,14 @@ summary: '인터넷 접속이 불가능한 온프레미스 사이트의 Linux �
 
 
 [role="lead"]
-인터넷 접속이 불가능한 온프레미스 사이트의 Linux 호스트에 NetApp Data Classification 설치하는 것을 _개인 모드_라고 합니다.  설치 스크립트를 사용하는 이 유형의 설치는 NetApp Console SaaS 계층에 연결되지 않습니다.
+인터넷에 접속할 수 없는 온프레미스 사이트의 Linux 호스트에 NetApp Data Classification을 설치하려면 _프라이빗 모드_를 사용하십시오. 이 배포 방식은 설치 스크립트를 사용하며 데이터 분류 인스턴스를 NetApp Console SaaS 계층에서 분리된 상태로 유지하므로 격리된 환경에서 로컬 데이터 소스를 스캔할 수 있습니다.
 
 link:https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Console 에이전트 및 Data Classification의 다양한 배포 모드에 대해 알아보세요"^].
 
 
 TIP: 온프레미스 VMware vSphere 배포의 경우 Data Classification은 간소화된 link:task-deploy-ova.html["OVA를 사용한 배포"]을 지원합니다.
 
-데이터 분류 설치 스크립트는 시스템과 환경이 필수 전제 조건을 충족하는지 확인하는 것으로 시작됩니다.  모든 전제 조건이 충족되면 설치가 시작됩니다.  데이터 분류 설치를 실행하지 않고도 전제 조건을 독립적으로 확인하려면 전제 조건만 테스트하는 별도의 소프트웨어 패키지를 다운로드할 수 있습니다. link:task-test-linux-system.html["Linux 호스트가 데이터 분류를 설치할 준비가 되었는지 확인하는 방법을 알아보세요."] .
+데이터 분류 설치 스크립트는 시스템 및 환경이 필수 요구 사항을 충족하는지 확인합니다. 요구 사항을 충족하면 설치가 시작됩니다. 데이터 분류 설치를 실행하기 전에 별도로 요구 사항을 확인하려면 요구 사항만 테스트하는 별도의 소프트웨어 패키지를 다운로드할 수 있습니다. link:task-test-linux-system.html["Linux 호스트가 데이터 분류를 설치할 준비가 되었는지 확인하는 방법을 알아보세요."].
 
 
 
@@ -84,7 +84,7 @@ NetApp 지원 사이트에서 데이터 분류 소프트웨어를 다운로드�
 
 Data Classification 소프트웨어는 특정 운영 체제 요구 사항, RAM 요구 사항, 소프트웨어 요구 사항 등을 충족하는 호스트에서 실행되어야 합니다.
 
-* 데이터 분류는 전용 호스트에서 수행되어야 합니다. 호스트는 다른 애플리케이션이나 바이러스 백신과 같은 타사 소프트웨어와 공유할 수 없습니다.
+* Data Classification은 전용 호스트에 있어야 합니다. 호스트는 바이러스 백신 등 다른 애플리케이션이나 타사 소프트웨어와 공유할 수 없습니다.
 * 데이터 분류를 통해 스캔할 데이터 세트에 맞는 크기를 선택하십시오.
 +
 [cols="17,17,27,31"]
@@ -151,7 +151,7 @@ Data Classification 소프트웨어는 특정 운영 체제 요구 사항, RAM �
 ** 호스트 시스템에서 고급 벡터 확장(AVX2)을 활성화해야 합니다.
 
 
-* *Red Hat Subscription Management*: 호스트는 Red Hat Subscription Management에 등록되어야 합니다.  등록되지 않은 경우, 설치 중에 시스템은 저장소에 접근하여 필요한 타사 소프트웨어를 업데이트할 수 없습니다.
+* *Red Hat Subscription Management*: 호스트는 Red Hat Subscription Management에 등록되어 있어야 합니다. 등록되어 있지 않으면 시스템이 설치 중에 필요한 타사 소프트웨어를 업데이트하기 위한 저장소에 액세스할 수 없습니다.
 * *추가 소프트웨어*: 데이터 분류를 설치하기 전에 호스트에 다음 소프트웨어를 설치해야 합니다.
 +
 ** 사용 중인 운영체제에 따라 컨테이너 엔진 중 하나를 설치해야 합니다.
