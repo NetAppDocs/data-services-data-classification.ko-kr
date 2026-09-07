@@ -14,7 +14,7 @@ summary: '인터넷 접속이 불가능한 온프레미스 사이트의 Linux �
 
 
 [role="lead"]
-인터넷에 접속할 수 없는 온프레미스 사이트의 Linux 호스트에 NetApp Data Classification을 설치하려면 _프라이빗 모드_를 사용하십시오. 이 배포 방식은 설치 스크립트를 사용하며 데이터 분류 인스턴스를 NetApp Console SaaS 계층에서 분리된 상태로 유지하므로 격리된 환경에서 로컬 데이터 소스를 스캔할 수 있습니다.
+_프라이빗 모드_를 사용하여 인터넷에 액세스할 수 없는 온프레미스 사이트의 Linux 호스트에 NetApp Data Classification을 설치합니다(오프라인 설치 또는 다크 사이트라고도 함). 이 배포는 설치 스크립트를 사용하며 Data Classification 인스턴스를 NetApp Console SaaS 계층에서 연결 해제된 상태로 유지하여 격리된 환경에서 로컬 데이터 소스를 스캔할 수 있도록 합니다.
 
 link:https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Console 에이전트 및 Data Classification의 다양한 배포 모드에 대해 알아보세요"^].
 
@@ -28,7 +28,7 @@ TIP: 온프레미스 VMware vSphere 배포의 경우 Data Classification은 간�
 [[supported-data-sources]]
 == 지원되는 데이터 소스
 
-개인 모드(때때로 "오프라인" 또는 "다크" 사이트라고도 함)로 설치된 경우 Data Classification은 온프레미스 사이트에 로컬인 데이터 소스의 데이터만 스캔할 수 있습니다. 현재 Data Classification은 다음 *로컬* 데이터 소스를 스캔할 수 있습니다:
+개인 모드로 설치된 경우, NetApp Data Classification은 온프레미스 사이트에 로컬인 데이터 소스의 데이터만 스캔할 수 있습니다. 현재 NetApp Data Classification에서 스캔할 수 있는 *로컬* 데이터 소스는 다음과 같습니다.
 
 * 온프레미스 ONTAP 시스템
 * 데이터베이스 스키마
@@ -40,6 +40,8 @@ TIP: 온프레미스 VMware vSphere 배포의 경우 Data Classification은 간�
 
 [[limitations]]
 == 제한 사항
+
+Data Classification이 콘솔 에이전트에 배포된 경우, 콘솔 에이전트를 다른 호스트로 마이그레이션하는 것은 지원되지 않습니다. 다크 사이트의 다른 콘솔 에이전트에서 Classification이 필요한 경우, 새 호스트에 새 콘솔 에이전트와 Data Classification 인스턴스를 배포하십시오.
 
 대부분의 데이터 분류 기능은 인터넷 액세스가 없는 사이트에 배포될 때 작동합니다. 그러나 인터넷 액세스가 필요한 특정 기능은 지원되지 않습니다. 예를 들면 다음과 같습니다.
 

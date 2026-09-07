@@ -792,7 +792,7 @@ BlueXP classification Microsoft Azure 및 Google Cloud Platform(GCP)용 Linux �
 * 파일 수
 * 파일 크기
 * 파일 생성
-* 파일 마지막 접근
+* 파일 마지막 액세스 시간
 * 파일이 마지막으로 수정되었습니다
 * 파일 발견 시간
 * 권한 추출
