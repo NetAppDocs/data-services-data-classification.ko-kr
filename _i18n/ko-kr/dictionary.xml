@@ -2594,7 +2594,6 @@
   <block id="2c6b86d7e99472d3dc260c2363c69efa" category="list-text">배포가 완료되면 VM을 켜십시오.</block>
   <block id="7020b99b4452945edfa566eb18678316" category="section-title">Data Classification 설치</block>
   <block id="f1cbf08f5744cd499f0689de8053c832" category="list-text"><block ref="1853466d175c8da4cfe77a84a98fc767" category="inline-link-macro-rx"></block>에서 Data Classification 소프트웨어를 다운로드하십시오.</block>
-  <block id="6cac65ee9c5b85cb06427233e5bdb208" category="paragraph">*DATASENSE-INSTALLER-&lt;version&gt;.tar.gz*라는 이름의 파일을 선택하십시오.</block>
   <block id="4d4bda9c294a00ba7df9db822f19e797" category="list-text">*Deploy Classification*을 선택합니다.</block>
   <block id="b49d72dce505eca7dd3d8a331d97211c" category="list-text">생성한 설치 명령을 실행하여 설치를 완료하고 시스템을 조직에 등록하십시오.</block>
   <block id="30dabb33051152f55606045c5b5163f8" category="section-title">온프레미스 설치 스크립트</block>
@@ -2830,8 +2829,6 @@
   <block id="52cc6c5c5119ce23df5222266c788298" category="paragraph">데이터 분류 설치 스크립트는 시스템 및 환경이 필수 요구 사항을 충족하는지 확인합니다. 요구 사항을 충족하면 설치가 시작됩니다. 데이터 분류 설치를 실행하기 전에 별도로 요구 사항을 확인하려면 요구 사항만 테스트하는 별도의 소프트웨어 패키지를 다운로드할 수 있습니다. <block ref="73a6280d3a4870acf61b76881089c551" category="inline-link-macro-rx"></block>.</block>
   <block id="65f8261465925974e48975862e4b3526" category="paragraph">설치 및 운영을 간소화하는 관리형 패키지인 사전 검증된 Open Virtual Appliance(OVA)를 사용하여 온프레미스 VMware vSphere 환경에 NetApp Data Classification을 배포합니다.</block>
   <block id="408d01175a02c0b79ef407289a1d2244" category="list-text">vSphere 클라이언트를 엽니다. 대상 클러스터 또는 호스트를 마우스 오른쪽 버튼으로 클릭하고 *OVF 템플릿 배포* &gt; *OVA에서 VM 생성*을 선택합니다.</block>
-  <block id="f4bc6166e7df940fd2d75df3d3224895" category="list-text">VM 호스트에서 <block ref="074de13e1cbe978eb55769428ed6d266" prefix=" " category="inline-code"></block>을(를) 실행하여 설치 프로그램 아카이브를 압축 해제합니다.</block>
-  <block id="40bd417b10a370fe4b3217e008ed97af" category="list-text">호스트 컴퓨터에서 설치 프로그램 압축 파일을 해제하십시오.</block>
   <block id="56d16acd0e3bc0d5c59016cbba576fbd" category="list-text">인스턴스 유형에 따라 클라우드 또는 온프레미스 중 적절한 *배포* 옵션을 선택하십시오.</block>
   <block id="51b7b19fce3b6bb7307e430297627254" category="list-text">_온프레미스 데이터 분류 배포_ 대화 상자가 나타납니다. 제공된 명령(예: <block ref="a402a6c8a10b4c24d7596599c6dfb7db" prefix=" " category="inline-code"></block>)을 텍스트 파일에 복사하여 나중에 사용하십시오. *닫기*를 선택하여 대화 상자를 닫습니다.</block>
   <block id="44ff83113f1a40ebb141ea0894346f8e" category="list-text">SSH를 사용하여 관리자 계정으로 OVA 어플라이언스에 연결하십시오.</block>
@@ -2876,6 +2873,10 @@
   <block id="6b5142975d1a9ae313680c5d4d9ebc84" category="paragraph">*쓰기 권한 없이 스캔* 옵션은 기본적으로 비활성화되어 있습니다. 즉, Data Classification에 적절한 쓰기 권한이 없는 경우 Data Classification은 "마지막 접근 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 파일을 스캔하지 않습니다. 시스템에서 마지막 접근 시간이 수정되는 것을 허용하는 경우 이 옵션을 선택하십시오. <block ref="dc5dc6a34f4d93f63278e3178de9dfbf" category="inline-link-macro-rx"></block>.</block>
   <block id="c83ea6ee515e995e19ee9c47217b48c5" category="admonition">시스템 개요 페이지에는 기본적으로 비활성화된 *쓰기 권한 없이 스캔* 옵션이 있습니다. Data Classification에 적절한 권한이 없으면 Data Classification이 "마지막 액세스 시간"을 원래 타임스탬프로 되돌릴 수 없으므로 파일을 스캔하지 않습니다. + *쓰기 권한 없이 스캔* 옵션을 사용하여 이 설정을 재정의할 수 있습니다. 이 옵션에 대한 자세한 내용은 <block ref="dafafd90d969cb1149320df4921f9837" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="2cc407af9cea07161223fabe8016e6de" category="paragraph">데이터 분류 기능은 사용자가 추가한 파일 공유 폴더의 파일들을 스캔하기 시작합니다. <block ref="f6f8ee4d6f4e6f825c36ff6c3e10d87d" category="inline-xref-macro-rx"></block>스캔 결과는 **대시보드**에서 확인할 수 있습니다.</block>
-  <block id="9d26347bf9049c082d482aa87b79d702" category="section-title">2026년 9월 16일</block>
-  <block id="119694a90256d7f33a7bdbec2bee8755" category="paragraph">*버전 1.57*</block>
+  <block id="cbad356d2a2c08e20ea2766c2d78305f" category="inline-xref">다음 섹션</block>
+  <block id="d3661928ac94155d9af8b9588602606a" category="admonition">OVA 파일은 기본 이미지이며 특정 Data Classification 버전에 종속되지 않습니다. NetApp 지원 사이트에서 다양한 OVA 버전을 사용할 수 있으며, 어떤 버전이든 어플라이언스 배포에 사용할 수 있습니다. <block ref="cc63dda17851968fa834d28d198fa758" category="inline-xref-macro-rx"></block>에서 OVA 위에 원하는 Data Classification 버전을 설치하십시오. Data Classification 릴리스와 일치하는 OVA 버전이 필요하지 않습니다.</block>
+  <block id="cf71fd1d20fc4d05c1d49a308d1652a4" category="admonition">다운로드하는 설치 프로그램 버전에 따라 어플라이언스에서 실행되는 Data Classification 버전이 결정됩니다. OVA와 달리 설치 프로그램 버전은 중요합니다. 사용하려는 Data Classification 버전의 설치 프로그램을 다운로드하십시오.</block>
+  <block id="e31839b826a7cabea3b4dd340a10c5f6" category="inline-link-macro">릴리스 노트</block>
+  <block id="31ea2cee1aa13d2744efce0d61094122" category="paragraph">*DATASENSE-INSTALLER-&lt;version&gt;.tar.gz*라는 이름의 파일을 선택하고, 올바른 버전을 선택했는지 확인하십시오. <block ref="f08bf23b5fb2866e10784388c02bd637" category="inline-link-macro-rx"></block>에서 최신 버전을 확인하십시오.</block>
+  <block id="26a834f02973c22b12d831ddd70ef359" category="list-text">호스트 머신에서 설치 프로그램 아카이브의 압축을 해제하십시오:<block ref="074de13e1cbe978eb55769428ed6d266" prefix=" " category="inline-code"></block>.</block>
 </blocks>
